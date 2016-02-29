@@ -23,7 +23,7 @@ public class e67 {
 			i = Math.pow((i-avg),2);
 			sum += i;
 		}
-		return ((int)sum)/(list.size()-1);
+		return sum/(list.size()-1);
 	}
 
 	public static void main(String[] args) {

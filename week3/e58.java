@@ -14,6 +14,6 @@ public class e58 {
 			System.out.print("Type a word: ");
 			text = reader.nextLine();
 		}
-		System.out.println("You ave the word "+text+" twice");
+		System.out.println("You have the word "+text+" twice");
 	}
 }

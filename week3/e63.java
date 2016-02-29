@@ -6,12 +6,14 @@ public class e63 {
 	
 	public static int sum(ArrayList<Integer> list) {
 	    // write your code here
-		int count = 0;
 		int sum = 0;
-		while(count < list.size()){
-			sum += list.get(count);
-			count++;
-		}
+//		int count = 0;
+//		while(count < list.size()){
+//			sum += list.get(count);
+//			count++;
+//		}
+		for(int i:list)
+			sum += i;
 		return sum;
 	}
 

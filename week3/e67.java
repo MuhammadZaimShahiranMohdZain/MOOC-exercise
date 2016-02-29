@@ -22,10 +22,8 @@ public class e67 {
 		for(double i:list){
 			i = Math.pow((i-avg),2);
 			sum += i;
-			System.out.println(i);
-			System.out.println(sum);
 		}
-		return sum/(list.size()-1);
+		return ((int)sum)/(list.size()-1);
 	}
 
 	public static void main(String[] args) {

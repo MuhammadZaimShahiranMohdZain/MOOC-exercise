@@ -6,9 +6,10 @@ public class e56 {
 	public static String reverse(String text) {
 		// write your code here
 		String help = "";
-		int count = text.length();
-		for (int i = text.length()-1; i >= 0; i--) {
+		int i = text.length()-1;
+		while(i>=0){
 			help = help + text.charAt(i);
+			i--;
 		}
 		return help;
 	}

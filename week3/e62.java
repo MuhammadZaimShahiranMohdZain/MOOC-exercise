@@ -1,6 +1,7 @@
 package week3;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class e62 {
 	
@@ -20,7 +21,8 @@ public class e62 {
 
 		// sorting brothers
 		brothers.sort(null);
-
+//		Collections.sort(brothers);
+		
 		// removing the last item
 		removeLast(brothers);
 

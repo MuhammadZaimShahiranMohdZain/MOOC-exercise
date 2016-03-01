@@ -29,13 +29,17 @@ public class e40 {
 			star++;
 			printWhitespaces(white);
 			printStars(star);
+			star--;
+			printStars(star);
+			star++;
+			printWhitespaces(white);
 			System.out.println();
 			y++;
 		}
 		
 		int bark = 0;
 		while(bark<2){
-			printWhitespaces(2);
+			printWhitespaces(star-2);
 			printStars(3);
 			System.out.println();
 			bark++;

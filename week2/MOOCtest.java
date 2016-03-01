@@ -6,6 +6,6 @@ public class MOOCtest {
 
 	@Test
 	public void test() {
-		new e40();
+		new e42();
 	}
 }

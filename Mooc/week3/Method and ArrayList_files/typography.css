@@ -1,0 +1,225 @@
+body {
+	line-height: 150%; font-family: Arial, Helvetica, Verdana, "Bitstream Vera Sans", sans-serif; font-size: 81.25%;
+}
+.form-text {
+	font-family: Arial, Helvetica, Verdana, "Bitstream Vera Sans", sans-serif;
+}
+h1 {
+	font-size: 180%;
+}
+h2 {
+	font-size: 142.85%;
+}
+h3 {
+	font-size: 114.28%;
+}
+h4 {
+	font-size: 100%;
+}
+h5 {
+	font-size: 90%;
+}
+h6 {
+	font-size: 80%;
+}
+#footer {
+	font-size: 95%;
+}
+.submitted {
+	font-size: 95%;
+}
+.terms {
+	font-size: 95%;
+}
+.terms {
+	line-height: 130%;
+}
+.node .read-more {
+	font-size: 95%;
+}
+.node .more-link {
+	font-size: 95%;
+}
+.node .links {
+	font-size: 95%;
+}
+div.comment div.links a {
+	font-size: 90%;
+}
+div.comment ul.links a {
+	font-size: 90%;
+}
+.signature {
+	font-size: 91.6%;
+}
+.breadcrumbs {
+	line-height: 100%; font-size: 90%;
+}
+ul.pager {
+	line-height: 150%; font-size: 90%;
+}
+ul.pager li {
+	line-height: 250%;
+}
+li {
+	line-height: 150%;
+}
+li.leaf {
+	line-height: 150%;
+}
+ul.menu li {
+	line-height: 150%;
+}
+.item-list ul li {
+	line-height: 150%;
+}
+.form-submit {
+	font-size: 80%;
+}
+.form-item .description {
+	line-height: 130%; font-size: 95%;
+}
+.block-region {
+	font-size: 130%;
+}
+#content-tabs ul.primary li a:link {
+	line-height: 120%; font-size: 110%;
+}
+#content-tabs ul.primary li a:visited {
+	line-height: 120%; font-size: 110%;
+}
+#content-tabs ul.secondary li a:link {
+	line-height: 110%; font-size: 100%;
+}
+#content-tabs ul.secondary li a:visited {
+	line-height: 110%; font-size: 100%;
+}
+.block-poll .poll div.title {
+	font-size: 120%;
+}
+#forum .description {
+	font-size: 90%;
+}
+.fusion-callout .inner {
+	font-size: 150%;
+}
+.fusion-multicol-menu .inner ul li {
+	font-size: 115%;
+}
+.fusion-multicol-menu .inner ul li.expanded ul {
+	font-size: 75%;
+}
+.fusion-multicol-menu .inner ul li.expanded ul li ul {
+	font-size: 85%;
+}
+.fusion-horiz-login#block-user-0 #user-login-form label {
+	font-size: 90%;
+}
+html.js .fusion-horiz-login#block-user-0 #user-login-form label {
+	font-size: 85%;
+}
+.fusion-horiz-login#block-user-0 .item-list li {
+	line-height: 105%; font-size: 95%;
+}
+.fusion-horiz-login#block-user-0 #edit-openid-identifier-wrapper .description {
+	font-size: 80%;
+}
+#grid-mask-toggle {
+	font-size: 14px;
+}
+.font-size-10 {
+	font-size: 62.5%;
+}
+.font-size-11 {
+	font-size: 68.75%;
+}
+.font-size-12 {
+	font-size: 75%;
+}
+.font-size-13 {
+	font-size: 81.25%;
+}
+.font-size-14 {
+	font-size: 87.5%;
+}
+.font-size-15 {
+	font-size: 93.75%;
+}
+.font-size-16 {
+	font-size: 100%;
+}
+.font-size-17 {
+	font-size: 106.25%;
+}
+.font-size-18 {
+	font-size: 112.5%;
+}
+#edit-theme-font-size-font-size-10-wrapper label {
+	font-size: 10px;
+}
+#edit-theme-font-size-font-size-11-wrapper label {
+	font-size: 11px;
+}
+#edit-theme-font-size-font-size-12-wrapper label {
+	font-size: 12px;
+}
+#edit-theme-font-size-font-size-13-wrapper label {
+	font-size: 13px;
+}
+#edit-theme-font-size-font-size-14-wrapper label {
+	font-size: 14px;
+}
+#edit-theme-font-size-font-size-15-wrapper label {
+	font-size: 15px;
+}
+#edit-theme-font-size-font-size-16-wrapper label {
+	font-size: 16px;
+}
+#edit-theme-font-size-font-size-17-wrapper label {
+	font-size: 17px;
+}
+#edit-theme-font-size-font-size-18-wrapper label {
+	font-size: 18px;
+}
+.font-family-sans-serif-sm {
+	font-family: Arial, Helvetica, "Nimbus Sans L", FreeSans, sans-serif;
+}
+.font-family-sans-serif-sm .form-text {
+	font-family: Arial, Helvetica, "Nimbus Sans L", FreeSans, sans-serif;
+}
+.font-family-sans-serif-lg {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.font-family-sans-serif-lg .form-text {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.font-family-serif-sm {
+	font-family: Garamond, Perpetua, "Nimbus Roman No9 L", "Times New Roman", serif;
+}
+.font-family-serif-sm .form-text {
+	font-family: Garamond, Perpetua, "Nimbus Roman No9 L", "Times New Roman", serif;
+}
+.font-family-serif-lg {
+	font-family: Baskerville, Georgia, Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", serif;
+}
+.font-family-serif-lg .form-text {
+	font-family: Baskerville, Georgia, Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", serif;
+}
+.font-family-myriad {
+	font-family: "Myriad Pro", Myriad, "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.font-family-myriad .form-text {
+	font-family: "Myriad Pro", Myriad, "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.font-family-lucida {
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
+}
+.font-family-lucida .form-text {
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
+}
+.font-family-tahoma {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+}
+.font-family-tahoma .form-text {
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+}

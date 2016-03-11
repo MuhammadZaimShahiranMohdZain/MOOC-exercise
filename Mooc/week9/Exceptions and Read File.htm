@@ -1,0 +1,2506 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0073)http://mooc.cs.helsinki.fi/programming-part2/material/week-9 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<TITLE>MOOC | MOOC - Massiivinen avoin verkkokurssi</TITLE>    <LINK href="/sites/mooc.cs.helsinki.fi/files/acquia_marina_favicon.png" 
+rel="shortcut icon" type="image/x-icon">   <LINK href="Exceptions%20and%20Read%20File_files/5c1587b6907a85bc361bd4b70014b0e3.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/node.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/defaults.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/system.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/system-menus.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/user.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/content-module.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/ckeditor.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/ctools.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/date.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/panels.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/views.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/aeb58e3ce47f9171327ad9fd87a26c8e.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/flexible.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/typography.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/superfish.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/superfish-navbar.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/superfish-vertical.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/fusion-acquia-marina-style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/custom.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/common.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/exercises.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/menu.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Exceptions%20and%20Read%20File_files/sh_style.css" 
+rel="stylesheet" type="text/css" media="all">   <LINK href="Exceptions%20and%20Read%20File_files/grid16-fluid.css" 
+rel="stylesheet" type="text/css" media="all">   <!--[if IE 8]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie8-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie8-fixes.css?8" />
+  <![endif]--> 
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie7-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie7-fixes.css?8" />
+  <![endif]--> 
+  <!--[if lte IE 6]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie6-fixes.css?8"/>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie6-fixes.css?8"/>
+  <![endif]--> 
+    
+<SCRIPT src="Exceptions%20and%20Read%20File_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/drupal.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/panels.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/jquery.bgiframe.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/hoverIntent.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/supposition.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/supersubs.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/superfish.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/jquery.corner.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/acquia-marina-script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/util-functions.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/clear-default-text.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/sh_java.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/sh_main.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/sh_ruby.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/sh_scala.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD>
+<BODY class="not-front not-logged-in page-node node-type-weekly-tasks no-sidebars full-node panels layout-main sidebars-both-first font-family-lucida font-size-13 grid-type-fluid grid-width-16 fluid-100" 
+id="pid-programming-part2-material-week-9">   
+<DIV class="page" id="page">
+<DIV class="page-inner" id="page-inner">
+<DIV id="skip"><A href="http://mooc.cs.helsinki.fi/programming-part2/material/week-9?noredirect=1#main-content-area">Skip 
+to Main Content Area</A>       </DIV><!-- header-top row: width = grid_width --> 
+            <!-- header-group row: width = grid_width -->       
+<DIV class="header-group-wrapper full-width" id="header-group-wrapper">
+<DIV class="header-group row grid16-16" id="header-group">
+<DIV class="header-group-inner inner clearfix" id="header-group-inner">
+<DIV class="primary-menu block" id="primary-menu">
+<DIV class="primary-menu-inner inner clearfix" id="primary-menu-inner">
+<UL class="menu sf-menu">
+  <LI class="expanded first"><A title="" 
+  href="http://mooc.cs.helsinki.fi/home">Kurssit ››</A>
+  <UL class="menu">
+    <LI class="leaf first"><A title="" 
+    href="http://mooc.fi/algoritmit">Algoritmien MOOC</A></LI>
+    <LI class="leaf"><A title="" href="http://mooc.cs.helsinki.fi/2014-ohjelmointi">Olio-ohjelmointi 
+    Javalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.aalto.fi/ohjelmointi/">Ohjelmointia Scalalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part1">Object-Oriented Programming with 
+    Java, part I</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part2">Object-Oriented Programming with 
+    Java, part II</A></LI>
+    <LI class="leaf last"><A title="" 
+    href="http://mooc.cs.helsinki.fi/wepa">Web-palvelinohjelmointi</A></LI></UL></LI>
+  <LI class="collapsed"><A title="Mikä on MOOC?" href="http://mooc.cs.helsinki.fi/content/mik%C3%A4-mooc">Mikä 
+  on MOOC? ››</A></LI>
+  <LI class="leaf last"><A title="" href="http://mooc.cs.helsinki.fi/content/j%C3%A4rjest%C3%A4v%C3%A4st%C3%A4-tahosta">Järjestävästä 
+  tahosta ››</A></LI></UL></DIV><!-- /primary-menu-inner --> </DIV><!-- /primary-menu --> 
+          </DIV><!-- /header-group-inner -->         </DIV><!-- /header-group --> 
+      </DIV><!-- /header-group-wrapper -->       <!-- preface-top row: width = grid_width --> 
+        <!--            <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
+        <div id="preface-top" class="preface-top row grid16-16">
+          <div id="preface-top-inner" class="preface-top-inner inner clearfix"> 
+--> 
+          </DIV><!-- /preface-top-inner -->         </DIV><!-- /preface-top -->  
+     <!-- /preface-top-wrapper -->           <!-- main row: width = grid_width --> 
+    
+<DIV class="main-wrapper full-width" id="main-wrapper">
+<DIV class="main row grid16-16" id="main">
+<DIV class="main-inner inner clearfix" id="main-inner"><!-- main group: width = grid_width - sidebar_first_width --> 
+          
+<DIV class="main-group row nested grid16-16" id="main-group">
+<DIV class="main-group-inner inner clearfix" id="main-group-inner">
+<DIV class="main-content row nested" id="main-content">
+<DIV class="main-content-inner inner clearfix" id="main-content-inner"><!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) --> 
+                    
+<DIV class="content-group row nested " id="content-group" style="width: 100%;">
+<DIV class="content-group-inner inner clearfix" id="content-group-inner">
+<DIV class="content-region row nested" id="content-region">
+<DIV class="content-region-inner inner clearfix" id="content-region-inner"><A 
+name="main-content-area" id="main-content-area"></A>                             
+                            
+<DIV class="content-inner block" id="content-inner">
+<DIV class="content-inner-inner inner clearfix" id="content-inner-inner">
+<DIV class="content-content" id="content-content">
+<DIV class="panel-flexible panels-flexible-13 clear-block">
+<DIV class="panel-flexible-inside panels-flexible-13-inside">
+<DIV class="panels-flexible-row panels-flexible-row-13-7 panels-flexible-row-first clear-block ">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-7-inside panels-flexible-row-inside-first clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_ panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-2 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<H1 class="title"><A 
+href="http://mooc.cs.helsinki.fi/programming-part2">Object-Oriented Programming 
+with Java, part II ››</A></H1></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-custom pane-3 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content"><LINK href="Exceptions%20and%20Read%20File_files/menu(1).css" 
+rel="stylesheet" type="text/css" media="screen"> <LINK href="Exceptions%20and%20Read%20File_files/common-new.css" 
+rel="stylesheet" type="text/css" media="screen, print"> <LINK href="Exceptions%20and%20Read%20File_files/sh_style(1).css" 
+rel="stylesheet" type="text/css" media="screen, print">        </DIV></DIV><!-- /inner-inner -->
+	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-4 clear-block js">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-4-inside clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en_ panels-flexible-region-first ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en_-inside panels-flexible-region-inside-first"></DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-js ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js-inside">
+<DIV class="panel-pane pane-node ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node odd full-node node-type-page" id="node-222">
+<DIV class="inner">
+<H2 class="title"><A title="" 
+href="http://mooc.cs.helsinki.fi/content/js-en"></A></H2>
+<DIV class="content clearfix">
+<SCRIPT src="Exceptions%20and%20Read%20File_files/bootstrap.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/jquery-1.7.1.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/exercises-eng-new.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/common-mooc-eng.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/sh_main.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/sh_java.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exceptions%20and%20Read%20File_files/jquery.easing.js" type="text/javascript"></SCRIPT>
+ 
+<DIV class="menu" id="toc" data-first-exercise-index="1" 
+data-first-chapter-index="1"><SPAN id="materiaali_toc"></SPAN>           <!--div id="tehtavat_toc" ></div--> 
+          <SPAN id="tehtavat_toc2"></SPAN>         </DIV></DIV></DIV><!-- /inner --> 
+  </DIV><!-- /node-222 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-copyright panels-flexible-region-last float-right">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-copyright-inside panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-1 box ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<P><A href="http://creativecommons.org/licenses/by-nc-sa/2.0/" 
+rel="license"><IMG style="border-width: 0px; float: right;" alt="Creative Commons License" 
+src="Exceptions%20and%20Read%20File_files/88x31.png"></A><SMALL>This material is 
+licensed under the Creative Commons BY-NC-SA license, which means that you can 
+use it and distribute it freely so long as you do not erase the names of the 
+original authors. If you do changes in the material and want to distribute this 
+altered version of the material, you have to license it with a similar free 
+license. The use of the material for commercial use is prohibited without a 
+separate agreement.</SMALL></P></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-author course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-author">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Authors: Arto Vihavainen, Matti 
+Luukkainen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-translators course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-translators">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Translators: Simone Romeo, Kenny 
+Heinonen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-8 panels-flexible-row-last clear-block js en">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-8-inside panels-flexible-row-inside-last clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-node-content box-mooc ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node even full-node node-type-weekly_tasks" id="node-322">
+<DIV class="inner">
+<DIV class="content clearfix">
+<DIV class="viikkoraja-mooc" id="Week 9" data-first-exercise-index="124" 
+data-first-chapter-index="42" tekija="Arto Vihavainen, Matti Luukkainen" 
+data-first-week-index-mooc="9" data-first-exercise-index-mooc="17" 
+data-first-chapter-index-mooc="43" data-first-week-index="9" deadline="unlocks when 85% of week 8 done ">
+<H2>Single Responsibility Principle</H2>
+<P>When we design bigger programs, we often reason about what class has to deal 
+with what task. If we delegate the implementation of the whole program to one 
+class, the result is inevitably chaos. A sector of software design, 
+<EM>object-oriented design</EM>, includes the <EM>Single Responsibility 
+Principle</EM>, which we should follow.</P>
+<P>The Single Responsibility Principle states that each class should have only 
+one clear role. If the class has one clear role, modifying that role is easy, 
+and only one class will have to be modified. <EM>Each class should have only one 
+reason to be modified.</EM>.</P>
+<P>Let us focus on the following class <CODE>Worker</CODE>, which has methods to 
+calculate his salary and to report his working hours.</P>
+<PRE class="sh_java">public class Worker {
+    // object variables
+
+    // worker's constructor and methods
+
+    public double calculateSalary() {
+        // the logic concerning salary count
+    }
+
+    public String reportHours() {
+        // the logic concerning working hours bookkeeping
+    }
+}
+    </PRE>
+<P>Even if the examples above do not show the concrete implementations, an alarm 
+should go off. Our <CODE>Worker</CODE> class has at least three different 
+responsibilities. It represents a worker, it performes the role of a salary 
+calculator, and the role of a working hour bookkeeping system by reporting 
+working hours. The class above should be split into three: one should represent 
+the worker, another should represent the salary calculator, and the third should 
+deal with time bookkeeping.</P>
+<PRE class="sh_java">public class Worker {
+    // object variables
+
+    // worker's constructor and methods
+}
+    </PRE>
+<PRE class="sh_java">public class SalaryCalculator {
+    // object variables
+
+    // methods for salary count
+
+    public double calculateSalary(Person person) {
+        // salary calculation logic
+    }
+}
+    </PRE>
+<PRE class="sh_java">public class TimeBookkeeping {
+    // object variables
+
+    // methods concerning time bookkeeping
+
+    public String createHourReport(Person person) {
+        // working hours bookeeping logic
+    }
+}
+    </PRE>
+<P><EM>Each variable, each code raw, each method, each class, and each program 
+should have only one responsibility. Often a "better" program stucture is clear 
+to the programmer only once the program is implemented. This is completely 
+acceptable: even more important it is that we always try to change a program to 
+make it clearer. <STRONG>Always refactor -- i.e. always improve your program 
+when it is needed!</STRONG></EM></P>
+<H2>Organising Classes into Packages</H2>
+<P>When we design and implement bigger programs, the number of classes rapidly 
+grows. When the number of classes grows, remembering their functionality and 
+methods becomes more difficult. Giving sensible names to classes helps to 
+remember their funcitonality. In addition to giving sensible names, it is good 
+to split the source code files into packages according to their functionality, 
+use, and other logical reasons. In fact, the <EM>packages</EM> are but folders 
+we use to organise our source code files. Directories are often called folders, 
+both in windows and colloqually. We will use the term directory, anyway.</P>
+<P>Programming environments provide made-up tools for package management. So 
+far, we have been creating classes and interfaces only in the <CODE>default 
+package</CODE> of the <CODE>Source Packages</CODE> partition. In NetBeans, we 
+can create a new package by clicking on <CODE>Source Packages</CODE>, and 
+choosing <CODE>New -&gt; Java Package...</CODE>. In the created package, we can 
+create classes in the same way as we do in the <CODE>default package</CODE>.</P>
+<P>You can read the name of the package that contains a certain class at the 
+beginning of the source code files in the sentence <CODE>package 
+<EM>packageName</EM></CODE> before the other statements. For instance, the below 
+class <CODE>Implementation</CODE> is contained in the package 
+<CODE>library</CODE>.</P>
+<PRE class="sh_java">package library;
+
+public class Implementation {
+
+    public static void main(String[] args) {
+        System.out.println("Hello packageworld!");
+    }
+}
+    </PRE>
+<P>Packages can contain other packages. For instance, the package definition 
+<CODE>package library.domain</CODE> means that the package <CODE>domain</CODE> 
+is contained in the package <CODE>library</CODE>. By placing packages into other 
+packages, we design the hierachy of classes and interfaces. For instance, all 
+Java's classes are located in packages that are contained in the package 
+<CODE>java</CODE>. The package name <CODE>domain</CODE> is often used to 
+represent the storage location of the classes which deal with concepts specific 
+for the domain. For instance, the class <CODE>Book</CODE> could be stored in the 
+package <CODE>library.domain</CODE> because it represents a concept specific of 
+the library.</P>
+<PRE class="sh_java">package library.domain;
+
+public class Book {
+    private String name;
+
+    public Book(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+}
+    </PRE>
+<P>We can uses the classes stored in our packages through the 
+<CODE>import</CODE> statement. For instance, the class 
+<CODE>Implementation</CODE>, which is contained in the package 
+<CODE>library</CODE> could make use of a class stored in 
+<CODE>library.domain</CODE> through the assignment <CODE>import 
+library.domain.Book</CODE>.</P>
+<PRE class="sh_java">package library;
+
+import library.domain.Book;
+
+public class Implementation {
+
+    public static void main(String[] args) {
+        Book book = new Book("The ABC of Packages!");
+        System.out.println("Hello packageworld: " + book.getName());
+    }
+}
+    </PRE>
+<PRE>Hello packageworld: The ABC of Packages!
+    </PRE>
+<P>The import statements are defined in our source code file after the package 
+statement but before the class statement. There can be many of them -- for 
+instance, when we want to use different classes. Java's made-up classes are 
+usually stored in <CODE>java</CODE> package child packages. Hopefully, the 
+statements which appear at the beginning of our classes -- such as <CODE>import 
+java.util.ArrayList</CODE> and <CODE>import java.util.Scanner;</CODE> -- are 
+starting to look more meaningful now.</P>
+<P>From now on, in <EM>all</EM> our exercises we will use packages. Next, we 
+will create our first packages ourselves.</P>
+<DIV class="tehtavat" id="viikko9">
+<DIV class="tehtava">
+<H3>First Packages</H3>
+<H4>UI Interface</H4>
+<P>Create the package <CODE>mooc</CODE> in your project. We create the 
+functionality of our application inside this package. Add the package 
+<CODE>ui</CODE> to your application; at this point, you should have the package 
+<CODE>mooc.ui</CODE>. Create a new interface in it, and call it 
+<CODE>UserInterface</CODE>.</P>
+<P>The interface <CODE>UserInterface</CODE> has to determine the method 
+<CODE>void update()</CODE>. </P>
+<H4>Text User Interface</H4>
+<P>Create the class <CODE>TextUserInterface</CODE> in the same package; make it 
+implement the interface <CODE>UserInterface</CODE>. Implement the method 
+<CODE>public void update()</CODE> which is required by the interface 
+<CODE>UserInterface</CODE> which <CODE>TextUserInterface</CODE> implements: its 
+only duty should be printing the string "<CODE>Updating the user 
+interface</CODE>" with a <CODE>System.out.println</CODE> method call.</P>
+<H4>Application Logic</H4>
+<P>Create now the package <CODE>mooc.logic</CODE>, and add the class 
+<CODE>ApplicationLogic</CODE> in it. The application logic API should be the 
+following:</P>
+<P></P>
+<UL>
+  <LI>the constructor <CODE>public ApplicationLogic(UserInterface 
+  ui)</CODE></LI>. It receives as parameter a class which implements the 
+  interface UserInterface. Note: your application logic has to see the interface 
+  and therefore to import it; in other words, the line <CODE>import 
+  mooc.ui.UserInterface</CODE> must appear at the beginning of he file<BR>
+  <LI>the method <CODE>public void execute(int howManyTimes)</CODE></LI> prints 
+  the string "The application logic works" as many times as it is defined by its 
+  parameter variable. After each "The application logic works" printout, the 
+  code has to call the <CODE>update()</CODE> method of the object which 
+  implements the interface <CODE>UserInterface</CODE> and which was assigned to 
+  the constructor as its parameter.<BR></UL>
+<P>You can test your application with the following main class.</P>
+<PRE class="sh_java">import mooc.logic.ApplicationLogic;
+import mooc.ui.UserInterface;
+import mooc.ui.TextUserInterface;
+
+public class Main {
+
+    public static void main(String[] args) {
+        UserInterface ui = new TextUserInterface();
+        new ApplicationLogic(ui).execute(3);
+    }
+}
+        </PRE>
+<P>The program output should be the following:</P>
+<PRE>The application logic works
+Updating the user interface
+The application logic works
+Updating the user interface
+The application logic works
+Updating the user interface
+        </PRE></DIV></DIV>
+<H3>A Concrete Directory Construction</H3>
+<P>All the projects which can be seen are stored in your computer <EM><A href="http://en.wikipedia.org/wiki/File_system" 
+target="_blank">file system</A></EM>. Each project has its own directory 
+(folder) which contains the project directories and files.</P>
+<P>The project directory <CODE>src</CODE> contains the program source code. If a 
+class package is a library, it is located in the directory <CODE>library</CODE> 
+of the project source code directory <CODE>src</CODE>. If you are interested in 
+it, it is possible to have a look at the concrete project structure in NetBeans, 
+by going to the <EM>Files</EM> tab which is next to the <EM>Projects</EM> tab. 
+If you can't see the <EM>Files</EM> tab, you can display it by choosing 
+<EM>Files</EM> from the <EM>Window</EM> menu.</P>
+<P>Application development is usually done through the <EM>Projects</EM> tab, 
+where NetBeans has hidden the project files which the programmer doesn't have to 
+care about.</P>
+<H3>Visibility Definitions and Packages</H3>
+<P>We have already managed to know two visibility definitions. The method and 
+variables with the visibility definition <CODE>private</CODE> are visible only 
+inside the class that defines them. They cannot be used outside the class. 
+Differently, the method and variables with visibility definition 
+<CODE>public</CODE> are visible for any class.</P>
+<PRE class="sh_java">package library.ui;
+
+public class UserInterface {
+    private Scanner reader;
+
+    public UserInterface(Scanner reader) {
+        this.reader = reader;
+    }
+
+    public void start() {
+        printTitle();
+
+        // more functionality
+    }
+
+    private void printTitle() {
+        System.out.println("***********");
+        System.out.println("* LIBRARY *");
+        System.out.println("***********");
+    }
+}
+    </PRE>
+<P>The object constructor and <CODE>start</CODE> method of the above class 
+<CODE>UserInterface</CODE> can be called from whatever program. The method 
+<CODE>printTitle</CODE> and the variable <CODE>reader</CODE> can be used only 
+inside their class.</P>
+<P>When we want to assign package visibility to a variable or a method, we do 
+not need to use any prefix. We can modify the example above assigning package 
+visibility to the method <CODE>printTitle</CODE>.</P>
+<PRE class="sh_java">package library.ui;
+
+public class UserInterface {
+    private Scanner reader;
+
+    public UserInterface(Scanner reader) {
+        this.reader = reader;
+    }
+
+    public void start() {
+        printTitle();
+
+        // more functionality
+    }
+
+    void printTitle() {
+        System.out.println("***********");
+        System.out.println("* Library *");
+        System.out.println("***********");
+    }
+}
+    </PRE>
+<P>Now, the classes <EM>inside the same package</EM> can use the method 
+<CODE>printTitle</CODE>.     </P>
+<PRE class="sh_java">package library.ui;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        UserInterface userInterface = new UserInterface(reader);
+
+        userInterface.printTitle(); // it works!
+    }
+}
+    </PRE>
+<P>If the class is in a different package, the method <CODE>printTitle</CODE> 
+can't be used.</P>
+<PRE class="sh_java">package library;
+
+import java.util.Scanner;
+import library.ui.UserInterface;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        UserInterface userInterface = new UserInterface(reader);
+
+        userInterface.printTitle(); // it doesn't work  !
+    }
+}
+    </PRE>
+<H2>Many Interfaces, and Interface Flexibility</H2>
+<P>Last week we were introduced to interfaces. An interface defines one or more 
+methods which have to be implemented in the class which implements the 
+interface. The interfaces can be stored into packages like any other class. For 
+instance, the interface <CODE>Identifiable</CODE> below is located in the 
+package <CODE>application.domain</CODE>, and it defines that the classes which 
+implement it have to implement the method <CODE>public String 
+getID()</CODE>.</P>
+<PRE class="sh_java">package application.domain;
+
+public interface Identifiable {
+    String getID();
+}
+    </PRE>
+<P>The class makes use of the interface through the keyword 
+<CODE>implements</CODE>. The class <CODE>Person</CODE>, which implements the 
+<CODE>Idenfifiable</CODE> interface. The <CODE>getID</CODE>of Person class 
+always returns the person ID.</P>
+<PRE class="sh_java">package application.domain;
+
+public class Person implements Identifiable {
+    private String name;
+    private String id;
+
+    public Person(String name, String id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getPersonID() {
+        return this.id;
+    }
+
+    @Override
+    public String getID() {
+        return getPersonID();
+    }
+
+    @Override
+    public String toString(){
+        return this.name + " ID: " +this.id;
+    }
+}
+    </PRE>
+<P>An interface strength is that interfaces are also <EM>types</EM>. All the 
+objects which are created from classes that implement an interface also have 
+that interface's type. This effictively helps us to build our applications.</P>
+<P>We create the class <CODE>Register</CODE>, which we can use to search for 
+people against their names. In addition to retrieve single people, 
+<CODE>Register</CODE> provides a method to retrieve a list with all the 
+people.</P>
+<PRE class="sh_java">public class Register {
+    private HashMap&lt;String, Identifiable&gt; registered;
+
+    public Register() {
+        this.registered = new HashMap&lt;String, Identifiable&gt;();
+    }
+
+    public void add(Identifiable toBeAdded) {
+        this.registered.put(toBeAdded.getID(), toBeAdded);
+    }
+
+    public Identifiable get(String id) {
+        return this.registered.get(id);
+    }
+
+    public List&lt;Identifiable&gt; getAll() {
+        return new ArrayList&lt;Identifiable&gt;(registered.values());
+    }
+}
+    </PRE>
+<P>Using the register is easy.</P>
+<PRE class="sh_java">Register personnel = new Register();
+personnel.add( new Person("Pekka", "221078-123X") );
+personnel.add( new Person("Jukka", "110956-326B") );
+
+System.out.println( personnel.get("280283-111A") );
+
+Person found = (Person) personnel.get("110956-326B");
+System.out.println( found.getName() );
+    </PRE>
+<P>Because the people are recorded in the register as <CODE>Identifiable</CODE>, 
+we have to change back their type if we want to deal with people through those 
+methods which are not defined in the interface. This is what happens in the last 
+two lines.</P>
+<P>What about if we wanted an operation which returns the people recorded in our 
+register sorted according to their ID?</P>
+<P>One class can implement various different interfaces, and our 
+<CODE>Person</CODE> class can implement <CODE>Comparable</CODE> in addition to 
+<CODE>Identifiable</CODE>. When we implement various different interfaces, we 
+separate them with a comma (<CODE>public class ... implements 
+<EM>FirstInterface</EM>, <EM>SecondInterface</EM> ...</CODE>). When we implement 
+many interfaces, we have to implement all the methods required by all the 
+interfaces. Below, we implement the interface <CODE>Comparable</CODE> in the 
+class <CODE>Person</CODE>.</P>
+<PRE class="sh_java">package application.domain;
+
+public class Person implements Identifiable, Comparable&lt;Person&gt; {
+    private String name;
+    private String id;
+
+    public Person(String name, String id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getPersonID() {
+        return this.id;
+    }
+
+    @Override
+    public String getID() {
+        return getPersonID();
+    }
+
+    @Override
+    public int compareTo(Person another) {
+        return this.getID().compareTo(another.getID());
+    }
+}
+    </PRE>
+<P>Now, we can add to the register method sortAndGetEverything:</P>
+<PRE class="sh_java">    public List&lt;Identifiable&gt; sortAndGetEverything() {
+        ArrayList&lt;Identifiable&gt; all = new ArrayList&lt;Identifiable&gt;(registered.values());
+        Collections.sort(all);
+        return all;
+    }
+    </PRE>
+<P>However, we notice that our solution does not work. Because the people are 
+recorded into the register as if their type was <CODE>Identifiable</CODE>, 
+Person has to implement the interface 
+<CODE>Comparable&lt;Identifiable&gt;</CODE> so that our register could sort 
+people with its method <CODE>Collections.sort()</CODE>. This means we have to 
+modify Person's interface:</P>
+<PRE class="sh_java">public class Person implements Identifiable, Comparable&lt;Identifiable&gt; {
+    // ...
+
+    @Override
+    public int compareTo(Identifiable another) {
+        return this.getID().compareTo(another.getID());
+    }
+}
+    </PRE>
+<P>Now our solution works!</P>
+<P>Our Register is unaware of the real type of the objects we record. We can use 
+the class Register to record objects of different types than Person, as long as 
+the object class implements the interface <CODE>Identifiable</CODE>. For 
+instance, below we use the register to manage shop sales:</P>
+<PRE class="sh_java">public class Sale implements Identifiable {
+    private String name;
+    private String barcode;
+    private int stockBalance;
+    private int price;
+
+    public Sale(String name, String barcode) {
+        this.name = name;
+        this.barcode = barcode;
+    }
+
+    public String getID() {
+        return barcode;
+    }
+
+    // ...
+}
+
+Register products = new Register();
+products.add( new Product("milk", "11111111") );
+products.add( new Product("yogurt", "11111112") );
+products.add( new Product("cheese", "11111113") );
+
+System.out.println( products.get("99999999") );
+
+Product product = (Product)products.get("11111112");
+product.increaseStock(100);
+product.changePrice(23);
+    </PRE>
+<P>The class <CODE>Register</CODE> is quite universal now that it is not 
+dependent on concrete classes. Whatever class which implements 
+<CODE>Identifiable</CODE> is compatible with Register. However, the method 
+<CODE>sortAndGetEverything</CODE> can only work if we implement the interface 
+Comparable&lt;Identifiable&gt;.</P><!--
+    <p>We create now the class <code>PersonRegister</code> which returns people using the interface <code>Identifiable</code>. In addition to retrieve individuals, <code>PersonRegister</code> provides a method to return a list with all the people.</p>
+
+<pre class="sh_java">
+public class PersonRegister {
+    private HashMap&lt;String, Person&gt; people;
+
+    public PersonRegister(HashMap&lt;String, Person&gt; people) {
+        this.people = people;
+    }
+
+    public void addPerson(Person person) {
+        this.people.put(person.getID(), person);
+    }
+
+    public void getPersonByID(Identifiable identifiable) {
+        this.people.get(identifiable.getID());
+    }
+
+    public List&lt;Person&gt; getPerson() {
+        return new ArrayList&lt;Person&gt;(people.values());
+    }
+}
+</pre>
+
+    <p>What about if we wanted to order our list in alphabetic order?</p>
+
+
+    <p>One class can implement various different interfaces; in addition to <code>Identifiable</code> the class <code>Person</code> can implement the interface we saw last week, <code>Comparable</code>. We can implement different interfaces by separating their names with a comma (<code>public class ... implements <em>FirstInterface</em>, <em>SecondInterface</em> ...</code>). When we implement many interfaces, we also have to implement all the methods they require. In the following example, <code>Person</code> implements the interface <code>Comparable</code>.</p>
+
+<pre class="sh_java">
+package application.domain;
+
+public class Person implements Identifiable, Comparable&lt;Person&gt; {
+    private String name;
+    private String id;
+
+    public Person(String name, String id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getPersonID() {
+        return this.id;
+    }
+
+    @Override
+    public String getID() {
+        return getPersonID();
+    }
+
+    @Override
+    public int compareTo(Person another) {
+        return this.name.compareTo(another.getName());
+    }
+}
+</pre>
+
+    <p>Now we can extend our the List method of PersonRegister in the following way:</p>
+
+<pre class="sh_java">
+    public List&lt;Person&gt; getPerson() {
+        ArrayList&lt;Person&gt; people = new ArrayList&lt;Person&gt;(people.values());
+        Collections.sort(people);
+        return people;
+    }
+</pre>
+
+--> 
+    <!--
+
+    <h3>Check-out Example</h3>
+
+    <p>In this section, we can reason about the product identification operations of a shop check-out. We can suppose that the products have a barcode, a name, and a price. A <code>Product</code> object implements the already defined interface <code>Identifiable</code>.</p>
+
+<pre class="sh_java">
+package application.domain;
+
+public class Tuote implements Identifiable {
+    private String barcode;
+    private String name;
+    private int price;
+
+    public Tuote(String barcode, String name, int price) {
+        this.barcode = barcode;
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getPrice() {
+        return this.price;
+    }
+
+    @Override
+    public String getID() {
+        return this.barcode;
+    }
+}
+</pre>
+
+    <p>Below, we implement <code>BarcodeReader</code> which reads objects and turns them into products. The barcode reader has to identify products thanks to the interface <code>Identifiable</code>. We can implement the class <code>BarcodeReader</code> so that it will include a HashMap, which retrieves products against their ID. The BarcodeReader is a part of our application logic, and we store it into the package <code>application.logic</code>.</p>
+
+<pre class="sh_java">
+package application.logic;
+
+public class BarcodeReader {
+    private HashMap&lt;String, Product&gt; products;
+
+    public BarcodeReader(HashMap&lt;String, Product&gt; products) {
+        this.products = products;
+    }
+
+    public Product identify(Identifiable identifiable) {
+        return this.products.get(identifiable.getID());
+    }
+}
+</pre>
+
+    <p>A BarcodeReader object returns a <code>Product</code> object if the barcode is found in the BarcodeReader HashMap. In the following example, we create a check-out which uses the barcode reader to add products to the purchase list. The class has the method <code>public void buy</code> which is given an instance of <code>Identifiable</code> as parameter. The purchase adds to the purchase list the objects which are recognised by the barcode reader. If an object is not recognised, nothing happens. The method <code>printPurchases</code> prints the name of the purchased products.</p>
+
+<pre class="sh_java">
+package application.domain;
+
+public class Cashout {
+    private BarcodeReader reader;
+    private List&lt;Product&gt; products;
+
+    public Cashout(BarcodeReader barcodeReader) {
+        this.reader = barcodeReader;
+        this.products = new ArrayList&lt;Product&gt;();
+    }
+
+    public void buy(Identifiable identifiable) {
+        Product identified = this.reader.identify(identifiable);
+        if (identified == null) {
+            return;
+        }
+
+        this.products.add(identified);
+    }
+
+    public void printPurchases() {
+        for(Product product: this.products) {
+            System.out.println(product.getName());
+        }
+    }
+}
+</pre>
+
+    <p>At this point we notice that it is extremely unconvenient to read products if they are printed in succession according to when they were added. We modify the output so that it will list the products in aplphabetic order. We add the interface <code>Comparable</code> to <code>Product</code> to sort our products in alphabetic order.</p>
+
+<pre class="sh_java">
+package application.domain;
+
+public class Product implements Identifiable, Comparable&lt;Product&gt; {
+    private String barcode;
+    private String name;
+    private int price;
+
+    public Tuote(String barcode, String name, int price) {
+        this.barcode = barcode;
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getPrice() {
+        return this.price;
+    }
+
+    @Override
+    public String getID() {
+        return this.barcode;
+    }
+
+    @Override
+    public int compareTo(Product product) {
+        return this.name.compareTo(product.getName());
+    }
+}
+</pre>
+
+    <p>We can still modify our cashout implementation so that our products are sorted if need be. Notice that the products only have to be sorted when products <em>are purchased</em>. A purchase is possibly the only situation where the order of the products in the list can change. If we do so, the purchases are always sorted when we call the method <code>printPurchases</code>.</p>
+
+<pre class="sh_java">
+package application.domain;
+
+public class Checkout {
+    private BarcodeReder reader;
+    private List&lt;Product&gt; products;
+
+    public Kassa( BarcodeReder BarcodeReader) {
+        this.reader = BarcodeReader;
+        this.products = new ArrayList&lt;Product&gt;();
+    }
+
+    public void buy(Identifiable identifiable) {
+        Tuote identified = this.reader.identify(identifiable);
+        if (identified == null) {
+            return;
+        }
+
+        this.products.add(identified);
+        Collections.sort(this.products);
+    }
+
+    public void printPurchases() {
+        for(Product product: this.products) {
+            System.out.println(product.getName());
+        }
+    }
+}
+</pre>
+
+--> 
+    
+<DIV><BIG><BIG><B>NetBeans Tips</B></BIG></BIG>       
+<UL><!-- TODO -->
+  <LI>All NetBeans tips can be found <A href="http://mooc.fi/courses/general/programming/#netbeans-tips">here</A> 
+  </LI>
+  <P>
+  <LI><B>Implement all abstract methods</B>         
+  <P>        Let us suppose that your program contains the interface 
+  <CODE>Interface</CODE>, and you are building the class <CODE>Class</CODE> 
+  which implements the interface. It will be annoying to write the declaration 
+  raws of all the interface methods.         </P>
+  <P>However it is possible to ask NetBeans to fill in the method bodies 
+  automatically. When you have defined the interface a class should implement, 
+  i.e. when you have written</P>
+<PRE class="sh_java">public class Class implements Interface {
+}
+        </PRE>
+  <P>NetBeans paints the class name red. If you go to lamp icon on the left 
+  corner of the raw, click, and choose <EM>Implement all abstract methods</EM>, 
+  the method bodies will appear in your code!</P></LI>
+  <LI><B>Clean and Build</B>         
+  <P>        Sometimes, NetBeans may get confused and try to run a code version 
+  without noticing all the corrected changes made to it. Usually you notice it 
+  because something "strange" happens. Usually, you can fix the problem by using 
+  <EM>Clean and build</EM> operation. The operation is found in the Run menu, 
+  and you can execute it also by clicking on the <EM>brush and hammer</EM> 
+  symbol. Clean and build deletes the translated versions of the code and 
+  generates a new translation.         </P></LI></UL></DIV>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Moving</H3>
+<P>Before moving, you pack your things and put them into boxes trying to keep 
+the number of boxes needed as small as possible. In this exercise we simulate 
+packing things into boxes. Each thing has a volume, and boxes have got a maximum 
+capacity.</P>
+<H4>Things and Items</H4>
+<P>The removers will later on move your things to a track (which is not 
+implemented here); therefore, we first implement the interface 
+<CODE>Thing</CODE>, which represents all things and boxes.</P>
+<P>The Thing interface has to determine the method <CODE>int getVolume()</CODE>, 
+which is needed to understand the size of a thing. Implement the interface 
+<CODE>Thing</CODE> in the package <CODE>moving.domain</CODE>.</P>
+<P>Next, implement the class <CODE>Item</CODE> in the package 
+<CODE>moving.domain</CODE>. The class receives the item name (String) and volume 
+(int) as parameter. The class has to implement the interface 
+<CODE>Thing</CODE>.</P>
+<P>Add the method <CODE>public String getName()</CODE> to <CODE>Item</CODE>, and 
+replace the method <CODE>public String toString()</CODE> so that it returns 
+strings which follow the pattern "<CODE>name (volume dm^3)</CODE>". Item should 
+now work like the following</P>
+<PRE class="sh_java">    Thing item = new Item("toothbrash", 2);
+    System.out.println(item);
+        </PRE>
+<PRE>toothbrash (2 dm^3)
+        </PRE>
+<H4>Comparable Item</H4>
+<P>When we pack our items into boxes, we want to start in order from the first 
+items. Implement the interface <CODE>Comparable</CODE> in the class 
+<CODE>Item</CODE>; the item <EM>natural order</EM> must be ascending against 
+volume. When you have implemented the interface <CODE>Comparable</CODE>, the 
+<CODE>sort</CODE> method of class <CODE>Collection</CODE> has to work in the 
+following way:.</P>
+<PRE class="sh_java">    List&lt;Item&gt; items = new ArrayList&lt;Item&gt;();
+    items.add(new Item("passport", 2));
+    items.add(new Item("toothbrash", 1));
+    items.add(new Item("circular saw", 100));
+
+    Collections.sort(items);
+    System.out.println(items);
+        </PRE>
+<PRE>[toothbrash (1 dm^3), passport (2 dm^3), circular saw (100 dm^3)]
+        </PRE>
+<H4>Moving Box</H4>
+<P>Implement now the class <CODE>Box</CODE> in the package 
+<CODE>moving.domain</CODE>. At first, implement the following method for your 
+Box:</P>
+<P></P>
+<UL>
+  <LI>the constructor <CODE>public Box(int maximumCapacity)</CODE></LI> receives 
+  the box maximum capacity as parameter;<BR>
+  <LI>the method <CODE>public boolean addThing(Thing thing)</CODE></LI> adds an 
+  item which implements the interface <CODE>Thing</CODE> to the box. If it does 
+  not fit in the box, the method returns <CODE>false</CODE>, otherwise 
+  <CODE>true</CODE>. The box must store the things into a list.<BR></UL>
+<P>Also, make your <CODE>Box</CODE> implement the <CODE>Thing</CODE> interface. 
+The method <CODE>getVolume</CODE> has to return the current volume of the things 
+inside the box.</P>
+<H4>Packing Items</H4>
+<P>Implement the class <CODE>Packer</CODE> in the package 
+<CODE>moving.logic</CODE>. The constructor of the class <CODE>Packer</CODE> is 
+given the parameter <CODE>int boxesVolume</CODE>, which determines how big boxes 
+the packer should use.</P>
+<P>Afterwards, implement the method <CODE>public List&lt;Box&gt; 
+packThings(List&lt;Thing&gt; things)</CODE>, which packs things into boxes.</P>
+<P>The method should move all the things in the parameter list into boxes, and 
+these boxes should be contained by the list the method returns. You don't need 
+to pay attention to such situations where the things are bigger than the boxes 
+used by the packer. The tests do not check the way the packer makes use of the 
+moving boxes.</P>
+<P>The example below shows how our packer should work:</P>
+<PRE class="sh_java">    // the things we want to pack
+    List&lt;Thing&gt; things = new ArrayList&lt;Thing&gt;();
+    things.add(new Item("passport", 2));
+    things.add(new Item("toothbrash", 1));
+    things.add(new Item("book", 4));
+    things.add(new Item("circular saw", 8));
+
+    // we create a packer which uses boxes whose valume is 10
+    Packer packer = new Packer(10);
+
+    // we ask our packer to pack things into boxes
+    List&lt;Box&gt; boxes = packer.packThings( things );
+
+    System.out.println("number of boxes: "+boxes.size());
+
+    for (Box box : boxes) {
+        System.out.println("  things in the box: "+box.getVolume()+" dm^3");
+    }
+        </PRE>
+<P>Prints:</P>
+<PRE>number of boxes: 2
+  things in the box: 7 dm^3
+  things in the box: 8 dm^3
+        </PRE>
+<P>The packer has packed the things into two boxes, the first box has the firts 
+three things, whose total volume was 7, and the last thing in the list -- the 
+circular saw, whose volume was 8 -- has gone to the third box. The tests do not 
+set a limit to the number of boxes used by the packer; each thing could have 
+been packed into a different box, and the output would have been:</P>
+<PRE>number of boxes: 4
+  things in the box: 2 dm^3
+  things in the box: 1 dm^3
+  things in the box: 4 dm^3
+  things in the box: 8 dm^3
+        </PRE>
+<P><STRONG>Note:</STRONG> to help testing, it would be convinient to create a 
+toString method for the class <CODE>Box</CODE>, for instance; this would help 
+printing the content of the box.</P><!--
+
+  <h4>Tehokkaampi pakkaaminen</h4>
+
+  <p>Alla on kuvattu eräs hieman tehokkaampi pakkaustapa <em>pseudokoodina</em>, eli ohjelmointikielen tapaisena koodina. Pseudokoodia käytetään muun muassa ohjelmointikieliriippumattomaan algoritmien eli ohjelmien kuvaamiseen.</p>
+
+<pre>
+pakkaaEsineet( esineet ):
+    jarjesta( esineet )
+
+    laatikot = [] // huom, kannattaa käyttää ArrayListiä
+
+    while esineet is not empty:
+        Muuttolaatikko pakattu = pakkaaLaatikko( esineet )
+        laatikot.add( pakattu )
+
+    return laatikot
+
+pakkaaLaatikko( esineet ):
+    Muuttolaatikko laatikko = new Muuttolaatikko
+
+    lisaaSuuria( esineet, laatikko )
+    lisaaPienia( esineet, laatikko )
+
+    return laatikko
+
+lisaaSuuria( esineet, laatikko ):
+    while esineet is not empty:
+        esine = suurin( esineet )
+
+        if lisaa ( laatikko, esine ) == false:
+            return
+
+lisaaPienia(List esineet, Muuttolaatikko laatikko):
+    while esineet is not empty:
+        esine = pienin( esineet )
+
+        if lisaa ( laatikko, esine ) == false:
+            return
+</pre>
+
+  <p>Muokkaa luokkaa <code>Pakkaaja</code> siten, että se toimii samoin tai paremmin kuin yllä kuvattu lähestymistapa.</p>
+
+  <p>Metodissa <code>pakkaaEsineet</code> pakataan muuttolaatikoita niin pitkään kun <code>esineet</code>-listalla on esineitä. Muuttolaatikkoa pakattaessa algoritmi lisää laukkuun ensiksi niin paljon suurimpia esineitä kuin laatikkoon mahtuu. Kun laatikkoon ei enää mahdu suurimpia esineitä, aletaan täyttämään sitä pienimmillä esineillä.</p>
+
+  <p>Toteutuksesta: Kun esineesi ovat järjestyksessä, suurin tavara löytyy indeksistä <code>esinelistan koko - 1</code>, pienin tavara löytyy indeksistä <code>0</code>. Älä käytä tässä <code>Collections.min</code> ja <code>Collections.max</code>-metodeja, sillä ne eivät osaa arvata että <code>ArrayList</code>-lista on jo järjestyksessä.</p>
+
+  <p>Poista esineitä <code>esineet</code>-listalta sitä mukaa kun niitä on lisätty muuttolaatikoihin. Sinun ei tarvitse varautua tilanteisiin joissa esineet ovat suurempia kuin muuttolaatikko.</p>
+
+  <p><em>Huom!</em> Saadaksesi pisteen tästä viimeisestä tehtävästä algoritmisi tulee toimia <em>vähintään</em> yhtä hyvin kuin yllä kuvattu algoritmi. Hyvyydellä tarkoitetaan sitä, että pakkaukseen kulunut aika tulee olla vähintään yhtä pieni kuin pseudokoodiratkaisun. Muuttolaatikkojen määrän tulee myös olla vähintään yhtä pieni.</p>
+
+  <p>Voit käyttää seuraavaa metodia satunnaisten esineiden luomiseen.</p>
+
+<pre class="sh_java">
+    public static List&lt;Esine&gt; luoEsineet(int kpl, int maxTilavuus) {
+        Random rand = new Random();
+
+        List&lt;Esine&gt; esineet = new ArrayList&lt;Esine&gt;();
+        for (int i = 0; i &lt; kpl; i++) {
+            esineet.add(new Esine("hammasharja", 1 + rand.nextInt(maxTilavuus)));
+        }
+
+        return esineet;
+    }
+</pre>
+
+  <p>Yllä kuvatulla algoritmilla pakkaamisen pitäisi toimia nopeasti jopa 100000 esinettä sisältävillä listoilla. Voit testata pakkaajasi nopeutta esimerkiksi seuraavasti:</p>
+
+<pre class="sh_java">
+        List&lt;Esine&gt esineet = luoEsineet(100000, 10);
+        Pakkaaja pakkaaja = new Pakkaaja(50);
+
+        long start = System.nanoTime();
+        List&lt;Muuttolaatikko&gt laatikot = pakkaaja.pakkaaEsineet(esineet);
+        long kulunutAika = ((System.nanoTime() - start) / 1000000);
+
+        System.out.println("Pakkaukseen kului " + kulunutAika + " ms.");
+        System.out.println("Tarvittiin " + laatikot.size() + " laatikkoa.");
+</pre>
+
+--> 
+      </DIV></DIV>
+<H2>Exceptions</H2>
+<P>Exceptions are such situations where the program executions is different from 
+our expectations. For instance, the program may have called a method of a 
+<EM>null</EM> reference, in which case the user is <EM>thrown</EM> a 
+<CODE>NullPointerException</CODE>. If we try to retrieve a index outside a 
+table, the user is thrown a <CODE>IndexOutOfBoundsException</CODE>. All of them 
+are a type of <CODE>Exception</CODE>.</P>
+<P>We deal with exception using the block <CODE>try { } catch (Exception e) { 
+}</CODE>. The code contained within the brackets which follows the keyword 
+<CODE>try</CODE> can <EM>possibly</EM> go through an exception. The keyword the 
+code within the brackets which follow the keyword <CODE>catch</CODE> defines 
+what should happen when the try-code throws an exception. We also define the 
+type of the exception we want to catch (<CODE>catch (Exception e)</CODE>).</P>
+<PRE class="sh_java">    try {
+        // code which can throw an exception
+    } catch (Exception e) {
+        // code which is executed in case of exception
+    }
+    </PRE>
+<P>The <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html#parseInt(java.lang.String)" 
+target="_blank">parseInt</A></CODE> method of class <CODE>Integer</CODE> which 
+turns a string into a number can throw a <CODE>NumberFormatException</CODE> if 
+its string parameter cannot be turned into a number. Now we implement a program 
+which tries to turn into a number a user input string.</P>
+<PRE class="sh_java">    Scanner reader = new Scanner(System.in);
+    System.out.print("Write a number: ");
+
+    int num = Integer.parseInt(reader.nextLine());
+    </PRE>
+<PRE>Write a number: <FONT color="red">tatti</FONT>
+<FONT color="red">Exception in thread "..." java.lang.NumberFormatException: For input string: "tatti"</FONT>
+    </PRE>
+<P>The program above throws an exception because the user digits an erroneous 
+number. The program execution ends up with a malfunction, and it cannot 
+continue. We add an exception management statement to our program. The call, 
+which may throw an exception is written into the <CODE>try</CODE> block, and the 
+action which takes place in case of exception is written into the 
+<CODE>catch</CODE> block.</P>
+<PRE class="sh_java">    Scanner reader = new Scanner(System.in);
+
+    System.out.print("Write a number: ");
+
+    try {
+        int num = Integer.parseInt(reader.nextLine());
+    } catch (Exception e) {
+        System.out.println("You haven't written a proper number.");
+    }
+    </PRE>
+<PRE>Write number: <FONT color="red">5</FONT>
+    </PRE>
+<PRE>Write number: <FONT color="red">oh no!</FONT>
+You haven't written a proper number.
+    </PRE>
+<P>In case of exception, we move from the chunk of code defined by the 
+<CODE>try</CODE> keyword to the <CODE>catch</CODE> chunk. Let's see this by 
+adding a print statement after the <CODE>Integer.parseInt</CODE> line in the 
+<CODE>try</CODE> chunk.</P>
+<PRE class="sh_java">    Scanner reader = new Scanner(System.in);
+
+    System.out.print("Write a number: ");
+
+    try {
+        int num = Integer.parseInt(reader.nextLine());
+        System.out.println("Looks good!");
+    } catch (Exception e) {
+        System.out.println("You haven't written a proper number.");
+    }
+    </PRE>
+<PRE>Write a number: <FONT color="red">5</FONT>
+Looks good!
+    </PRE>
+<PRE>Write a number: <FONT color="red">I won't!</FONT>
+you haven't written a proper number.
+    </PRE>
+<P>String <CODE>I won't!</CODE> is given as parameter to the method 
+<CODE>Integer.parseInt</CODE>, which throws an exception if the String parameter 
+can't be changed into a number. Note that the code in the <CODE>catch</CODE> 
+chunk is executed <EM>only</EM> in case of exception -- otherwise the program do 
+not arrive till there.</P>
+<P>Let's make something more useful out of our number translator: let's do a 
+method which keeps on asking to type a number till the user does it. The user 
+can return <EM>only</EM> if they have typed the right number.</P>
+<PRE class="sh_java">public int readNumber(Scanner reader) {
+    while (true) {
+        System.out.print("Write a number: ");
+
+        try {
+            int num = Integer.parseInt(reader.nextLine());
+            return num;
+        } catch (Exception e) {
+            System.out.println("You haven't written a proper number.");
+        }
+    }
+}
+    </PRE>
+<P>The method <CODE>readNumber</CODE> could work in the following way:</P>
+<PRE>Write a number: <FONT color="red">I won't!</FONT>
+You haven't written a proper number.
+Write a number: <FONT color="red">Matti has a mushroom on his door.</FONT>
+You haven't written a proper number.
+Write a number: <FONT color="red">43</FONT>
+
+    </PRE>
+<H3>Throwing Exceptions</H3>
+<P>Methods and constructors can <EM>throw</EM> exceptions. So far, there are two 
+kinds of exceptions which can be thrown. There are the ones which have to be 
+handled, and the ones which don't have to be dealt with. When we have to handle 
+the exceptions, we do it either in a <CODE>try-catch</CODE> chunk, or 
+<EM>throwing them from a <CODE>method</CODE></EM>. </P>
+<P>In the clock exercise of Introduction to Programming, we explained that we 
+can stop our program of one second, by calling the method 
+<CODE>Thread.sleep(1000)</CODE>. The method may throw an exception, which we 
+<EM>must</EM> deal with. In fact, we handle the exception using the 
+<CODE>try-catch</CODE> sentence; in the following example we skip the exception, 
+and we leave empty the <CODE>catch</CODE> chunk.</P>
+<PRE class="sh_java">    try {
+        // we sleep for 1000 milliseconds
+        Thread.sleep(1000);
+    } catch (Exception e) {
+        // In case of exception, we do not do anything.
+    }
+  </PRE>
+<P>It is also possible to avoid handling the exceptions in a method, and 
+<EM>delegate the responsibility</EM> to the method caller. We delegate the 
+responsibility of a method by using the statement <CODE>throws 
+Exception</CODE>.</P>
+<PRE class="sh_java">    public void sleep(int sec) <STRONG>throws Exception</STRONG> {
+        Thread.sleep(sec * 1000);   // now we don't need the try-catch block
+    }
+  </PRE>
+<P>The <CODE>sleep</CODE> method is called in another method. Now, this other 
+method can either handle the exception in a <CODE>try-catch</CODE> block or 
+delegate the responsibility forward. Sometimes, we delegate the responsibility 
+of handling an exception, till the very end, and even the <CODE>main</CODE> 
+method delegates it:</P>
+<PRE class="sh_java">public class Main {
+   public static void main(String[] args) throws Exception {
+       // ...
+   }
+}
+  </PRE>
+<P>In such cases, the exception ends up in Java's virtual machine, which 
+interrupts the program in case there is an error which causes the problem.</P>
+<P>There are some exceptions which the programmer does not always have to 
+address, such as the <CODE>NumberFormatException</CODE> which is thrown by 
+<CODE>Integer.parseInt</CODE>. Also the <CODE>RuntimeException</CODE>s do not 
+always require to be addressed; next week we will go back to <EM>why</EM> 
+variables can have more than one type.</P>
+<P>We can throw an exception ourself from the source code using the 
+<CODE>throw</CODE> statement. For instance, if we want to throw an exception 
+which was created in the class <CODE>NumberFormatException</CODE>, we could use 
+the statement <CODE>throw new NumberFormatException()</CODE>.</P>
+<P>Another exception which hasn't got to be addressed is 
+<CODE>IllegalArgumentException</CODE>. With 
+<CODE>IllegalArgumentException</CODE> we know that a method or a constructor has 
+received an <EM>illegal</EM> value as parameter. For instance, we use the 
+IllegalArgumentException when we want to make sure that a parameter has received 
+particular values. We create the class <CODE>Grade</CODE> whose constructor has 
+a integer parameter: the grade.</P>
+<PRE class="sh_java">public class Grade {
+    private int grade;
+
+    public Grade(int grade) {
+        this.grade = grade;
+    }
+
+    public int getGrade() {
+        return this.grade;
+    }
+}
+  </PRE>
+<P>Next, we want to validate the value of the constructor parameter of our Grade 
+class. The grades in Finland are from 0 to 5. If the grade is something else, we 
+want to <EM>throw an exception</EM>. We can add an if statement to our 
+<CODE>Grade</CODE> class constructor, which checks whether the grade is outside 
+range 0-5. If so, we throw an <CODE>IllegalArgumentException</CODE> telling 
+<CODE>throw new IllegalArgumentException("The grade has to be between 
+0-5");</CODE>.</P>
+<PRE class="sh_java">public class Grade {
+    private int grade;
+
+    public Grade(int grade) {
+        if (grade &lt; 0 || grade &gt; 5) {
+            throw new IllegalArgumentException("The grade has to be between 0-5");
+        }
+        this.grade = grade;
+    }
+
+    public int getGrade() {
+        return this.grade;
+    }
+}
+  </PRE>
+<PRE class="sh_java">    Grade grade = new Grade(3);
+    System.out.println(grade.getGrade());
+
+    Grade wrongGrade = new Grade(22);
+    // it causes an exception, we don't continue
+  </PRE>
+<PRE>3
+Exception in thread "..." java.lang.IllegalArgumentException: The grade has to be between 0-5
+  </PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Method Argument Validation</H3>
+<P>Let's train method argument validation with the help of the 
+<CODE>IllegalArgumentException</CODE>. The excercise layout shows two classes 
+<CODE>Person</CODE> and <CODE>Calculator</CODE>. Change the class in the 
+following way:</P>
+<H4>Person Validation</H4>
+<P>The constructor of <CODE>Person</CODE> has to make sure its parameter's Name 
+variable is not null, empty, or longer than 40 characters. The age has also to 
+be between 0-120. If one of the conditions above are not satisfied, the 
+constructor has to throw an <CODE>IllegalArgumentException</CODE>.</P>
+<H4>Calculator Validation</H4>
+<P>The <CODE>Calculator</CODE> methods have to be changed in the following way: 
+the method <CODE>multiplication</CODE> has to work only if its parameter is not 
+negative (greater than or equal to 0). The method 
+<CODE>binomialCoefficient</CODE> has to work only if the parameters are not 
+negative and the size of a subset is smaller than the set's size. If one of the 
+methods receives invalid arguments when they are called, they have to throw a 
+<CODE>IllegalArgumentException</CODE>.</P></DIV>
+<DIV class="tehtava">
+<H3>Sensors and Temperature Measurement</H3>
+<P>All the code in our application has to be placed into the package 
+<CODE>application</CODE>.</P>
+<P>We have got the following interface available for our use:</P>
+<PRE class="sh_java">public interface Sensor {
+    boolean isOn();  // returns true if the sensor is on
+    void on();       // switches the sensor on
+    void off();      // switches the sensor off
+    int measure();   // returns the sensor reading if the sensor is on
+                     // if the sensor is off, it throws an IllegalStateException
+}
+      </PRE>
+<H4>Constant Sensor</H4>
+<P>Create the class <CODE>Constant Sensor</CODE> which implements the interface 
+<CODE>Sensor</CODE>.</P>
+<P>The constant sensor is online all the time. The methods on() and off() do not 
+do anything. The constant sensor has a constructor with an int parameter. The 
+<CODE>measure</CODE> method call returns the number received as constructor 
+parameter.</P>
+<P>For instance:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+  ConstantSensor ten = new ConstantSensor(10);
+  ConstantSensor minusFive = new ConstantSensor(-5);
+
+  System.out.println( ten.measure() );
+  System.out.println( minusFive.measure() );
+
+  System.out.println( ten.isOn() );
+  ten.off();
+  System.out.println( ten.isOn() );
+}
+      </PRE>
+<P>Prints:</P>
+<PRE>10
+-5
+true
+true
+      </PRE>
+<H4>Thermometer</H4>
+<P>Create the class <CODE>Thermometer</CODE> which implements the interface 
+<CODE>Sensor</CODE>.</P>
+<P>At first, the thermometer is off. When the <CODE>measure</CODE> method is 
+called, if the thermometer is on it returns a random number between -30 and 30. 
+If the thermometer is off, it throws an <CODE>IllegalStateException</CODE>.   
+</P>
+<H4>AverageSensor</H4>
+<P>Create the class <CODE>AverageSensor</CODE> which implements the interface 
+<CODE>Sensor</CODE>.</P>
+<P>An average sensor contains many sensors. In addition to the methods defined 
+by the interface <CODE>Sensor</CODE>, the class has the method <CODE>public void 
+addSensor(Sensor additional)</CODE> which adds a new sensor to the 
+AverageSensor.</P>
+<P>The average sensor is on when <EM>all</EM> its sensors are on. When the 
+average sensor is switched on, all its sensors have to be switched on if they 
+were not on already. When the average sensor is closed, at least one of its 
+sensors has to be switched off. It's also possible that all its sensors are 
+switched off.</P>
+<P>The <CODE>measure</CODE> method of our AverageSensor returns the average of 
+the readings of all its sensors (because the return value is <CODE>int</CODE>, 
+the readings are rounded down as it is for integer division). If the 
+<CODE>measure</CODE> method is called when the average sensor is off, or if the 
+average sensor was not added any sensor, the method throws an 
+<CODE>IllegalStateException</CODE>. </P>
+<P>Below, you find an example of a sensor program (note that both the 
+Thermometer and the AverageSensor constructors are without parameter):</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Sensor kumpula = new Thermometer();
+    kumpula.on();
+    System.out.println("the temperature in Kumpula is "+kumpula.measure() + " degrees");
+
+    Sensor kaisaniemi = new Thermometer();
+    Sensor helsinkiVantaa = new Thermometer();
+
+    AverageSensor helsinkiArea = new AverageSensor();
+    helsinkiArea.addSensor(kumpula);
+    helsinkiArea.addSensor(kaisaniemi);
+    helsinkiArea.addSensor(helsinkiVantaa);
+
+    helsinkiArea.on();
+    System.out.println("the temperature in Helsinki area is "+helsinkiArea.measure() + " degrees");
+}
+</PRE>
+<P>Prints (the printed readings depend on the random temperature readings):</P>
+<PRE class="sh_java">the temperature in Kumpula is -7 degrees
+the temperature in Helsinki area is -10 degrees
+</PRE>
+<P><B>Note:</B> you'd better use a ConstantSensor object to test your average 
+sensor!</P>
+<H4>All Readings</H4>
+<P>Add the method <CODE>public List&lt;Integer&gt; readings()</CODE> to your 
+AverageSensor; it returns a list of the reading results of all the measurements 
+executed through your AverageSensor. Below is an example of how the method 
+works: </P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Sensor kumpula = new Thermometer();
+    Sensor kaisaniemi = new Thermometer();
+    Sensor helsinkiVantaa = new Thermometer();
+
+    AverageSensor helsinkiArea = new AverageSensor();
+    helsinkiArea.addSensor(kumpula);
+    helsinkiArea.addSensor(kaisaniemi);
+    helsinkiArea.addSensor(helsinkiVantaa);
+
+    helsinkiArea.on();
+    System.out.println("the temperature in Helsinki area is "+helsinkiArea.measure() + " degrees");
+    System.out.println("the temperature in Helsinki area is "+helsinkiArea.measure() + " degrees");
+    System.out.println("the temperature in Helsinki area is "+helsinkiArea.measure() + " degrees");
+
+    System.out.println("readings: "+helsinkiArea.readings());
+}
+</PRE>
+<P>Prints (again, the printed readings depend on the random temperature 
+readings):</P>
+<PRE class="sh_java">the temperature in Helsinki area is -10 degrees
+the temperature in Helsinki area is -4 degrees
+the temperature in Helsinki area is -5 degrees
+
+readings: [-10, -4, 5]
+</PRE></DIV></DIV>
+<H3>Exceptions and Interfaces</H3>
+<P>Interfaces do not have a method body, but the method definition can be freely 
+chosen when the developer implements the interface. Interfaces can also define 
+the exceptions throw. For instance, the classes which implement the following 
+<CODE>FileServer</CODE> can <EM>possibly</EM> throw an exception in their 
+methods <CODE>download</CODE> and <CODE>save</CODE>.</P>
+<PRE class="sh_java">public interface FileServer {
+    String download(String file) throws Exception;
+    void save(String file, String string) throws Exception;
+}
+</PRE>
+<P>If an interface defines the <CODE>throws Exception</CODE> attributes for the 
+methods -- i.e. the methods may throw an exception -- the classes which 
+implement the interface must be defined in the same way. However, they do not 
+have to throw an exception, as it becomes clear in the following example.</P>
+<PRE class="sh_java">public class TextServer implements FileServer {
+
+    private Map&lt;String, String&gt; data;
+
+    public TextServer() {
+        this.data = new HashMap&lt;String, String&gt;();
+    }
+
+    @Override
+    public String download(String file) throws Exception {
+        return this.data.get(file);
+    }
+
+    @Override
+    public void save(String file, String string) throws Exception {
+        this.data.put(file, stirng);
+    }
+}
+</PRE>
+<H3>The Exception Information</H3>
+<P>The <CODE>catch</CODE> block tells how we handle an exception, and it tells 
+us what exception we should be prepared for: <CODE>catch (<EM>Exception 
+e</EM>)</CODE>. The exception information is saved into the <CODE>e</CODE> 
+variable.</P>
+<PRE class="sh_java">    try {
+        // the code, which may throw an exception
+    } catch (Exception e) {
+        // the exception information is saved into the variable e
+    }
+</PRE>
+<P>The class <CODE>Exception</CODE> can provide useful methods. For instance, 
+the method <CODE>printStackTrace()</CODE> prints a <EM>path</EM> which tells us 
+where the exception came from. Let's check the following error printed by the 
+method <CODE>printStackTrace()</CODE>.</P>
+<PRE>Exception in thread "main" java.lang.NullPointerException
+  at package.Class.print(Class.java:43)
+  at package.Class.main(Class.java:29)
+</PRE>
+<P>Reading the stack trace happens button up. The lowest is the first call, i.e. 
+the program execution has started from the <CODE>main()</CODE> method of class 
+<CODE>Class</CODE>. At line 29 of the main method of <CODE>Class</CODE>, we 
+called the method <CODE>print()</CODE>. Line 43 of the method <CODE>print</CODE> 
+caused a <CODE>NullPointerException</CODE>. Exception information are extremely 
+important to find out the origin of a problem.</P>
+<H2>Reading a File</H2>
+<P>A relevant part of programming is related to stored files, in one way or in 
+another. Let's take the first steps in Java file handling. Java's API provides 
+the class <A href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html" 
+target="_blank">File</A>, whose contents can be read using the already known <A 
+href="http://docs.oracle.com/javase/6/docs/api/java/util/Scanner.html" target="_blank">Scanner</A> 
+class.</P>
+<P>If we read the desciption of the <CODE>File</CODE> <A href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html" 
+target="_blank">API</A> we notice the <CODE>File</CODE> class has the 
+constructor <CODE>File(String pathname)</CODE>, which <EM>creates a new File 
+instance by converting the given pathname string into an abstract pathname</EM>. 
+This means the <CODE>File</CODE> class constructor can be given the pathname of 
+the file we want to open.</P>
+<P><EM>In the NetBeans programming environment, files have got their own tab 
+called <EM>Files</EM>, which contains all our project files. If we add a file to 
+a project <EM>root</EM> -- that is to say outside all folders -- we can refer to 
+it by writing only the its name. We create a file object by fiving the file 
+pathname to it as parameter:</EM></P>
+<PRE class="sh_java">    File file = new File("file-name.txt");
+</PRE>
+<P><CODE>System.in</CODE> input stream is not the only reading source we can 
+give to the constructor of a Scanner class. For instance, the reading source can 
+be a file, in addition to the user keyboard. Scanner provides the same methods 
+to read a keyboard input and a file. In the following example, we open a file 
+and we print all the text contained in the file using the 
+<CODE>System.out.println</CODE> statement. At the end, we close the file using 
+the statement <CODE>close</CODE>.</P>
+<PRE class="sh_java">        // The file we read
+        File file = new File("filename.txt");
+
+        Scanner reader = new Scanner(file);
+        while (reader.hasNextLine()) {
+            String line = reader.nextLine();
+            System.out.println(line);
+        }
+
+        reader.close();
+</PRE>
+<P>The Scanner class constructor <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/util/Scanner.html#Scanner(java.io.File)" 
+target="_blank">public Scanner(File source)</A></CODE> (<EM>Constructs a new 
+Scanner that produces values scanned from the specified file.</EM>) throws a 
+<CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/io/FileNotFoundException.html" 
+target="_blank">FileNotFoundException</A></CODE> when the specified file is not 
+found. The <CODE>FileNotFoundException</CODE> is different than 
+<CODE>RuntimeException</CODE>, and we have either to handle it or throw it 
+forward. At this point, you only have to know that the programming environment 
+tells you whether you have to handle the exception or not. Let's first create a 
+try-catch block where we handle our file as soon as we open it.</P>
+<PRE class="sh_java">    public void readFile(File f) {
+        // the file we read
+        Scanner reader = null;
+
+        try {
+            reader = new Scanner(f);
+        } catch (Exception e) {
+            System.out.println("We couldn't read the file. Error: " + e.getMessage());
+            return; // we exit the method
+        }
+
+        while (reader.hasNextLine()) {
+            String line = reader.nextLine();
+            System.out.println(line);
+        }
+
+        reader.close();
+    }
+</PRE>
+<P>Another option is to delegate the exception handling responsibility to the 
+method caller. We delegate the exception handling responsibility by adding the 
+definition <CODE>throws <EM>ExceptionType</EM></CODE> to the method. For 
+instance, we can add <CODE>throws Exception</CODE> because the type of all 
+exceptions is <CODE>Exception</CODE>. When a method has the attribute 
+<CODE>throws Exception</CODE>, whatever chunk of code which calls that method 
+knows that it may throw an exception, and it should be prepared for it.</P>
+<PRE class="sh_java">    public void readFile(File f) throws Exception {
+        // the file we read
+        Scanner reader = new Scanner(f);
+
+        while (reader.hasNextLine()) {
+            String line = reader.nextLine();
+            System.out.println(line);
+        }
+
+        reader.close();
+    }
+</PRE>
+<P>In the example, the method <CODE>readFile</CODE> receives a file as 
+parameter, and prints all the file lines. At the end, the reader is closed, and 
+the file is closed with it, too. The attribute <CODE>throws Exception</CODE> 
+tells us that the method may throw an exception. Same kind of attributes can be 
+added to all the methods that handle files.</P>
+<P>Note that the <CODE>Scanner</CODE> object's method <CODE>nextLine</CODE> 
+returns a string, but it does not return a new line at the end of it. If you 
+want to read a file and still maintain the new lines, you can add a new line at 
+the end of each line:</P>
+<PRE class="sh_java">    public String readFileString(File f) throws Exception {
+        // the file we read
+        Scanner reader = new Scanner(f);
+
+        String string = "";
+
+        while (reader.hasNextLine()) {
+            String line = reader.nextLine();
+            string += line;
+            string += "\n";
+        }
+
+        reader.close();
+        return string;
+    }
+</PRE>
+<P>Because we use the <CODE>Scanner</CODE> class to read files, we have all 
+Scanner methods available for use. For instance the method 
+<CODE>hasNext()</CODE> returns the boolean value <CODE>true</CODE> if the file 
+contains something more to read, and the method <CODE>next()</CODE> reads the 
+following word and returns a <CODE>String</CODE> object. </P>
+<P>The following program creates a <CODE>Scanner</CODE> object which opens the 
+file <CODE>file.txt</CODE>. Then, it prints every fifth word of the file.</P>
+<PRE class="sh_java">        File f = new File("file.txt");
+        Scanner reader = new Scanner(f);
+
+        int whichNumber = 0;
+        while (reader.hasNext()) {
+            whichNumber++;
+            String word = reader.next();
+
+            if (whichNumber % 5 == 0) {
+                System.out.println(word);
+            }
+        }
+</PRE>
+<P>Below, you find the text contained in the file, followed by the program 
+output.</P>
+<PRE>Exception handling is the process of responding to the occurrence, during computation, of exceptions – anomalous or exceptional events requiring special processing – often changing the normal flow of program execution. ...
+</PRE>
+<PRE>process
+occurrence,
+–
+requiring
+changing
+program
+</PRE>
+<H3>Character Set Issues</H3>
+<P>When we read a text file (or when we save something into a file), Java has to 
+find out the character set used by the operating system. Knowledge of the 
+character set is required both to save text on the computer harddisk in binary 
+format, and to translate binary data into text.</P>
+<P>There have been developed standard character sets, and "UTF-8" is the most 
+common nowadays. UTF-8 character set contains both the alphabet letters of 
+everyday use and more particular characters such as the Japanese kanji 
+characters or the information need to read and save the chess pawns. From a 
+simplified programming angle, we could think a character set both as a 
+character-number hashmap and a number-character hashmap. The character-number 
+hashmap shows what binary number is used to save each character into a file. The 
+number-character hashmap shows how we can translate into characters the values 
+we obtain reading a file.</P>
+<P>Almost each operating system producer has also got their own standards. Some 
+support and want to contribute to the use of open source standards, some do not. 
+If you have got problems with the use of Scandinavian characters such as ä and ö 
+(expecially Mac and Windows users), you can tell which character set you want to 
+use when you create a <CODE>Scanner</CODE> object. In this course, we always use 
+the the "UTF-8" character set.</P>
+<P>You can create a Scanner object which to read a file which uses the UTF-8 
+character set in the following way:</P>
+<PRE class="sh_java">    File f = new File("examplefile.txt");
+    Scanner reader = new Scanner(f, "UTF-8");
+</PRE>
+<P>Anther thing you can do to set up a character set is using an environment 
+variable. Macintosh and Windows users can set up an the value of the environment 
+variable <CODE>JAVA_TOOL_OPTIONS</CODE> to the string 
+<CODE>-Dfile.encoding=UTF8</CODE>. In such case, Java always uses UTF-8 
+characters as a default.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Printer</H3>
+<P>Create the class <CODE>Printer</CODE>, its constructor <CODE>public 
+Printer(String fileName)</CODE> which receives a String standing for the file 
+name, and the method <CODE>public void printLinesWhichContain(String 
+word)</CODE> which prints the file lines which contain the parameter word 
+(<EM>lower and upper case make difference in this excercise; for instance, 
+"test" and "Test" are not the considered the same</EM>); the lines are printed 
+in the same order as they are inside the file.</P>
+<P>If the argument is an empty String, all of the file is printed.</P>
+<P>If the file is not found, the constructor delegates the exception with no 
+need for a try-catch statement; the constructor simply has to be defined in the 
+following way:</P>
+<PRE class="sh_java">public Printer {
+
+   public Printer(String fileName) throws Exception {
+      // ...
+   }
+
+   // ...
+}
+</PRE>
+<P>The file <EM>textFile</EM> has been place into the default package of your 
+project to help the tests. When you define the file name of the constructor of 
+Printer, you have to write <CODE>src/textfile.txt</CODE>. The file contains an 
+extract of Kalevala, a Finnish epic poem:</P>
+<PRE>Siinä vanha Väinämöinen
+katseleikse käänteleikse
+Niin tuli kevätkäkönen
+näki koivun kasvavaksi
+Miksipä on tuo jätetty
+koivahainen kaatamatta
+Sanoi vanha Väinämöinen
+</PRE>
+<P>The following example shows what the program should do:</P>
+<PRE class="sh_java">    Printer printer = new Printer("src/textfile.txt");
+
+    printer.printLinesWhichContain("Väinämöinen");
+    System.out.println("-----");
+    printer.printLinesWhichContain("Frank Zappa");
+    System.out.println("-----");
+    printer.printLinesWhichContain("");
+    System.out.println("-----");
+</PRE>
+<P>Prints:</P>
+<PRE>Siinä vanha Väinämöinen
+Sanoi vanha Väinämöinen
+-----
+-----
+Siinä vanha Väinämöinen
+katseleikse käänteleikse
+Niin tuli kevätkäkönen
+näki koivun kasvavaksi
+Miksipä on tuo jätetty
+koivahainen kaatamatta
+Sanoi vanha Väinämöinen
+</PRE>
+<P>In the project, you also find the whole Kalevala; the file name is 
+<CODE>src/kalevala.txt</CODE></P></DIV>
+<DIV class="tehtava">
+<H3>File Analysis</H3>
+<P>In this exercise, we create an application to calculate the number of lines 
+and characters.</P>
+<H4>Number of Lines</H4>
+<P>Create the class <CODE>Analysis</CODE> in the package <CODE>file</CODE>; the 
+class has the constructor <CODE>public Analysis(File file)</CODE>. Create the 
+method <CODE>public int lines()</CODE>, which returns the number of lines of the 
+file the constructor received as parameter.</P>
+<P>The method cannot be "disposable", that is to say it has to return the right 
+value even though it is called different times in a raw. Note that after you 
+create a Scanner object for a file and read its whole contents using 
+<CODE>nextLine</CODE> method calls, you can't use the <EM>same</EM> scanner to 
+read the file again!</P>
+<P><STRONG>Attention:</STRONG> if the tests report a <EM>timeout</EM>, it 
+probably means that you haven't been reading the file at all, meaning that the 
+<CODE>nextLine</CODE> method calls miss!</P>
+<H4>Number of Characters</H4>
+<P>Create the method <CODE>public int characters()</CODE> in the class 
+<CODE>Analysis</CODE>; the method returns the number of characters of the file 
+the constructor received as parameter.</P>
+<P>The method cannot be "disposable", that is to say it has to return the right 
+value even though it is called different times in a raw.</P>
+<P>You can decide yourself what to do if the constructor parameter file does not 
+exist.</P>
+<P>The file <EM>testFile</EM> has been place into the test package of your 
+project to help the tests. When you define the file name of the constructor of 
+Analysis, you have to write <CODE>test/testfile.txt</CODE>. The file contains 
+the following text:</P>
+<PRE>there are 3 lines, and characters
+because line breaks are also
+characters
+</PRE>
+<P>The following example shows what the program should do:</P>
+<PRE class="sh_java">    File file = new File("test/testfile.txt");
+    Analysis analysis = new Analysis(file);
+    System.out.println("Lines: " + analysis.lines());
+    System.out.println("Characters: " + analysis.characters());
+</PRE>
+<PRE>Lines: 3
+Characters: 74
+</PRE></DIV>
+<DIV class="tehtava">
+<H3>Word Inspection</H3>
+<P>Create the class WordInspection, which allows for different kinds of analyses 
+on words. Implement the class in the package <CODE>wordinspection</CODE>.</P>
+<P>The Institute for the Languages of Finland (Kotimaisten kielten 
+tutkimuskeskus, Kotus) has published online a list of Finnish words. In this 
+exercise we use a modified version of that list, which can be found in the 
+exercise source folder <CODE>src</CODE> with the name <CODE>wordList.txt</CODE>; 
+the relative path is <CODE>"src/wordList.txt"</CODE>. Because the word list if 
+quite long, in fact, a <CODE>shortList.txt</CODE> was created in the project for 
+the tests; the file can be found following the path 
+<CODE>"src/shortList.txt"</CODE>. </P>
+<P><STRONG>If you have problems with Scandinavian letters </STRONG> (Mac and 
+Windows users) create your <CODE>Scanner</CODE> object assigning it the "UTF-8" 
+character set, in the following way: <CODE>Scanner reader = new Scanner(file, 
+"UTF-8");</CODE> Problems come expecially when the tests are executed.</P>
+<H4 class="req">Word Count</H4>
+<P>Create the constructor <CODE>public WordInspection(File file)</CODE> to your 
+WordInspection class. The constructor creates a new WordInspection object which 
+inspects the given file.</P>
+<P>Create the method <CODE>public int wordCount()</CODE>, which counts the file 
+words and prints their number. In this part, you don't have to do anything with 
+the words, you should only count how many there are. For this exercise, you can 
+expect there is only one word in each row.</P>
+<H4 class="req">z</H4>
+<P>Create the method <CODE>public List&lt;String&gt; wordsContainingZ()</CODE>, 
+which returns all the file words which contain a z; for instance, jazz and 
+zombie.</P>
+<H4 class="req">Ending l</H4>
+<P>Create the method <CODE>public List&lt;String&gt; wordsEndingInL()</CODE>, 
+which returns all the Finnish words of the file which end in l; such words are, 
+for instance, kannel and sammal.</P>
+<P><EM>Attention! If you read the file various different times in your program, 
+you notice that your code contains a lot of copy-paste, so far. It would be 
+useful to think whether it would be possible to read the file in an different 
+place, maybe inside the constructor or as a method, which the constructor calls. 
+In such case, the methods could use a list which was read before and then create 
+a new list which suits their search criteria. In week 12, we will come back 
+again with an ortodox way to eliminate copy-paste.</EM></P>
+<H4>Palindromes</H4>
+<P>Create the method <CODE>public List&lt;String&gt; palindromes()</CODE>, which 
+returns all the palindrome words of the file. Such words are, for instance, ala 
+and enne.</P>
+<H4 class="req">All Vowels</H4>
+<P>Create the method <CODE>public List&lt;String&gt; 
+wordsWhichContainAllVowels()</CODE>, which returns all the words of the file 
+which contain all Finnish vowels (aeiouyäö). Such words are, for instance, 
+myöhäiselokuva and ympäristönsuojelija.</P></DIV></DIV>
+<H2>Hashmaps and Sets</H2>
+<H3>Many Values and One Key</H3>
+<P>As we remember, we can save only one value per key using HashMap. In the 
+following examples we save people's mobile phone numbers in a HashMap.</P>
+<PRE class="sh_java">  Map&lt;String, String&gt; phoneNumbers = new HashMap&lt;String, String&gt;();
+
+  phoneNumbers.put("Pekka", "040-12348765");
+
+  System.out.println( "Pekka's number: "+ phoneNumbers.get("Pekka") );
+
+  phoneNumbers.put("Pekka", "09-111333");
+
+  System.out.println( "Pekka's number: "+ phoneNumbers.get("Pekka") );
+</PRE>
+<P>as expected, the output tells us:</P>
+<PRE>Pekka's number: 040-12348765
+Pekka's number: 09-111333
+</PRE>
+<P>What about if we wanted to save various different values per one key, what 
+about if a person had many phone numbers? Can we manage with an HashMap? Of 
+course! For instance, instead of saving Strings as HashMap values we could save 
+ArrayLists, mapping more than one object to one key. Let's change the way we 
+save phone numbers as follows:</P>
+<PRE class="sh_java">  Map&lt;String, ArrayList&lt;String&gt;&gt; phoneNumbers = new HashMap&lt;String, ArrayList&lt;String&gt;&gt;();
+</PRE>
+<P>Now, a list is mapped to each HashMap key. Even though the new command 
+creates a HashMap, the list which will be saved inside has to be created 
+separately. In the following example, we add two numbers to the HashMap for 
+Pekka, and we print them:</P>
+<PRE class="sh_java">  Map&lt;String, ArrayList&lt;String&gt;&gt; phoneNumbers = new HashMap&lt;String, ArrayList&lt;String&gt;&gt;();
+
+  // We map an empty ArrayList to Pekka
+  phoneNumbers.put( "Pekka", new  ArrayList&lt;String&gt;() );
+
+  // we add Pekka's number to the list
+  phoneNumbers.get("Pekka").add("040-12348765");
+
+  // and we add a second phone number
+  phoneNumbers.get("Pekka").add("09-111333");
+
+  System.out.println( "Pekka's numbers: "+ phoneNumbers.get("Pekka") );
+</PRE>
+<P>Prints</P>
+<PRE>Pekka's numbers: [040-12348765, 09-111333]
+</PRE>
+<P>We define the phone number type as <CODE>Map&lt;String, 
+ArrayList&lt;String&gt;&gt;</CODE>, that is a Map whose key is a String and 
+whose value is a list containing strings. The concrete implementation -- that is 
+to say the created object -- was a HashMap. We could have defined a variable 
+also in the following way: </P>
+<PRE class="sh_java">Map&lt;String, List&lt;String&gt;&gt; phoneNumbers = new HashMap&lt;String, List&lt;String&gt;&gt;();
+</PRE>
+<P>Now, the variable type is a Map, whose key is a String and value is a 
+<CODE>List</CODE> containing strings. In fact, a List is an interface which 
+defines the List functionality, and ArrayLists implement this interface, for 
+instance. The concrete object is a HashMap.</P>
+<P>The values we save into the HashMap are concrete object which implement the 
+interface <CODE>List&lt;String&gt;</CODE>, ArrayLists, for instance. Again, we 
+can add values to the HashMap in the following way:</P>
+<PRE class="sh_java">  // first, we map an empty ArrayList to Pekka
+  phoneNumbers.put( "Pekka", new  ArrayList&lt;String&gt;() );
+
+  // ...
+</PRE>
+<P>In the future, instead of using concrete classes (such as 
+<CODE>HashMap</CODE> and <CODE>ArrayList</CODE>, for instance), we will always 
+try to use their respective interfaces <CODE>Map</CODE> and 
+<CODE>List</CODE>.</P>
+<H3>Sets</H3>
+<P>Differently from lists, in a <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html" 
+target="_blank">Set</A></CODE> there can be up to one same entry, that is to say 
+the same object can not be contained twice in a set. The similarity between two 
+objects is inspected using the methods <CODE>equals</CODE> and 
+<CODE>hashCode</CODE>. </P>
+<P>One of the classes which implement the <CODE>Set</CODE> interface is  
+<CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/util/HashSet.html" 
+target="_blank">HashSet</A></CODE>. Let's use it to implement the class 
+<CODE>ExerciseAccounting</CODE>, which allows us to keep an account of the 
+exercise we do and to print them. Let's suppose the the exercises are always 
+integers.</P>
+<PRE class="sh_java">public class ExerciseAccounting {
+    private Set&lt;Integer&gt; doneExercises;
+
+    public ExerciseAccounting() {
+        this.doneExercises = new HashSet&lt;Integer&gt;();
+    }
+
+    public void add(int exercise) {
+        this.doneExercises.add(exercise);
+    }
+
+    public void print() {
+        for (int exercise: this.doneExercises) {
+            System.out.println(exercise);
+        }
+    }
+}
+</PRE>
+<PRE class="sh_java">        ExerciseAccounting account = new ExerciseAccounting();
+        account.add(1);
+        account.add(1);
+        account.add(2);
+        account.add(3);
+
+        account.print();
+</PRE>
+<PRE>1
+2
+3
+</PRE>
+<P>The solution above is useful if we don't need information about the exercises 
+done by each different user. We can change the saving logic of the exercises in 
+a way to have them save in relation to each user, using a HashMap. The users are 
+recognized through a unique string (for instance, their student number), and 
+each user has their own set of finished exercises.</P>
+<PRE class="sh_java">public class ExerciseAccounting {
+    private Map&lt;String, Set&lt;Integer&gt;&gt; doneExercises;
+
+    public ExerciseAccounting() {
+        this.doneExercises = new HashMap&lt;String, Set&lt;Integer&gt;&gt;();
+    }
+
+    public void add(String user, int exercise) {
+        // note that when we create a new user we have first to map an empty exercise set to it
+        if (!this.doneExercises.containsKey(user)) {
+            this.doneExercises.put(user, new HashSet&lt;Integer&gt;());
+        }
+
+        // first, we retrieve the set containing the user's exercises and then we add an exercise to it
+        Set&lt;Integer&gt; finished = this.doneExercises.get(user);
+        finished.add(exercise);
+
+        // the previous would have worked out without helping variable in the following way:
+        //  this.doneExercises.get(user).add(exercise);
+    }
+
+    public void print() {
+        for (String user: this.doneExercises.keySet()) {
+            System.out.println(user + ": " + this.doneExercises.get(user));
+        }
+    }
+}
+</PRE>
+<PRE class="sh_java">        ExerciseAccounting accounting = new ExerciseAccounting();
+        accounting.add("Mikael", 3);
+        accounting.add("Mikael", 4);
+        accounting.add("Mikael", 3);
+        accounting.add("Mikael", 3);
+
+        accounting.add("Pekka", 4);
+        accounting.add("Pekka", 4);
+
+        accounting.add("Matti", 1);
+        accounting.add("Matti", 2);
+
+        accounting.print();
+</PRE>
+<PRE>Matti: [1, 2]
+Pekka: [4]
+Mikael: [3, 4]
+</PRE>
+<P>Note that the user names are not printed in order, in our example. This 
+depends on the saving process of the <CODE>HashMap</CODE> entries, which happens 
+through the value returned by the <CODE>hashCode</CODE> method, and does not 
+involve the entry order in any way.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Multiple Entry Dictionary</H3>
+<P>Let's make an extended version of the dictionary of week 1. Your task is to 
+implement the class <CODE>PersonalMultipleEntryDictionary</CODE>, which can save 
+one or more entry for each word translated. The class has to implement the 
+interface in the exercise source, <CODE>MultipleEntryDictionary</CODE>, with the 
+following methods:</P>
+<P></P>
+<UL>
+  <LI><CODE>public void add(String word, String entry)</CODE></LI>, which adds a 
+  new entry to a word, maintaining the old ones<BR>
+  <LI><CODE>public Set&lt;String&gt; translate(String word)</CODE></LI>, which 
+  returns a <CODE>Set</CODE> object, with all the entries of the word, or a 
+  <CODE>null</CODE> reference, if the word is not in the dictionary<BR>
+  <LI><CODE>public void remove(String word)</CODE></LI>, which removes a word 
+  and all its entries from the dictionary<BR></UL>
+<P>As for the ExampleAccounting above, it's good to store the translations into 
+a <CODE>Map&lt;String, Set&lt;String&gt;&gt;</CODE> object variable.</P>
+<P>The interface code:</P>
+<PRE class="sh_java">package dictionary;
+
+import java.util.Set;
+
+public interface MultipleEntryDictionary {
+    void add(String word, String translation);
+    Set&lt;String&gt; translate(String word);
+    void remove(String word);
+}
+</PRE>
+<P>An example program:</P>
+<PRE class="sh_java">    MultipleEntryDictionary dict = new PersonalMultipleEntryDictionary();
+    dict.add("kuusi", "six");
+    dict.add("kuusi", "spruce");
+
+    dict.add("pii", "silicon");
+    dict.add("pii", "pi");
+
+    System.out.println(dict.translate("kuusi"));
+    dict.remove("pii");
+    System.out.println(dict.translate("pii"));
+</PRE>
+<P>Prints:</P>
+<PRE>[six, spruce]
+null
+</PRE></DIV><!-- TODO: Translate --> 
+<DIV class="tehtava">
+<H3>Duplicate Remover</H3>
+<P>Your task is to implement inside the package <CODE>tools</CODE> a class 
+<CODE>PersonalDuplicateRemover</CODE>, which stores the given characterStrings 
+so that equal characterStrings are removed (a.k.a duplicates). Class also holds 
+a record of the amount of duplicates. Class should implement the given interface 
+<CODE>DuplicateRemover</CODE>, which has the following methods:</P>
+<P></P>
+<UL>
+  <LI><CODE>public void add(String characterString)</CODE></LI> stores a 
+  characterString if it's not a duplicate.<BR>
+  <LI><CODE>public int getNumberOfDetectedDuplicates()</CODE></LI> returns the 
+  number of detected duplicates.<BR>
+  <LI><CODE>public Set&lt;String&gt; getUniqueCharacterStrings()</CODE></LI> 
+  returns an object which implements the interface 
+  <CODE>Set&lt;String&gt;</CODE>. Object should have all unique characterStrings 
+  (no duplicates!). If there are no unique characterStrings, method returns an 
+  empty set.<BR>
+  <LI><CODE>public void empty()</CODE></LI> removes stored characterStrings and 
+  resets the amount of detected duplicates.<BR></UL>
+<P>Code of the interface:</P>
+<PRE class="sh_java">package tools;
+
+import java.util.Set;
+
+public interface DuplicateRemover {
+    void add(String characterString);
+    int getNumberOfDetectedDuplicates();
+    Set&lt;String&gt; getUniqueCharacterStrings();
+    void empty();
+}
+</PRE>
+<P>Interface can be used like this for example:</P>
+<PRE class="sh_java">    public static void main(String[] args) {
+        DuplicateRemover remover = new PersonalDuplicateRemover();
+        remover.add("first");
+        remover.add("second");
+        remover.add("first");
+
+        System.out.println("Current number of duplicates: " +
+            remover.getNumberOfDetectedDuplicates());
+
+        remover.add("last");
+        remover.add("last");
+        remover.add("new");
+
+        System.out.println("Current number of duplicates: " +
+            remover.getNumberOfDetectedDuplicates());
+
+        System.out.println("Unique characterStrings: " +
+            remover.getUniqueCharacterStrings());
+
+        remover.empty();
+
+        System.out.println("Current number of duplicates: " +
+            remover.getNumberOfDetectedDuplicates());
+
+        System.out.println("Unique characterStrings: " +
+            remover.getUniqueCharacterStrings());
+    }
+</PRE>
+<P>Code above would print: (order of characterStrings can change, it doesn't 
+matter)</P>
+<PRE>Current number of duplicates: 1
+Current number of duplicates: 2
+Unique characterStrings: [first, second, last, new]
+Current number of duplicates: 0
+Unique characterStrings: []
+</PRE></DIV></DIV>
+<H3>One Object in Many Lists, a Map Construction or a Set</H3>
+<P>As we remember, object variable are reference-type, which means that the 
+variable does not memorize the object itself, but the reference to the object. 
+Respectively, if we put an object into an ArrayList, for instance, the List does 
+not memorize the object itself but the <CODE>reference</CODE> to the object. 
+There is no reason why we should not be able to save an object in various 
+different lists or HashMaps, for instance.</P>
+<P>Let's have a look at our library example, which saves books into HashMaps, 
+both based on their writer and ISB number. In addition to this, the library. 
+Moreover, the library has two lists for the books on loan and for the ones that 
+are on the shelves.</P>
+<PRE class="sh_java">public class Book {
+    private String ISBN;
+    private String writer;
+    private String name;
+    private int date;
+    // ...
+}
+
+public class Library {
+    private Map&lt;String, Book&gt; ISBNBooks;
+    private Map&lt;String, List&lt;String&gt;&gt; writerBooks;
+    private List&lt;Book&gt; loanBooks;
+    private List&lt;Book&gt; shelfBooks;
+
+    public void addBook(Book newBook){
+        ISBNBooks.put(newBook.getIsbn(), newBook);
+        writerBooks.get(newBook.getWriter()).add(newBook);
+        shelfBooks.add(newBook);
+    }
+
+    public Book getBookBasedOnISBN(String isbn){
+        return ISBNBooks.get(isbn);
+    }
+
+    // ...
+}
+</PRE>
+<P>If an object is listed in different places at the same time (in a list, a 
+set, or a map construction), you have to pay particular attention so to make 
+sure the state of the different collections is consistent. For instance, if we 
+decide to delete a book, it must be deleted from both maps as well as from the 
+two lists which contain the books on loan and on the shelves.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Phone Search</H3>
+<P><B>Attention: you can create only one Scanner object so that your tests would 
+work well. Also, do not use static variables, the tests execute your program 
+many different times, and the static variable values left from the previous 
+execution would possibly disturb them!</B></P>
+<P>Let's create an application to manage people phone numbers and addresses.</P>
+<P>The exercise can be worth 1-5 points. To receive one point, you should 
+implement the following functionality:</P>
+<UL>
+  <LI>1 adding a phone number to the relative person</LI>
+  <LI>2 phone number search by person</LI></UL>
+<P>to receive two points we also require</P>
+<UL>
+  <LI>3 name search by phone number</LI></UL>
+<P>to receive three points also</P>
+<UL>
+  <LI>4 adding an address to the relative person</LI>
+  <LI>5 personal information search (search for a person's address and phone 
+  number)</LI></UL>
+<P>if you want to receive four points, also implement</P>
+<UL>
+  <LI>6 removing a person's information</LI></UL>
+<P>and to receive all the points:</P>
+<UL>
+  <LI>7 filtered search by keyword (retrieving a list which must be sorted by 
+  name in alphabetic order), the keyword can appear in the name or 
+address</LI></UL>
+<P>An example of how the program works:</P>
+<PRE>phone search
+available operations:
+ 1 add a number
+ 2 search for a number
+ 3 search for a person by phone number
+ 4 add an address
+ 5 search for personal information
+ 6 delete personal information
+ 7 filtered listing
+ x quit
+
+command: <FONT color="red">1</FONT>
+whose number: <FONT color="red">pekka</FONT>
+number: <FONT color="red">040-123456</FONT>
+
+command: <FONT color="red">2</FONT>
+whose number: <FONT color="red">jukka</FONT>
+  not found
+
+command: <FONT color="red">2</FONT>
+whose number: <FONT color="red">pekka</FONT>
+ <FONT color="red">040-123456</FONT>
+
+command: <FONT color="red">1</FONT>
+whose number: <FONT color="red">pekka</FONT>
+number: <FONT color="red">09-222333</FONT>
+
+command: <FONT color="red">2</FONT>
+whose number: <FONT color="red">pekka</FONT>
+ 040-123456
+ 09-222333
+
+command: <FONT color="red">3</FONT>
+number: <FONT color="red">02-444123</FONT>
+ not found
+
+command: <FONT color="red">3</FONT>
+number: <FONT color="red">09-222333</FONT>
+ pekka
+
+command: <FONT color="red">5</FONT>
+whose information: <FONT color="red">pekka</FONT>
+  address unknown
+  phone numbers:
+   040-123456
+   09-222333
+
+command: <FONT color="red">4</FONT>
+whose address: <FONT color="red">pekka</FONT>
+street: <FONT color="red">ida ekmanintie</FONT>
+city: <FONT color="red">helsinki</FONT>
+
+command: <FONT color="red">5</FONT>
+whose information: <FONT color="red">pekka</FONT>
+  address: ida ekmanintie helsinki
+  phone numbers:
+   040-123456
+   09-222333
+
+command: <FONT color="red">4</FONT>
+whose address: <FONT color="red">jukka</FONT>
+street: <FONT color="red">korsontie</FONT>
+city: <FONT color="red">vantaa</FONT>
+
+command: <FONT color="red">5</FONT>
+whose information: <FONT color="red">jukka</FONT>
+  address: korsontie vantaa
+  phone number not found
+
+command: <FONT color="red">7</FONT>
+keyword (if empty, all listed): <FONT color="red">kk</FONT>
+
+ jukka
+  address: korsontie vantaa
+  phone number not found
+
+ pekka
+  address: ida ekmanintie helsinki
+  phone numbers:
+   040-123456
+   09-222333
+
+command: <FONT color="red">7</FONT>
+keyword (if empty, all listed): <FONT color="red">vantaa</FONT>
+
+ jukka
+  address: korsontie vantaa
+  phone number not found
+
+command: <FONT color="red">7</FONT>
+keyword (if empty, all listed): <FONT color="red">seppo</FONT>
+ keyword not found
+
+command: <FONT color="red">6</FONT>
+whose information: <FONT color="red">jukka</FONT>
+
+command: <FONT color="red">5</FONT>
+whose information: <FONT color="red">jukka</FONT>
+  not found
+
+command: <FONT color="red">x</FONT>
+</PRE>
+<P>Some remarks:</P>
+<UL>
+  <LI>Because of the tests, it is essential that the <EM>user interface</EM> 
+  works exactly as in the example above. The application can optionally decide 
+  in which way invalid inputs are handled. The tests contain only valid 
+  inputs.</LI>
+  <LI><EM><STRONG>The program has to start when the main method is executed; you 
+  can only create one Scanner object.</STRONG></EM></LI>
+  <LI>Do not use static variables, the tests execute your program many different 
+  times, and the static variable values left from the previous execution would 
+  possibly disturb them!</LI>
+  <LI>In order to make things easier, we assume the name is a single string; if 
+  we want to print our lists sorted by surname in alphabetic order, the name has 
+  to be given in the form <EM>surname name</EM>.</LI>
+  <LI>A person can have more than one phone number and address. However, these 
+  are not necessarily stored.</LI>
+  <LI>If a person is deleted, no search should retrieve 
+them.</LI></UL></DIV></DIV></DIV></DIV></DIV><!-- /inner -->   </DIV><!-- /node-322 --> 
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV></DIV></DIV></DIV><!-- /content-content -->             
+                                                  </DIV><!-- /content-inner-inner --> 
+                            </DIV><!-- /content-inner -->                        
+   </DIV><!-- /content-region-inner -->                         </DIV><!-- /content-region --> 
+                        
+<DIV class="content-bottom row nested " id="content-bottom">
+<DIV class="content-bottom-inner inner clearfix" id="content-bottom-inner">
+<DIV class="block block-block odd first last grid16-16" id="block-block-1">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="content clearfix">
+<DIV id="header-top-block">
+<P class="rtecenter">Ohjaus: <A href="http://mooc.fi/content/irc-ohjeet">IRCnet 
+#mooc.fi </A>&nbsp;&nbsp; |  Tiedotus: <A href="http://twitter.com/mooc1"><IMG 
+height="50" style="vertical-align: middle;" src="Exceptions%20and%20Read%20File_files/twitter_newbird_blue.png"> 
+Twitter </A><A href="http://www.facebook.com/Moocfi"><IMG height="30" style="padding: 10px; vertical-align: middle;" 
+src="Exceptions%20and%20Read%20File_files/f_logo-1.png"> Facebook</A>  |  
+Virheraportit: <A href="http://sourceforge.net/p/mooc-issues/tickets/"><IMG 
+height="30" style="padding: 10px; vertical-align: middle;" src="Exceptions%20and%20Read%20File_files/sf-footer-logo.png"> 
+SourceForge</A></P>
+<P class="rtecenter"><A href="http://www.cs.helsinki.fi/"><IMG width="400" 
+style="vertical-align: middle;" alt="Helsingin yliopiston tietojenkäsittelytieteen laitos" 
+src="Exceptions%20and%20Read%20File_files/CS-logo-MOOC.jpg">&nbsp; 
+</A></P></DIV>
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-47575342-3', 'auto');
+  ga('send', 'pageview');
+ 
+</SCRIPT>
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --></DIV><!-- /content-bottom-inner --> 
+</DIV><!-- /content-bottom -->                       </DIV><!-- /content-group-inner --> 
+                    </DIV><!-- /content-group -->                                
+       </DIV><!-- /main-content-inner -->                 </DIV><!-- /main-content --> 
+                              </DIV><!-- /main-group-inner -->             
+</DIV><!-- /main-group -->           </DIV><!-- /main-inner -->         </DIV><!-- /main --> 
+      </DIV><!-- /main-wrapper -->       <!-- postscript-bottom row: width = grid_width --> 
+            <!-- footer row: width = grid_width -->             <!-- footer-message row: width = grid_width --> 
+      
+<DIV class="footer-message-wrapper full-width" id="footer-message-wrapper">
+<DIV class="footer-message row grid16-16" id="footer-message">
+<DIV class="footer-message-inner inner clearfix" id="footer-message-inner">
+<DIV class="footer-message-text block" id="footer-message-text">
+<DIV class="footer-message-text-inner inner clearfix" id="footer-message-text-inner"><BR></DIV><!-- /footer-message-text-inner --> 
+</DIV><!-- /footer-message-text -->                    </DIV><!-- /footer-message-inner --> 
+        </DIV><!-- /footer-message -->       </DIV><!-- /footer-message-wrapper --> 
+    <!-- /page-inner -->   <!-- /page -->   </BODY></HTML>

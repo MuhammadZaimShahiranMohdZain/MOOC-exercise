@@ -1,0 +1,24 @@
+.menu {
+	
+}
+.menu a {
+	
+}
+.menu h3 {
+	
+}
+#fl_menu {
+	top: 20px; width: 200px; height: 30px; right: 0px; position: absolute; z-index: 9999;
+}
+#fl_menu .label {
+	background: rgb(0, 0, 0); color: rgb(255, 255, 255); line-height: 50px; letter-spacing: 4px; padding-left: 20px; font-family: "Arial Black", Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold;
+}
+#fl_menu .menu {
+	display: none;
+}
+#fl_menu .menu .menu_item {
+	background: rgb(255, 255, 255); padding: 6px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 11px; text-decoration: none; border-top-color: rgb(51, 51, 51); border-top-width: 1px; border-top-style: solid; display: block;
+}
+#fl_menu .menu a.menu_item:hover {
+	background: rgb(238, 238, 238); color: rgb(51, 51, 51);
+}

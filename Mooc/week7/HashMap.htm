@@ -1,0 +1,3035 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0073)http://mooc.cs.helsinki.fi/programming-part2/material/week-7 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<TITLE>MOOC | MOOC - Massiivinen avoin verkkokurssi</TITLE>    <LINK href="/sites/mooc.cs.helsinki.fi/files/acquia_marina_favicon.png" 
+rel="shortcut icon" type="image/x-icon">   <LINK href="Hashmap_files/5c1587b6907a85bc361bd4b70014b0e3.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/node.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/defaults.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/system.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/system-menus.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/user.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/content-module.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/ckeditor.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/ctools.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/date.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/panels.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/views.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/aeb58e3ce47f9171327ad9fd87a26c8e.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/flexible.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/typography.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/superfish.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/superfish-navbar.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/superfish-vertical.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/fusion-acquia-marina-style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/custom.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/common.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/exercises.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/menu.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Hashmap_files/sh_style.css" 
+rel="stylesheet" type="text/css" media="all">   <LINK href="Hashmap_files/grid16-fluid.css" 
+rel="stylesheet" type="text/css" media="all">   <!--[if IE 8]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie8-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie8-fixes.css?8" />
+  <![endif]--> 
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie7-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie7-fixes.css?8" />
+  <![endif]--> 
+  <!--[if lte IE 6]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie6-fixes.css?8"/>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie6-fixes.css?8"/>
+  <![endif]--> 
+    
+<SCRIPT src="Hashmap_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/drupal.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/panels.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/jquery.bgiframe.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/hoverIntent.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/supposition.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/supersubs.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/superfish.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/jquery.corner.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/acquia-marina-script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/util-functions.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/clear-default-text.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/sh_java.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/sh_main.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/sh_ruby.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/sh_scala.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD>
+<BODY class="not-front not-logged-in page-node node-type-weekly-tasks no-sidebars full-node panels layout-main sidebars-both-first font-family-lucida font-size-13 grid-type-fluid grid-width-16 fluid-100" 
+id="pid-programming-part2-material-week-7">   
+<DIV class="page" id="page">
+<DIV class="page-inner" id="page-inner">
+<DIV id="skip"><A href="http://mooc.cs.helsinki.fi/programming-part2/material/week-7?noredirect=1#main-content-area">Skip 
+to Main Content Area</A>       </DIV><!-- header-top row: width = grid_width --> 
+            <!-- header-group row: width = grid_width -->       
+<DIV class="header-group-wrapper full-width" id="header-group-wrapper">
+<DIV class="header-group row grid16-16" id="header-group">
+<DIV class="header-group-inner inner clearfix" id="header-group-inner">
+<DIV class="primary-menu block" id="primary-menu">
+<DIV class="primary-menu-inner inner clearfix" id="primary-menu-inner">
+<UL class="menu sf-menu">
+  <LI class="expanded first"><A title="" 
+  href="http://mooc.cs.helsinki.fi/home">Kurssit ››</A>
+  <UL class="menu">
+    <LI class="leaf first"><A title="" 
+    href="http://mooc.fi/algoritmit">Algoritmien MOOC</A></LI>
+    <LI class="leaf"><A title="" href="http://mooc.cs.helsinki.fi/2014-ohjelmointi">Olio-ohjelmointi 
+    Javalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.aalto.fi/ohjelmointi/">Ohjelmointia Scalalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part1">Object-Oriented Programming with 
+    Java, part I</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part2">Object-Oriented Programming with 
+    Java, part II</A></LI>
+    <LI class="leaf last"><A title="" 
+    href="http://mooc.cs.helsinki.fi/wepa">Web-palvelinohjelmointi</A></LI></UL></LI>
+  <LI class="collapsed"><A title="Mikä on MOOC?" href="http://mooc.cs.helsinki.fi/content/mik%C3%A4-mooc">Mikä 
+  on MOOC? ››</A></LI>
+  <LI class="leaf last"><A title="" href="http://mooc.cs.helsinki.fi/content/j%C3%A4rjest%C3%A4v%C3%A4st%C3%A4-tahosta">Järjestävästä 
+  tahosta ››</A></LI></UL></DIV><!-- /primary-menu-inner --> </DIV><!-- /primary-menu --> 
+          </DIV><!-- /header-group-inner -->         </DIV><!-- /header-group --> 
+      </DIV><!-- /header-group-wrapper -->       <!-- preface-top row: width = grid_width --> 
+        <!--            <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
+        <div id="preface-top" class="preface-top row grid16-16">
+          <div id="preface-top-inner" class="preface-top-inner inner clearfix"> 
+--> 
+          </DIV><!-- /preface-top-inner -->         </DIV><!-- /preface-top -->  
+     <!-- /preface-top-wrapper -->           <!-- main row: width = grid_width --> 
+    
+<DIV class="main-wrapper full-width" id="main-wrapper">
+<DIV class="main row grid16-16" id="main">
+<DIV class="main-inner inner clearfix" id="main-inner"><!-- main group: width = grid_width - sidebar_first_width --> 
+          
+<DIV class="main-group row nested grid16-16" id="main-group">
+<DIV class="main-group-inner inner clearfix" id="main-group-inner">
+<DIV class="main-content row nested" id="main-content">
+<DIV class="main-content-inner inner clearfix" id="main-content-inner"><!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) --> 
+                    
+<DIV class="content-group row nested " id="content-group" style="width: 100%;">
+<DIV class="content-group-inner inner clearfix" id="content-group-inner">
+<DIV class="content-region row nested" id="content-region">
+<DIV class="content-region-inner inner clearfix" id="content-region-inner"><A 
+name="main-content-area" id="main-content-area"></A>                             
+                            
+<DIV class="content-inner block" id="content-inner">
+<DIV class="content-inner-inner inner clearfix" id="content-inner-inner">
+<DIV class="content-content" id="content-content">
+<DIV class="panel-flexible panels-flexible-13 clear-block">
+<DIV class="panel-flexible-inside panels-flexible-13-inside">
+<DIV class="panels-flexible-row panels-flexible-row-13-7 panels-flexible-row-first clear-block ">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-7-inside panels-flexible-row-inside-first clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_ panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-2 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<H1 class="title"><A 
+href="http://mooc.cs.helsinki.fi/programming-part2">Object-Oriented Programming 
+with Java, part II ››</A></H1></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-custom pane-3 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content"><LINK href="Hashmap_files/menu(1).css" rel="stylesheet" 
+type="text/css" media="screen"> <LINK href="Hashmap_files/common-new.css" rel="stylesheet" 
+type="text/css" media="screen, print"> <LINK href="Hashmap_files/sh_style(1).css" 
+rel="stylesheet" type="text/css" media="screen, print">        </DIV></DIV><!-- /inner-inner -->
+	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-4 clear-block js">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-4-inside clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en_ panels-flexible-region-first ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en_-inside panels-flexible-region-inside-first"></DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-js ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js-inside">
+<DIV class="panel-pane pane-node ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node odd full-node node-type-page" id="node-222">
+<DIV class="inner">
+<H2 class="title"><A title="" 
+href="http://mooc.cs.helsinki.fi/content/js-en"></A></H2>
+<DIV class="content clearfix">
+<SCRIPT src="Hashmap_files/bootstrap.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/jquery-1.7.1.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/exercises-eng-new.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/common-mooc-eng.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/sh_main.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/sh_java.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Hashmap_files/jquery.easing.js" type="text/javascript"></SCRIPT>
+ 
+<DIV class="menu" id="toc" data-first-exercise-index="1" 
+data-first-chapter-index="1"><SPAN id="materiaali_toc"></SPAN>           <!--div id="tehtavat_toc" ></div--> 
+          <SPAN id="tehtavat_toc2"></SPAN>         </DIV></DIV></DIV><!-- /inner --> 
+  </DIV><!-- /node-222 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-copyright panels-flexible-region-last float-right">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-copyright-inside panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-1 box ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<P><A href="http://creativecommons.org/licenses/by-nc-sa/2.0/" 
+rel="license"><IMG style="border-width: 0px; float: right;" alt="Creative Commons License" 
+src="Hashmap_files/88x31.png"></A><SMALL>This material is licensed under the 
+Creative Commons BY-NC-SA license, which means that you can use it and 
+distribute it freely so long as you do not erase the names of the original 
+authors. If you do changes in the material and want to distribute this altered 
+version of the material, you have to license it with a similar free license. The 
+use of the material for commercial use is prohibited without a separate 
+agreement.</SMALL></P></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-author course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-author">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Authors: Arto Vihavainen, Matti 
+Luukkainen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-translators course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-translators">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Translators: Simone Romeo, Kenny 
+Heinonen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-8 panels-flexible-row-last clear-block js en">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-8-inside panels-flexible-row-inside-last clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-node-content box-mooc ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node even full-node node-type-weekly_tasks" id="node-305">
+<DIV class="inner">
+<DIV class="content clearfix">
+<DIV class="viikkoraja-mooc" id="Week 7" data-first-exercise-index="108" 
+data-first-chapter-index="33" tekija="Arto Vihavainen, Matti Luukkainen" 
+data-first-week-index-mooc="7" data-first-exercise-index-mooc="1" 
+data-first-chapter-index-mooc="33" data-first-week-index="7" deadline=" ">
+<H2>Recapping programming basics</H2>
+<P>In this chapter we briefly recap a few concepts we became familiar with in 
+Part 1. You can familiarize yourself with the programming basics course material 
+<A href="http://mooc.fi/courses/2013/programming-part-1/">here</A>.</P>
+<H3>Program, commands and variables</H3>
+<P>A computer program consists of a series of commands that a computer runs one 
+at a time, from top to bottom. The commands always have a predefined structure 
+and semantics. In Java - the programming language we use in this course - the 
+commands are read from top to bottom, left to right. Programming courses are 
+traditionally started by introducing a program that prints the string 
+<CODE>Hello World!</CODE>. Below is a command written in Java that prints the 
+<CODE>Hello World!</CODE> string.</P>
+<PRE class="sh_java">        System.out.println("Hello World!");
+    </PRE>
+<P>In the command the method <CODE>println</CODE> - which belongs to the 
+<CODE>System</CODE> class - gets called, which prints the string passed in to it 
+as a parameter, and after that a linebreak. The method is given the string 
+<CODE>Hello World!</CODE> as a parameter; consequently the program prints out 
+<CODE>Hello World!</CODE> followed by a linebreak.</P>
+<P>Variables can be used as part of the functionality of the program. Below is a 
+program which introduces the variable <CODE>length</CODE> of the integer type. 
+The value 197 is set to this variable on the next line. After this the value 
+<CODE>179</CODE> of the variable <CODE>length</CODE> is printed.</P>
+<PRE class="sh_java">        int length;
+        length = 179;
+        System.out.println(length);
+    </PRE>
+<P>The execution of the program above would happen one line at a time. First the 
+line <CODE>int length;</CODE> is executed, in which the variable 
+<CODE>length</CODE> is introduced. Next the line <CODE>length = 179;</CODE> is 
+executed, in which we set the value <CODE>179</CODE> to the variable that was 
+introduced on the previous line. After this the line 
+<CODE>System.out.println(length);</CODE> is run, in which we call the print 
+method we saw earlier. To this method we give the variable <CODE>length</CODE> 
+as a parameter. The method prints the content - the value - of the variable 
+<CODE>length</CODE>, which is <CODE>179</CODE>.</P>
+<P>In the program above we really wouldn't have to introduce the variable 
+<CODE>length</CODE> on one line and then set its value on the next. The 
+introduction of a variable and setting its value can be done on the same 
+line.</P>
+<PRE class="sh_java">        int length = 179;
+    </PRE>
+<P>When executing the above line, the variable <CODE>length</CODE> is introduced 
+and as it is introduced the value <CODE>179</CODE> is set to it.</P>
+<P>In reality all information within a computer is represented as a series of 
+bits - ones and zeros. Variables are an abstraction offered by the programming 
+language with which we can handle different values more easily. The variables 
+are used to store values and to maintain the state of the program. In Java, we 
+have the primitive variable types <CODE>int</CODE> (integer), 
+<CODE>double</CODE> (floating-point), <CODE>boolean</CODE> (truth value), 
+<CODE>char</CODE> (character), and the reference variable types 
+<CODE>String</CODE> (character string), <CODE>ArrayList</CODE> (array), and all 
+classes. We'll return to primitive data type variables and to reference type 
+variables and their differences later.</P>
+<H3>Comparing variables and reading input</H3>
+<P>The functionality of programs is built with the help of control structures. 
+Control structures make different functions possible depending on the variables 
+of the program. Below, an example of an <CODE>if - else if - else</CODE> control 
+structure, in which a different function is executed depending on the result of 
+the comparison. In the example a string <CODE>Accelerate</CODE> is printed if 
+the value of the variable <CODE>speed</CODE> is smaller than 110, the string 
+<CODE>Break</CODE> if the <CODE>speed</CODE> is greater than 120, and the string 
+<CODE>Cruising</CODE> in other cases.</P>
+<PRE class="sh_java">int speed = 105;
+
+if (speed &lt; 110) {
+    System.out.println("Accelerate");
+} else if (speed &gt; 120) {
+    System.out.println("Break");
+} else {
+    System.out.println("Cruising");
+}
+    </PRE>
+<P>Because in the example above the value of the variable <CODE>speed</CODE> is 
+105, the program will always print the string <CODE>Accelerate</CODE>. Remember 
+that the comparison of strings is done with the <CODE>equals</CODE> method that 
+belongs to the <A href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html" 
+target="_blank">String</A> class. Below is an example in which an object created 
+from Java's <A href="http://docs.oracle.com/javase/6/docs/api/java/util/Scanner.html" 
+target="_blank">Scanner</A> class is used to read the input of a user. The 
+program checks if the strings entered by the user are equal.</P>
+<PRE class="sh_java">Scanner reader = new Scanner(System.in);
+
+System.out.print("Enter the first string: ");
+String first = reader.nextLine();
+
+System.out.print("Enter the second string: ");
+String second = reader.nextLine();
+
+System.out.println();
+
+if (first.equals(second)) {
+    System.out.println("The strings you entered are the same!");
+} else {
+    System.out.println("The strings you entered weren't the same!");
+}
+    </PRE>
+<P>The functionality of the program depends on the user's input. Below is an 
+example; the red text is user input.</P>
+<PRE>Enter the first string: <FONT color="red">carrot</FONT>
+Enter the second string: <FONT color="red">lettuce</FONT>
+
+The strings you entered weren't the same!
+    </PRE>
+<H3>Loops</H3>
+<P>Repetition is often required in programs. First we make a so-called 
+<CODE>while-true-break</CODE> loop, which we run until the user inputs the 
+string <CODE>password</CODE>. The statement <CODE>while(true)</CODE> begins the 
+loop, which will then be repeated until it runs into the keyword 
+<CODE>break</CODE>.</P>
+<PRE class="sh_java">        Scanner reader = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Enter password: ");
+            String password = reader.nextLine();
+
+            if (password.equals("password")) {
+                break;
+            }
+        }
+
+        System.out.println("Thanks!");
+    </PRE>
+<PRE>Enter password: <FONT color="red">carrot</FONT>
+Enter password: <FONT color="red">password</FONT>
+Thanks!
+    </PRE>
+<P>You can also pass a comparison to a <CODE>while</CODE> loop instead of the 
+boolean <CODE>true</CODE>. Below, the user input is printed so that there are 
+stars above and below it.</P>
+<PRE class="sh_java">        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter string: ");
+        String characterString = reader.nextLine();
+
+        int starNumber = 0;
+        while (starNumber &lt; characterString.length()) {
+            System.out.print("*");
+            starNumber = starNumber + 1;
+        }
+        System.out.println();
+
+        System.out.println(characterString);
+
+        starNumber = 0;
+        while (starNumber &lt; characterString.length()) {
+            System.out.print("*");
+            starNumber = starNumber + 1;
+        }
+        System.out.println();
+    </PRE>
+<PRE>Enter string: <FONT color="red">carrot</FONT>
+******
+carrot
+******
+    </PRE>
+<P>The example above should make you feel a little bad inside. The bad feelings 
+are hopefully because you see that the example violates the rules learned in the 
+programming basics. The example has unneccessary repetition which should be 
+removed with the help of methods.</P>
+<P>In addition to the while-loop we also have two versions of the 
+<CODE>for-loop</CODE> at our disposal. The newer <CODE>for-loop</CODE> is used 
+for going through lists.</P>
+<PRE class="sh_java">        ArrayList&lt;String&gt; greetings = new ArrayList&lt;String&gt;();
+        greetings.add("Hei");
+        greetings.add("Hallo");
+        greetings.add("Hi");
+
+        for (String greet: greetings) {
+            System.out.println(greet);
+        }
+    </PRE>
+<PRE>Hei
+Hallo
+Hi
+    </PRE>
+<P>The more traditional <CODE>for-loop</CODE> is used in situations similar to 
+where you would use a <CODE>while-loop</CODE>. It can, for example, be used to 
+go through arrays. In the following example all values in the array 
+<CODE>values</CODE> will be multiplied by two and then finally printed using the 
+newer <CODE>for-loop.</CODE></P>
+<PRE class="sh_java">        int[] values = new int[] {1, 2, 3, 4, 5, 6};
+
+        for (int i = 0; i &lt; values.length; i++) {
+            values[i] = values[i] * 2;
+        }
+
+        for (int value: values) {
+            System.out.println(value);
+        }
+    </PRE>
+<PRE>2
+4
+6
+8
+10
+12
+    </PRE>
+<P>The traditional <CODE>for-loop</CODE> is very useful in cases where we go 
+through indices one at a time. The loop below will go through the characters of 
+a character string one by one, and prints the character string <CODE>Hip!</CODE> 
+every time we encounter the character <CODE>a</CODE>.</P>
+<PRE class="sh_java">        String characterString = "saippuakauppias";
+        for (int i = 0; i &lt; characterString.length(); i++) {
+            if (characterString.charAt(i) == 'a') {
+                System.out.println("Hip!");
+            }
+        }
+    </PRE>
+<PRE>Hip!
+Hip!
+Hip!
+Hip!
+    </PRE>
+<H3>Methods</H3>
+<P>Methods are a way of chopping up the functionality of a program into smaller 
+entities. All Java programs start their execution from the <CODE>main</CODE> 
+program method, which is defined with the statement <CODE>public static void 
+main(String[] args)</CODE>. This statement defines a static method - that is a 
+method which belongs to the <EM>class</EM> - which receives a character string 
+array as its parameter.</P>
+<P>The program defines methods to abstract the functionalities of the program. 
+When programming, one should try to achieve a situation in which the program can 
+be looked at from a <EM>higher level</EM>, in such a case the main method 
+consists of calls to a group of self-defined, well-named methods. The methods 
+then specify the functionality of the program and perhaps are based on calls to 
+other methods.</P>
+<P>Methods that are defined using the keyword <CODE>static</CODE> belong to the 
+<EM>class</EM> that holds the method, and work as so-called support methods. The 
+methods that are defined without the keyword <CODE>static</CODE> belong to the 
+instances - <EM>the objects</EM> - created from the class and can modify the 
+state of that individual object.</P>
+<P>A method always has a visibility modifier (<CODE>public</CODE>, visible to 
+'everyone', or <CODE>private</CODE>, only visible within its class), a return 
+type (in the <CODE>main</CODE> method this is <CODE>void</CODE>, which returns 
+nothing) and a name. In the following code we create a method which belongs to a 
+class, <CODE>public static void print(String characterString, int times)</CODE>. 
+This method prints a character string the defined amount of times. This time we 
+use the method <CODE>System.out.print</CODE>, which works just like 
+<CODE>System.out.println</CODE>, but doesn't print a linebreak.</P>
+<PRE class="sh_java">        public static void print(String characterString, int times) {
+            for (int i = 0; i &lt; times; i++) {
+                System.out.print(characterString);
+            }
+        }
+    </PRE>
+<P>The method above prints the character string it receives as a parameter an 
+amount of times equal to the integer - which was also passed in as a 
+parameter.</P>
+<P>In the section on loops we noticed that the code had some nasty copy-paste 
+stuff in it. With the help of methods, we can move the printing of stars to a 
+separate method. We create a method <CODE>public static void printStars(int 
+times)</CODE>, which prints the amount of stars it receives as a parameter. The 
+method uses a <CODE>for</CODE> loop instead of a <CODE>while</CODE>.</P>
+<PRE class="sh_java">        public static void printStars(int times) {
+            for (int i = 0; i &lt; times; i++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    </PRE>
+<P>When making use of a method, our previous (and hideous) example now looks 
+like the following.</P>
+<PRE class="sh_java">        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter characterString: ");
+        String characterString = reader.nextLine();
+
+        printStars(characterString.length());
+        System.out.println(characterString);
+        printStars(characterString.length());
+
+    </PRE>
+<H3>Class</H3>
+<P>Methods can abstract a program up to a certain point, but as the program 
+becomes larger it's sensible to chop down the program even further into smaller 
+and more logical entities. With the help of classes, we can define higher level 
+concepts of a program and functionalities related to those concepts. Every Java 
+program requires a class in order to work, so the <CODE>Hello World!</CODE> 
+example wouldn't work without the class definition. A class is defined with the 
+keywords <CODE>public class nameOfTheClass</CODE>.</P>
+<PRE class="sh_java">public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+    </PRE>
+<P>In a program, classes are used to define concepts and functionalities related 
+to those concepts. Objects can be created from a class and are the embodiments 
+of that class. Every object that belongs to a certain class has the same 
+structure, but the variables belonging to each objects can be different. The 
+methods of objects handle the <EM>state</EM> of the object, that is, the 
+variables of the object.</P>
+<P>Let's inspect the class <CODE>Book</CODE> below; the class has the object 
+variables <CODE>name</CODE> (String) and <CODE>publishingYear</CODE> 
+(integer).</P>
+<PRE class="sh_java">        public class Book {
+            private String name;
+            private int publishingYear;
+
+            public Book(String name, int publishingYear) {
+                this.name = name;
+                this.publishingYear = publishingYear;
+            }
+
+            public String getName() {
+                return this.name;
+            }
+
+            public int getPublishingYear() {
+                return this.publishingYear;
+            }
+        }
+    </PRE>
+<P>The definition in the beginning, <CODE>public class Book</CODE>, tells the 
+name of the class. This is followed by the definitions of object variables. 
+Object variables are variables which for each of the objects created from the 
+class are their own -- the object variables of one object are unrelated to the 
+state of the same variables of another object. It's usually appropriate to hide 
+the object variables from the users of the class, to define the visibility 
+modifier <CODE>private</CODE> for them. If the visibility modifier is set to 
+<CODE>public</CODE>, the user of the object will be able to directly access the 
+object variables.</P>
+<P>Objects are created from a class with a <EM>constructor</EM>. A constructor 
+is a method that initializes an object (creates the variables belonging to the 
+object) and executes the commands that are within the constructor. The 
+constructor is always named the same as the class that has the constructor in 
+it. In the constructor <CODE>public Book(String name, int publishingYear)</CODE> 
+a new object is created from the class <CODE>Book</CODE> and its variables are 
+set to the values that were passed in as parameters.</P>
+<P>Two methods that handle the information in the object are also defined for 
+the class above. The method <CODE>public String getName()</CODE> returns the 
+name of the object in question. The method <CODE>public int 
+getPublishingYear()</CODE> returns the publishing year of the object in 
+question.</P>
+<H3>Object</H3>
+<P><EM>Objects</EM> are created with the help of the constructor that is defined 
+within a class. In the program code the costructor is called with the 
+<CODE>new</CODE> command, which returns a reference to the new object. Objects 
+are instances created from classes. Let's inspect a program that creates two 
+different books, after which it prints the values returned by the 
+<CODE>getName</CODE> methods belonging to the objects.</P>
+<PRE class="sh_java">        Book senseAndSensibility = new Book("Sense and Sensibility", 1811);
+        Book prideAndPrejudice = new Book("Pride and Prejudice", 1813);
+
+        System.out.println(senseAndSensibility.getName());
+        System.out.println(prideAndPrejudice.getName());
+    </PRE>
+<PRE>Sense and Sensibility
+Pride and Prejudice
+    </PRE>
+<P>So, each object has its own internal state. The state is formed from object 
+variables that belong to the object. Object variables can be both primitive type 
+variables and reference type variables. If reference type variables belong to 
+the objects, it is possible that other objects also refer to the same referenced 
+objects! Let's visualize this with the bank example, in which there are accounts 
+and persons.</P>
+<PRE class="sh_java">        public class Account {
+            private String accountID;
+            private int balanceAsCents;
+
+            public Account(String accountID) {
+                this.accountID = accountID;
+                this.balanceAsCents = 0;
+            }
+
+            public void deposit(int sum) {
+                this.balanceAsCents += sum;
+            }
+
+            public int getBalanceAsCents() {
+                return this.balanceAsCents;
+            }
+
+            // .. other methods related to an account
+        }
+    </PRE>
+<PRE class="sh_java">        import java.util.ArrayList;
+
+        public class Person {
+            private String name;
+            private ArrayList&lt;Account&gt; accounts;
+
+            public Person(String name) {
+                this.name = name;
+                this.accounts = new ArrayList&lt;Account&gt;();
+            }
+
+            public void addAccount(Account account) {
+                this.accounts.add(account);
+            }
+
+            public int moneyTotal() {
+                int total = 0;
+                for (Account account: this.accounts) {
+                    total += account.getBalanceAsCents();
+                }
+
+                return total;
+            }
+
+            // ... other methods related to a person
+        }
+    </PRE>
+<P>Each object created from the <CODE>Person</CODE> class has its own name and 
+its own list of accounts. Next, let's create two persons and two accounts. One 
+of the accounts is owned by only one person and the other one is shared.</P>
+<PRE class="sh_java">        Person matti = new Person("Matti");
+        Person maija = new Person("Maija");
+
+        Account salaryAccount = new Account("NORD-LOL");
+        Account householdAccount = new Account("SAM-LOL");
+
+        matti.addAccount(salaryAccount);
+        matti.addAccount(householdAccount);
+        maija.addAccount(householdAccount);
+
+        System.out.println("Money on Matti's accounts: " + matti.moneyTotal());
+        System.out.println("Money on Maija's accounts: " + maija.moneyTotal());
+        System.out.println();
+
+        salaryAccount.deposit(150000);
+
+        System.out.println("Money on Matti's accounts: " + matti.moneyTotal());
+        System.out.println("Money on Maija's accounts: " + maija.moneyTotal());
+        System.out.println();
+
+        householdAccount.deposit(10000);
+
+        System.out.println("Money on Matti's accounts: " + matti.moneyTotal());
+        System.out.println("Money on Maija's accounts: " + maija.moneyTotal());
+        System.out.println();
+    </PRE>
+<PRE>Money on Matti's accounts: 0
+Money on Maija's accounts: 0
+
+Money on Matti's accounts: 150000
+Money on Maija's accounts: 0
+
+Money on Matti's accounts: 160000
+Money on Maija's accounts: 10000
+    </PRE>
+<P>Initially, the accounts of both persons are empty. When money is added to the 
+salaryAccount - which <CODE>matti</CODE> has a reference to - the amount of 
+money on Matti's accounts grows. When money is added to the householdAccount 
+<EM>the amount of money each person has grows</EM>. This is because both Matti 
+and Maija have "access" to the householdAccount, so in each of the persons' 
+object variable <CODE>accounts</CODE>, there's a reference to the 
+householdAccount.</P>
+<H3>The structure of a program</H3>
+<P>A program should be clear and easy to understand for both the original writer 
+and others. The most important aspects of a clear program are class structure 
+and good naming conventions. Each class should have a single, clearly defined 
+responsibility. Methods are used to reduce repetition and to create a structure 
+for the internal functionality of the class. A method should also have a clear 
+responsibility to ensure it stays short and simple. Methods that do many things 
+should be divided into smaller helper methods, which are called by the original 
+method. A good programmer writes code that can be understood even weeks after it 
+was originally written.</P>
+<P>Good, understandable code uses descriptive naming of variables, methods and 
+classes, and consistent indentation. Let's look at the example below, a small 
+program for buying and selling goods. Even though the only thing available is 
+carrots, with no bookkeeping, the user interface could be extended to use a 
+storage class to keep track of items.     </P>
+<PRE class="sh_java">public class UserInterface {
+    private Scanner reader;
+
+    public UserInterface(Scanner reader) {
+        this.reader = reader;
+    }
+
+    public void start() {
+        while (true) {
+            String command = reader.nextLine();
+
+            if (command.equals("end")) {
+                break;
+            } else if (command.equals("buy")) {
+                String line = null;
+                while(true) {
+                    System.out.print("What to buy: ");
+                    line = reader.nextLine();
+                    if(line.equals("carrot")) {
+                        break;
+                    } else {
+                        System.out.println("Item not found!");
+                    }
+                }
+
+                System.out.println("Bought!");
+            } else if (command.equals("sell")) {
+                String line = null;
+                while(true) {
+                    System.out.print("What to sell: ");
+                    line = reader.nextLine();
+                    if(line.equals("carrot")) {
+                        break;
+                    } else {
+                        System.out.println("Item not found!");
+                    }
+                }
+
+                System.out.println("Sold!");
+            }
+        }
+    }
+}
+    </PRE>
+<P>This example has numerous problems. The first problem is the long 
+<CODE>start</CODE> method. It can be shortened by moving most of the command 
+handling to a separate method.</P>
+<PRE class="sh_java">public class UserInterface {
+    private Scanner reader;
+
+    public UserInterface(Scanner reader) {
+        this.reader = reader;
+    }
+
+    public void start() {
+        while (true) {
+            String command = reader.nextLine();
+
+            if (command.equals("end")) {
+                break;
+            } else {
+                handleCommand(command);
+            }
+        }
+    }
+
+    public void handleCommand(String command) {
+        if (command.equals("buy")) {
+            String line = null;
+            while(true) {
+                System.out.print("What to buy: ");
+                line = reader.nextLine();
+                if(line.equals("carrot")) {
+                    break;
+                } else {
+                    System.out.println("Item not found!");
+                }
+            }
+
+            System.out.println("Bought!");
+        } else if (command.equals("sell")) {
+            String line = null;
+            while(true) {
+                System.out.print("What to sell: ");
+                line = reader.nextLine();
+                if(line.equals("carrot")) {
+                    break;
+                } else {
+                    System.out.println("Item not found!");
+                }
+            }
+
+            System.out.println("Sold!");
+        }
+    }
+}
+    </PRE>
+<P><CODE>handleCommand</CODE> still has some repetition for reading the user 
+input. Both buying and selling first print a character string with the question, 
+then take input from the user. If the input is incorrect (other than "carrot"), 
+"Item not found!" is printed. We will create a new method, <CODE>public String 
+readInput(String question)</CODE>, to handle this. Note that if the program used 
+some other object to keep track of inventory, we would compare user input to the 
+inventory's contents instead.</P>
+<PRE class="sh_java">public class UserInterface {
+    private Scanner reader;
+
+    public UserInterface(Scanner reader) {
+        this.reader = reader;
+    }
+
+    public void start() {
+        while (true) {
+            String command = reader.nextLine();
+
+            if (command.equals("end")) {
+                break;
+            } else {
+                handleCommand(command);
+            }
+        }
+    }
+
+    public void handleCommand(String command) {
+        if (command.equals("buy")) {
+            String input = readInput("What to buy: ");
+            System.out.println("Bought!");
+        } else if (command.equals("sell")) {
+            String input = readInput("What to sell: ");
+            System.out.println("Sold!");
+        }
+    }
+
+    public String readInput(String question) {
+        while (true) {
+            System.out.print(question);
+            String line = reader.nextLine();
+
+            if (line.equals("carrot")) {
+                return line;
+            } else {
+                System.out.println("Item not found!");
+            }
+        }
+    }
+}
+    </PRE>
+<P>The program is now divided into appropriate parts. There are still a few 
+things, other than implementing more methods, we can do to improve readability. 
+The <CODE>start</CODE> method has an <CODE>if</CODE> branch that ends in 
+<CODE>break</CODE>, which exits the loop. We can remove the unnecessary 
+<CODE>else</CODE> branch, simply moving the <CODE>handleCommand</CODE> method to 
+be called after the <CODE>if</CODE> statement. The program still works exactly 
+as before, but the method is now shorter and easier to read. A similar situation 
+exists in the <CODE>readInput</CODE> method, so we will clean it up too.</P>
+<PRE class="sh_java">public class UserInterface {
+    private Scanner reader;
+
+    public UserInterface(Scanner reader) {
+        this.reader = reader;
+    }
+
+    public void start() {
+        while (true) {
+            String command = reader.nextLine();
+
+            if (command.equals("end")) {
+                break;
+            }
+
+            handleCommand(command);
+        }
+    }
+
+    public void handleCommand(String command) {
+        if (command.equals("buy")) {
+            String input = readInput("What to buy: ");
+            System.out.println("Bought!");
+        } else if (command.equals("sell")) {
+            String input = readInput("What to sell: ");
+            System.out.println("Sold!");
+        }
+    }
+
+    public String readInput(String question) {
+        while (true) {
+            System.out.print(question);
+            String line = reader.nextLine();
+
+            if (line.equals("carrot")) {
+                return line;
+            }
+
+            System.out.println("Item not found!");
+        }
+    }
+}
+    </PRE>
+<P>Dividing a program into smaller parts, like we did above, is called 
+<EM>refactoring</EM>. It does not change how the program works, but the internal 
+structure is changed to be more clear and easier to maintain. The current 
+version is clearer than the original, but it can be improved further. For 
+example, <CODE>handleCommand</CODE> can be further divided into two different 
+methods, one for handling buying and the other for selling.</P>
+<PRE class="sh_java">public class UserInterface {
+    private Scanner reader;
+
+    public UserInterface(Scanner reader) {
+        this.reader = reader;
+    }
+
+    public void start() {
+        while (true) {
+            String command = reader.nextLine();
+
+            if (command.equals("end")) {
+                break;
+            }
+
+            handleCommand(command);
+        }
+    }
+
+    public void handleCommand(String command) {
+        if (command.equals("buy")) {
+            commandBuy();
+        } else if (command.equals("sell")) {
+            commandSell();
+        }
+    }
+
+    public void commandBuy() {
+        String input = readInput("What to buy: ");
+        System.out.println("Bought!");
+    }
+
+    public void commandSell() {
+        String input = readInput("What to sell: ");
+        System.out.println("Sold!");
+    }
+
+    public String readInput(String question) {
+        while (true) {
+            System.out.print(question);
+            String line = reader.nextLine();
+
+            if (line.equals("carrot")) {
+                return line;
+            } else {
+                System.out.println("Item not found!");
+            }
+        }
+    }
+}
+    </PRE>
+<P>The program now has a clear structure with descriptively named methods. Every 
+method is short and has a small task to handle. Note that refactoring the code 
+did not add any new functionality, it merely changed the way the program works 
+internally.</P>
+<H3>Programming and the importance of practicing</H3>
+<P>As far as we know, nobody has yet learned programming by listening to 
+lectures. To develop the skill required in programming, it is essential to 
+practice both what you have learned earlier and things that are new to you. 
+Programming can be compared to speaking languages or playing an instrument, both 
+of which can only be learned by doing. Master violinists are probably not good 
+at playing <EM>only</EM> because they practice a lot. Playing an instrument is 
+fun, which makes one more motivated to practice. The same applies to 
+programming.</P>
+<P>As Linus Torvalds said, <EM>"Most good programmers do programming not because 
+they expect to get paid or get adulation by the public, but because it is fun to 
+program"</EM>.</P>
+<P>Dr. Luukkainen has written a list of instructions for new programmers to 
+follow when learning to program. Follow this advice to become a great 
+programmer!</P>
+<UL>
+  <LI> Take small steps       
+  <UL>
+    <LI> Divide the problem you are trying to solve into smaller parts and solve 
+    them <STRONG>one at a time</STRONG> </LI>
+    <LI> Keep testing that your solution is moving in the right direction, 
+    ensuring that you have solved the current part correctly</LI></UL></LI>
+  <LI> Keep the code as clean as you can       
+  <UL>
+    <LI> use proper indentation </LI>
+    <LI> use descriptive names for variables, methods, classes, everything</LI>
+    <LI> keep all methods short, including <CODE>main</CODE> </LI>
+    <LI> write methods that only do one thing </LI>
+    <LI><STRONG>remove all copy-paste code by refactoring (or don't copy and 
+    paste code in the first place!)</STRONG></LI>
+    <LI> replace "bad" and unclear code with clean, easy to read code 
+  </LI></UL></LI></UL>
+<H3>Visibility</H3>
+<P>Until now, we have been using two different keywords to define the 
+<EM>visibility</EM> of methods and instance variables. <CODE>public</CODE> makes 
+the method or instance variable visible and accessable to everyone. Methods and 
+constructors are usually marked as public, so that they can be called from 
+outside the class.</P>
+<P>Declaring a method or instance variable <CODE>private</CODE> hides it from 
+the outside, making it only accessible from inside the same class.</P>
+<PRE class="sh_java">public class Book {
+    private String name;
+    private String contents;
+
+    public Book(String name, String contents) {
+        this.name = name;
+        this.contents = contents;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getContents() {
+        return this.contents;
+    }
+
+    // ...
+}
+    </PRE>
+<P>The instance variables in the Book class above can only be accessed with the 
+public methods <CODE>getName</CODE> and <CODE>getContents</CODE>. Fields 
+declared as private are only accessible in code inside the class. Methods can 
+also be declared as private, which prevents them from being called outside the 
+class.</P>
+<P>Now it's time to start practicing!</P>
+<DIV class="tehtavat" id="viikko7">
+<DIV class="tehtava">
+<H3>Smileys</H3>
+<P>Create the support method <CODE>private static void printWithSmileys(String 
+characterString)</CODE> for the class <CODE>Smileys</CODE> which comes with the 
+assignment template. The method is to print the given character string 
+surrounded with smileys. Use the character string <CODE>:)</CODE> as the 
+smiley.</P>
+<PRE class="sh_java">printWithSmileys("\\:D/");
+        </PRE>
+<PRE>:):):):):)
+:) \:D/ :)
+:):):):):)
+        </PRE>
+<P>Note, that the character string must have \\ so we can print the symbol 
+\.</P>
+<P><EM>Note!</EM> if the length of the character string is an odd number, add an 
+extra space on the right side of the given character string.</P>
+<PRE class="sh_java">printWithSmileys("\\:D/");
+printWithSmileys("87.");
+        </PRE>
+<PRE>:):):):):)
+:) \:D/ :)
+:):):):):)
+:):):):):)
+:) 87.  :)
+:):):):):)
+        </PRE>
+<P>It's a good idea to first think how many smileys should be printed for a 
+character string of a certain length. The length of a character string can be 
+found out with the method <CODE>length</CODE> which belongs to it. A loop is 
+helpful for printing the top and bottom smiley rows, the middle row can be 
+handled with a normal print command. You can check if a length is an odd number 
+with the help of a remainder <CODE>characterString.length() % 2 == 
+1</CODE>.</P></DIV>
+<DIV class="tehtava">
+<H3>Character String Changer</H3>
+<P>In this assignment we create a character string changer, which consists of 
+two classes. The class <CODE>Changer</CODE> turns a single character to another 
+one. The Changer holds a number of Changes and changes character strings with 
+the help of Change objects it holds.</P>
+<H4>Change-class</H4>
+<P>Create a class <CODE>Change</CODE>, that has the following 
+functionalities:</P>
+<UL>
+  <LI> constructor <CODE>public Change(char fromCharacter, char 
+  toCharacter)</CODE> that creates an object that makes changes from character 
+  <CODE>fromCharacter</CODE> to <CODE>toCharacter</CODE></LI>
+  <LI> method <CODE>public String change(String characterString)</CODE> returns 
+  the changed version of the given character string</LI></UL>
+<P>The class is used in the following way:</P>
+<PRE class="sh_java">  String word = "carrot";
+  Change change1 = new Change('a', 'b');
+  word = change1.change(word);
+
+  System.out.println(word);
+
+  Change Change2 = new Change('r', 'x');
+  word = Change2.change(word);
+
+  System.out.println(word);
+        </PRE>
+<P>The example above would print:</P>
+<PRE>  cbrrot
+  cbxxot
+        </PRE>
+<P><STRONG>Tip:</STRONG> you can handle replacing characters in two ways, either 
+with the help of a method in the class <CODE>String</CODE> (look for it 
+yourself!) or by going through the character string character by character while 
+forming the changed character string.</P>
+<P>If you don't use the ready-made method of String, it is good to remember that 
+even though you compare character strings with the command <CODE>equals</CODE> 
+you compare single characters with the == operator:</P>
+<PRE class="sh_java">  String word = "carrot";
+
+  String replacedA = "";
+  for ( int i=0; i &lt; word.length(); i++) {
+     char character = word.charAt(i);
+     if ( character == 'a' ) {
+        replacedA += '*'
+     }  else {
+        replacedA += character;
+     }
+  }
+
+  System.out.println(replacedA);  // prints c*rrot
+        </PRE>
+<H4>Changer-class</H4>
+<P>Create the class <CODE>Changer</CODE>, with the following functions:</P>
+<UL>
+  <LI> constructor <CODE>public Changer()</CODE> creates a new changer</LI>
+  <LI> method <CODE>public void addChange(Change change)</CODE> adds a new 
+  Change to the Changer</LI>
+  <LI> method <CODE>public String change(String characterString)</CODE> executes 
+  all added Changes for the character string in the order of their adding and 
+  returns the changed character string</LI></UL>
+<P>The class is used in the following way:</P>
+<PRE class="sh_java">  Changer scandiesAway = new Changer();
+  scandiesAway.addChange(new Change('ä', 'a'));
+  scandiesAway.addChange(new Change('ö', 'o'));
+  System.out.println(scandiesAway.change("ääliö älä lyö, ööliä läikkyy"));
+        </PRE>
+<P>The above example would print:</P>
+<PRE>  aalio ala lyo, oolia laikkyy
+        </PRE><!-- TODO -->         
+<P><STRONG>Tip:</STRONG> It's a good idea to store the Changes to a list object 
+variable of Changer (in the same fashion as on the basics course we stored 
+players to a team, phone numbers to a phone book or books to a library, for 
+example) A Changer is executed so that the changes are done to the character 
+string one at a time as in the following example:</P>
+<PRE class="sh_java">    ArrayList&lt;Change&gt; changes = new ArrayList&lt;Change&gt;();
+
+    changes.add( new Change('a', 'b') );
+    changes.add( new Change('k', 'x') );
+    changes.add( new Change('o', 'å') );
+
+    String word = "carrot";
+
+    for (Change Change : changes) {
+        word = Change.change(word);
+    }
+
+    System.out.println(word);  // print pårxxbnb
+        </PRE>
+<P><STRONG>REMINDER</STRONG> when you add an ArrayList, a Scanner or a Random, 
+Java doesn't recognize the class unless you "import" it by adding the following 
+lines to the beginning:</P>
+<PRE class="sh_java">import java.util.ArrayList;    // imports ArrayList
+import java.util.*;            // imports all tools from java.util, including ArrayList, Scanner ja Random
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3>Calculator</H3>
+<P>In this assignment, we make a simple calculator, similar to the one made in 
+the material of programming basics' week 1. This time however, we pay attention 
+to the structure of the program. Especially we will make the 
+<EM>main</EM>-method (the main program) very light. The main program method 
+doesn't actually do anything else than just start the program:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        calculator.start();
+    }
+}
+        </PRE>
+<P>What the main program here does is it just creates the object that implements 
+the actual application logic and then starts it. This is the proper way of 
+creating programs and from now on we'll try to achieve this structure.</P>
+<H4>Reader</H4>
+<P>In order to communicate with the user, the calculator needs a Scanner-object. 
+As we've seen, reading integers with a Scanner is a little laborious. We now 
+create a separate class <CODE>Reader</CODE> that encapsulates a 
+Scanner-object.</P>
+<P>Implement the class <CODE>Reader</CODE> and add the following methods to 
+it</P>
+<UL>
+  <LI><CODE>public String readString()</CODE></LI>
+  <LI><CODE>public int readInteger()</CODE></LI></UL>
+<P>Within the Reader there should be a Scanner-object as an instance variable, 
+which the methods use in the old familiar way we know from programming basics. 
+Remember that when reading integers, it's good to first read the entire line and 
+then turn that in to an integer. Here we can utilize the method 
+<CODE>parseInt</CODE> of the <CODE>Integer</CODE>-class.</P>
+<H4>Application body</H4>
+<P>The calculator works like this:</P>
+<PRE>command: <FONT color="red">sum</FONT>
+value1: <FONT color="red">4</FONT>
+value2: <FONT color="red">6</FONT>
+sum of the values 10
+
+command: <FONT color="red">product</FONT>
+value1: <FONT color="red">3</FONT>
+value2: <FONT color="red">2</FONT>
+product of the values 6
+
+command: <FONT color="red">end</FONT>
+        </PRE>
+<P>Implement the class <CODE>Calculator</CODE> to take care of the application 
+logic of your program, and for that class a method <CODE>public void 
+start()</CODE> which looks exactly like this:</P>
+<PRE class="sh_java">    public void start() {
+        while (true) {
+            System.out.print("command: ");
+            String command = reader.readString();
+            if (command.equals("end")) {
+                break;
+            }
+
+            if (command.equals("sum")) {
+                sum();
+            } else if (command.equals("difference")) {
+                difference();
+            } else if (command.equals("product")) {
+                product();
+            }
+        }
+
+        statistics();
+    }
+        </PRE>
+<P>The calculator has the operations <CODE>sum, difference, product</CODE>.</P>
+<P>Finish the bodies for the methods <CODE>sum</CODE>, <CODE>difference</CODE>, 
+<CODE>product</CODE> and <CODE>stasistics</CODE>. All of them are to be of the 
+type <CODE>private void</CODE> which means that the methods are available only 
+for internal use in the calculator.</P>
+<P>Add an instance variable of the type <CODE>Reader</CODE> for the calculator 
+and create the reader in the constructor. <EM>The calculator may not have a 
+separate Scanner-type variable!</EM></P>
+<H4>Implementation of the application logic</H4>
+<P>Now implement the methods <CODE>sum</CODE>, <CODE>difference</CODE> and 
+<CODE>product</CODE> so that they work according to the example above. In the 
+example, first a command is asked from the user and then two values. The desired 
+operation is then executed and the value of the operation is printed. Notice 
+that asking the user for the values happens within the methods <CODE>sum</CODE>, 
+<CODE>difference</CODE> and <CODE>product</CODE>! The methods use the 
+Reader-object to ask the values, so the body of the methods is as follows:</P>
+<PRE class="sh_java">    private void sum() {
+       System.out.print("value1: ");
+       int value1 = // read the value using the Reader-object
+       System.out.print("value2: ");
+       int value2 = // read the value using the Reader-object
+       // print the value according to the example above
+    }
+        </PRE>
+<H4>Statistics</H4>
+<P>After the <CODE>while</CODE>-loop in the <CODE>start</CODE>-method, the 
+method <CODE>statistics</CODE> is called. The method is meant to print the 
+amount of operations done with the Calculator-object:</P>
+<PRE>command: <FONT color="red">sum</FONT>
+value1: <FONT color="red">4</FONT>
+value2: <FONT color="red">6</FONT>
+sum of the values 10
+
+command: <FONT color="red">product</FONT>
+luku1: <FONT color="red">3</FONT>
+luku2: <FONT color="red">2</FONT>
+product of the values 6
+
+command: <FONT color="red">end</FONT>
+Calculations done 2
+        </PRE>
+<P>Implement the method <CODE>private void statistics()</CODE>, and make the 
+required changes to the code of the Calculator-class in order to collect the 
+statistics.</P>
+<P>Note: if an invalid command is given to the program (something other than 
+sum, difference, product or end), the calculator will not react to the command 
+in any way, but instead continues by asking the next command. Statistics is not 
+to count an invalid command as a completed calculation.</P>
+<PRE>command: <FONT color="red">integral</FONT>
+command: <FONT color="red">difference</FONT>
+value1: <FONT color="red">3</FONT>
+value2: <FONT color="red">2</FONT>
+difference of the values 1
+
+command: <FONT color="red">end</FONT>
+Calculations done 1
+        </PRE>
+<P><STRONG>Bonus assignment (not tested):</STRONG> Reading the user input is 
+repeated in the same way in all three operation implementing methods. Remove the 
+repetition from your code with the help of a support method. The method can 
+return the two values asked from the user in an array, for 
+example.</P></DIV></DIV>
+<H2>Primitive- and reference-type variables</H2>
+<P>Java is a strongly typed language, what this means is that all of its 
+variables have a <EM>type</EM>. The types of the variables can be divided in to 
+two categories: <STRONG>primitive-type and reference-type variables</STRONG>. 
+Both types of variables have their own "slot", which holds the information 
+belonging to them. Primitive-type variables hold the concrete <EM>value</EM> in 
+their slot, while the reference-type variables hold a <EM>reference</EM> to a 
+concrete <EM>object</EM>.</P>
+<H3>Primitive-type variables</H3>
+<P>The value of a primitive type variable is saved in a slot created for the 
+variable. Each primitive-type variable has its own slot and its own value. A 
+variable's slot is created when it is introduced (<CODE>int number;</CODE>, for 
+example). A value is set to a slot with the assignment operator <CODE>=</CODE>. 
+Below is an example of the introduction of a primitive-type <CODE>int</CODE> 
+(integer) variable and setting of its value in the same expression.</P>
+<PRE class="sh_java">int number = 42;
+    </PRE>
+<P>Primtive type variables, among others, are <CODE>int</CODE>, 
+<CODE>double</CODE>, <CODE>char</CODE>, <CODE>boolean</CODE> and the more rarely 
+used <CODE>short</CODE>, <CODE>float</CODE>, <CODE>byte</CODE> and 
+<CODE>long</CODE>. Another primitive-type is <CODE>void</CODE>, but it doesn't 
+have its own slot or value. The <CODE>void</CODE>-type is used when we want to 
+express that a method doesn't return a value.</P>
+<P>Next we introduce two primitive-type variables and set values to them.</P>
+<PRE class="sh_java">int five = 5;
+int six = 6;
+    </PRE>
+<P>The primitive-type variables introduced above are named <CODE>five</CODE> and 
+<CODE>six</CODE>. When introducing the variable <CODE>five</CODE> the value 5 is 
+set to the <EM>slot</EM> that was created for it (<CODE>int five = 5;</CODE>).  
+When introducing the variable <CODE>six</CODE> the value 6 is set to the 
+<EM>slot</EM> that was created for it (<CODE>int six = 6;</CODE>). The variables 
+<CODE>five</CODE> and <CODE>six</CODE> are both of the type <CODE>int</CODE>, or 
+integers.</P>
+<P>Primitive-type variables can be visualized as boxes that both have the values 
+belonging to them saved in to them:</P>
+<P><IMG src="Hashmap_files/primitive-five-and-six.png"></P>
+<P>Next lets inspect how the values of primitive-type variables get copied.</P>
+<PRE class="sh_java">int five = 5;
+int six = 6;
+
+five = six; // the variable 'five' now holds the value 6 - the value that was in the variable 'six'.
+six = 64; // the variable 'six' now holds the value 64
+
+// the variable 'five' still holds the value 6
+    </PRE>
+<P>Above we introduce the variables <CODE>five</CODE> and <CODE>six</CODE> and 
+we set values to them. After this the value held in the slot of the variable 
+<CODE>six</CODE> is copied to the slot of the variable <CODE>five</CODE> 
+(<CODE>five = six;</CODE>). If the value of the variable <CODE>six</CODE> is 
+changed after this point the value in the variable <CODE>five</CODE> remains 
+unaffected: the value of the variable <CODE>five</CODE> is in its own slot and 
+is not related to the value in the slot of the variable <CODE>six</CODE> in any 
+way. The end situation as a picture:</P>
+<P><IMG src="Hashmap_files/primitive-five-and-six-64.png"></P>
+<H4>Primitive type variable as a method parameter and return value</H4>
+<P>When a primitive type variable is passed to a method as a parameter, the 
+method parameter is set to the value in the given variable's slot. In practice, 
+the method parameters also have their own slots to which the value is copied, 
+like in an assignment expression. Let us consider the following method 
+<CODE>addToValue(int value, int amount)</CODE>.</P>
+<PRE class="sh_java">public int addToValue(int value, int amount) {
+    return value + amount;
+}
+    </PRE>
+<P>The method <CODE>addToValue</CODE> is given two parameters: 
+<CODE>value</CODE> and <CODE>amount</CODE>. The method returns a new value, 
+which is the sum of the given parameters. Let us investigate how the method is 
+called.</P>
+<PRE class="sh_java">int myValue = 10;
+myValue = addToValue(myValue, 15);
+// the variable 'myValue' now holds the value 25
+    </PRE>
+<P>In the example, <CODE>addToValue</CODE> is called using the variable 
+<CODE>myValue</CODE> and the value <CODE>15</CODE>. These are copied to the 
+method parameters <CODE>value</CODE>, which will hold the value 10 (the contents 
+of <CODE>myValue</CODE>), and <CODE>amount</CODE>, which wil hold the value 15. 
+The method returns the sum of <CODE>value</CODE> and <CODE>amount</CODE>, which 
+is equal to <CODE>10 + 15 = 25</CODE>.</P>
+<P>Note! In the previous example, the value of the variable <CODE>myValue</CODE> 
+is changed only because it is assigned the return value of 
+<CODE>addToValue</CODE> (<CODE>myValue = addToValue(myValue, 15);</CODE>). If 
+the call to <CODE>addToValue</CODE> were as follows, the value of the variable 
+<CODE>myValue</CODE> would remain unchanged.</P>
+<PRE class="sh_java">int myValue = 10;
+addToValue(myValue, 15);
+// the variable 'myValue' still holds the value 10
+    </PRE>
+<H4>Minimum and maximum values</H4>
+<P>Each primitive data type can represent a specific range of values limited by 
+its minimum and maximum value, which are the smallest and largest values 
+representable by the type. This is because a predefined data size is used for 
+the internal represetantion of the type in Java (and most other programming 
+languages).</P>
+<P>The minimum and maximum values for a few Java primitive types are:</P>
+<P></P>
+<TABLE cellspacing="5">
+  <TBODY>
+  <TR>
+    <TH>Data type</TH>
+    <TH>Description</TH>
+    <TH>Minimum value</TH>
+    <TH>Max value</TH></TR>
+  <TR>
+    <TD>int</TD>
+    <TD>Integer</TD>
+    <TD>-2 147 483 648 (<CODE>Integer.MIN_VALUE</CODE>)</TD>
+    <TD>2 147 483 647 (<CODE>Integer.MAX_VALUE</CODE>)</TD></TR>
+  <TR>
+    <TD>long</TD>
+    <TD>Long interger</TD>
+    <TD>-9 223 372 036 854 775 808 (<CODE>Long.MIN_VALUE</CODE>)</TD>
+    <TD>9 223 372 036 854 775 807 (<CODE>Long.MAX_VALUE</CODE>)</TD></TR>
+  <TR>
+    <TD>boolean</TD>
+    <TD>Truth value</TD>
+    <TD colspan="2"><CODE>true</CODE> or <CODE>false</CODE></TD></TR>
+  <TR>
+    <TD>double</TD>
+    <TD>Floating point</TD>
+    <TD><CODE>Double.MIN_VALUE</CODE></TD>
+    <TD><CODE>Double.MAX_VALUE</CODE></TD></TR></TBODY></TABLE>
+<P><STRONG>Rounding errors</STRONG></P>
+<P>When using floating point data types, it is important to keep in mind that 
+floating point types are always an <EM>approximation</EM> of the actual value. 
+Because floating point types use a predefined data size to represent the value 
+similarly to all other primitive data types, we may observe quite surprising 
+rounding errors. For example, consider the following case.</P>
+<PRE class="sh_java">double a = 0.39;
+double b = 0.35;
+System.out.println(a - b);
+    </PRE>
+<P>The example prints the value <CODE>0.040000000000000036</CODE>. Programming 
+languages usually include tools to more accurately handle floating point 
+numbers. In Java, for example, the class <EM>BigDecimal</EM> can be used to 
+store infinitely long floating point numbers.</P>
+<P>When comparing floating point numbers, rounding errors are usually taken into 
+account by comparing the distance between the values. For example, with the 
+variables in the previous example, the expression <CODE>a - b == 0.04</CODE> 
+does not produce the expected result due to a rounding error.</P>
+<PRE class="sh_java">double a = 0.39;
+double b = 0.35;
+
+if((a - b) == 0.04) {
+    System.out.println("Successful comparison!");
+} else {
+    System.out.println("Failed comparison!");
+}
+    </PRE>
+<PRE>Failed comparison!
+    </PRE>
+<P>One method to calculate the distance between two values is as follows. The 
+helper function <CODE>Math.abs</CODE> returns the absolute value of the value 
+passed to it.</P>
+<PRE class="sh_java">double a = 0.39;
+double b = 0.35;
+
+double distance = 0.04 - (a - b);
+
+if(Math.abs(distance) &lt; 0.0001) {
+    System.out.println("Successful comparison!");
+} else {
+    System.out.println("Failed comparison!");
+}
+    </PRE>
+<PRE>Successful comparison!
+    </PRE>
+<H3>Reference-Type Variables</H3>
+<P>Reference-type variables memorize the information which has been assigned to 
+them "on the other end of the line". Reference-type variables contain a 
+reference to the location where the information is stored. Differently from 
+primitive-type variables, reference-type variable do not have a limited scope 
+because their value or <EM>information</EM> is stored at the referenced 
+location. Another substantial difference between primitive-type and 
+reference-type variables is that various different reference-type variables can 
+point to the same object.</P><!--
+        <p>Reference-type variables are objects which are created through the <code>new</code> keyword. The value of a reference-type variable is still assigned using the operator <code>=</code>; however, the <code>new</code> operator creates an object and returns the reference to that object. The reference is stored within the variable, and it becomes its value.</p>
+--> 
+    
+<P>Let us have a look at two reference-type variables. In the following examples 
+we make use of the class <EM>Calculator</EM>:</P>
+<PRE class="sh_java">public class Calculator {
+    private int value;
+
+    public Calculator(int originalValue) { // Contructor
+        this.value = originalValue;
+    }
+
+    public void increaseValue() {
+        this.value = this.value + 1;
+    }
+
+    public int getValue() {
+        return value;
+   }
+}
+    </PRE>
+<P>Main:</P>
+<PRE class="sh_java">Calculator bonusCalculator = new Calculator(5);
+Calculator axeCalculator = new Calculator(6);
+    </PRE>
+<P>In the examples we first create a reference-type variable called 
+<CODE>bonusCalculator</CODE>. The <CODE>new</CODE> operator tells that we define 
+storage space for the information to be assigned to the variable, then we 
+execute the code which follows the <CODE>new</CODE> operator, and we return a 
+reference to the object that has been so created. The reference which is 
+returned is assigned to the <CODE>bonusCalculator</CODE> variable through the 
+<CODE>=</CODE> equal sign. The same thing happens with the variable called 
+<CODE>axeCalculator</CODE>. If we want to think about it with pictures, we can 
+imagine a reference-type variable as it were a box, the variable itself, with a 
+line or an arrow, which starts at the box and points to an object. In fact, the 
+variable does not contain the object, but it points to the object information. 
+</P>
+<P><IMG src="Hashmap_files/reference-type-calculators.png"></P>
+<P>Next, let us have a look at how a reference-type object is duplicated.</P>
+<PRE class="sh_java">Calculator bonusCalculator = new Calculator(5);
+Calculator axeCalculator = new Calculator(6);
+
+bonusCalculator = axeCalculator; // the reference contained by the variable axeCalculator is copied to the variable bonusCalculator
+                                 // that is to say, a reference to a Calculator-type object which received the value 6 in its constructor
+                                 // is copied to the variable bonusCalculator
+    </PRE>
+<P>When we copy a reference-type variable (see above <CODE>bonusCalculator =  
+axeCalculator;</CODE>), the reference to the variable duplicates as well. In 
+this case, a reference to the <CODE>axeCalculator</CODE> variable slot is copied 
+to the <CODE>bonusCalculator</CODE> variable slot. Now, both the objects point 
+to the same place!</P>
+<P><IMG src="Hashmap_files/reference-type-calculators-ref-changed.png"></P>
+<P>Let us continue with the example above and let us set a new reference to the 
+variable <CODE>axeCalculator</CODE>; this new reference will point to a new 
+object created by the command <CODE>new Calculator(10)</CODE>.</P>
+<PRE class="sh_java">Calculator bonusCalculator = new Calculator(5);
+Calculator axeCalculator = new Calculator(6);
+
+bonusCalculator = axeCalculator; // the reference contained by the variable axeCalculator is copied to the variable bonusCalculator
+                                 // that is to say, a reference to a Calculator-type object which received the value 6 in its constructor
+                                 // is copied to the variable
+
+axeCalculator = new Calculator(10); // a new reference is assigned to the axeCalculator variable
+                                    // which points to the object created by the command new Calculator(10)
+
+// the bonusCalculator variable still contains a reference to the Calculator object which received value 6 in its parameter
+    </PRE>
+<P>In these examples, we do the same operations which were shown in the 
+assignment example in the primitive-type variables section. In the very last 
+example, we copied the reference of reference-type variables, whereas in the 
+primitive-type variables section we copied the value of primitive-type 
+variables. In both cases, we copy the contents of a slot: the primitive-type 
+variable slot contains a value, whereas the reference-type variable slot 
+contains a reference.</P>
+<P>At the end of the previous example no variable points to the Calculator 
+object which received value 5 in its constructor. Java's garbage collection 
+deletes such useless objects from time to time. Our final situation looks like 
+the following:</P>
+<P><IMG src="Hashmap_files/reference-type-calculators-3rd-object.png"></P>
+<P>Let us have a look to a third example still, and let us focus on an essential 
+difference between primitive-type and reference-type variables.</P>
+<PRE class="sh_java">Calculator bonusCalculator = new Calculator(5);
+Calculator axeCalculator = new Calculator(6);
+
+bonusCalculator = axeCalculator; // the reference contained by the variable axeCalculator is copied to the variable bonusCalculator
+                                 // that is to say, a reference to a Calculator-type object which received the value 6 in its constructor
+                                 // is copied to the variable
+
+axeCalculator.increaseValue(); // we increase by one the value of the object referenced by axeCalculator
+
+System.out.println(bonusCalculator.getValue());
+System.out.println(axeCalculator.getValue());
+    </PRE>
+<PRE>7
+7
+    </PRE>
+<P>Both <CODE>bonusCalculator</CODE>and <CODE>axeCalculator</CODE> point to the 
+same object, after we have run the command <CODE>bonusCalculator = 
+axeCalculator;</CODE>, and therefore, now they both have the same value 7, even 
+though we have increased only one of them.</P>
+<P>The situation might be clear if we look at the following picture. The method 
+<CODE>axeCalculator.increaseValue()</CODE> increases by one the 
+<CODE>value</CODE> variable of the object pointing to the 
+<CODE>axeCalculator</CODE> variable. Because <CODE>bonusCalculator</CODE> points 
+to the same object, the method <CODE>bonusCalculator.getValue()</CODE> returns 
+the same value which was increased by the method 
+<CODE>axeCalculator.increaseValue()</CODE>.</P>
+<P><IMG src="Hashmap_files/reference-type-calculators-val-changed.png"></P>
+<P>In the following example, three reference-type variables all point to the 
+same <CODE>Calculator</CODE> object.</P>
+<PRE class="sh_java">Calculator bonus = new Calculator(5);
+Calculator ihq = bonus;
+Calculator lennon = bonus;
+    </PRE>
+<P>In the example, we create only one <CODE>Calculator</CODE> object, but all 
+the three <CODE>Calculator</CODE> variables point to that same one. Therefore, 
+<CODE>bonus</CODE>, <CODE>ihq</CODE>, and <CODE>lennon</CODE> method calls all 
+modify the same object. To tell it once again: when reference-type variables are 
+copied, their references also duplicate. The same concept in a picture:</P>
+<P><IMG src="Hashmap_files/three-calculators-1.png"></P>
+<P>Let's use this example to focus on duplication once more.</P>
+<PRE class="sh_java">Calculator bonus = new Calculator(5);
+Calculator ihq = bonus;
+Calculator lennon = bonus;
+
+lennon = new Calculator(3);
+    </PRE>
+<P>The modification of the <CODE>lennon</CODE> variable contents – that is to 
+say the change of reference – does not affect the references of either 
+<CODE>bonus</CODE> or <CODE>ihq</CODE>. When we assign a value to a variable, we 
+<EM>only</EM> change the contents of that variable's own slot. The same concept 
+in a picture:</P>
+<P><IMG src="Hashmap_files/three-calculators-2.png"></P>
+<H4>A Reference-Type Variables and Method Parameters</H4>
+<P>When a reference-type variable is given to a method as its parameter, we 
+create a method parameter which is the copy of the reference of a variable. In 
+other words, we copy the reference to the parameter's own slot. Differently from 
+what happens with original-type variables, we copy the reference and not their 
+value. In fact, we can modify the object behind the reference even from within 
+the method. Let us take the method <CODE>public void addToCalculator(Calculator 
+calculator, int amount)</CODE>.</P>
+<PRE class="sh_java">public void addToCalculator(Calculator calculator, int amount) {
+    for (int i = 0; i &lt; amount; i++) {
+        calculator.increaseValue();
+    }
+}
+    </PRE>
+<P>We give two parameters to the method <CODE>addToCalculator</CODE> – a 
+reference-type value and an original-type variable. The contents of both 
+variable slots are copied to method parameter slots. The reference-type 
+parameter <CODE>calculator</CODE> receives a copy of a reference, whereas the 
+original-type parameter <CODE>amount</CODE> receives the copy of value. The 
+method will call the <CODE>increaseValue()</CODE> method of the 
+<CODE>Calculator</CODE>-type parameter, and it will do it as many times as the 
+value of the <CODE>amount</CODE> variable. Let us analyze the method call a 
+little more deeply.</P>
+<PRE class="sh_java">int times = 10;
+
+Calculator bonus = new Calculator(10);
+addToCalculator(bonus, times);
+// the bonus variable value is now 20
+    </PRE>
+<P>In the example we call the <CODE>addToCalculator</CODE> method, whose given 
+variables are <CODE>bonus</CODE> and <CODE>times</CODE>. This means that the 
+reference of the reference-type variable <CODE>bonus</CODE> and the value of the 
+original-type variable <CODE>times</CODE>  (which is <CODE>10</CODE>) are copied 
+as parameters whose names are <CODE>calculator</CODE> and <CODE>amount</CODE>, 
+respectively. The method executes the <CODE>increaseValue()</CODE> method of the 
+<CODE>calculator</CODE> variable a number of times which equals the value of 
+<CODE>amount</CODE>. See the following picture:</P>
+<P><IMG src="Hashmap_files/refs-main-and-method-world.png"></P>
+<P><EM>The method contains variables which are completely separated from the 
+main program!</EM></P>
+<P>As far as the reference-type variable is concerned, a reference duplicates 
+and it is given to the method, and the variable inside the method will still 
+point to the same object. As far as the original-type variable is concerned, a 
+value is copied, and the variable inside the method will have its completely 
+independent value.</P>
+<P>The method recognises the calculator which the <CODE>bonus</CODE> variable 
+points to, and the alterations made by the method have a direct impact on the 
+object. The situation is different with original-type variables, and the method 
+only receives a copy of the value of the <CODE>times</CODE> variable. In fact, 
+it is not possible to modify the value of original-type variables directly 
+within a method.</P>
+<H4>A method which returns a reference-type variable</H4>
+<P>When a method returns a reference-type variable, it returns the reference to 
+an object located elsewhere. Once the reference is returned by a method, it can 
+be assigned to a variable in the same way as a normal assignment would happen, 
+through the equal sign (=). Let us have a look at the method <CODE>public 
+Calculator createCalculator(int startValue)</CODE>, which creates a new 
+reference-type variable.</P>
+<PRE class="sh_java">public Calculator createCalculator(int startValue) {
+    return new Calculator(startValue);
+}
+    </PRE>
+<P>The creteCalculator method creates an object and returns its 
+<CODE>newCalculator</CODE> reference. By calling the method, we always create a 
+new object. In the following example we create two different 
+<CODE>Calculator</CODE>-type objects.</P>
+<PRE class="sh_java">Calculator bonus  = createCalculator(10);
+Calculator lennon = createCalculator(10);
+    </PRE>
+<P>The method <CODE>createCalculator</CODE> always creates a new 
+<CODE>Calculator</CODE>-type object. With the first call, <CODE>Calculator bonus 
+ = createCalculator(10);</CODE> we assign the method return reference to the 
+<CODE>bonus</CODE> variable. With the second call, we create another reference 
+and we assign it to the <CODE>lennon</CODE> variable. The variables 
+<CODE>bonus</CODE> and <CODE>lennon</CODE> do not contain the same reference 
+because the method creates a new object in both cases, and it returns the 
+reference to that particular object.</P>
+<H2 id="stat_ja_ei">Static and Non-Static</H2>
+<P>Let's further investigate a topic we introduced in the 30th section of 
+Introduction to Programming. The static or non-static nature of a variable or of 
+a method depends on their scope. Static methods are always related to their 
+class, whereas non-static methods can modify the variables of the object 
+itself.</P>
+<H3>Static, Class Libraries and Final</H3>
+<P>The methods which receive the definition static are not related to objects 
+but to classes. it is possible to define class-specific variables by adding the 
+word <CODE>static</CODE> to their name. For instance, 
+<CODE>Integer.MAX_VALUE</CODE>, <CODE>Long.MIN_VALUE</CODE> and 
+<CODE>Double.MAX_VALUE</CODE> are all static methods. Static methods are called 
+via their class name, for instance <CODE>ClassName.variable</CODE> or 
+<CODE>ClassName.method()</CODE>.</P>
+<P>We call <EM>class library</EM> a class which contains common-use methods and 
+variables. For instance, Java <CODE>Math</CODE> class is a class library. It 
+provides the <CODE>Math.PI</CODE> variable, inter alia. Often, creating your own 
+class libraries can prove useful. Helsinki Regional Transport Authority 
+(Finnish: Helsingin Seudun Liikenne, HSL) could use a class library to keep its 
+ticket prices at its fingertips.</P>
+<PRE class="sh_java">public class HslPrices {
+    public static final double SINGLETICKET_ADULT = 2.50;
+    public static final double TRAMTICKET_ADULT = 2.50;
+}
+    </PRE>
+<P>The keyword <CODE>final</CODE> in the variable definition tells that once we 
+assign a value to a variable, we can not assign a new one to it. Final-type 
+variables are constant, and they always have to have a value. For instance, the 
+class variable which tells the greatest integer, <CODE>Integer.MAX_VALUE</CODE>, 
+is a constant class variable.</P>
+<P>Once we have the class presented above, <CODE>HslPrices</CODE>, all the 
+programs which need the single or tram-ticket price can have access to it 
+through the class <CODE>HslPrices</CODE>. With the next example, we present the 
+class <CODE>Person</CODE>, which has the method 
+<CODE>enoughMoneyForSingleTicket()</CODE>, which makes use of the ticket price 
+found in the class <CODE>HslPrices</CODE>.</P>
+<PRE class="sh_java">public class Person {
+    private String name;
+    private double money;
+    // more object variables
+
+    // constructor
+
+    public boolean enoughMoneyForSingleTicket() {
+        if(this.money &gt;= HslPrices.SINGLETICKET_ADULT) {
+            return true;
+        }
+
+        return false;
+    }
+
+    // the other methods regarding the class Person
+}
+    </PRE>
+<P>The method <CODE>public boolean enoughMoneyForSingleTicket()</CODE> compares 
+the object variable <CODE>money</CODE> of class <CODE>Person</CODE> to the 
+static variable <CODE>SINGLETICKET_ADULT</CODE> of class <CODE>HslPrices</CODE>. 
+The method <CODE>enoughMoneyForSingleTicket()</CODE> can be called only through 
+an object reference. For instance:</P>
+<PRE class="sh_java">Person matti = new Person();
+
+if (matti.enoughMoneyForSingleTicket()) {
+    System.out.println("I'll buy a ticket.");
+} else {
+    System.out.println("Fare dodging, yeah!");
+}
+    </PRE>
+<P>Note the naming convention! All <EM>constants</EM>, i.e. all variable which 
+are provided with the definition final, are written with 
+CAPITAL_LETTERS_AND_UNDERLINE_CHARACTERS.</P>
+<P>Static methods function analogously. For instance, the class 
+<CODE>HslPrices</CODE> could <EM>encapsulate</EM> the variables and only provide 
+<EM>accessors</EM>. We call accessors the methods which allow us to either read 
+a variable value or to assign them a new one.</P>
+<PRE class="sh_java">public class HslPrices {
+    private static final double SINGLETICKET_ADULT = 2.50;
+    private static final double TRAMTICKET_ADULT = 2.50;
+
+    public static double getSingleTicketPrice() {   // Accessor
+        return SINGLETICKET_ADULT;
+    }
+
+    public static double getTramTicketPrice() {   // Accessor
+        return TRAMTICKET_ADULT;
+    }
+}
+    </PRE>
+<P>In such cases, when we code a class such as <CODE>Person</CODE>, we can't 
+call the variable straight, but we have to get it through the method 
+<CODE>getSingleTicketPrice()</CODE>.</P>
+<PRE class="sh_java">public class Peson {
+    private String name;
+    private double money;
+    // other object variables
+
+    // constructor
+
+    public boolean enoughMoneyForSingleTicket() {
+        if(this.money &gt;= HslPrices.getSingleTicketPrice()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    // other methods regarding the class Person
+}
+    </PRE>
+<P>Even though Java allows for static variable use, we do not usually require 
+it. Often, using static methods causes problems with the program structure, 
+because static variables are as inconvenient as <A href="http://c2.com/cgi/wiki?GlobalVariablesAreBad">global 
+variables</A>. <B>The only static variables we use in this course are constant, 
+i.e. final!</B></P>
+<H3>Non-Static</H3>
+<P>Non-static methods and variables are related to objects. The object 
+variables, or attributes, are defined at the beginning of the class. When an 
+object is created with the <CODE>new</CODE> operator, we allocate storage space 
+for all its object variables. The variable values are personal of the object, 
+which means that every object receives personal variable values. Let us focus 
+again on the class <CODE>Person</CODE>, which has the object variable 
+<CODE>name</CODE> and <CODE>money</CODE>.</P>
+<PRE class="sh_java">public class Person {
+  private String name;
+  private double money;
+
+  // other details
+}
+    </PRE>
+<P>When we create a new instance of class <EM>Person</EM>, we also initialize 
+its variables. If we do not initialize the reference-type variable 
+<CODE>name</CODE>, it receives value <EM>null</EM>. Let us add the 
+<EM>constructor</EM> and a couple of methods to our class <EM>Person</EM>.</P>
+<PRE class="sh_java">public class Person {
+  private String name;
+  private double money;
+
+    // constructor
+    public Person(String name, double money) {
+        this.name = name;
+        this.money = money;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public double getMoney() {
+        return this.money;
+    }
+
+    public void addMoney(double amount) {
+        if(amount &gt; 0) {
+          this.money += amount;
+        }
+    }
+
+    public boolean enoughMoneyForSigleTicket() {
+        if(this.money &gt;= HslPrices.getSingleTicketPrice()) {
+            return true;
+        }
+
+        return false;
+    }
+}
+    </PRE>
+<P>The constructor <CODE>Person(String name, double money)</CODE> creates a new 
+Person object, and it returns its reference. The method <CODE>getName()</CODE> 
+returns the reference to a <CODE>name</CODE> object, and the 
+<CODE>getMoney()</CODE> method returns the original-type variable 
+<CODE>money</CODE>. The method <CODE>addMoney(double amount)</CODE> receives as 
+parameter an amount of money, and it adds it to the <CODE>money</CODE> object 
+variable if the parameter's value is greater than 0.</P>
+<P>Object methods are called through their object reference. The following code 
+example creates a new Person object, increases its money, and prints its name, 
+at the end. Note that the method calls follow the pattern 
+<CODE>objectName.methodName()</CODE></P>
+<PRE class="sh_java">Person matti = new Person("Matti", 5.0);
+matti.addMoney(5);
+
+if (matti.enoughMoneyForSingleTicket()) {
+    System.out.println("I'll buy a single ticket.");
+} else {
+    System.out.println("Fare dodging, yeah!");
+}
+    </PRE>
+<P>The example prints "<CODE>I'll buy a single ticket.</CODE>"</P>
+<H4>Class Methods</H4>
+<P>Non-static class methods can be also called without specifying the object 
+which indicates the class. In the following example, the <CODE>toString()</CODE> 
+method points to the class <CODE>Person</CODE>, which calls the object method 
+<CODE>getName()</CODE>.</P>
+<PRE class="sh_java">public class Person {
+    // earlier written content
+
+    public String toString() {
+        return this.getName();
+    }
+}
+    </PRE>
+<P>The <CODE>toString()</CODE> method calls the class method 
+<CODE>getName()</CODE>, which belongs to the object in question. The 
+<CODE>this</CODE> prefix emphasizes that the call refers precisely to this 
+object.</P>
+<P>Non-static methods can also call static methods, that is the class-specific 
+ones. On the other hand, static methods can not call non-static methods without 
+a reference to the object itself, which is essential to retrieve the object 
+information.</P>
+<H4>A Variable within a Method</H4>
+<P>The variables which are defined inside a method are auxiliary variables used 
+during the method execution, and they are not to be confused with object 
+variables. The example below shows how a local variable is created inside a 
+method. The <CODE>index</CODE> variable exists and is accessible only during the 
+method execution.</P>
+<PRE class="sh_java">public class ... {
+    ...
+
+    public static void printTable(String[] table) {
+        int index = 0;
+
+        while(index &lt; table.length) {
+            System.out.println(table[index]);
+            index++;
+        }
+    }
+}
+    </PRE>
+<P>In the <CODE>printTable()</CODE> method, we create the auxiliary variable 
+<CODE>index</CODE> which we use to parse the table. The variable 
+<CODE>index</CODE> exists only during the method execution.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Thing, Suitcase, and Container</H3>
+<P>In these exercises, we create the classes <CODE>Thing</CODE>, 
+<CODE>Suitcase</CODE>, and <CODE>Container</CODE>, and we train to use objects 
+which contain other objects.</P>
+<H4 class="req">Class Thing</H4>
+<P>Create the class <CODE>Thing</CODE> whose objects can represent different 
+kinds of things. The information to store are the thing's name and weight 
+(kg).</P>
+<P>Add the following methods to your class:</P>
+<UL>
+  <LI>A construsctor, which is given the thing's name and weight as 
+  parameter</LI>
+  <LI><CODE>public String getName()</CODE>, which returns the thing's name</LI>
+  <LI><CODE>public int getWeight()</CODE>, which returns the thing's weight</LI>
+  <LI><CODE>public String toString()</CODE>, which returns a string in the form 
+  "name (weight kg)"</LI></UL>
+<P>Below, you find an example of how to use the class:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Thing book = new Thing("Happiness in Three Steps", 2);
+        Thing mobile = new Thing("Nokia 3210", 1);
+
+        System.out.println("Book name: " + book.getName());
+        System.out.println("Book weight: " + book.getWeight());
+
+        System.out.println("Book: " + book);
+        System.out.println("Mobile: " + mobile);
+    }
+}
+        </PRE>
+<P>The program output should look like the following:</P>
+<PRE>Book name: Happiness in Three Steps
+Book weight: 2
+Book: Happiness in Three Steps (2 kg)
+Mobile: Nokia 3210 (1 kg)
+        </PRE>
+<H4 class="req">Class Suitcase</H4>
+<P>Create the class <CODE>Suitcase</CODE>. <CODE>Suitcase</CODE> has 
+<CODE>things</CODE> and a maximum weight limit, which defines the greatest total 
+allowed weight of the things contained within the <CODE>Suitcase</CODE> 
+object.</P>
+<P>Add the following methods to your class:</P>
+<UL>
+  <LI> A constructor, which is given a maximum weight limit</LI>
+  <LI><CODE>public void addThing(Thing thing)</CODE>, which adds the 
+  <CODE>thing</CODE> in the parameter to your suitcase. The method does not 
+  return any value.</LI>
+  <LI><CODE>public String toString()</CODE>, which returns a string in the form 
+  "x things (y kg)"</LI></UL>
+<P>The <CODE>things</CODE> are saved into an <CODE>ArrayList</CODE> object:</P>
+<PRE class="sh_java">ArrayList&lt;Thing&gt; things = new ArrayList&lt;Thing&gt;();
+            </PRE>
+<P>The class <CODE>Suitcase</CODE> has to make sure the thing's weight does not 
+cause the total weight to exceed the maximum weight limit. The method 
+<CODE>addThing</CODE> should not add a new thing if the total weight happens to 
+exceed the maximum weight limit.</P>
+<P>Below, you find an example of how the class can be used:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Thing book = new Thing("Happiness in three steps", 2);
+        Thing mobile = new Thing("Nokia 3210", 1);
+        Thing brick = new Thing("Brick", 4);
+
+        Suitcase suitcase = new Suitcase(5);
+        System.out.println(suitcase);
+
+        suitcase.addThing(book);
+        System.out.println(suitcase);
+
+        suitcase.addThing(mobile);
+        System.out.println(suitcase);
+
+        suitcase.addThing(brick);
+        System.out.println(suitcase);
+    }
+}
+            </PRE>
+<P>The program output should look like the following:</P>
+<PRE>0 things (0 kg)
+1 things (2 kg)
+2 things (3 kg)
+2 things (3 kg)
+            </PRE>
+<H4>Language Check</H4>
+<P>"0 things" or "1 things" is not really proper English – it would be better to 
+say "empty" or "1 thing". Implement this change in the class 
+<CODE>Suitcase</CODE>.</P>
+<P>Now, the output of the previous program should look like the following:</P>
+<PRE>empty (0 kg)
+1 thing (2 kg)
+2 things (3 kg)
+2 things (3 kg)
+            </PRE>
+<H4 class="req">Every Thing</H4>
+<P>Add the following methods to <CODE>Suitcase</CODE>:</P>
+<UL>
+  <LI><CODE>printThings</CODE>, which prints out all the <CODE>things</CODE> 
+  inside the suitcase</LI>
+  <LI><CODE>totalWeight</CODE>, which returns the total weight of the 
+  <CODE>things</CODE> in your suitcase</LI></UL>
+<P>Below, there is an example of how the class can be used:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Thing book = new Thing("Happiness in Three Steps", 2);
+        Thing mobile = new Thing("Nokia 3210", 1);
+        Thing brick = new Thing("Brick", 4);
+
+        Suitcase suitcase = new Suitcase(10);
+        suitcase.addThing(book);
+        suitcase.addThing(mobile);
+        suitcase.addThing(brick);
+
+        System.out.println("Your suitcase contains the following things:");
+        suitcase.printThings();
+        System.out.println("Total weight: " + suitcase.totalWeight() + " kg");
+    }
+}
+            </PRE>
+<P>The program output should now look like the following:</P>
+<PRE>Your suitcase contains the following things:
+Happiness in Three Steps (2 kg)
+Nokia 3210 (1 kg)
+Brick (4 kg)
+Total weight: 7 kg
+            </PRE>
+<P>Modify your class also so that you use only two object variables. One 
+contains the maximum weight, the other is a list with the things in your 
+suitcase.</P>
+<H4 class="req">The heaviest Thing</H4>
+<P>Now, add the method <CODE>heaviestThing</CODE> to your class 
+<CODE>Suitcase</CODE>, which returns the thing which weighs the most. If there 
+are more than one <CODE>thing</CODE> with the same weight, the method can return 
+either one. The method has to return an object reference. If the suitcase is 
+empty, the method returns <EM>null</EM>.</P>
+<P>Here is an usage example of the class:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Thing book = new Thing("Happiness in Three Steps", 2);
+        Thing mobile = new Thing("Nokia 3210", 1);
+        Thing brick = new Thing("Brick", 4);
+
+        Suitcase suitcase = new Suitcase(10);
+        suitcase.addThing(book);
+        suitcase.addThing(mobile);
+        suitcase.addThing(brick);
+
+        Thing heaviest = suitcase.heaviestThing();
+        System.out.println("The heaviest thing: " + heaviest);
+    }
+}
+            </PRE>
+<P>The program output should look like the following:</P>
+<PRE>The heaviest thing: Brick (4 kg)
+            </PRE>
+<H4 class="req">Container</H4>
+<P>Create the class <CODE>Container</CODE>, which has the following methods:</P>
+<UL>
+  <LI> a constructor which is given the maximum weight limit</LI>
+  <LI><CODE>public void addSuitcase(Suitcase suitcase)</CODE>, which adds the 
+  suitcase as a parameter to the container</LI>
+  <LI><CODE>public String toString()</CODE> which returns a string in the form 
+  "x suitcases (y kg)"</LI></UL>
+<P>Store the suitcase with a suitable <CODE>ArrayList</CODE> construction.</P>
+<P>The class <CODE>Container</CODE> has to make sure the <CODE>thing</CODE>'s 
+total weight does not overcome the maximum weight limitation. The method 
+<CODE>addSuitcase</CODE> should not add a new suitcase if the total weight 
+happens to exceed the maximum weight limit.</P>
+<P>Below, there is an example of how the class can be used:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Thing book = new Thing("Happiness in Three Steps", 2);
+        Thing mobile = new Thing("Nokia 3210", 1);
+        Thing brick = new Thing("Brick", 4);
+
+        Suitcase tomsCase = new Suitcase(10);
+        tomsCase.addThing(book);
+        tomsCase.addThing(mobile);
+
+        Suitcase georgesCase = new Suitcase(10);
+        georgesCase.addThing(brick);
+
+        Container container = new Container(1000);
+        container.addSuitcase(tomsCase);
+        container.addSuitcase(georgesCase);
+
+        System.out.println(container);
+    }
+}
+            </PRE>
+<P>The program output should look like the following:</P>
+<PRE>2 suitcases (7 kg)
+            </PRE>
+<H4 class="req">The Container Contents</H4>
+<P>Add the method <CODE>public void printThings()</CODE> to your 
+<CODE>Container</CODE>; the method prints out all the things inside the 
+container's suitcases.</P>
+<P>Below is an example of how the class can be used:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Thing book = new Thing("Happiness in Three Steps", 2);
+        Thing mobile = new Thing("Nokia 3210", 1);
+        Thing brick = new Thing("Brick", 4);
+
+        Suitcase tomsCase = new Suitcase(10);
+        tomsCase.addThing(book);
+        tomsCase.addThing(mobile);
+
+        Suitcase georgesCase = new Suitcase(10);
+        georgesCase.addThing(brick);
+
+        Container container = new Container(1000);
+        container.addSuitcase(tomsCase);
+        container.addSuitcase(georgesCase);
+
+        System.out.println("There are the following things in the container suitcases:");
+        container.printThings();
+    }
+}
+            </PRE>
+<P>The program output should look like the following:</P>
+<PRE>There are the following things in the container suitcases:
+Happiness in Three Steps (2 kg)
+Nokia 3210 (1 kg)
+Brick (4 kg)
+            </PRE>
+<H4>A Lot of Bricks</H4>
+<P>Let's check that our container works fine and we can still not exceed the 
+maximum weight limit. In the <CODE>Main</CODE> class, create the method 
+<CODE>public static void addSuitcasesFullOfBricks(Container container)</CODE>, 
+which adds 100 suitcases into the container it receives as parameter; there is 
+one brick in each suitcase. The bricks weight will then increase by one each 
+time until the weight becomes 100 kg.</P>
+<P>The program body is the following:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] Container) {
+        Container container = new Container(1000);
+        addSuitcasesFullOfBricks(container);
+        System.out.println(container);
+    }
+
+    public static void addSuitcasesFullOfBricks(Container container) {
+        // adding 100 suitcases with one brick in each
+    }
+}
+            </PRE>
+<P>The program output should look like the following:</P>
+<PRE>44 suitcases (990 kg)
+            </PRE></DIV></DIV>
+<H2 id="hashmap">HashMap</H2>
+<P><A 
+href="http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html">HashMap</A> 
+is one of Java's most useful data structures. The idea behind HashMap is we 
+define an index for an object key - a unique value, for instance a social 
+security number, a student number, or a phone number. We call <EM>hashing</EM> 
+the process of changing a key into an index, or simply to define an index. The 
+hashing happens thanks to a particular function which makes sure that we get 
+always the same index with a known key.</P>
+<P>Adding and retrieving items based on the keys allows for a particularly quick 
+search process. Instead of parsing the table items one by one (in the worst case 
+we would have to go through all the items), and instead of looking for a value 
+with a binary search (in which case we would have to go through a number of 
+items which would depend on the logarithm of the table size), we can look at 
+only one table index and check whether a value is mapped to that index.</P>
+<P>HashMap uses the <CODE>Object</CODE> class <CODE>hashCode()</CODE> method to 
+find a key value. Every HashMap subclass will <EM>inherit</EM> the 
+<CODE>hashCode()</CODE> method. However, we will not go deep into HashMap 
+workings in this course. We will return to inheritance in week 10.</P>
+<P>Java's <CODE>HashMap</CODE> class encapsulates - or hides - the way it works, 
+and it returns made-up methods ready to use.</P>
+<P>When we create a HashMap we need two <EM>type parameters</EM>, a type for the 
+key variable, and a type for the stored object. The following example uses a 
+<CODE>String</CODE>-type object as key, and a <CODE>String</CODE>-type object as 
+the stored object.</P>
+<PRE class="sh_java">HashMap&lt;String, String&gt; numbers = new HashMap&lt;String, String&gt;();
+numbers.put("One", "Yksi");
+numbers.put("Two", "Kaksi");
+
+String translation = numbers.get("One");
+System.out.println(translation);
+
+System.out.println(numbers.get("Two"));
+System.out.println(numbers.get("Three"));
+System.out.println(numbers.get("Yksi"));
+        </PRE>
+<PRE>Yksi
+Kaksi
+null
+null
+        </PRE>
+<P>In the example, we create a HashMap where both the key and the stored object 
+are strings. We add information to the HashMap with the <CODE>put()</CODE> 
+method, which receives the references to the key and to the stored object as 
+parameter. The method <CODE>get()</CODE> returns either the reference to the key 
+given as parameter or a <CODE>null</CODE> value in case the key was not 
+found.</P>
+<P>Each key is mapped to one value, within the HashMap. If we store a new value 
+with an already existing key, the old value is lost.</P>
+<PRE class="sh_java">HashMap&lt;String, String&gt; numbers = new HashMap&lt;String, String&gt;();
+numbers.put("One", "Yksi");
+numbers.put("Two", "Kaksi");
+numbers.put("One", "Uno");
+
+String translation = numbers.get("One");
+System.out.println(translation);
+
+System.out.println(numbers.get("Two"));
+System.out.println(numbers.get("Three"));
+System.out.println(numbers.get("Yksi"));
+        </PRE>
+<P>Because the key "<CODE>One</CODE>" is assigned a new value, the print output 
+of the example is like the following.</P>
+<PRE>Uno
+Kaksi
+null
+null
+        </PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Nicknames</H3>
+<P>Create a <CODE>HashMap&lt;String,String&gt;</CODE> object in the 
+<CODE>main</CODE> method. Store the following people's names and nicknames into 
+the HashMap, the name being the key and the nickname its value. Use only lower 
+case letters.</P>
+<UL>
+  <LI>matti's nickname is mage</LI>
+  <LI>mikael's nickname is mixu</LI>
+  <LI>arto's nickname is arppa</LI></UL>
+<P>Then, retrieve mikael's nickname and print it.</P>
+<P>The tests require you write lower case names.</P></DIV></DIV>
+<H3 id="kirjastotietokanta">Book Search through HashMap</H3>
+<P>Let us go deeper into HashMap workings with the help of the following 
+example. Books can be retrieved based on their name, which acts as book key. If 
+we find a book for the given name, we obtain the respective reference, as well 
+as the book details. Let us create the example class <CODE>Book</CODE>, which 
+has a name and the book contents as object variables.</P>
+<PRE class="sh_java">public class Book {
+    private String name;
+    private String contents;
+    private int publishingYear;
+
+    public Book(String name, int publishingYear, String contents) {
+        this.name = name;
+        this.publishingYear = publishingYear;
+        this.contents = contents;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPublishingYear() {
+        return this.publishingYear;
+    }
+
+    public void setPublishingYear(int publishingYear) {
+        this.publishingYear = publishingYear;
+    }
+
+    public String getContents() {
+        return this.contents;
+    }
+
+    public void setContents(String contents) {
+        this.contents = contents;
+    }
+
+    public String toString() {
+        return "Name: " + this.name + " (" + this.publishingYear + ")\n"
+                + "Contents: " + this.contents;
+    }
+}
+        </PRE>
+<P>In the following example, we create a HashMap which makes use of the book 
+name - a String-type object - and stores the references which point to 
+<CODE>Book</CODE>-objects.</P>
+<PRE class="sh_java">HashMap&lt;String, Book&gt; bookCollection = new HashMap&lt;String, Book&gt;();
+        </PRE>
+<P>The HashMap above has a <CODE>String</CODE> object as key. Let us extend our 
+example so that we would add two books to our book collection, <CODE>"Sense and 
+Sensibility"</CODE> and <CODE>"Pride and Prejudice"</CODE>.</P>
+<PRE class="sh_java">Book senseAndSensibility = new Book("Sense and Sensibility", 1811, "...");
+Book prideAndPrejudice = new Book("Pride and Prejudice", 1813, "....");
+
+HashMap&lt;String, Book&gt; bookCollection = new HashMap&lt;String, Book&gt;();
+bookCollection.put(senseAndSensibility.getName(), senseAndSensibility);
+librabookCollectionry.put(prideAndPrejudice.getName(), prideAndPrejudice);
+        </PRE>
+<P>Books can be retrieved from the book collection based on their name. A search 
+for the book <CODE>"Persuasion"</CODE> does not return a corresponding entry, in 
+which case the HashMap returns a <CODE>null</CODE> reference. However, the book 
+"Pride and Prejudice" was found.</P>
+<PRE class="sh_java">Book book = bookCollection.get("Persuasion");
+System.out.println(book);
+System.out.println();
+book = bookCollection.get("Pride and Prejudice");
+System.out.println(book);
+        </PRE>
+<PRE>null
+
+Name: Pride and Prejudice (1813)
+Contents: ...
+        </PRE>
+<P>HashMaps are useful when we know the key to use for our search. Keys are 
+always unique, and it is not possible to store more than one object together 
+with one key alone. The object which we store can still be a <EM>list</EM> or 
+another HashMap, of course!</P>
+<H3 id="kapseloitu_kirjasto">Library</H3>
+<P>The problem with the book collection above is that we must remember the 
+correct book name when we search for it, character by character. Java built-in 
+<CODE>String</CODE> class provides us the tools for this. The 
+<CODE>toLowerCase()</CODE> method turns a string's characters to lower case, and 
+the <CODE>trim()</CODE> method deletes the white spaces at the beginning and at 
+the end of the string. Computer users tend to write white spaces at the 
+beginning or end of a text, involuntarily.</P>
+<PRE class="sh_java">String text = "Pride and Prejudice ";
+text = text.toLowerCase(); // the text is now "pride and prejudice "
+text = text.trim() // the text is now "pride and prejudice"
+        </PRE>
+<P>Let us create the the class <CODE>Library</CODE>, which encapsulates a 
+HashMap containing books, and allows for book search regardless of its spelling. 
+Let us add the methods <CODE>addBook(Book book)</CODE> and 
+<CODE>removeBook(String bookName)</CODE> to our <CODE>Library</CODE> class. It's 
+already clear that we would need various different methods to clean a string. 
+Therefore, we can create a separate method called <CODE>private String 
+stringCleaner(String string)</CODE>.</P>
+<PRE class="sh_java">public class Library {
+    private HashMap&lt;String, Book&gt; collection;
+
+    public Library() {
+        this.collection = new HashMap&lt;String, Book&gt;();
+    }
+
+    public void addBook(Book book) {
+        String name = stringCleaner(book.getName());
+
+        if(this.collection.containsKey(name)) {
+            System.out.println("The book is already in the library!");
+        } else {
+            collection.put(name, book);
+        }
+    }
+
+    public void removeBook(String bookName) {
+        bookName = stringCleaner(bookName);
+
+        if(this.collection.containsKey(bookName)) {
+            this.collection.remove(bookName);
+        } else {
+            System.out.println("The book was not found, you can't remove it!");
+        }
+    }
+
+    private String stringCleaner(String string) {
+        if (string == null) {
+            return "";
+        }
+
+        string = string.toLowerCase();
+        return string.trim();
+    }
+}
+        </PRE>
+<P>We implement our search functionality so that we can retrieve a book using a 
+hash algorithm based on the book name.</P>
+<PRE class="sh_java">    public Book getBook(String bookName) {
+        bookName = stringCleaner(bookName);
+        return this.collection.get(bookName);
+    }
+        </PRE>
+<P>The method above returns the wanted book when this is found, otherwise it 
+returns a <CODE>null</CODE> value. We can also also go through all the 
+collection keys one by one, and look for the beginning characters of the book's 
+name. In this way, we would actually fail to capitalise on HashMap performance 
+speed because, in the worst case, we would need to go through all the book 
+names. Search based on the beginning characters of a string is possible through 
+the <CODE>keySet()</CODE> method. The <CODE>keySet()</CODE> method returns a set 
+of keys, which can be parsed with the <CODE>for each</CODE> loop.</P>
+<PRE class="sh_java">    public Book getBookUsingItsBeginningCharacters(String beginning) {
+        beginning = stringCleaner(beginning);
+
+        for (String key: this.collection.keySet()) {
+            if (key.startsWith(beginning)) {
+                return this.collection.get(key);
+            }
+        }
+
+        return null;
+    }
+        </PRE>
+<P>Let's leave the method above out of our library for now. Our library is still 
+lacking an essential feature concerning book addition. Let us create the method 
+<CODE>public ArrayList&lt;Book&gt; bookList()</CODE>, which returns a list of 
+the books in our library. The method <CODE>bookList()</CODE> makes use of the 
+<CODE>values()</CODE> method, which is provided by HashList. The 
+<CODE>values()</CODE> method returns a set of our library books, which can be 
+given as parameter to the constructor of an <CODE>ArrayList</CODE> class.</P>
+<PRE class="sh_java">public class Library {
+    private HashMap&lt;String, Book&gt; collection;
+
+    public Library() {
+        this.collection = new HashMap&lt;String, Book&gt;();
+    }
+
+    public Book getBook(String bookName) {
+        bookName = stringCleaner(bookName);
+        return this.collection.get(bookName);
+    }
+
+    public void addBook(Book kirja) {
+        String name = stringCleaner(book.getName());
+
+        if(this.collection.containsKey(name)) {
+            System.out.println("The book is already in the library!");
+        } else {
+            this.collection.put(name, book);
+        }
+    }
+
+    public void removeBook(String bookName) {
+        bookName = stringCleaner(bookName);
+
+        if(this.collection.containsKey(bookName)) {
+            this.collection.remove(bookName);
+        } else {
+            System.out.println("The book was not found, you can't remove it!");
+        }
+    }
+
+    public ArrayList&lt;Book&gt; bookList() {
+        return new ArrayList&lt;Book&gt;(this.collection.values());
+    }
+
+    private String stringCleaner(String string) {
+        if (string == null) {
+            return "";
+        }
+
+        string = string.toLowerCase();
+        return string.trim();
+    }
+}
+        </PRE>
+<P>Among the programming principles, there is the so called <EM>DRY</EM> 
+principle (Don't Repeat Yourself), according to which we try to avoid having 
+code repeat in different places. Turning a string to lower case, and its 
+<EM>trimming</EM> - removing white spaces from the beginning and the end of a 
+string - would have ocurred several different places without the 
+<CODE>stringCleaner()</CODE> method. We might hardly notice we are repeating the 
+same code as we are writing. It is only afterwards we may see the repeated code 
+has snuck in there. That the repetition happens is not in itself bad, however. 
+The most important thing is that we clean our code as soon as we notice the 
+need.</P>
+<H3>Original-Type Variables in a HashMap</H3>
+<P>Both HashMap keys and stored objects are reference-type variables. If we want 
+to use an original-type variable as key or stored value, we can use their 
+reference-type equivalent. Some are introduced below.</P>
+<P></P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>Original-type</TH>
+    <TH>Reference-type equivalent</TH></TR>
+  <TR>
+    <TD>int</TD>
+    <TD><A href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html" 
+      target="_blank">Integer</A></TD></TR>
+  <TR>
+    <TD>double</TD>
+    <TD><A href="http://docs.oracle.com/javase/8/docs/api/java/lang/Double.html" 
+      target="_blank">Double</A></TD></TR>
+  <TR>
+    <TD>char</TD>
+    <TD><A href="http://docs.oracle.com/javase/8/docs/api/java/lang/Character.html" 
+      target="_blank">Character</A></TD></TR></TBODY></TABLE>
+<P>In fact, Java automatically encapsulates original-type values and translates 
+them into reference-type values when needed. Even though the number 
+<CODE>1</CODE> is an original-type variable, it can be used as an 
+<CODE>Integer</CODE> key directly in the following way.</P>
+<PRE class="sh_java">HashMap&lt;Integer, String&gt; table = new HashMap&lt;Integer, String&gt;();
+table.put(1, "Be!");
+            </PRE>
+<P>In Java, the automatic translation of original-type variables into 
+reference-type ones is called <EM>auto-boxing</EM>, i.e. allocation into a slot. 
+The same process also works in the opposite way. We can create a method which 
+returns a HashMap containing an Integer. In the following example, the automatic 
+translation happens inside the method <CODE>addTwitch</CODE>.</P>
+<PRE class="sh_java">public class TwitchRegister {
+    private HashMap&lt;String, Integer&gt; twitched;
+
+    public NumberBookkeeping() {
+        this.twitched = new HashMap&lt;String, Integer&gt;();
+    }
+
+    public void addTwitch(String name, int number) {
+        this.twitched.put(name, number);
+    }
+
+    public int lastTwitch(String name) {
+        this.twitched.get(name);
+    }
+}
+            </PRE>
+<P>Even though the HashMap contains Integer objects, Java can also translate 
+certain reference-type variables into their original-type equivalent. For 
+instance, <CODE>Integer</CODE> objects can be translated into <CODE>int</CODE> 
+values, if needed. However, this can be misleading! If we try to translate a 
+null reference into a number, we receive the 
+<EM>java.lang.reflect.InvocationTargetException</EM> error. When we make use of 
+this automatic translation, we have to be sure that the value we want to 
+translate is not null. The above <CODE>lastTwitch</CODE> method must be fixed in 
+the following way.</P>
+<PRE class="sh_java">    public int lastTwitch(String name) {
+        if(this.twitched.containsKey(name) {
+            return this.twitched.get(name);
+        }
+
+        return 0;
+    }
+            </PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Promissory Note</H3>
+<P>Create the class <CODE>PromissoryNote</CODE> with the following 
+functionality:</P>
+<UL>
+  <LI> the constructor <CODE>public PromissoryNote()</CODE> creates a new 
+  promissory note</LI>
+  <LI> the method <CODE>public void setLoan(String toWhom, double value)</CODE> 
+  which stores the information about loans to specific people.</LI>
+  <LI> the method <CODE>public double howMuchIsTheDebt(String whose)</CODE> 
+  which returns the entity of the debt held by the parameter 
+  <CODE>person</CODE></LI></UL>
+<P>The class can be used in the following way:</P>
+<PRE class="sh_java">  PromissoryNote mattisNote = new PromissoryNote();
+  mattisNote.setLoan("Arto", 51.5);
+  mattisNote.setLoan("Mikael", 30);
+
+  System.out.println(mattisNote.howMuchIsTheDebt("Arto"));
+  System.out.println(mattisNote.howMuchIsTheDebt("Joel"));
+                </PRE>
+<P>The example above would print:</P>
+<PRE>51.5
+0
+                </PRE>
+<P>Be careful in a situation where you ask for the debt of a person who hasn't 
+got debts. Go back to the final example of section 36.3, if you need!</P>
+<P>Attention! The promissory note does not need to take into account old loans. 
+When you set a new debt to a person who has an old one, the old one is 
+canceled.</P>
+<PRE class="sh_java">  PromissoryNote mattisNote = new PromissoryNote();
+  mattisNote.setLoan("Arto", 51.5);
+  mattisNote.setLoan("Arto", 10.5);
+
+  System.out.println(mattisNote.howMuchIsTheDebt("Arto"));
+                </PRE>
+<PRE>10.5
+                </PRE></DIV>
+<DIV class="tehtava">
+<H3>Dictionary</H3>
+<P>In this exercise, we implement a dictionary which can be used to retrieve the 
+English translation of Finnish words. We implement our dictionary using the 
+<CODE>HashMap</CODE> data structure.</P>
+<H4 class="req">Class Dictionary</H4>
+<P>Create a class called <CODE>Dictionary</CODE>. The class has the following 
+methods:</P>
+<UL>
+  <LI><CODE>public String translate(String word)</CODE>, returning the 
+  translation of its parameter. If the word is unknown, it returns 
+  <EM>null</EM>.</LI>
+  <LI><CODE>public void add(String word, String translation)</CODE>, adding a 
+  new translation to the dictionary</LI></UL>
+<P>Implement the class Dictionary so that it contained only one object variable, 
+a <CODE>HashMap</CODE> data structure.</P>
+<P>Test your Dictionary:</P>
+<PRE class="sh_java">    Dictionary dictionary = new Dictionary();
+    dictionary.add("apina", "monkey");
+    dictionary.add("banaani", "banana");
+    dictionary.add("cembalo", "harpsichord");
+
+    System.out.println(dictionary.translate("apina"));
+    System.out.println(dictionary.translate("porkkana"));
+                </PRE>
+<PRE>monkey
+null
+                </PRE>
+<H4>Amount of Words</H4>
+<P>Add the method <CODE>public int amountOfWords()</CODE>, which returns the 
+amount of words in the dictionary.</P>
+<PRE class="sh_java">    Dictionary dictionary = new Dictionary();
+    dictionary.add("apina", "monkey");
+    dictionary.add("banaani", "banana");
+    System.out.println(dictionary.amountOfWords());
+
+    dictionary.add("cembalo", "harpsichord");
+    System.out.println(dictionary.amountOfWords());
+                </PRE>
+<PRE>2
+3
+                </PRE>
+<H4>Listing All Words</H4>
+<P>Add the method <CODE>public ArrayList&lt;String&gt; translationList()</CODE> 
+to your dictionary, returning strings which stand for a content list of your 
+dictionary in the form <I>key = value</I>.</P>
+<PRE class="sh_java">    Dictionary dictionary = new Dictionary();
+    dictionary.add("apina", "monkey");
+    dictionary.add("banaani", "banana");
+    dictionary.add("cembalo", "harpsichord");
+
+    ArrayList&lt;String&gt; translations = dictionary.translationList();
+    for(String translation: translations) {
+        System.out.println(translation);
+    }
+                </PRE>
+<PRE>banaani = banana
+apina = monkey
+cembalo = harpsichord
+                </PRE>
+<P><STRONG>Hint:</STRONG> you can go through all HashMap keys using the method 
+<CODE>keySet</CODE> in the following way:</P>
+<PRE class="sh_java">    HashMap&lt;String, String&gt; wordPairs = new HashMap&lt;String, String&gt;();
+
+    wordPairs.put("monkey", "animal");
+    wordPairs.put("South", "compass point");
+    wordPairs.put("sauerkraut", "food");
+
+    for ( String key : wordPairs.keySet() ) {
+        System.out.print( key + " " );
+    }
+
+    // prints: monkey South sauerkraut
+                </PRE>
+<H4 class="req">The Beginning of a Text User Interface</H4>
+<P>In this exercise, we also train creating a text user interface. Create the 
+class <CODE>TextUserInterface</CODE>, with the following methods:                
+ </P>
+<UL>
+  <LI> the constructor <CODE>public TextUserInterface(Scanner reader, Dictionary 
+  dictionary)</CODE></LI>
+  <LI><CODE>public void start()</CODE>, which starts the interface.</LI></UL>
+<P>The text user interface stores into two object variables the reader and 
+dictionary it has received as constructor parameters. You don't need other 
+object variables.                 <STRONG>                  The user input must 
+be read using the reader object received as constructor parameter! The 
+translations also have to be stored into the dicitonary object received as 
+constructor parameter. The text user interface must not create new objects 
+itself!                 </STRONG>                 </P>
+<P><STRONG>Attention:</STRONG> This means <STRONG>The text user interface must 
+not create a scanner itself</STRONG> but it must use the scanner received as 
+parameter to read the user input!</P>
+<P>At the beginning, in the text user interface must only have the command 
+<CODE>quit</CODE>, to quit the text user interface. If the user inputs something 
+else, we print "Unknown statement".</P>
+<PRE class="sh_java">    Scanner reader = new Scanner(System.in);
+    Dictionary dict = new Dictionary();
+
+    TextUserInterface ui = new TextUserInterface(reader, dict);
+    ui.start();
+                </PRE>
+<PRE>Statement:
+  quit - quit the text user interface
+
+Statement: <FONT color="red">help</FONT>
+Unknown statement
+
+Statement: <FONT color="red">quit</FONT>
+Cheers!
+                </PRE>
+<H4 class="req">Adding and Translating Words</H4>
+<P>Add the methods <CODE>add</CODE> and <CODE>translate</CODE> to your text user 
+interface. The command <CODE>add</CODE> asks for a word pair from the user and 
+adds them to the dictionary. The command <CODE>translate</CODE> asks a word from 
+the user and it prints the translation.</P>
+<PRE class="sh_java">    Scanner reader = new Scanner(System.in);
+    Dictionary dict = new Dictionary();
+
+    TextUserInterface ui = new TextUserInterface(reader, dict);
+    ui.start();
+                </PRE>
+<PRE>Statements:
+  add - adds a word pair to the dictionary
+  translate - asks a word and prints its translation
+  quit - quits the text user interface
+
+Statement: <FONT color="red">add</FONT>
+In Finnish: <FONT color="red">porkkana</FONT>
+Translation: <FONT color="red">carrot</FONT>
+
+Statement: <FONT color="red">translate</FONT>
+Give a word: <FONT color="red">porkkana</FONT>
+Translation: carrot
+
+Statement: <FONT color="red">quit</FONT>
+Cheers!
+                </PRE></DIV></DIV>
+<H2>Towards Automatic Tests</H2>
+<P>Testing a program manually is a hopeless burden. It is possible to automate 
+inputs by setting up a string as a Scanner object parameter. The example below 
+shows how it is possible to test automatically the program above.</P>
+<PRE class="sh_java">    String input = "translate\n" + "monkey\n"  +
+                   "translate\n" + "cheese\n" +
+                   "add\n"  + "cheese\n" + "juusto\n" +
+                   "translate\n" + "cheese\n" +
+                   "quit\n";
+
+    Scanner reader = new Scanner(input);
+    Dictionary dictionary = new Dictionary();
+
+    TextUserInterface ui = new TextUserInterface(reader, dictionary);
+    ui.start();
+            </PRE>
+<P>The print output contains only the program output, and not the user 
+commands.</P>
+<PRE>Commands:
+  add - adds a word couple to the dictionary
+  translate - asks for a word and prints its translation
+  quit - stops the user interface
+
+Command: Give word: Unknown word!
+
+Command: Give word: Unknown word!
+
+Command: In Finnish: Translation:
+Command: Give word: Translation: juusto
+
+Command: Cheers!
+            </PRE>
+<P>Giving a string to a Scanner class is a way to replace the String inputs 
+given through the keyboard. The contents of the String variable 
+<CODE>input</CODE> "simulates" the user input. <CODE>\n</CODE> denotes a line 
+break. Each single part of the <CODE>input</CODE> variable which ends with a 
+line break corresponds to one nextLine() input.</P>
+<P>It is easy to change the text input, and we can add new words to our 
+dictionary in the following way:</P>
+<PRE class="sh_java">    String input = "add\n"  + "cheese\n" + "juusto\n" +
+                   "add\n"  + "bier\n" + "olut\n" +
+                   "add\n"  + "book\n" + "kirja\n" +
+                   "add\n"  + "computer\n" + "tietokone\n" +
+                   "add\n"  + "auto\n" + "car\n" +
+                   "quit\n";
+            </PRE>
+<P>If you want to test again your program manually, change the Scanner object 
+constructor parameter into <CODE>System.in</CODE>, i.e system input stream.</P>
+<P>The program functionality must be checked from the output pane, still. The 
+result can still be confusing at the beginning, because the automatic input does 
+not appear in the output pane at all.</P>
+<P>The final goal will be to also automate the testing the program's 
+functionality, so that both testing the program and analising its output text 
+would happen successfully in one click.</P>
+<H2>Java API</H2>
+<P>The Java programming language we use in our course is made of three things. 
+The first is the program syntax and semantics: the way we define variables, the 
+control flow, the variable and class structure, and their functionality. The 
+second is JVM, i.e. <EM>Java Virtual Machine</EM>, used for running our 
+programs. Our Java programs are translated into a <EM>bytecode</EM>, which can 
+be run on whatever computer has JVM. We haven't dealt with program translation 
+because the program environment does it on our behalf. Sometimes, if the program 
+environtment does not work as expected we may have to choose <EM>clean &amp; 
+build</EM>, which deletes the old source code and translates our program again. 
+The third is API (<EM>Application Programming Interface</EM>), that is to say 
+the program interface or standard library.</P>
+<P>API is a set of built-in classes specific of the programming language, which 
+is provided to users for their own projects. For instance the casses 
+<CODE>ArrayList</CODE>, <CODE>Arrays</CODE>, <CODE>Collections</CODE>, and 
+<CODE>String</CODE> are all part of Java's build-in API. A description of the 
+API of Java 7 can be found at the address <A href="http://docs.oracle.com/javase/7/docs/api/" 
+target="_blank">http://docs.oracle.com/javase/7/docs/api/</A>. On the left side 
+of the page we find a description of Java's built-in classes. If you look for 
+the <CODE>ArrayList</CODE> class, you  find a link to <A href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html" 
+target="_blank">http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html</A>, 
+which shows the stucture, constructors, and methods of the class.</P>
+<P>NetBeans is able to show a class API, if needed. If you write a class name 
+and add the relative import sentence, you can right click on the class name and 
+and choose <EM>Show Javadoc</EM>. This opens the class API description in your 
+browser.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Airport</H3>
+<P>Every week, you will find one or more larger exercises, where you can design 
+freely the program structure, the appearance of the user interface and the 
+requred commands are predefined. The first exercise which you can design freely 
+in Advanced Programming is <EM>Airport</EM>.</P>
+<P><B>Attention: you can create only one Scanner object so that your tests would 
+work well. Also, do not use static variables, the tests execute your program 
+many different times, and the static variable values left from the previous 
+execution would possibly disturb them!</B></P>
+<P>In the airport exercises we create an application to manage an airport, with 
+its airplanes and flights. As far as the planes are concerned, we always know 
+their ID and capacity. As for the flights, we know the plane used for the 
+flight, the departure airport code (for instance <A href="http://en.wikipedia.org/wiki/Helsinki_Airport" 
+target="_blank">HEL</A>) and the destination airport code (for instance <A href="http://en.wikipedia.org/wiki/Batman_Airport" 
+target="_blank">BAL</A>).</P>
+<P>There can be various different flights and planes. The same plane can also go 
+on various different flights (various different routes). The application must 
+offer two different panels. First, the airport worker inputs the flight and 
+plane information to the system in the airport panel.</P>
+<P>When the user exits the airport panel, the user then proceeds to use the 
+flight service. The flight service has three actions: printing planes, printing 
+flights, and printing airplane information. In addition to this, the user can 
+exit the application by choosing <CODE>x</CODE>. If the user inputs an invalid 
+command, the command is asked again.</P>
+<PRE>Airport panel
+--------------------
+
+Choose operation:
+[1] Add airplane
+[2] Add flight
+[x] Exit
+&gt; <FONT color="red">1</FONT>
+Give plane ID: <FONT color="red">HA-LOL</FONT>
+Give plane capacity: <FONT color="red">42</FONT>
+Choose operation:
+[1] Add airplane
+[2] Add flight
+[x] Exit
+&gt; <FONT color="red">1</FONT>
+Give plane ID: <FONT color="red">G-OWAC</FONT>
+Give plane capacity: <FONT color="red">101</FONT>
+Choose operation:
+[1] Add airplane
+[2] Add flight
+[x] Exit
+&gt; <FONT color="red">2</FONT>
+Give plane ID: <FONT color="red">HA-LOL</FONT>
+Give departure airport code: <FONT color="red">HEL</FONT>
+Give destination airport code: <FONT color="red">BAL</FONT>
+Choose operation:
+[1] Add airplane
+[2] Add flight
+[x] Exit
+&gt; <FONT color="red">2</FONT>
+Give plane ID: <FONT color="red">G-OWAC</FONT>
+Give departure airport code: <FONT color="red">JFK</FONT>
+Give destination airport code: <FONT color="red">BAL</FONT>
+Choose operation:
+[1] Add airplane
+[2] Add flight
+[x] Exit
+&gt; <FONT color="red">2</FONT>
+Give plane ID: <FONT color="red">HA-LOL</FONT>
+Give departure airport code: <FONT color="red">BAL</FONT>
+Give destination airport code: <FONT color="red">HEL</FONT>
+Choose operation:
+[1] Add airplane
+[2] Add flight
+[x] Exit
+&gt; <FONT color="red">x</FONT>
+
+Flight service
+------------
+
+Choose operation:
+[1] Print planes
+[2] Print flights
+[3] Print plane info
+[x] Quit
+&gt; <FONT color="red">1</FONT>
+G-OWAC (101 ppl)
+HA-LOL (42 ppl)
+Choose action:
+[1] Print planes
+[2] Print flights
+[3] Print plane info
+[x] Quit
+&gt; <FONT color="red">2</FONT>
+HA-LOL (42 ppl) (HEL-BAL)
+HA-LOL (42 ppl) (BAL-HEL)
+G-OWAC (101 ppl) (JFK-BAL)
+
+Choose operation:
+[1] Print planes
+[2] Print flights
+[3] Print plane info
+[x] Quit
+&gt; <FONT color="red">3</FONT>
+Give plane ID: <FONT color="red">G-OWAC</FONT>
+G-OWAC (101 ppl)
+
+Choose operation:
+[1] Print planes
+[2] Print flights
+[3] Print plane info
+[x] Quit
+&gt; <FONT color="red">x</FONT>
+                </PRE>
+<P><STRONG>Attention:</STRONG> for the tests, it is essential that the <EM>user 
+interface</EM> works <B>exactly</B> as displayed above. In fact, it is a good 
+idea to copy-paste the menus printed by the above program into your code 
+<EM>exactly</EM>. The tests do not require that your program should be prepared 
+to deal with invalid inputs. This exercise is worth three single excercise 
+points.</P>
+<P><EM><STRONG>The program must start by executing the main method in the 
+exercise layout.</STRONG></EM></P>
+<P><B>Still another remark:</B> in order to make your tests work, your program 
+has to create only one Scanner object. Also, avoid using static variables: the 
+tests execute your program many different times, and the static variable values 
+left from the previous execution would possibly disturb 
+them!</P></DIV></DIV></DIV></DIV></DIV><!-- /inner -->   </DIV><!-- /node-305 --> 
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV></DIV></DIV></DIV><!-- /content-content -->             
+                                                  </DIV><!-- /content-inner-inner --> 
+                            </DIV><!-- /content-inner -->                        
+   </DIV><!-- /content-region-inner -->                         </DIV><!-- /content-region --> 
+                        
+<DIV class="content-bottom row nested " id="content-bottom">
+<DIV class="content-bottom-inner inner clearfix" id="content-bottom-inner">
+<DIV class="block block-block odd first last grid16-16" id="block-block-1">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="content clearfix">
+<DIV id="header-top-block">
+<P class="rtecenter">Ohjaus: <A href="http://mooc.fi/content/irc-ohjeet">IRCnet 
+#mooc.fi </A>&nbsp;&nbsp; |  Tiedotus: <A href="http://twitter.com/mooc1"><IMG 
+height="50" style="vertical-align: middle;" src="Hashmap_files/twitter_newbird_blue.png"> 
+Twitter </A><A href="http://www.facebook.com/Moocfi"><IMG height="30" style="padding: 10px; vertical-align: middle;" 
+src="Hashmap_files/f_logo-1.png"> Facebook</A>  |  Virheraportit: <A href="http://sourceforge.net/p/mooc-issues/tickets/"><IMG 
+height="30" style="padding: 10px; vertical-align: middle;" src="Hashmap_files/sf-footer-logo.png"> 
+SourceForge</A></P>
+<P class="rtecenter"><A href="http://www.cs.helsinki.fi/"><IMG width="400" 
+style="vertical-align: middle;" alt="Helsingin yliopiston tietojenkäsittelytieteen laitos" 
+src="Hashmap_files/CS-logo-MOOC.jpg">&nbsp; </A></P></DIV>
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-47575342-3', 'auto');
+  ga('send', 'pageview');
+ 
+</SCRIPT>
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --></DIV><!-- /content-bottom-inner --> 
+</DIV><!-- /content-bottom -->                       </DIV><!-- /content-group-inner --> 
+                    </DIV><!-- /content-group -->                                
+       </DIV><!-- /main-content-inner -->                 </DIV><!-- /main-content --> 
+                              </DIV><!-- /main-group-inner -->             
+</DIV><!-- /main-group -->           </DIV><!-- /main-inner -->         </DIV><!-- /main --> 
+      </DIV><!-- /main-wrapper -->       <!-- postscript-bottom row: width = grid_width --> 
+            <!-- footer row: width = grid_width -->             <!-- footer-message row: width = grid_width --> 
+      
+<DIV class="footer-message-wrapper full-width" id="footer-message-wrapper">
+<DIV class="footer-message row grid16-16" id="footer-message">
+<DIV class="footer-message-inner inner clearfix" id="footer-message-inner">
+<DIV class="footer-message-text block" id="footer-message-text">
+<DIV class="footer-message-text-inner inner clearfix" id="footer-message-text-inner"><BR></DIV><!-- /footer-message-text-inner --> 
+</DIV><!-- /footer-message-text -->                    </DIV><!-- /footer-message-inner --> 
+        </DIV><!-- /footer-message -->       </DIV><!-- /footer-message-wrapper --> 
+    <!-- /page-inner -->   <!-- /page -->   </BODY></HTML>

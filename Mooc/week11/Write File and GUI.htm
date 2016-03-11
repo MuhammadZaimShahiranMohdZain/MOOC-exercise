@@ -1,0 +1,2066 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0074)http://mooc.cs.helsinki.fi/programming-part2/material/week-11 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<TITLE>MOOC | MOOC - Massiivinen avoin verkkokurssi</TITLE>    <LINK href="/sites/mooc.cs.helsinki.fi/files/acquia_marina_favicon.png" 
+rel="shortcut icon" type="image/x-icon">   <LINK href="Write%20File%20and%20GUI_files/5c1587b6907a85bc361bd4b70014b0e3.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/node.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/defaults.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/system.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/system-menus.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/user.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/content-module.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/ckeditor.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/ctools.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/date.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/panels.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/views.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/aeb58e3ce47f9171327ad9fd87a26c8e.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/flexible.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/typography.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/superfish.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/superfish-navbar.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/superfish-vertical.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/fusion-acquia-marina-style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/custom.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/common.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/exercises.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/menu.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Write%20File%20and%20GUI_files/sh_style.css" 
+rel="stylesheet" type="text/css" media="all">   <LINK href="Write%20File%20and%20GUI_files/grid16-fluid.css" 
+rel="stylesheet" type="text/css" media="all">   <!--[if IE 8]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie8-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie8-fixes.css?8" />
+  <![endif]--> 
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie7-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie7-fixes.css?8" />
+  <![endif]--> 
+  <!--[if lte IE 6]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie6-fixes.css?8"/>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie6-fixes.css?8"/>
+  <![endif]--> 
+    
+<SCRIPT src="Write%20File%20and%20GUI_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/drupal.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/panels.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/jquery.bgiframe.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/hoverIntent.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/supposition.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/supersubs.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/superfish.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/jquery.corner.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/acquia-marina-script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/util-functions.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/clear-default-text.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/sh_java.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/sh_main.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/sh_ruby.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/sh_scala.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD>
+<BODY class="not-front not-logged-in page-node node-type-weekly-tasks no-sidebars full-node panels layout-main sidebars-both-first font-family-lucida font-size-13 grid-type-fluid grid-width-16 fluid-100" 
+id="pid-programming-part2-material-week-11">   
+<DIV class="page" id="page">
+<DIV class="page-inner" id="page-inner">
+<DIV id="skip"><A href="http://mooc.cs.helsinki.fi/programming-part2/material/week-11?noredirect=1#main-content-area">Skip 
+to Main Content Area</A>       </DIV><!-- header-top row: width = grid_width --> 
+            <!-- header-group row: width = grid_width -->       
+<DIV class="header-group-wrapper full-width" id="header-group-wrapper">
+<DIV class="header-group row grid16-16" id="header-group">
+<DIV class="header-group-inner inner clearfix" id="header-group-inner">
+<DIV class="primary-menu block" id="primary-menu">
+<DIV class="primary-menu-inner inner clearfix" id="primary-menu-inner">
+<UL class="menu sf-menu">
+  <LI class="expanded first"><A title="" 
+  href="http://mooc.cs.helsinki.fi/home">Kurssit ››</A>
+  <UL class="menu">
+    <LI class="leaf first"><A title="" 
+    href="http://mooc.fi/algoritmit">Algoritmien MOOC</A></LI>
+    <LI class="leaf"><A title="" href="http://mooc.cs.helsinki.fi/2014-ohjelmointi">Olio-ohjelmointi 
+    Javalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.aalto.fi/ohjelmointi/">Ohjelmointia Scalalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part1">Object-Oriented Programming with 
+    Java, part I</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part2">Object-Oriented Programming with 
+    Java, part II</A></LI>
+    <LI class="leaf last"><A title="" 
+    href="http://mooc.cs.helsinki.fi/wepa">Web-palvelinohjelmointi</A></LI></UL></LI>
+  <LI class="collapsed"><A title="Mikä on MOOC?" href="http://mooc.cs.helsinki.fi/content/mik%C3%A4-mooc">Mikä 
+  on MOOC? ››</A></LI>
+  <LI class="leaf last"><A title="" href="http://mooc.cs.helsinki.fi/content/j%C3%A4rjest%C3%A4v%C3%A4st%C3%A4-tahosta">Järjestävästä 
+  tahosta ››</A></LI></UL></DIV><!-- /primary-menu-inner --> </DIV><!-- /primary-menu --> 
+          </DIV><!-- /header-group-inner -->         </DIV><!-- /header-group --> 
+      </DIV><!-- /header-group-wrapper -->       <!-- preface-top row: width = grid_width --> 
+        <!--            <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
+        <div id="preface-top" class="preface-top row grid16-16">
+          <div id="preface-top-inner" class="preface-top-inner inner clearfix"> 
+--> 
+          </DIV><!-- /preface-top-inner -->         </DIV><!-- /preface-top -->  
+     <!-- /preface-top-wrapper -->           <!-- main row: width = grid_width --> 
+    
+<DIV class="main-wrapper full-width" id="main-wrapper">
+<DIV class="main row grid16-16" id="main">
+<DIV class="main-inner inner clearfix" id="main-inner"><!-- main group: width = grid_width - sidebar_first_width --> 
+          
+<DIV class="main-group row nested grid16-16" id="main-group">
+<DIV class="main-group-inner inner clearfix" id="main-group-inner">
+<DIV class="main-content row nested" id="main-content">
+<DIV class="main-content-inner inner clearfix" id="main-content-inner"><!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) --> 
+                    
+<DIV class="content-group row nested " id="content-group" style="width: 100%;">
+<DIV class="content-group-inner inner clearfix" id="content-group-inner">
+<DIV class="content-region row nested" id="content-region">
+<DIV class="content-region-inner inner clearfix" id="content-region-inner"><A 
+name="main-content-area" id="main-content-area"></A>                             
+                            
+<DIV class="content-inner block" id="content-inner">
+<DIV class="content-inner-inner inner clearfix" id="content-inner-inner">
+<DIV class="content-content" id="content-content">
+<DIV class="panel-flexible panels-flexible-13 clear-block">
+<DIV class="panel-flexible-inside panels-flexible-13-inside">
+<DIV class="panels-flexible-row panels-flexible-row-13-7 panels-flexible-row-first clear-block ">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-7-inside panels-flexible-row-inside-first clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_ panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-2 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<H1 class="title"><A 
+href="http://mooc.cs.helsinki.fi/programming-part2">Object-Oriented Programming 
+with Java, part II ››</A></H1></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-custom pane-3 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content"><LINK href="Write%20File%20and%20GUI_files/menu(1).css" 
+rel="stylesheet" type="text/css" media="screen"> <LINK href="Write%20File%20and%20GUI_files/common-new.css" 
+rel="stylesheet" type="text/css" media="screen, print"> <LINK href="Write%20File%20and%20GUI_files/sh_style(1).css" 
+rel="stylesheet" type="text/css" media="screen, print">        </DIV></DIV><!-- /inner-inner -->
+	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-4 clear-block js">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-4-inside clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en_ panels-flexible-region-first ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en_-inside panels-flexible-region-inside-first"></DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-js ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js-inside">
+<DIV class="panel-pane pane-node ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node odd full-node node-type-page" id="node-222">
+<DIV class="inner">
+<H2 class="title"><A title="" 
+href="http://mooc.cs.helsinki.fi/content/js-en"></A></H2>
+<DIV class="content clearfix">
+<SCRIPT src="Write%20File%20and%20GUI_files/bootstrap.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/jquery-1.7.1.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/exercises-eng-new.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/common-mooc-eng.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/sh_main.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/sh_java.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Write%20File%20and%20GUI_files/jquery.easing.js" type="text/javascript"></SCRIPT>
+ 
+<DIV class="menu" id="toc" data-first-exercise-index="1" 
+data-first-chapter-index="1"><SPAN id="materiaali_toc"></SPAN>           <!--div id="tehtavat_toc" ></div--> 
+          <SPAN id="tehtavat_toc2"></SPAN>         </DIV></DIV></DIV><!-- /inner --> 
+  </DIV><!-- /node-222 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-copyright panels-flexible-region-last float-right">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-copyright-inside panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-1 box ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<P><A href="http://creativecommons.org/licenses/by-nc-sa/2.0/" 
+rel="license"><IMG style="border-width: 0px; float: right;" alt="Creative Commons License" 
+src="Write%20File%20and%20GUI_files/88x31.png"></A><SMALL>This material is 
+licensed under the Creative Commons BY-NC-SA license, which means that you can 
+use it and distribute it freely so long as you do not erase the names of the 
+original authors. If you do changes in the material and want to distribute this 
+altered version of the material, you have to license it with a similar free 
+license. The use of the material for commercial use is prohibited without a 
+separate agreement.</SMALL></P></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-author course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-author">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Authors: Arto Vihavainen, Matti 
+Luukkainen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-translators course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-translators">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Translators: Simone Romeo, Kenny 
+Heinonen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-8 panels-flexible-row-last clear-block js en">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-8-inside panels-flexible-row-inside-last clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-node-content box-mooc ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node even full-node node-type-weekly_tasks" id="node-326">
+<DIV class="inner">
+<DIV class="content clearfix">
+<DIV class="viikkoraja-mooc" id="Week 11" data-first-exercise-index="141" 
+data-first-chapter-index="50" tekija="Arto Vihavainen, Matti Luukkainen" 
+data-first-week-index-mooc="11" data-first-exercise-index-mooc="34" 
+data-first-chapter-index-mooc="51" data-first-week-index="11" deadline="unlocks when 85% of week 10 done ">
+<H2 id="tiedostostoon_kirjoitus">Writing to a File</H2>
+<P>In section 15, we learnt that reading from a file happened with the help of 
+the classes <CODE>Scanner</CODE> and <CODE>File</CODE>. The class <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/io/FileWriter.html">FileWriter</A></CODE> 
+provides the functionality to write to a file. The <CODE>FileWriter</CODE> 
+constructor is given as parameter a String illustrating the file location.</P>
+<PRE class="sh_java">FileWriter writer = new FileWriter("file.txt");
+writer.write("Hi file!\n"); // the line break has to be written, too!
+writer.write("Adding text\n");
+writer.write("And more");
+writer.close(); // the call closes the file and makes sure the written text goes to the file
+</PRE>
+<P>In the example we write the string "Hi file!" to the file "file.txt"; that is 
+followed by a line break, and by more text. Note that when you use the 
+<CODE>write</CODE> method, it does not produce line breaks, but they have to be 
+added later manually.</P>
+<P>Both the <CODE>FileWriter</CODE> constructor and the <CODE>write</CODE> 
+method may throw an exception, which has to be either handled or the 
+responsibility has to be delegated to the calling method. The method which is 
+given as parameter the file name and the text to write into it can look like the 
+following.</P>
+<PRE class="sh_java">public class FileHandler {
+
+    public void writeToFile(String fileName, String text) throws Exception {
+        FileWriter writer = new FileWriter(fileName);
+        writer.write(text);
+        writer.close();
+    }
+}
+</PRE>
+<P>In the above <CODE>writeToFile</CODE> method, we first create a 
+<CODE>FileWriter</CODE> object, which writes into the <CODE>fileName</CODE> file 
+stored at the location specified as parameter. After this, we write into the 
+file using the <CODE>write</CODE> method. The exception the constructor and 
+<CODE>write</CODE> method can possibly throw has to be handled either with the 
+help of a <CODE>try-catch</CODE> block or delegating the responsibility. In the 
+method <CODE>writeToFile</CODE> the responsibility was delegated.</P>
+<P>Let's create a <CODE>main</CODE> method where we call the 
+<CODE>writeToFile</CODE> method of a <CODE>FileHandler</CODE> object. The 
+exception does not have to be handled in the <CODE>main</CODE> method either, 
+but the method can declare to throw possibly an exception throw the definition 
+<CODE>throws Exception</CODE>.</P>
+<PRE class="sh_java">    public static void main(String[] args) throws Exception {
+        FileHandler handler = new FileHandler();
+        handler.writeToFile("diary.txt", "Dear Diary, today was a nice day.");
+    }
+</PRE>
+<P>When we call the method above, we create the file "diary.txt", where we write 
+the text "Dear Diary, today was a nice day.". If the file exists already, the 
+old content is erased and the new one is written. FileWriter allows us to add 
+text at the end of the already existing file by providing additional parameter 
+<CODE>boolean append</CODE>, without erasing the existing text. Let's add the 
+method <CODE>appendToFile()</CODE> to the class <CODE>FileHandler</CODE>; the 
+method appends the text received as parameter to the end of the file.</P>
+<PRE class="sh_java">public class FileHandler {
+    public void writeToFile(String fileName, String text) throws Exception {
+        FileWriter writer = new FileWriter(fileName);
+        writer.write(text);
+        writer.close();
+    }
+
+    public void appendToFile(String fileName, String text) throws Exception {
+        FileWriter writer = new FileWriter(fileName, true);
+        writer.write(text);
+        writer.close();
+    }
+}
+</PRE>
+<P>In most of the cases, instead of writing text at the end of a file with the 
+method <CODE>append</CODE>, it is easier to write all the file again.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>File Manager</H3>
+<P>Together with the exercise body, you find the class <CODE>FileManager</CODE>, 
+which contains the method bodies to read a write a file.</P>
+<H4>File Reading</H4>
+<P>Implement the method <CODE>public ArrayList&lt;String&gt; read(String 
+file)</CODE> to return the lines of the parameter file in ArrayList form, each 
+file line being a String contained by the ArrayList. </P>
+<P>There are two text files to help testing the project: 
+<CODE>src/testinput1.txt</CODE> and <CODE>src/testinput2.txt</CODE>. The methods 
+are supposed to be used in the following way: </P>
+<PRE class="sh_java">    public static void main(String[] args) throws FileNotFoundException, IOException {
+        FileManager f = new FileManager();
+
+        for (String line : f.read("src/testinput1.txt")) {
+            System.out.println(line);
+        }
+    }
+</PRE>
+<P>The print output should look like the following</P>
+<PRE>first
+second
+</PRE>
+<H4>Writing a Line</H4>
+<P>Modify the method <CODE>public void save(String file, String text)</CODE> so 
+that it would write the string of the second argument into the file of the first 
+argument. If the file already exists, the string is written over the old 
+version. </P>
+<H4>Writing a List</H4>
+<P>Modify the method <CODE>public void save(String file, ArrayList&lt;String&gt; 
+texts)</CODE> so that it would write the strings of the second argument into the 
+file of the first argument; each string of the array list has to go to its own 
+line. If the file already exists, the strings are written over the old version. 
+</P></DIV>
+<DIV class="tehtava">
+<H3>Two-Direction Dictionary</H3>
+<P>With this exercise, we develop the dictionary we implemented earlier, so that 
+words can be both read and written into the file. Also, the dictionary has to 
+translate in both directions, from Finnish into English and from English into 
+Finnish (in this exercise, we suppose unofficially that Finnish and English do 
+not have words which are spellt the same). Your task is creating the dictionary 
+in the class <CODE>MindfulDictionary</CODE>. The class has to be implemented in 
+the package <CODE>dictionary</CODE>.</P>
+<H4>Forgetful Basic Functionality</H4>
+<P>Create a parameterless constructor, as well as the methods:</P>
+<UL>
+  <LI><CODE>public void add(String word, String translation)</CODE></LI> adds a 
+  word to the dictionary. Each word has only one translation; if the same word 
+  is added twice, nothing happens.<BR>
+  <LI><CODE>public String translate(String word)</CODE></LI> returns the word 
+  translation; if the word isn't recognised, it returns null<BR></UL>
+<P>At this point, the dictionary has to work in the following way:</P>
+<PRE class="sh_java">MindfulDictionary dict = new MindfulDictionary();
+dict.add("apina", "monkey");
+dict.add("banaani", "banana");
+dict.add("apina", "apfe");
+
+System.out.println( dict.translate("apina") );
+System.out.println( dict.translate("monkey") );
+System.out.println( dict.translate("programming") );
+System.out.println( dict.translate("banana") );
+</PRE>
+<P>Prints:</P>
+<PRE>monkey
+apina
+null
+banaani
+</PRE>
+<P>As you notice from the example, after adding a pair the dictionary can 
+translate in both directions.</P>
+<H4>Removing Words</H4>
+<P>Add the method <CODE>public void remove(String word)</CODE>, which removes 
+the given word and its translation from your dictionary.</P>
+<P>At this point, the dictionary has to work in the following way:</P>
+<PRE class="sh_java">MindfulDictionary dict = new MindfulDictionary();
+dict.add("apina", "monkey");
+dict.add("banaani", "banana");
+dict.add("ohjelmointi", "programming");
+dict.remove("apina");
+dict.remove("banana");
+
+System.out.println( dict.translate("apina") );
+System.out.println( dict.translate("monkey") );
+System.out.println( dict.translate("banana") );
+System.out.println( dict.translate("banaani") );
+System.out.println( dict.translate("ohjelmointi") );
+</PRE>
+<P>Prints</P>
+<PRE>null
+null
+null
+null
+programming
+</PRE>
+<P>As you see, the delection happens in both ways: whether you remove a word or 
+its translation, the dictionary loses the both the pieces of information. </P>
+<H4>Loading a File</H4>
+<P>Create the constructor <CODE>public MindfulDictionary(String file)</CODE> and 
+the method <CODE>public boolean load()</CODE>, which loads a file whose name is 
+given as parameter in the dictionary constructor. If opening or reading the file 
+does not work, the method returns false and otherwise true.</P>
+<P>Each line of the dictionary file contains a word and its translation, divided 
+by the character ":". Together with the exercise body, you find a dictionary 
+file meant to help the tests. It looks like the following: </P>
+<PRE>apina:monkey
+alla oleva:below
+olut:beer
+</PRE>
+<P>Read the dictionary file line by line with the reader method 
+<CODE>nextLine</CODE>. You can split the lines with the String method 
+<CODE>split</CODE>, in the following way:</P>
+<PRE class="sh_java">Scanner fileReader = new ...
+while ( fileReader.hasNextLine() ){
+    String line = fileReader.nextLine();
+    String[] parts = line.split(":");   // the line is split at :
+
+    System.out.println( parts[0] );     // the part of the line before :
+    System.out.println( parts[1] );     // the part of the line after :
+}
+</PRE>
+<P>The dictionary is used in the following way:</P>
+<PRE class="sh_java">MindfulDictionary dict = new MindfulDictionary("src/words.txt");
+dict.load();
+
+System.out.println( dict.translate("apina") );
+System.out.println( dict.translate("ohjelmointi") );
+System.out.println( dict.translate("alla oleva") );
+</PRE>
+<P>Printing</P>
+<PRE>monkey
+null
+below
+</PRE>
+<H4>Saving Data</H4>
+<P>Create the method <CODE>public boolean save()</CODE>; when the method is 
+called, the dictionary contents are written into the file whose name was given 
+as parameter to the constructor. The method returns false if the file can't be 
+saved; otherwise it returns true. Dictionary files have to be saved in the form 
+described above, meaning that the program has to be able to read its own 
+files.</P>
+<P><STRONG>Attention:</STRONG> even though the dictionary can translate in both 
+directions, only one direction has to be stored into the dictionary file. For 
+instance, if the dictionary knows that <EM>tietokone = computer</EM>, you have 
+to write either the line:</P>
+<PRE>tietokone:computer
+</PRE>
+<P>or the line</P>
+<PRE>computer:tietokone
+</PRE>
+<P>but not both!</P>
+<P>It may be useful to write the new translation list over the old file; in 
+fact, the <CODE>append</CODE> command which came out in the material should not 
+be used.</P>
+<P>The final version of your dictionary should be used in the following way:</P>
+<PRE class="sh_java">MindfulDictionary dict = new MindfulDictionary("src/words.txt");
+dict.load();
+
+// using the dictionary
+
+dict.save();
+</PRE>
+<P>At the beginning we load the dictionary from our file, and we save it back in 
+the end, so that the changes made to the dictionary will be available next time, 
+too.</P></DIV></DIV>
+<H2 id="kalit">User Interfaces</H2>
+<P>
+<HR>
+
+<P><BIG><STRONG><STRONG>Attention!</STRONG> A part of the user interface tests 
+opens a user interface and uses your mouse to click on the user interface 
+components. When you are executing user interface tests, do not use your 
+mouse!</STRONG></BIG></P>
+<P>
+<HR>
+
+<P>So far, our programs have only been composed of application logic and text 
+user interface which made use of application logic. In a couple of exercises we 
+have also got a graphical user interface, but they had usually been created for 
+us. Next, we see how we can create graphical user interfaces in Java.</P>
+<P>User interfaces are windows which contain different types of buttons, text 
+boxes, and menus. When we program user interfaces we use Java's <A href="http://docs.oracle.com/javase/tutorial/uiswing/components/index.html" 
+target="_blank">Swing</A> component library, which provides us with classes to 
+create and handle user interfaces.</P>
+<P>The basic element of a user interface is the class <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/JFrame.html" 
+target="_blank">JFrame</A></CODE>, and we create the user interface components 
+in its component section. Orthodox user interfaces implement the interface 
+<CODE>Runnable</CODE>, and they are started in the main program. In this course, 
+we use the following user interface body:</P>
+<PRE class="sh_java">import java.awt.Container;
+import java.awt.Dimension;
+import javax.swing.JFrame;
+import javax.swing.WindowConstants;
+
+public class UserInterface implements Runnable {
+
+    private JFrame frame;
+
+    public UserInterface() {
+    }
+
+    @Override
+    public void run() {
+        frame = new JFrame("Title");
+        frame.setPreferredSize(new Dimension(200, 100));
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        createComponents(frame.getContentPane());
+
+        frame.pack();
+        frame.setVisible(true);
+    }
+
+    private void createComponents(Container container) {
+    }
+
+    public JFrame getFrame() {
+        return frame;
+    }
+}
+</PRE>
+<P>Let's have a closer look the the user interface code above.</P>
+<PRE class="sh_java">public class UserInterface implements Runnable {
+</PRE>
+<P>The class <CODE>UserInterface</CODE> implements Java's <A href="http://docs.oracle.com/javase/6/docs/api/java/lang/Runnable.html" 
+target="_blank">Runnable</A> interface, which allows us to execute a threaded 
+program. Executing a threaded program means that we execute different parts of 
+the program at the same time. We do not dig deeper into threads, but a further 
+information on threads is provided by the course <EM>Operating Systems</EM>.</P>
+<PRE class="sh_java">    private JFrame frame;
+</PRE>
+<P>The user interface contains a <CODE>JFrame</CODE> object as variable, which 
+is the basic element of a visible user interface. All user interface components 
+are added to the <CODE>JFrame</CODE> object component container. Note that 
+<STRONG>object variables cannot be initiated outside the methods</STRONG>. For 
+instance, an initialisation of the object variable <CODE>JFrame</CODE> with the 
+class definition <CODE>"private JFrame frame = new JFrame()"</CODE> would evade 
+user interface thread execution order, and it can lead to a breakdown.</P>
+<PRE class="sh_java">    @Override
+    public void run() {
+        frame = new JFrame("Title");
+        frame.setPreferredSize(new Dimension(200, 100));
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        createComponents(frame.getContentPane());
+
+        frame.pack();
+        frame.setVisible(true);
+    }
+</PRE>
+<P>The interface <CODE>Runnable</CODE> defines the method <CODE>public void 
+run()</CODE>, which has to be implemented by all classes which implement the 
+interface. With the method <CODE>public void run()</CODE>, we first create a new 
+JFrame whose title is <CODE>"Title"</CODE>. After this, we define the frame size 
+whose width is 200 pixels and height is 100 pixels. The statement 
+<CODE>frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);</CODE> 
+tells to the JFrame object that the user interface has to close when the user 
+presses the cross icon.</P>
+<P>Afterwards, we call the method <CODE>createComponents</CODE> which is defined 
+lower down in the class. The method is given <CODE>JFrame</CODE>'s <EM><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/Container.html" 
+target="_blank">Container</A></EM> object as parameter, where we can add user 
+interface components.</P>
+<P>Finally, we call the method <CODE>frame.pack()</CODE> which packs the JFrame 
+object as defined before and sorts the user interface components of the 
+Container object contained by JFrame. At the end, we call the method 
+<CODE>frame.setVisible(true)</CODE>, to show the user interface to the user.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+    }
+</PRE>
+<P>In the method <CODE>createComponents</CODE> we add user interface components 
+to the <CODE>JFrame</CODE>'s container. In our example there is no UI component 
+in addition to our JFrame window. The class <CODE>UserInterface</CODE> has also 
+the method <CODE>getFrame</CODE> which we can use to retrieve the JFrame object 
+which is encapsulated in the class.</P>
+<P>Swing user interfaces are started through the method 
+<CODE>invokeLater</CODE>, which is provided by the class <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/SwingUtilities.html" 
+target="_blank">SwingUtilities</A></CODE>. <CODE>invokeLater</CODE> receives as 
+parameter an object which implements the interface <CODE>Runnable</CODE>. The 
+method adds the <CODE>Runnable</CODE> object to the execution queue and calls it 
+as soon as possible. With the class<CODE>SwingUtilities</CODE>, we can start new 
+threads when we need them.</P>
+<PRE class="sh_java">import javax.swing.SwingUtilities;
+
+public class Main {
+
+    public static void main(String[] args) {
+        UserInterface ui = new UserInterface();
+        SwingUtilities.invokeLater(ui);
+    }
+}
+</PRE>
+<P>When we execute the main method above, the user interface we have defined in 
+the class <CODE>UserInterface</CODE> appears in our screen.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/first-ui.png"></P>
+<H3>UI Components</H3>
+<P>User Interfaces are composed of a background window (JFrame) and a component 
+Container, as well as the UI components which are set into the container. UI 
+components are different kinds of buttons, texts, and other items. Every 
+component has its own class. It's useful to get accustomed to Oracle visual 
+sequence of components at the address <A href="http://docs.oracle.com/javase/tutorial/uiswing/components/index.html" 
+target="_blank">http://docs.oracle.com/javase/tutorial/uiswing/components/index.html</A>.</P>
+<H4>Text</H4>
+<P>Text can be displayed with the help of the class <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/JLabel.html" 
+target="_blank">JLabel</A></CODE>. <CODE>JLabel</CODE> provides a UI component 
+which can be assigned text and whose text can be modified. The text is assigned 
+either in the constructor, or separately, with the <CODE>setText</CODE> 
+method.</P>
+<P>Let's modify our UI container to display text. We create a new JLabel text 
+component within the method <CODE>createComponents</CODE>. Then we retrieve the 
+<CODE>Container</CODE> object from our <CODE>JFrame</CODE> object, and we add 
+JLabel to Container using its <CODE>add</CODE> method.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        JLabel text = new JLabel("Text field!");
+        container.add(text);
+    }
+</PRE>
+<P>As you see from the code above, JLabel shall display the text <CODE>"Text 
+field!"</CODE>. When we execute the user interface, we see the following 
+window.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/text-field.png"></P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Greeter</H3>
+<P>Implement a user interface which displays the text "Hi!". The width of the 
+user interface (i.e. of the JFrame object) has to be at least 400px, its height 
+200px, and its title should be "Swing on". The JFrame object should be created 
+and become visible inside the method <CODE>run()</CODE>, and the text components 
+are added to the user interface with the method <CODE>createComponents(Container 
+container)</CODE>.</P>
+<P><STRONG>ATTENTION: The ui object variables have to be initiated in the 
+methods or in the constructor! Do not initiate an object variable directly in 
+its definition.</STRONG></P></DIV></DIV>
+<H4>Buttons</H4>
+<P>You can add buttons to your user interface using the class 
+<CODE>JButton</CODE>. Adding a JButton object to your user interface is similar 
+to adding a JLabel object.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        JButton button = new JButton("Click!");
+        container.add(button);
+    }
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/click.png"></P>
+<P>Next, we try to add both text and a button to our user interface.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        JButton button = new JButton("Click!");
+        container.add(button);
+        JLabel text = new JLabel("Text.");
+        container.add(text);
+    }
+</PRE>
+<P>When we execute the program we see the following user interface.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/text.png"></P>
+<P>Only the last component we have added is visible, and our program does not 
+work as we would expect. What is the problem, in fact?</P>
+<H3>Setting up UI Components</H3>
+<P>All UI components have got their own location in the user interface. The 
+component location is defined by the UI <EM>Layout Manager</EM>. Before, when we 
+tried to add many different components to our <CODE>Container</CODE> object, 
+only one component became visible. Every <CODE>Container</CODE> object has a 
+default UI layout manager: <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/BorderLayout.html" 
+target="_blank">BorderLayout</A></CODE>.</P>
+<P>BorderLayout places the UI components to five areas: the user interface 
+centre and the four compass points.  When we use the Container's 
+<CODE>add</CODE> method, we can give it another parameter, clarifying where we 
+would like to place the component. the BorderLayout class has five class 
+variables available for use: <CODE>BorderLayout.NORTH</CODE>, 
+<CODE>BorderLayout.EAST</CODE>, <CODE>BorderLayout.SOUTH</CODE>, 
+<CODE>BorderLayout.WEST</CODE>, ja <CODE>BorderLayout.CENTER</CODE>.</P>
+<P>The UI layout manager we want to use is assigned to the 
+<CODE>Container</CODE> object in the parameter of the method 
+<CODE>setLauout</CODE>. In addition to the UI component, the method 
+<CODE>add</CODE> can also be assigned the location wehere the component should 
+be placed. In the example below, we assign a component to every BorderLayout 
+location.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        // the following line is not essential in this case, because BorderLayout is default in JFrame
+        container.setLayout(new BorderLayout());
+
+        container.add(new JButton("North"), BorderLayout.NORTH);
+        container.add(new JButton("East"), BorderLayout.EAST);
+        container.add(new JButton("South"), BorderLayout.SOUTH);
+        container.add(new JButton("West"), BorderLayout.WEST);
+        container.add(new JButton("Center"), BorderLayout.CENTER);
+
+        container.add(new JButton("Default (Center)"));
+    }
+</PRE>
+<P>Notice that the button <CODE>"Center"</CODE> is not visible in our user 
+interface because the button <CODE>"Default (Center)"</CODE> is assigned to its 
+place by default. A container with the code above will look like the following 
+after increasing its size manually.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/layout-override.png"></P>
+<P>As for UI components, there are also many UI layout managers. Oracle has a 
+visual guide to learn more about UI layout managers at <A href="http://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html" 
+target="_blank">http://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html</A>. 
+Below, we introduce the layout manager <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/BoxLayout.html" 
+target="_blank">BoxLayout</A></CODE>.</P>
+<H4>BoxLayout</H4>
+<P>When we use BoxLayout, UI components are added into the user interface either 
+horizontally or vertically. The BoxLayout constructor is given a Container 
+object as parameter -- where we have been adding the UI components -- and the 
+layout direction of the UI components. The layout direction can be either 
+<CODE>BoxLayout.X_AXIS</CODE>, i.e. components are set up horizontally, or 
+<CODE>BoxLayout.Y_AXIS</CODE>, i.e. the componets are set up vertically. 
+Differently than BorderLayout, BoxLayout does not have a limited number of 
+places. In other words, you can add to your Container as many components as you 
+want.</P>
+<P>Arranging the user interface with <CODE>BoxLayout</CODE> works as using 
+<CODE>BorderLayout</CODE>. We first create the layout manager and we assign it 
+to the <CODE>Container</CODE> object using its method <CODE>setLayout</CODE>. 
+After this, we can add components to the <CODE>Container</CODE> object using the 
+<CODE>add</CODE> method. We don't need a further parameter specifying the 
+location. Below, you find an example of components placed in horizontal 
+order.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        BoxLayout layout = new BoxLayout(container, BoxLayout.X_AXIS);
+        container.setLayout(layout);
+
+        container.add(new JLabel("First!"));
+        container.add(new JLabel("Second!"));
+        container.add(new JLabel("Third!"));
+    }
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/layout-xaxis.png"></P>
+<P>Setting up the components vertically does not require major changes. We 
+modify the direction parameter of the <CODE>BoxLayout</CODE> constructor: 
+<CODE>BoxLayout.Y_AXIS</CODE>.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        BoxLayout layout = new BoxLayout(container, BoxLayout.Y_AXIS);
+        container.setLayout(layout);
+
+        container.add(new JLabel("First!"));
+        container.add(new JLabel("Second!"));
+        container.add(new JLabel("Third!"));
+    }
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/layout-yaxis.png"></P>
+<P>Using the different layout managers, we can create user interfaces where the 
+components are set up appropriately. Below, there is an example of user 
+interface where the components are placed vertically. First there is some text, 
+and then an optional selection. You can create a multiple-exclusion scope for a 
+set of buttons -- meaning that turning "on" one of those buttons turns off all 
+the others in the group -- using <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/ButtonGroup.html" 
+target="_blank">ButtonGroup</A></CODE> and <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/JRadioButton.html" 
+target="_blank">JRadioButton</A></CODE>.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        BoxLayout layout = new BoxLayout(container, BoxLayout.Y_AXIS);
+        container.setLayout(layout);
+
+        container.add(new JLabel("Choose meat or fish:"));
+
+        JRadioButton meat = new JRadioButton("Meat");
+        JRadioButton fish = new JRadioButton("Fish");
+
+        ButtonGroup buttonGroup = new ButtonGroup();
+        buttonGroup.add(meat);
+        buttonGroup.add(fish);
+
+        container.add(meat);
+        container.add(fish);
+    }
+</PRE>
+<P>Once the UI is launched, and Meat is selected, the UI looks as follows.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/buttongroup.png"></P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Survey</H3>
+<P>Implement a user interface in the exercise body; the interface has to look 
+like the following:</P>
+<P><IMG src="Write%20File%20and%20GUI_files/survey.png"></P>
+<P>Use <CODE>BoxLayout</CODE> as layout manager for your user interface; the 
+components are the classes <CODE>JLabel</CODE>, <CODE>JRadioButton</CODE>, 
+<CODE>JCheckBox</CODE> and <CODE>JButton</CODE>.</P>
+<P>Use the class <CODE>ButtonGroup</CODE> to make sure the options <CODE>"No 
+reason."</CODE> and <CODE>"Because it is fun!"</CODE> cannot be chosen at the 
+same time.</P>
+<P>Make sure that the user interface is big enough so that the user can click 
+the buttons without resizing the interface. For instance, you can use 200 pixels 
+for the width and 300 pixels for the height.</P></DIV></DIV>
+<H3>Managing Action Events</H3>
+<P>So far, even though our user interfaces are beautiful, they are quite boring: 
+they do not react in any way according to the actions done on the interfaces.
+ Such unresponsiveness does not depend on our user interface components, but on 
+the fact we haven't provided them with any way to listen to action events.</P>
+<P>Action event listeners <EM>listen</EM> the UI components they are assigned 
+to. Always when we perform an action on our UI components -- pressing a button, 
+for instance -- the UI component calls a particular method of all the action 
+event listeners assigned to it. Action event listeners are classes which 
+implement a particular interface, and whose instances can be assigned to UI 
+components. When an action event happens, the UI component goes through all its 
+action event listeners, and calls the method defined by the interface.</P>
+<P>The most used action event listener interface with Swing user interfaces is 
+<CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/event/ActionListener.html">ActionListener</A></CODE>. 
+The interface <CODE>ActionListener</CODE> defines the method <CODE>void 
+actionPerformed(ActionEvent e)</CODE>, which receives an <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/event/ActionEvent.html" 
+target="_blank">ActionEvent</A></CODE> object as parameter.</P>
+<P>Let's implement our first own action event listener, which has to print a 
+message only when we press the relative button. The class 
+<CODE>MessageListener</CODE> implements <CODE>ActionListener</CODE> and prints 
+the message <CODE>"Message received!"</CODE> when the method 
+<CODE>actionPerformed</CODE> is called.</P>
+<PRE class="sh_java">import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class MessageListener implements ActionListener {
+
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        System.out.println("Message received!");
+    }
+}
+</PRE>
+<P>Next, we create the a <CODE>JButton</CODE> for our user interface, and we add 
+a instance of <CODE>MessageListener</CODE> to it. The class <CODE>JButton</CODE> 
+can be added an action event listener by using the method defined in its parent 
+class <CODE>AbstractButton</CODE>: <CODE>public void 
+addActionListener(ActionListener actionListener)</CODE>.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        JButton button = new JButton("Send!");
+        button.addActionListener(new MessageListener());
+
+        container.add(button);
+    }
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/send.png"></P>
+<P>When we press the button in our user interface we see the following 
+message.</P>
+<PRE>Message received!
+</PRE>
+<H4>Handling Objects in the Action Event Listeners</H4>
+<P>Often, we want that an action event listener modified the state of an object. 
+In order to have access to the object in the action event listener, the action 
+event listener constructor has to be assigned a reference to the obejct 
+concerned. Action eventlisteners are exactly similar to other Java's class, and 
+we can program their whole functionality.</P>
+<P>Let's take the following user interface, which has two <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/JTextArea.html" 
+target="_blank">JTextArea</A></CODE>s -- where the user can input text, and a 
+<CODE>JButton</CODE>. The user interface makes use of <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/GridLayout.html" 
+target="_blank">GridLayout</A></CODE>, which makes the user interface look like 
+a coordinate system. In the GridLayout constructor, we defined one line and 
+three columns.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        GridLayout layout = new GridLayout(1, 3);
+        container.setLayout(layout);
+
+        JTextArea textAreaLeft = new JTextArea("The Copier");
+        JTextArea textAreaRight = new JTextArea();
+        JButton copyButton = new JButton("Copy!");
+
+        container.add(textAreaLeft);
+        container.add(copyButton);
+        container.add(textAreaRight);
+    }
+</PRE>
+<P>After a manual resize, the UI looks like the following.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/copier.png"></P>
+<P>We want to implement our user interface so that the text in the left area 
+would be copied into the right area when we press the <CODE>JButton</CODE>. This 
+is possible by implementing an action event listener. Let's create the class 
+<CODE>AreaCopier</CODE> which implements <CODE>ActionListener</CODE> and copies 
+the text from one to the other JTextArea.</P>
+<PRE class="sh_java">import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JTextArea;
+
+public class AreaCopier implements ActionListener {
+
+    private JTextArea origin;
+    private JTextArea destination;
+
+    public AreaCopier(JTextArea origin, JTextArea destination) {
+        this.origin = origin;
+        this.destination = destination;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        this.destination.setText(this.origin.getText());
+    }
+}
+</PRE>
+<P>Adding the new action event listener to the <CODE>JButton</CODE> object is 
+possible using the method <CODE>addActionListener</CODE>.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        GridLayout layout = new GridLayout(1, 3);
+        container.setLayout(layout);
+
+        JTextArea textAreaLeft = new JTextArea("The Copier");
+        JTextArea textAreaRight = new JTextArea();
+        JButton copyButton = new JButton("Copy!");
+
+        AreaCopier copier = new AreaCopier(textAreaLeft, textAreaRight);
+        copyButton.addActionListener(copier);
+
+        container.add(textAreaLeft);
+        container.add(copyButton);
+        container.add(textAreaRight);
+    }
+</PRE>
+<P>When we press the button, the text in the left area is copied into the right 
+one.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/copier2.png"></P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Notice Board</H3>
+<P>Implement a user interface in the exercise body; the interface has to look 
+like the following:</P>
+<P><IMG src="Write%20File%20and%20GUI_files/noticeboard.png"></P>
+<P>The program has to be composed of the following classes, which are contained 
+in the package <CODE>noticeboard</CODE>. The class <CODE>NoticeBoard</CODE> is 
+the user interface class, and it is started from the <CODE>Main</CODE> class. 
+The notice board has various different components: <CODE>JTextField</CODE>, 
+<CODE>JButton</CODE>, and <CODE>JLabel</CODE>. You can manage the layout of the 
+ui components with <CODE>GridLayout</CODE>: the call <CODE>new GridLayout(3, 
+1)</CODE> creates a new layout manager, which sets up three ui elements 
+vertically.</P>
+<P>The application also has to contain the class 
+<CODE>ActionEventListener</CODE>, which implements the interface 
+<CODE>ActionListener</CODE>. The action event listener is connected to the 
+button, and when pressed, it has to copy the contents of the JTextField into 
+JLabel. At the same time, it wipes the JTextField by setting its contents as 
+"".</P>
+<P>Make sure that the user interface is big enough to click on each 
+button.</P></DIV></DIV>
+<H3>Separating Application and UI Logic</H3>
+<P>Mixing the application logic (the functionality to print or compute, for 
+instance) and the user interface together in the same classes is usually a bad 
+thing. It makes much more difficult to test and modify a program, and it makes 
+the code much more difficult to read. As the single responsibility principle 
+states: each class should have only one clear responsibility. Separating the 
+application logic from the UI logic works smoothly planning your interfaces 
+appropriately. Let's suppose, that we have got a the class 
+<CODE>PersonRecord</CODE>, and we want to implement a user interface to record 
+people.</P>
+<PRE class="sh_java">public interface PersonRecord {
+    void record(Person person);
+    Person get(String id);
+
+    void delete(Person person);
+    void delete(String id);
+    void deleteAll();
+
+    Collection&lt;Person&gt; getAll();
+}
+</PRE>
+<H4>UI Implementation</H4>
+<P>When we implement our user interface, a good start is adding the components 
+to it. If we want to record people, we need fields for their name and their ID 
+number, as well as a button to add the person. We use Java's <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/JTextField.html" 
+target="_blank">JTextField</A></CODE> to input text, and the class 
+<CODE>JButton</CODE> to implement our button. In addition, we also create 
+<CODE>JLabel</CODE> textual descriptions which tell the user what to do.</P>
+<P>For our UI layout, we use <CODE>GridLayout</CODE>. There are three lines and 
+two columns in our user interface. We add the action event listener later. The 
+UI method <CODE>createComponents</CODE> looks like the following.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        GridLayout layout = new GridLayout(3, 2);
+        container.setLayout(layout);
+
+        JLabel textName = new JLabel("Name: ");
+        JTextField nameField = new JTextField();
+        JLabel textID = new JLabel("ID: ");
+        JTextField idField = new JTextField();
+
+        JButton addButton = new JButton("Add!");
+        // event listener
+
+        container.add(textName);
+        container.add(nameField);
+        container.add(textID);
+        container.add(idField);
+        container.add(new JLabel(""));
+        container.add(addButton);
+    }
+</PRE>
+<P>After adding the information, our user interface looks like the 
+following.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/persondetails.png"></P>
+<P>The action event listener has to know about the recording functionality 
+(<CODE>PersonRecord</CODE> interface), as well as the fields it uses. Let's 
+create the class <CODE>PersonRecordListener</CODE> which implements 
+<CODE>ActionListener</CODE>. As constructor parameter, the class is assigned an 
+object which implements the interface <CODE>PersonRecord</CODE>, as well as two 
+<CODE>JTextField</CODE> objects which stand for the name and ID fields. In the 
+method <CODE>actionPerformed</CODE> we create a new <CODE>Person</CODE> object 
+and we record it using the <CODE>record</CODE> method of our 
+<CODE>PersonRecord</CODE> object.</P>
+<PRE class="sh_java">public class PersonRecordListener implements ActionListener {
+
+    private PersonRecord personRecord;
+    private JTextField nameField;
+    private JTextField idField;
+
+    public PersonRecordListener(PersonRecord personRecord, JTextField nameField, JTextField idField) {
+        this.personRecord = personRecord;
+        this.nameField = nameField;
+        this.idField = idField;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        Person person = new Person(nameField.getText(), idField.getText());
+        this.personRecord.record(person);
+    }
+}
+</PRE>
+<P>In order to retrieve a <CODE>PersonRecord</CODE> reference to 
+<CODE>PersonRecordListener</CODE>, the user interface must have access to it. 
+Let's add to our user interface the object variable <CODE>private PersonRecord 
+personRecord</CODE> which is set up in the constructor. We also modify the 
+constructor of the class <CODE>UserInterface</CODE>, which is assigned a class 
+which implements the interface <CODE>PersonRecord</CODE>.</P>
+<PRE class="sh_java">public class UserInteface implements Runnable {
+
+    private JFrame frame;
+    private PersonRecord personRecord;
+
+    public UserInteface(PersonRecord personRecord) {
+        this.personRecord = personRecord;
+    }
+    // ...
+
+
+</PRE>
+<P>Now we can create the action event listener 
+<CODE>PersonRecordListener</CODE>, which is given both a 
+<CODE>PersonRecord</CODE> reference and the fields.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        GridLayout layout = new GridLayout(3, 2);
+        container.setLayout(layout);
+
+        JLabel nameText = new JLabel("Name: ");
+        JTextField nameField = new JTextField();
+        JLabel idText = new JLabel("ID: ");
+        JTextField idField = new JTextField();
+
+        JButton addButton = new JButton("Add!");
+        PersonRecordListener listener = new PersonRecordListener(personRecord, nameField, idField);
+        addButton.addActionListener(listener);
+
+        container.add(nameText);
+        container.add(nameField);
+        container.add(idText);
+        container.add(idField);
+        container.add(new JLabel(""));
+        container.add(addButton);
+    }
+</PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Axe Click Effect</H3>
+<P>In this exercise we implement a calculator to count the number of clicks. In 
+the exercise, the application logic (counting) and the ui logic are divided from 
+each other. The final application should look like the following, so far. </P>
+<P><IMG src="Write%20File%20and%20GUI_files/clickeffect.png"></P>
+<H4>PersonalCalculator</H4>
+<P>Implement the class <CODE>PersonalCalculator</CODE> in the package 
+<CODE>clicker.applicationlogic</CODE>; the class implements the interface 
+<CODE>Calculator</CODE>. At first, the method <CODE>giveValue</CODE> of 
+<CODE>PersonalCalculator</CODE> returns 0. Whenever the method 
+<CODE>increase</CODE> is called, the value increases by one.</P>
+<P>If you want, you can test the class using the following program.</P>
+<PRE class="sh_java">        Calculator calc = new PersonalCalculator();
+        System.out.println("Value: " + calc.giveValue());
+        calc.increase();
+        System.out.println("Value: " + calc.giveValue());
+        calc.increase();
+        System.out.println("Value: " + calc.giveValue());
+</PRE>
+<PRE>Value: 0
+Value: 1
+Value: 2
+</PRE>
+<H4>ClickListener</H4>
+<P>Implement the class <CODE>ClickListener</CODE> in the package 
+<CODE>clicker.ui</CODE>; the class implements the interface 
+<CODE>ActionListener</CODE>. <CODE>ClickListener</CODE> receives two objects as 
+constructor parameters: an object which implements the interface 
+<CODE>Calculator</CODE> and a <CODE>JLabel</CODE> object.</P>
+<P>Implement the <CODE>actionPerformed</CODE> method so that the 
+<CODE>Calculator</CODE> object increases by one at first, and after it, the 
+calculator value is set as text of the <CODE>JLabel</CODE> object. The text of 
+the <CODE>JLabel</CODE> object can be modified with the method 
+<CODE>setText</CODE>.</P>
+<H4>User Interface</H4>
+<P>Modify the class <CODE>UserInterface</CODE>; now the user interface has to 
+receive a <CODE>Calculator</CODE> object as constructor parameter: you need a 
+new constructor. Add the necessary ui components to your UserInterface. Also, 
+set the action event listener you implemented in the previous section to the 
+button.</P>
+<P>Use the functionality provided by the class <CODE>BorderLayout</CODE> to 
+manage the layout of the ui components. Also, change the <CODE>Main</CODE> class 
+so that the user interface is assigned a <CODE>PersonalCalculator</CODE> object. 
+When the <CODE>"Click!"</CODE> button in the user interface has been pressed 
+twice, the application looks like below, more or less.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/clickeffect2.png"></P></DIV></DIV>
+<H3>Nested Container Objects</H3>
+<P>Sometimes we end up in a situation, where the <CODE>Container</CODE> object 
+provided by <CODE>JFrame</CODE> is not suitable enough for our UI layout. We may 
+want our user interface to look different or to group up UI components according 
+to their use. For instance, building a user interface like the one below would 
+not be so easy, using only the <CODE>Container</CODE> object provided by the 
+class <CODE>JFrame</CODE>.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/nestedobjects.png"></P>
+<P>We can place Container objects inside each other. The class <CODE><A href="http://docs.oracle.com/javase/6/docs/api/javax/swing/JPanel.html" 
+target="_blank">JPanel</A></CODE> (see also <A href="http://docs.oracle.com/javase/tutorial/uiswing/components/panel.html" 
+target="_blank">How to Use Panels</A>) allows for nested <CODE>Container</CODE> 
+objects. It is possible to add UI components to a <CODE>JPanel</CODE> instance 
+in the same way we add components to the <CODE>Container</CODE> instance of 
+<CODE>JFrame</CODE> class. Moreover, it is possible to add an instance of 
+<CODE>JPanel</CODE> to a <CODE>Container</CODE> object. This makes possible to 
+use many <CODE>Container</CODE> objects to develop one user interface.</P>
+<P>Creating a user interface like the one above is easier with 
+<CODE>JPanel</CODE>. Let's create a user interface with three buttons -- 
+Execute, Test, and Send -- plus a text field. The buttons are a group on its 
+own, and we assign them to a <CODE>JPanel</CODE> object which is placed in the 
+lower part of the <CODE>Container</CODE> object which we have got from 
+<CODE>JFrame</CODE> class.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        container.add(new JTextArea());
+        container.add(createPanel(), BorderLayout.SOUTH);
+    }
+
+    private JPanel createPanel() {
+        JPanel panel = new JPanel(new GridLayout(1, 3));
+        panel.add(new JButton("Execute"));
+        panel.add(new JButton("Test"));
+        panel.add(new JButton("Send"));
+        return panel;
+    }
+</PRE>
+<P>The JPanel class is given as constructor parameter the layout style to use. 
+If in its constructor the layout style requires a reference to the 
+<CODE>Container</CODE> object used, the <CODE>JPanel</CODE> class also has the 
+method <CODE>setLayout</CODE>.</P>
+<P>If our user interface has clear, separate, groups of components we can also 
+inherit the <CODE>JPanel</CODE> class. For instance, the panel above could be 
+implemented in the following way, too.</P>
+<PRE class="sh_java">import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+public class MenuPanel extends JPanel {
+
+    public MenuPanel() {
+        super(new GridLayout(1, 3));
+        createComponents();
+    }
+
+    private void createComponents() {
+        add(new JButton("Execute"));
+        add(new JButton("Test"));
+        add(new JButton("Send"));
+    }
+}
+</PRE>
+<P>Now we can create a <CODE>MenuPanel</CODE> instance in our user interface 
+class.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        container.add(new JTextArea());
+        container.add(new MenuPanel(), BorderLayout.SOUTH);
+    }
+</PRE>
+<P>Note that in case you need an action event listener, the class 
+<CODE>MenuPanel</CODE> must be given all the objects its need as parameter.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Calculator</H3>
+<P>The goal of the exercise is creating a simple calculator. The calculator user 
+interface has to look like the following:</P>
+<P><IMG src="Write%20File%20and%20GUI_files/laskin.png"></P>
+<P>Together with the exercise body, you find the main program which starts the 
+calculator, as well as the class <CODE>GraphicCalculator</CODE> which contains a 
+graphic user interface. The user interface has to follow exactly the following 
+points, but you can plan the program structure as you wish. <B>Note:</B> 
+<CODE>GraphicCalculator</CODE> provides empty methods <CODE>run</CODE>, 
+<CODE>createComponents</CODE> and <CODE>getFrame</CODE>.</P>
+<H4>The Layout</H4>
+<P>You find a <CODE>JFrame</CODE> with the exercise body; you manage its layout 
+using <CODE>GridLayout</CODE> with three lines and one column. 
+<CODE>JTextField</CODE> has to be placed in the upper block and has to be used 
+for the text output; it must be set off with the method call 
+<CODE>setEnabled(false)</CODE>. The second block has to contain 
+<CODE>JTextField</CODE> for the text input. Originally, the input field contains 
+the text "0", and the input field is empty.</P>
+<P>The lowest block has to contain <CODE>JPanel</CODE>, and this has to have the 
+layout manager <CODE>GridLayout</CODE>, with one line and three columns. The 
+panel has three <CODE>JButton</CODE>s, with texts "+", "-" and "Z".</P>
+<H4>Basic Functionality</H4>
+<P>The calculator basic functionality is the following. When the user writes a 
+number n into the input field and presses <STRONG>+</STRONG>, the value of the 
+output field is added n and the output field is updated with a new value. 
+Accordingly, when the user writes a number n into the input field and presses 
+<STRONG>-</STRONG>, the value of the output field is decreased by n, and the 
+output field is updated with the new value. If the user presses 
+<STRONG>Z</STRONG>, the output field value is reset to zero.</P>
+<H4>Cozy Management</H4>
+<P>Let's extend our program with the following features:</P>
+<UL>
+  <LI>If the output field is 0, the user can't press the <STRONG>Z</STRONG> 
+  button, i.e. the button has to be set off with the method call 
+  <CODE>setEnabled(false)</CODE>. Otherwise, the button has to be on.</LI>
+  <LI>When the user presses any of the buttons <STRONG>+, -, Z</STRONG> the 
+  input field is wiped.</LI>
+  <LI>If the input value is not an integer and the user presses one of the 
+  buttons <STRONG>+, -, Z</STRONG>, the input field is wiped and the value of 
+  the output field does not change (unless the button is 
+  <STRONG>Z</STRONG>).</LI></UL></DIV></DIV>
+<H2>Drawing</H2>
+<P>Its <CODE>Container</CODE> functionality is not the only reason why we use 
+the class <CODE>JPanel</CODE>: it is also used as drawing board, and the user 
+inherits the <CODE>JPanel</CODE> class and overrides the method <CODE>protected 
+void paintComponent(Graphics graphics)</CODE>. The user interface calls the 
+method <CODE>paintComponent</CODE> whenever we want to draw again the UI 
+component contents. The parameter of the method <CODE>paintComponent</CODE> 
+receives from the user interface an object which implements the abstract class 
+<CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html" 
+target="_blank">Graphics</A></CODE>. Let's create the class 
+<CODE>DrawingBoard</CODE> <CODE>JPanel</CODE> which inherits from 
+<CODE>JPanel</CODE> and which overrides the <CODE>paintComponent</CODE> 
+method.</P>
+<PRE class="sh_java">public class DrawingBoard extends JPanel {
+
+    public DrawingBoard() {
+        super.setBackground(Color.WHITE);
+    }
+
+    @Override
+    protected void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
+    }
+}
+</PRE>
+<P>The drawing board above does not contain concrete drawing functionality. In 
+the constructor, we can define the colour of our drawing board to be white by 
+calling its superclass' method <CODE>setBackground</CODE>. The method 
+<CODE>setBackGround</CODE> receives an instance of the class <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/Color.html" 
+target="_blank">Color</A></CODE> as parameter. The class <CODE>Color</CODE> 
+contains the most common colours as class variables; for instance, you get the 
+white colour using the class variable <CODE>Color.WHITE</CODE>.</P>
+<P>The overridden <CODE>paintComponent</CODE> method calls the superclass' 
+<CODE>paintComponent</CODE> method, and it does not do anything else. Let's add 
+the drawing board to the <CODE>createComponents</CODE> method of class 
+<CODE>UserInterface</CODE>. We use the user interface which was defined at the 
+beginning of the section <A href="http://mooc.cs.helsinki.fi/programming-part2/material/week-11?noredirect=1#58">58. 
+User Interfaces</A>.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        container.add(new DrawingBoard());
+    }
+</PRE>
+<P>When we start our user interface we see an empty screen, whose background 
+colour is white. The size of the user interface below is set to 300x300 through 
+the method <CODE>setPreferredSize</CODE>, and its title is <CODE>"Drawing 
+Board"</CODE>.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/drawingboard.png"></P>
+<P>Drawing on the board is possible using the methods provides by the <CODE><A 
+href="http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html" target="_blank">Graphics</A></CODE> 
+object. Let's modify the method <CODE>paintComponent</CODE> of 
+<CODE>DrawingBoard</CODE> and let's draw two rectangles using the method 
+<CODE>fillRect</CODE> of the <CODE>Graphics</CODE> object.</P>
+<PRE class="sh_java">    @Override
+    protected void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
+
+        graphics.fillRect(50, 80, 100, 50);
+        graphics.fillRect(200, 20, 50, 200);
+    }
+</PRE>
+<P>The method <CODE>fillRect</CODE> receives as parameter the <CODE>x</CODE> and 
+<CODE>y</CODE> coordinates of a rectangle, plus the rectangle width and height. 
+In fact, above we first draw a rectangle which starts with pixel whose 
+coordinates are <CODE>(50, 80)</CODE>, which is 100 pixels long, and 50 pixels 
+high. Afterwards, we draw a 50-pixel long, 100-pixel high rectangle which begins 
+at <CODE>(200, 20)</CODE>.</P>
+<P>As you notice from the picture, the coordinate system does not work as we are 
+accustomed to.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/drawingboard-blocks.png"></P>
+<P>Java's <CODE>Graphics</CODE> object (and most of other programming language 
+libraries) expects the value of the y axis to grow downwards. The coordinate 
+system origin, i.e. the point <CODE>(0,0)</CODE> is in the upper left corner: 
+the Graphics object always knows the UI component where we draw, and it is able 
+to define the location of the point to draw based on it. The location of the UI 
+origin can become clear with the help of the following program. First we draw a 
+green 10-pixel long, 200-pixel high rectangle which starts from the point (0,0). 
+Then we draw a black 200-pixel long, 10-pixel high rectangle which starts from 
+the point (0,0). The drawing colour is defined by the method 
+<CODE>setColor</CODE> of our <CODE>Graphics</CODE> object.</P>
+<PRE class="sh_java">    @Override
+    protected void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
+
+        graphics.setColor(Color.GREEN);
+        graphics.fillRect(0, 0, 10, 200);
+        graphics.setColor(Color.BLACK);
+        graphics.fillRect(0, 0, 200, 10);
+    }
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/drawingboard-coordinates.png"></P>
+<P>Such coordinate system reversibility depends on the way user interface size 
+is modified. When we modify the size of a user interface, this is reduced or 
+increased by "dragging the bottom right corner"; in this way, the drawing on the 
+screan would move while we change the UI size. Because the grid starts from the 
+upper left corner, the drawing position is always the same, but the visible part 
+changes.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Drawing Board</H3>
+<P>With the exercise body, you find a pre-made user interface, which is 
+connected to the class <CODE>DrawingBoard</CODE>, which inherits 
+<CODE>JPanel</CODE>. Modify the method <CODE>paintCOmponent</CODE> of 
+<CODE>DrawingBoard</CODE> so that it would draw the following figure. You can 
+only use the <CODE>fillRect</CODE> method of the <CODE>graphics</CODE> object, 
+in this exercise.</P>
+<P><IMG src="Write%20File%20and%20GUI_files/smiley.gif"></P>
+<P>Attention! Do not use more than five <CODE>fillRect</CODE> calls. The figure 
+does not have to be identical to the one above, the tests tell you when your 
+figure is close enough to the required one.</P></DIV></DIV>
+<P>Let's extend our previous example and draw an independent avatar-object in 
+our user interface. Let's create the class <CODE>Avatar</CODE>; it has the 
+coordinates of the point where it appears, and it is a circle with a 10-pixel 
+diameter. The location of the avatar can be changed by calling its 
+<CODE>move</CODE> method.</P>
+<PRE class="sh_java">import java.awt.Graphics;
+
+public class Avatar {
+
+    private int x;
+    private int y;
+
+    public Avatar(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void move(int movingX, int movingY) {
+        this.x += movingX;
+        this.y += movingY;
+    }
+
+    public void draw(Graphics graphics) {
+        graphics.fillOval(x, y, 10, 10);
+    }
+}
+</PRE>
+<P>Let's modify our drawing board, giving it an instance of our 
+<CODE>Avatar</CODE> as constructor parameter. The method 
+<CODE>paintComponent</CODE> of <CODE>DrawingBoard</CODE> does not draw the 
+character itself, but it delegates the responsibility to the instance of the 
+class <CODE>Avatar</CODE>.</P>
+<PRE class="sh_java">import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JPanel;
+
+public class DrawingBoard extends JPanel {
+
+    private Avatar avatar;
+
+    public DrawingBoard(Avatar avatar) {
+        super.setBackground(Color.WHITE);
+        this.avatar = avatar;
+    }
+
+    @Override
+    protected void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
+        avatar.draw(graphics);
+    }
+}
+</PRE>
+<P>Let's also give our avatar as parameter to our user interface. Avatar is an 
+independent object in the user interface, and we only want to draw it in the 
+user interface. It is essential to change our UI constructor so that it received 
+a <CODE>Avatar</CODE> object. Moreover, in the method 
+<CODE>createComponents</CODE> we give an instance of the class 
+<CODE>Avatar</CODE> as parameter to our <CODE>DrawingBoard</CODE> object.</P>
+<PRE class="sh_java">public class UserInterface implements Runnable {
+
+    private JFrame frame;
+    private Avatar avatar;
+
+    public UserInterface(Avatar avatar) {
+        this.avatar = avatar;
+    }
+
+// ...
+
+    private void createComponents(Container container) {
+        DrawingBoard drawingBoard = new DrawingBoard(avatar);
+        container.add(drawingBoard);
+    }
+// ...
+</PRE>
+<P>Now, our user interface can be started giving it an <CODE>Avatar</CODE> 
+object as constructor parameter.</P>
+<PRE class="sh_java">        UserInterface ui = new UserInterface(new Avatar(30, 30));
+        SwingUtilities.invokeLater(ui);
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/drawingboard-avatar.png"></P>
+<P>In the user interface above, we see a ball-like Avatar.</P>
+<P>Let's now add the functionality to move the avatar. We want to move it using 
+our keyboard. When the user presses the left arrow, the avatar should move left. 
+Pressing the right arrow should move the avatar right. We need an action event 
+listener, which would listen to our keyboard. The interface <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/event/KeyListener.html" 
+target="_blank">KeyListener</A></CODE> defines the functionality needed to 
+listener to a keyboard.</P>
+<P>The interface <CODE>KeyListener</CODE> calls for implementing the methods 
+<CODE>keyPressed</CODE>, <CODE>keyReleased</CODE>, and <CODE>keyTyped</CODE>. We 
+are only interested to the case in which the keyboard is pressed, so we can 
+leave empty the methods <CODE>keyReleased</CODE> and <CODE>keyTyped</CODE>. 
+Let's create the class <CODE>KeyboardListener</CODE>, which implements the 
+interface <CODE>KeyListener</CODE>. The class receives as parameter a 
+<CODE>Avatar</CODE> object, and the action event manager has to shift it.</P>
+<PRE class="sh_java">import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+public class KeyboardListener implements KeyListener {
+
+    private Avatar avatar;
+
+    public KeyboardListener(Avatar avatar) {
+        this.avatar = avatar;
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+            avatar.move(-5, 0);
+        } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            avatar.move(5, 0);
+        }
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+    }
+
+    @Override
+    public void keyTyped(KeyEvent ke) {
+    }
+}
+</PRE>
+<P>The method <CODE>keyPressed</CODE> receives as parameter an instance of 
+<CODE>KeyEvent</CODE> from the user interface. The KeyEvent object knows the 
+number related to the pressed key thanks to its method 
+<CODE>getKeycode()</CODE>. Different keys have got different class variables in 
+the <CODE>KeyEvent</CODE> class; for instance, the left arrow is 
+<CODE>KeyEvent.VK_LEFT</CODE>.</P>
+<P>We want to listen to the keystrokes directed to our user interface (we don't 
+want to write to the text field, for instance), and therefore we assign our 
+keyboard listener to the <CODE>JFrame</CODE> instance. Let's modify our user 
+interface and add the keyboard listener to the JFrame object.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        DrawingBoard drawingBoard = new DrawingBoard(avatar);
+        container.add(drawingBoard);
+
+        frame.addKeyListener(new KeyboardListener(avatar));
+    }
+</PRE>
+<P>Our application now listens to keystrokes, and it leads them to the instance 
+of the class <CODE>KeyboardListener</CODE>.</P>
+<P>However, when we try out our user interface it does not work: the avatar does 
+not move on the screen. What is the problem, in fact? We can check the 
+keystrokes which are received by our <CODE>KeyboardListener</CODE> by adding a 
+text printout to the beginning of our <CODE>keyPressed</CODE> method.</P>
+<PRE class="sh_java">    @Override
+    public void keyPressed(KeyEvent e) {
+        System.out.println("Keystroke " + e.getKeyCode() +  " pressed.");
+
+        // ...
+</PRE>
+<P>If we start our program and press some keys we will notice the following 
+output.</P>
+<PRE>Keystroke 39 pressed.
+Keystroke 37 pressed.
+Keystroke 40 pressed.
+Keystroke 38 pressed.
+</PRE>
+<P>In fact, our keyboard listener works, but our drawing board does not 
+update.</P>
+<H3>Drawing Board Repainting</H3>
+<P>User interface components usually have the functionality to repaint the 
+component outer face, when needed. For instance, when we press the button, the 
+instance of the class <CODE>JButton</CODE> is able to paint the button as if it 
+was pressed, and to paint it normal again afterwards. The drawing board we have 
+implemented does not have a pre-made update functionality; instead, we have to 
+ask our drawing board to paint itself again when needed.</P>
+<P>Each subclass of <CODE>Component</CODE> has the method <CODE>public void 
+repaint()</CODE>, which repaints the component after it is called. We want that 
+our <CODE>DrawingBoard</CODE> object would get repainted while the avatar moves. 
+The avatar moves in the class <CODE>KeyboardListener</CODE>, and it is logic the 
+repainting would happen there, too.</P>
+<P>In order to be repainted, our keyboard listener needs a drawing board 
+reference. Let's modify our class <CODE>KeyboardListener</CODE>, so that it 
+would receive as parameter both an <CODE>Avatar</CODE> object and the 
+<CODE>Component</CODE> object to repaint. We call the <CODE>repaint</CODE> 
+method of the <CODE>Component</CODE> object after each <CODE>keyPressed</CODE> 
+action event.</P>
+<PRE class="sh_java">import java.awt.Component;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+public class KeyboardListener implements KeyListener {
+
+    private Component component;
+    private Avatar avatar;
+
+    public KeyboardListener(Avatar avatar, Component component) {
+        this.avatar = avatar;
+        this.component = component;
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+            avatar.move(-5, 0);
+        } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            avatar.move(5, 0);
+        }
+
+        component.repaint();
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+    }
+
+    @Override
+    public void keyTyped(KeyEvent ke) {
+    }
+}
+</PRE>
+<P>Let's also modify the <CODE>createComponents</CODE> method of 
+<CODE>UserInterface</CODE> and give an instance of <CODE>DrawingBoard</CODE> as 
+parameter to our keyboard listener.</P>
+<PRE class="sh_java">    private void createComponents(Container container) {
+        DrawingBoard drawingBoard = new DrawingBoard(hahmo);
+        container.add(drawingBoard);
+
+        frame.addKeyListener(new KeyboardListener(avatar, drawingBoard));
+    }
+</PRE>
+<P>Now, our avatar's moves are visible also in the user interface. Whenever the 
+user presses the keyboard, the user interface keyboard listener handles the 
+call. At the end of each call, the <CODE>repaint</CODE> method of our drawing 
+board is called, and the drawing board gets repainted.</P>
+<P><IMG 
+src="Write%20File%20and%20GUI_files/drawingboard-avatar-movement.png"></P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>A Moving Figure</H3>
+<P>We create a program which allows the user to move the figures drawn on a 
+board using their keyboard. Together with the program you find the body of a 
+user interface, which you can modify as your program proceeds.</P>
+<P>At first, we create a couple of classes to manage the figures. Later on we 
+will be able to draw the figures to our board. Create all the classes of the 
+program in the package <CODE>movingfigure</CODE>.</P>
+<P>In this exercise we make use of both inheritance and abstract classes: go 
+back to sections 18.1, 18.2, and 18.5, if you need.</P>
+<H4 class="req">Figure: an Abstract Class</H4>
+<P>Create the abstract class <CODE>Figure</CODE>. Figures have the object 
+variables <CODE>x</CODE> and <CODE>y</CODE>, which tell the figure position on 
+the board; they also have the method <CODE>public void move(int dx, int 
+dy)</CODE>, which moves the figures according to the parameter coordinate 
+movements. For instance, if the position is  (100,100), at the beginning, after 
+calling the method <CODE>move(10,-50)</CODE> the position will be (110,50). The 
+class constructor <CODE>public Figure(int x, int y)</CODE> has to define the 
+original position of the figure. Additionally, implement also the methods 
+<CODE>public int getX()</CODE> and <CODE>public int getY()</CODE>.</P>
+<P>The class also has to have the abstract method <CODE>public abstract void 
+draw(Graphics graphics)</CODE>, which draws the figure on the drawing board. The 
+figure drawing method is implemented in the classes which inherit 
+<CODE>Figure</CODE>.</P>
+<H4 class="req">Circle</H4>
+<P>Create the class <CODE>Circle</CODE> which inherits Figure. Circle has a 
+<CODE>diameter</CODE>, whose value is defined by the constructor <CODE>public 
+Circle(int x, int y, int diameter)</CODE>. The Circle position is stored into 
+the object variables defined in its parent class. </P>
+<P>The circle defines the method <CODE>draw</CODE> so that it would draw a 
+circle of the right size, in the place defined by the coordinates, and using the 
+method <CODE>fillOval</CODE> of the <CODE>Graphics</CODE> object; the first two 
+parameters of the method are taken for the position of the circle. Take example 
+from the relative method in the Avatar example. For more information about the 
+methods of Graphics objects, you can have a look at <A href="http://docs.oracle.com/javase/6/docs/api/java/awt/Graphics.html">Java's 
+API.</A> </P>
+<H4 class="req">Drawing Board</H4>
+<P>Create the class <CODE>DrawingBoard</CODE> which inherits 
+<CODE>JPanel</CODE>; you can take example from the drawing board in the previous 
+exercise, for instance. DrawingBoard receives a <CODE>Figure</CODE> object as 
+parameter. Override <CODE>JPanel</CODE>'s method <CODE>protected void 
+paintComponent(Graphics g)</CODE> so that it first calls the superclass' 
+<CODE>paintComponent</CODE> method, and then the <CODE>draw</CODE> method of the 
+figure which was assigned to the drawing board.</P>
+<P>Modify the class <CODE>UserInterface</CODE> so that it would receive a 
+<CODE>Figure</CODE> object as constructor parameter. Assign your DrawingBoard to 
+the user interface together with the <CODE>createComponents(Container 
+container)</CODE> method, and assign to the drawing board the figure which was 
+given to the user interface as constructor parameter.</P>
+<P>Finally, test that the following sample code draws a circle on the 
+screen.</P>
+<PRE class="sh_java">        UserInterface ui = new UserInterface(new Circle(50, 50, 250));
+        SwingUtilities.invokeLater(ui);
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/moving-circle.png"></P>
+<H4 class="req">Keyboard Listener</H4>
+<P>Let's extend our drawing board, so that we could move the figures using our 
+keyboard arrows. Create the class <CODE>KeyboardListener</CODE> which implements 
+the interface <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/awt/event/KeyListener.html" 
+target="_blank">KeyListener</A></CODE>. The class <CODE>KeyboardListener</CODE> 
+has two constructor parameters: an instance of the class <CODE>Component</CODE> 
+and one of the class <CODE>Figure</CODE>.</P>
+<P>The instance of Component is given to the keyboard listener so that the 
+component would be updated each time the keyboard is pressed. The component is 
+updated with the method call <CODE>repaint</CODE>, which is inherited from he 
+class <CODE>Component</CODE>. The type of the class DrawingBoard is 
+<CODE>Component</CODE>, because <CODE>Component</CODE> is the upper class of the 
+class which inherits <CODE>JPanel</CODE>.</P>
+<P>Implement the method <CODE>keyPressed(KeyEvent e)</CODE> of the interface 
+<CODE>KeyListener</CODE>; when the user presses the left arrow, the figure moves 
+one point left. Pressing right, the figure moves one point right. Pressing up it 
+moves one point up, and pressing down the figure moves one point down. Note that 
+the y axe grows from the upper side of the window downwards. The arrow key codes 
+are <CODE>KeyEvent.VK_LEFT</CODE>, <CODE>KeyEvent.VK_RIGHT</CODE>, 
+<CODE>KeyEvent.VK_UP</CODE>, and <CODE>KeyEvent.VK_DOWN</CODE>. Leave empty the 
+other methods required by the interface <CODE>KeyListener</CODE>.</P>
+<P>Always call class Component's method <CODE>repaint</CODE> in the end of 
+keylistener event.</P>
+<P>Add keylistener in the UserInterface's method <CODE>addListeners</CODE>. 
+KeyListener must be connected to <CODE>JFrame</CODE>-object.</P>
+<H4 class="req">Square and Box</H4>
+<P>Let <CODE>Square</CODE> and <CODE>Box</CODE> inherit the class 
+<CODE>Figure</CODE>. Square has the constructor <CODE>public Square(int x, int 
+y, int sideLength)</CODE>; the constructor of box is <CODE>public Box(int x, int 
+y, int width, int height)</CODE>. Use the method <CODE>fillRect</CODE> of a 
+graphic object to draw the figures.</P>
+<P>Make sure that squares and boxes are drawn and move right on the 
+DrawingBoard.</P>
+<PRE class="sh_java">        UserInterface ui = new UserInterface(new Square(50, 50, 250));
+        SwingUtilities.invokeLater(ui);
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/moving-box.png"></P>
+<PRE class="sh_java">        UserInterface ui = new UserInterface(new Box(50, 50, 100, 300));
+        SwingUtilities.invokeLater(ui);
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/moving-box2.png"></P>
+<H4 class="req">Compound Figure</H4>
+<P>Let <CODE>CompoundFigure</CODE> inherit <CODE>Figure</CODE>. Compound figure 
+contains other figures which are stored in an ArrayList. CompoundFigure has the 
+method <CODE>public void add(Figure f)</CODE>, which adds a new Figure object to 
+the compound figure. Compound figures do not have their own position, and it is 
+not important what values are assigned to x and y coordinates. Compound figures 
+draw themselves by asking their parts to draw themselves; the same thing happens 
+when a compound figure moves. This means that the inherited method 
+<CODE>move</CODE> has to be overwritten!</P>
+<P>You can test whether your compound figure moves and is drawn well using the 
+following code:</P>
+<PRE class="sh_java">        CompoundFigure truck = new CompoundFigure();
+
+        truck.add(new Box(220, 110, 75, 100));
+        truck.add(new Box(80, 120, 200, 100));
+        truck.add(new Circle(100, 200, 50));
+        truck.add(new Circle(220, 200, 50));
+
+        UserInterface ui = new UserInterface(truck);
+        SwingUtilities.invokeLater(ui);
+</PRE>
+<P><IMG src="Write%20File%20and%20GUI_files/moving-car.png"></P>
+<P>Note how the <B>object responsibilities are shared here</B>. Each Figure is 
+in charge of drawing and moving itself. Simple figures all move in the same way. 
+Each simple figure has to manage their own drawing themselves. Compound figures 
+move by asking their parts to move, and the same thing happens when it comes to 
+be drawn. The drawing board knows a Figure object which, in fact, can be 
+whatever simple figure or a compound figure: they are all drawn and moved in the 
+same way. In fact, the drawing board works correctly regardless of the real type 
+of the figure; the drawing board does not have to know the details of the 
+figure. When the drawing board calls the method <CODE>draw</CODE> or 
+<CODE>move</CODE> of the figure, the method of the real type of the figure is 
+called, thanks to <B>polymorphism</B>.</P>
+<P>It's worth to notice that CompoundFigure can contain whatever Figure object, 
+even another CompoundFigure! The class structure allows for highly complex 
+figure formations, whereas figures move and draw themselves always in the same 
+way.</P>
+<P>The class structure can also be expanded easily; for instance, a compound 
+figure would work without needing changes even if we created new types which 
+inherit Figure (say Triangle, Point, Line, exc.), and the same thing would apply 
+to the drawing board and user interface.</P></DIV></DIV>
+<H3>Pre-made Application Frameworks</H3>
+<P>An application framework is a program which provides a baseline and a set of 
+features to implement a particular application. One way to create an application 
+framework is to create a class which provides pre-made features, so that classes 
+can inherit it and build a particular application. Application frameworks are 
+usually wide, and they are thought for a special purpose, for instance to 
+program games or develop web-applications. Let's quickly get acquainted with a 
+pre-made application library, by greating the application logic of a Game of 
+Life.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Game of Life</H3>
+<P>In this exercise, we implement the application logic of a Game of Life, 
+inheriting a pre-made application body.The application body is in a library 
+which has been added to the project singularly, and its source codes are not 
+visible.</P>
+<P><B>ATTENTION:</B> your task won't be extremely difficult, but the exercise 
+descriptions may look a bit confusing, at first. Read the instruction carefully, 
+or ask for help if you can't get started. The exercise is definitely worth of 
+your energies, because the result is beautiful!</P>
+<P>Game of Life is a simple "population simulator" which was developed by the 
+mathematician John Conway; see <A href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</A>.</P>
+<P>Game of Life rules:</P>
+<UL>
+  <LI>Every living cell dies if they have less than two living neighbours.</LI>
+  <LI>Every living cell keeps on living during the following iteration (i.e. 
+  turn) if they have two or three living neighbours.</LI>
+  <LI>Every living cell dies if they have more than three living 
+neighbours.</LI>
+  <LI>Every dead cell is turned back to life if they have exactly three living 
+  neighbours.</LI></UL>
+<P>The abstract class <CODE>GameOfLifeBoard</CODE> provides the following 
+functionality</P>
+<UL>
+  <LI><B>public GameOfLifeBoard(int length, int height)</B> creates a game board 
+  of the defined dimensions</LI>
+  <LI><B>public boolean[][] getBoard()</B> provides access to the game board, 
+  which is a bidimensional table containing boolean values – as you may guess 
+  from the method return value! We come back to bidimensional boards later on 
+  when needed.</LI>
+  <LI><B>public int getWidth()</B> returns the board width</LI>
+  <LI><B>public int getHeight()</B> returns the board height</LI>
+  <LI><B>public void playTurn()</B> simulates a turn of the game</LI></UL>
+<P>The class <CODE>GameOfLifeBoard</CODE> has also got the following abstract 
+method, <B>which you will have to implement</B>.</P>
+<P></P>
+<UL>
+  <LI><B>public abstract void turnToLiving(int x, int y)</B> animates the cell 
+  whose coordinates are (x, y), that is to say it assigns the value <I>true</I> 
+  to it. If the coordinates are outside the board, nothing happens.</LI>
+  <LI><B>public abstract void turnToDead(int x, int y)</B> kills the cell whose 
+  coordinates are (x, y), that is to say it assigns the value <I>false</I> to 
+  it. If the coordinates are outside the board, nothing happens.</LI>
+  <LI><B>public abstract boolean isAlive(int x, int y)</B> tells whether the 
+  cell at (x, y) is alive. If the coordinates are outside the board, the method 
+  returns <I>false.</I></LI>
+  <LI><B>public abstract void initiateRandomCells(double 
+  probabilityForEachCell)</B> initiates all the cells of the board: every cell 
+  is alive with a probability of <I>probabilityForEachCell.</I> The probability 
+  is a double value between [0, 1]. If a method is called with value 1, all the 
+  cells have to be alive. Accordingly, if the probability is 0, all the cells 
+  have to be dead.</LI>
+  <LI><B>public abstract int getNumberOfLivingNeighbours(int x, int y)</B> tells 
+  the number of living neighbours for the cell at (x, y).</LI>
+  <LI><B>public abstract void manageCell(int x, int y, int livingNeighbours)</B> 
+  managese the cell (x, y) according to the rules of the Game of Life.</LI></UL>
+<H4>GameOfLife implementation, Part 1</H4>
+<P>Create the class <CODE>PersonalBoard</CODE> into the package 
+<CODE>game</CODE>; PersonalBoard inherits the class <CODE>GameOfLifeBoard</CODE> 
+which is in the package <CODE>gameoflife</CODE>. Note that the package 
+<CODE>gameoflife</CODE> is not visible in your project, but it comes together 
+with the class library. In the class <CODE>PersonalBoard</CODE>, implement the 
+constructor <CODE>public PersonalBoard(int width, int height)</CODE>, which 
+calls the superclass constructor with the given parameters:</P>
+<PRE class="sh_java">import gameoflife.GameOfLifeBoard;
+
+public class PersonalBoard extends GameOfLifeBoard {
+
+    public PersonalBoard(int width, int height) {
+        super(width, height);
+    }
+
+    // ..
+</PRE>
+<P>You can first replace all the abstract methods with non-abstract ones, which 
+do not do anything particular anyway, so far. However, because the methods are 
+not abstract, this class can create instances, differently than the abstract 
+class GameOfLifeBoard.</P>
+<P>Implement the following methods</P>
+<UL>
+  <LI><B>public abstract void turnToLiving(int x, int y)</B> animates the cell 
+  whose coordinates are (x, y), that is to say it assigns the value <I>true</I> 
+  to it. If the coordinates are outside the board, nothing happens.</LI>
+  <LI><B>public abstract void turnToDead(int x, int y)</B> kills the cell whose 
+  coordinates are (x, y), that is to say it assigns the value <I>false</I> to 
+  it. If the coordinates are outside the board, nothing happens.</LI>
+  <LI><B>public abstract boolean isAlive(int x, int y)</B> tells whether the 
+  cell at (x, y) is alive. If the coordinates are outside the board, the method 
+  returns <I>false.</I></LI></UL>
+<P><B>Hint:</B> You have access to the bidimensional table of the superclass 
+through the superclass method <CODE>getBoard()</CODE>. Bidimensional tables are 
+used as normal tables, but they are assigned two indexes. The first index tells
+ the row and the second tells the column. For instance, the following program 
+chunk creates a 10 x 10 table, and prints the value at (3,1).</P>
+<PRE class="sh_java">boolean[][] values = new boolean[10][10];
+System.out.println(values[3][1]);
+</PRE>
+<P>Accordingly, we can print the value at (x,y) of our PersonalBoard's 
+superclass, in the following way:</P>
+<PRE class="sh_java">boolean[][] board = getBoard();
+System.out.println(board[x][y]);
+</PRE>
+<P>And an index (x,y) can be assigned a value in the following way:</P>
+<PRE class="sh_java">boolean[][] board = getBoard();
+board[x][y] = true;
+</PRE>
+<P>Or straight, using a helping variable:</P>
+<PRE class="sh_java">getBoard()[x][y] = true;
+</PRE>
+<P>Test your implementation with the following program.</P>
+<PRE class="sh_java">package game;
+
+public class Main {
+    public static void main(String[] args) {
+        PersonalBoard board = new PersonalBoard(7, 5);
+
+        board.turnToLiving(2, 0);
+        board.turnToLiving(4, 0);
+
+        board.turnToLiving(3, 3);
+        board.turnToLiving(3, 3);
+
+        board.turnToLiving(0, 2);
+        board.turnToLiving(1, 3);
+        board.turnToLiving(2, 3);
+        board.turnToLiving(3, 3);
+        board.turnToLiving(4, 3);
+        board.turnToLiving(5, 3);
+        board.turnToLiving(6, 2);
+
+        GameOfLifeTester tester = new GameOfLifeTester(board);
+        tester.play();
+    }
+}
+</PRE>
+<P>The output should look like the following: </P>
+<PRE>Press enter to continue, otherwise quit: &lt;enter&gt;
+
+  X X
+
+X     X
+ XXXXX
+
+Press enter to continue, otherwise quit: <FONT color="red">stop</FONT>
+Thanks!
+</PRE>
+<P></P>
+<H4>GameOfLife implementation, Part 2</H4>
+<P>Implement the method <B>public abstract void initiateRandomCells(double 
+probabilityForEachCell)</B> initiates all the cells of the board: every cell is 
+alive with a probability of <I>probabilityForEachCell.</I> The probability is a 
+double value between [0, 1]. </P>
+<P>Test the method. Given the value 0.0, there should be no cell alive; given 
+the value 1.0, all the cells should be alive (i.e. visible in the form of X 
+characters). With the value 0.5, around fifty precent of the cells should be 
+alive.</P>
+<PRE class="sh_java">        PersonalBoard board = new PersonalBoard(3, 3);
+        board.initiateRandomCells(1.0);
+
+        GameOfLifeTester tester = new GameOfLifeTester(board);
+        tester.play();
+</PRE>
+<PRE>Press enter to continue, otherwise quit: &lt;enter&gt;
+
+XXX
+XXX
+XXX
+Press enter to continue, otherwise quit: <FONT color="red">stop</FONT>
+Thanks!
+</PRE>
+<H4>GameOfLife Implementation, part 3</H4>
+<P>Implement the method <B>getNumberOfLivingNeighbours(int x, int y),</B> which 
+calculates the number of neighbour cells which are alive. Central cells have 
+eight neighbours, the ones on the side have five, and the ones in the corner 
+have only three. </P>
+<P>Test the method with the following sentences (of course, you can create your 
+own test instances!):</P>
+<PRE class="sh_java">PersonalBoard board = new PersonalBoard(7, 5);
+
+board.turnToLiving(0, 1);
+board.turnToLiving(1, 0);
+board.turnToLiving(1, 2);
+board.turnToLiving(2, 2);
+board.turnToLiving(2, 1);
+
+System.out.println("Neighbours alive (0,0): " + board.getNumberOfLivingNeighbours(0, 0));
+System.out.println("Neighbours alive (1,1): " + board.getNumberOfLivingNeighbours(1, 1));
+</PRE>
+<P>The print output should look like the following: </P>
+<PRE>Neighbours alive (0,0): 2
+Neighbours alive (1,1): 5
+</PRE>
+<H4>GameOfLife Implementation, Part 4</H4>
+<P>Only one method is missing: <B>manageCell(int x, int y, int 
+livingNeighbours)</B>. Game of Life rules were the following:</P>
+<UL>
+  <LI>Every living cell dies if they have less than two living neighbours.</LI>
+  <LI>Every living cell keeps on living during the following iteration (i.e. 
+  turn) if they have two or three living neighbours.</LI>
+  <LI>Every living cell dies if they have more than three living 
+neighbours.</LI>
+  <LI>Every dead cell is turned back to life if they have exactly three living 
+  neighbours.</LI></UL>
+<P>Implement the method <CODE>manageCell(int x, int y, int 
+livingNeighbours)</CODE> according to the following rules. It's good to program 
+and test one rule at one time!</P>
+<P>When you are done with all the rule, you can test the program with the 
+following graphic simulator.</P>
+<PRE class="sh_java">package game;
+
+import gameoflife.Simulator;
+
+public class Main {
+
+    public static void main(String[] args) {
+        PersonalBoard board = new PersonalBoard(100, 100);
+        board.initiateRandomCells(0.7);
+
+        Simulator simulator = new Simulator(board);
+        simulator.simulate();
+    }
+}
+</PRE></DIV></DIV></DIV></DIV></DIV><!-- /inner --> 
+  </DIV><!-- /node-326 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV></DIV></DIV></DIV><!-- /content-content -->             
+                                                  </DIV><!-- /content-inner-inner --> 
+                            </DIV><!-- /content-inner -->                        
+   </DIV><!-- /content-region-inner -->                         </DIV><!-- /content-region --> 
+                        
+<DIV class="content-bottom row nested " id="content-bottom">
+<DIV class="content-bottom-inner inner clearfix" id="content-bottom-inner">
+<DIV class="block block-block odd first last grid16-16" id="block-block-1">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="content clearfix">
+<DIV id="header-top-block">
+<P class="rtecenter">Ohjaus: <A href="http://mooc.fi/content/irc-ohjeet">IRCnet 
+#mooc.fi </A>&nbsp;&nbsp; |  Tiedotus: <A href="http://twitter.com/mooc1"><IMG 
+height="50" style="vertical-align: middle;" src="Write%20File%20and%20GUI_files/twitter_newbird_blue.png"> 
+Twitter </A><A href="http://www.facebook.com/Moocfi"><IMG height="30" style="padding: 10px; vertical-align: middle;" 
+src="Write%20File%20and%20GUI_files/f_logo-1.png"> Facebook</A>  |  
+Virheraportit: <A href="http://sourceforge.net/p/mooc-issues/tickets/"><IMG 
+height="30" style="padding: 10px; vertical-align: middle;" src="Write%20File%20and%20GUI_files/sf-footer-logo.png"> 
+SourceForge</A></P>
+<P class="rtecenter"><A href="http://www.cs.helsinki.fi/"><IMG width="400" 
+style="vertical-align: middle;" alt="Helsingin yliopiston tietojenkäsittelytieteen laitos" 
+src="Write%20File%20and%20GUI_files/CS-logo-MOOC.jpg">&nbsp; </A></P></DIV>
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-47575342-3', 'auto');
+  ga('send', 'pageview');
+ 
+</SCRIPT>
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --></DIV><!-- /content-bottom-inner --> 
+</DIV><!-- /content-bottom -->                       </DIV><!-- /content-group-inner --> 
+                    </DIV><!-- /content-group -->                                
+       </DIV><!-- /main-content-inner -->                 </DIV><!-- /main-content --> 
+                              </DIV><!-- /main-group-inner -->             
+</DIV><!-- /main-group -->           </DIV><!-- /main-inner -->         </DIV><!-- /main --> 
+      </DIV><!-- /main-wrapper -->       <!-- postscript-bottom row: width = grid_width --> 
+            <!-- footer row: width = grid_width -->             <!-- footer-message row: width = grid_width --> 
+      
+<DIV class="footer-message-wrapper full-width" id="footer-message-wrapper">
+<DIV class="footer-message row grid16-16" id="footer-message">
+<DIV class="footer-message-inner inner clearfix" id="footer-message-inner">
+<DIV class="footer-message-text block" id="footer-message-text">
+<DIV class="footer-message-text-inner inner clearfix" id="footer-message-text-inner"><BR></DIV><!-- /footer-message-text-inner --> 
+</DIV><!-- /footer-message-text -->                    </DIV><!-- /footer-message-inner --> 
+        </DIV><!-- /footer-message -->       </DIV><!-- /footer-message-wrapper --> 
+    <!-- /page-inner -->   <!-- /page -->   </BODY></HTML>

@@ -1,0 +1,2589 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0073)http://mooc.cs.helsinki.fi/programming-part2/material/week-8 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<TITLE>MOOC | MOOC - Massiivinen avoin verkkokurssi</TITLE>    <LINK href="/sites/mooc.cs.helsinki.fi/files/acquia_marina_favicon.png" 
+rel="shortcut icon" type="image/x-icon">   <LINK href="Interfaces_files/5c1587b6907a85bc361bd4b70014b0e3.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/node.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/defaults.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/system.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/system-menus.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/user.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/content-module.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/ckeditor.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/ctools.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/date.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/panels.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/views.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/aeb58e3ce47f9171327ad9fd87a26c8e.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/flexible.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/typography.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/superfish.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/superfish-navbar.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/superfish-vertical.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/fusion-acquia-marina-style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/custom.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/common.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/exercises.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/menu.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Interfaces_files/sh_style.css" 
+rel="stylesheet" type="text/css" media="all">   <LINK href="Interfaces_files/grid16-fluid.css" 
+rel="stylesheet" type="text/css" media="all">   <!--[if IE 8]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie8-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie8-fixes.css?8" />
+  <![endif]--> 
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie7-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie7-fixes.css?8" />
+  <![endif]--> 
+  <!--[if lte IE 6]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie6-fixes.css?8"/>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie6-fixes.css?8"/>
+  <![endif]--> 
+    
+<SCRIPT src="Interfaces_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/drupal.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/panels.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/jquery.bgiframe.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/hoverIntent.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/supposition.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/supersubs.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/superfish.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/jquery.corner.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/acquia-marina-script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/util-functions.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/clear-default-text.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/sh_java.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/sh_main.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/sh_ruby.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/sh_scala.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD>
+<BODY class="not-front not-logged-in page-node node-type-weekly-tasks no-sidebars full-node panels layout-main sidebars-both-first font-family-lucida font-size-13 grid-type-fluid grid-width-16 fluid-100" 
+id="pid-programming-part2-material-week-8">   
+<DIV class="page" id="page">
+<DIV class="page-inner" id="page-inner">
+<DIV id="skip"><A href="http://mooc.cs.helsinki.fi/programming-part2/material/week-8?noredirect=1#main-content-area">Skip 
+to Main Content Area</A>       </DIV><!-- header-top row: width = grid_width --> 
+            <!-- header-group row: width = grid_width -->       
+<DIV class="header-group-wrapper full-width" id="header-group-wrapper">
+<DIV class="header-group row grid16-16" id="header-group">
+<DIV class="header-group-inner inner clearfix" id="header-group-inner">
+<DIV class="primary-menu block" id="primary-menu">
+<DIV class="primary-menu-inner inner clearfix" id="primary-menu-inner">
+<UL class="menu sf-menu">
+  <LI class="expanded first"><A title="" 
+  href="http://mooc.cs.helsinki.fi/home">Kurssit ››</A>
+  <UL class="menu">
+    <LI class="leaf first"><A title="" 
+    href="http://mooc.fi/algoritmit">Algoritmien MOOC</A></LI>
+    <LI class="leaf"><A title="" href="http://mooc.cs.helsinki.fi/2014-ohjelmointi">Olio-ohjelmointi 
+    Javalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.aalto.fi/ohjelmointi/">Ohjelmointia Scalalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part1">Object-Oriented Programming with 
+    Java, part I</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part2">Object-Oriented Programming with 
+    Java, part II</A></LI>
+    <LI class="leaf last"><A title="" 
+    href="http://mooc.cs.helsinki.fi/wepa">Web-palvelinohjelmointi</A></LI></UL></LI>
+  <LI class="collapsed"><A title="Mikä on MOOC?" href="http://mooc.cs.helsinki.fi/content/mik%C3%A4-mooc">Mikä 
+  on MOOC? ››</A></LI>
+  <LI class="leaf last"><A title="" href="http://mooc.cs.helsinki.fi/content/j%C3%A4rjest%C3%A4v%C3%A4st%C3%A4-tahosta">Järjestävästä 
+  tahosta ››</A></LI></UL></DIV><!-- /primary-menu-inner --> </DIV><!-- /primary-menu --> 
+          </DIV><!-- /header-group-inner -->         </DIV><!-- /header-group --> 
+      </DIV><!-- /header-group-wrapper -->       <!-- preface-top row: width = grid_width --> 
+        <!--            <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
+        <div id="preface-top" class="preface-top row grid16-16">
+          <div id="preface-top-inner" class="preface-top-inner inner clearfix"> 
+--> 
+          </DIV><!-- /preface-top-inner -->         </DIV><!-- /preface-top -->  
+     <!-- /preface-top-wrapper -->           <!-- main row: width = grid_width --> 
+    
+<DIV class="main-wrapper full-width" id="main-wrapper">
+<DIV class="main row grid16-16" id="main">
+<DIV class="main-inner inner clearfix" id="main-inner"><!-- main group: width = grid_width - sidebar_first_width --> 
+          
+<DIV class="main-group row nested grid16-16" id="main-group">
+<DIV class="main-group-inner inner clearfix" id="main-group-inner">
+<DIV class="main-content row nested" id="main-content">
+<DIV class="main-content-inner inner clearfix" id="main-content-inner"><!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) --> 
+                    
+<DIV class="content-group row nested " id="content-group" style="width: 100%;">
+<DIV class="content-group-inner inner clearfix" id="content-group-inner">
+<DIV class="content-region row nested" id="content-region">
+<DIV class="content-region-inner inner clearfix" id="content-region-inner"><A 
+name="main-content-area" id="main-content-area"></A>                             
+                            
+<DIV class="content-inner block" id="content-inner">
+<DIV class="content-inner-inner inner clearfix" id="content-inner-inner">
+<DIV class="content-content" id="content-content">
+<DIV class="panel-flexible panels-flexible-13 clear-block">
+<DIV class="panel-flexible-inside panels-flexible-13-inside">
+<DIV class="panels-flexible-row panels-flexible-row-13-7 panels-flexible-row-first clear-block ">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-7-inside panels-flexible-row-inside-first clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_ panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-2 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<H1 class="title"><A 
+href="http://mooc.cs.helsinki.fi/programming-part2">Object-Oriented Programming 
+with Java, part II ››</A></H1></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-custom pane-3 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content"><LINK href="Interfaces_files/menu(1).css" rel="stylesheet" 
+type="text/css" media="screen"> <LINK href="Interfaces_files/common-new.css" 
+rel="stylesheet" type="text/css" media="screen, print"> <LINK href="Interfaces_files/sh_style(1).css" 
+rel="stylesheet" type="text/css" media="screen, print">        </DIV></DIV><!-- /inner-inner -->
+	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-4 clear-block js">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-4-inside clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en_ panels-flexible-region-first ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en_-inside panels-flexible-region-inside-first"></DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-js ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js-inside">
+<DIV class="panel-pane pane-node ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node odd full-node node-type-page" id="node-222">
+<DIV class="inner">
+<H2 class="title"><A title="" 
+href="http://mooc.cs.helsinki.fi/content/js-en"></A></H2>
+<DIV class="content clearfix">
+<SCRIPT src="Interfaces_files/bootstrap.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/jquery-1.7.1.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/exercises-eng-new.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/common-mooc-eng.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/sh_main.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/sh_java.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Interfaces_files/jquery.easing.js" type="text/javascript"></SCRIPT>
+ 
+<DIV class="menu" id="toc" data-first-exercise-index="1" 
+data-first-chapter-index="1"><SPAN id="materiaali_toc"></SPAN>           <!--div id="tehtavat_toc" ></div--> 
+          <SPAN id="tehtavat_toc2"></SPAN>         </DIV></DIV></DIV><!-- /inner --> 
+  </DIV><!-- /node-222 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-copyright panels-flexible-region-last float-right">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-copyright-inside panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-1 box ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<P><A href="http://creativecommons.org/licenses/by-nc-sa/2.0/" 
+rel="license"><IMG style="border-width: 0px; float: right;" alt="Creative Commons License" 
+src="Interfaces_files/88x31.png"></A><SMALL>This material is licensed under the 
+Creative Commons BY-NC-SA license, which means that you can use it and 
+distribute it freely so long as you do not erase the names of the original 
+authors. If you do changes in the material and want to distribute this altered 
+version of the material, you have to license it with a similar free license. The 
+use of the material for commercial use is prohibited without a separate 
+agreement.</SMALL></P></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-author course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-author">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Authors: Arto Vihavainen, Matti 
+Luukkainen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-translators course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-translators">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Translators: Simone Romeo, Kenny 
+Heinonen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-8 panels-flexible-row-last clear-block js en">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-8-inside panels-flexible-row-inside-last clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-node-content box-mooc ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node even full-node node-type-weekly_tasks" id="node-312">
+<DIV class="inner">
+<DIV class="content clearfix">
+<DIV class="viikkoraja-mooc" id="Week 8" data-first-exercise-index="116" 
+data-first-chapter-index="38" tekija="Arto Vihavainen, Matti Luukkainen" 
+data-first-week-index-mooc="8" data-first-exercise-index-mooc="9" 
+data-first-chapter-index-mooc="39" data-first-week-index="8" deadline="unlocks when 85% of week 7 done ">
+<H2 id="object">Object</H2>
+<P>In our course, we have been using frequently the method <CODE>public String 
+toString()</CODE> when we wanted to print an object in the shape of a string. 
+Calling the method without setting it up properly does usually cause an error. 
+We can have a look at the class <CODE>Book</CODE>, which does not contain the 
+method <CODE>public String toString()</CODE> yet, and see what happens when the 
+program uses the method <CODE>System.out.println()</CODE> and tries to print an 
+object of <CODE>Book</CODE> class.</P>
+<PRE class="sh_java">public class Book {
+    private String name;
+    private int publishingYear;
+
+    public Book(String name, int publishingYear) {
+        this.name = name;
+        this.publishingYear = publishingYear;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getPublishingYear() {
+        return this.publishingYear;
+    }
+}
+            </PRE>
+<PRE class="sh_java">Book objectBook = new Book("Object book", 2000);
+System.out.println(objectBook);
+            </PRE>
+<P>if we take an object of <CODE>Book</CODE> class and use it as the parameter 
+of the method <CODE>System.out.println()</CODE>, our program does not print an 
+error message. Our program does not crash, and instead of reading an error 
+message, we notice an interesting print output. The print output contains the 
+name of the class, <CODE>Book</CODE>, plus an indefinite String which follows a 
+@ character. Notice that when we call 
+<CODE>System.out.println(objectBook)</CODE> Java calls 
+<CODE>System.out.println(objectBook.toString())</CODE>, in fact, but this does 
+not cause an error.</P>
+<P>The explanation is related to the way Java classes are built. Each Java class 
+automatically <EM>inherits</EM> the <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html" 
+target="_blank">Object</A></CODE> class, which contains a set of methods that 
+are useful to each Java class. Heritage means that our class has access to the 
+features and functions defined in the inherited class. Among the others, the 
+class <CODE>Object</CODE> contains the method <CODE>toString</CODE>, which is 
+inherited by the classes we create.</P>
+<P>The <CODE>toString</CODE> method inherited from the object class is not 
+usually the one we'd want. That's why we will want to <EM>replace</EM> it with 
+one we make personally. Let us add the method <CODE>public String 
+toString()</CODE> to our <CODE>Book</CODE> class. This method will replace the 
+<CODE>toString</CODE> method inherited from the <CODE>Object</CODE> class.</P>
+<PRE class="sh_java">public class Book {
+    private String name;
+    private int publishingYear;
+
+    public Book(String name, int publishingYear) {
+        this.name = name;
+        this.publishingYear = publishingYear;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getPublishingYear() {
+        return this.publishingYear;
+    }
+
+    @Override
+    public String toString() {
+        return this.name + " (" + this.publishingYear + ")";
+    }
+}
+            </PRE>
+<P>If now we create an object instance, and we set it into the print method, we 
+notice that the <CODE>toString</CODE> method of the <CODE>Book</CODE> class 
+produces a string.</P>
+<PRE class="sh_java">Book objectBook = new Book("Object book", 2000);
+System.out.println(objectBook);
+            </PRE>
+<PRE>Object book (2000)
+            </PRE>
+<P>Above the <CODE>toString</CODE> method of class <CODE>Book</CODE> we see the 
+<CODE>@Override</CODE> <EM>annotation</EM>. We use annotations to give 
+guidelines to both the translator and the reader about how to relate to the 
+methods. The <CODE>@Override</CODE> annotation tells that the following method 
+replaces the one defined inside the inherited class. If we don't add an 
+annotation to the method we replace, the translator gives us a <EM>warning</EM>, 
+however avoiding writing annotations is not a mistake.</P>
+<P>There are also other useful methods we inherit from the <CODE>Object</CODE> 
+class. Let us now get acquainted with the methods <CODE>equals</CODE> and 
+<CODE>hashCode</CODE>.</P>
+<H3>Equals Method</H3>
+<P>The <CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html#equals(java.lang.Object)" 
+target="_blank">equals</A></CODE> method is used to compare two objects. The 
+method is particularly used when we compare two <CODE>String</CODE> objects.</P>
+<PRE class="sh_java">Scanner reader = new Scanner(System.in);
+
+System.out.print("Write password: ");
+String password = reader.nextLine();
+
+if (password.equals("password")) {
+    System.out.println("Right!");
+} else {
+    System.out.println("Wrong!");
+}
+            </PRE>
+<PRE>Write password: <FONT color="red">mightycarrot</FONT>
+Wrong!
+            </PRE>
+<P>The <CODE>equals</CODE> method is defined in the <CODE>Object</CODE> class, 
+and it makes sure that both the parameter object and the compared object have 
+the same reference. In other words, by default the method makes sure that we are 
+dealing with <EM>one</EM> unique object. If the reference is the same, the 
+method returns <CODE>true</CODE>, otherwise <CODE>false</CODE>. The following 
+example should clarify the concept. The class <CODE>Book</CODE> doesn't 
+implement its own <CODE>equals</CODE> method, and therefore it uses the one 
+created by the <CODE>Object</CODE> class.</P>
+<PRE class="sh_java">Book objectBook = new Book("Objectbook", 2000);
+Book anotherObjectBook = objectBook;
+
+if (objectBook.equals(objectBook)) {
+    System.out.println("The books were the same");
+} else {
+    System.out.println("The books were not the same");
+}
+
+// Now we create an object with the same contents, which is however a different, independent object
+anotherObjectBook = new Book("Objectbook", 2000);
+
+if (objectBook.equals(anotherObjectBook)) {
+    System.out.println("The books were the same");
+} else {
+    System.out.println("The books were not the same");
+}
+            </PRE>
+<P>Print output:</P>
+<PRE>The books were the same
+The books were not the same
+            </PRE>
+<P>Even if the internal structure of both <CODE>Book</CODE> objects (i.e. the 
+object variable values) is exactly the same, only the first comparison prints 
+"<CODE>The books were the same</CODE>". This depends on the fact that only in 
+the first case also the references were the same, i.e. we were comparing an 
+object with itself. In the second example, we had two different objects even 
+though they both had the same values.</P>
+<P>When we use the <CODE>equals</CODE> method to compare strings, it works as we 
+want it to: it identifies two strings as equal if the have the same 
+<EM>contents</EM> even though they are two different objects. In fact, the 
+default <CODE>equals</CODE> method is replaced with a new implementation in the 
+String class.</P>
+<P>We want that book comparison happened against name and year. We replace the 
+<CODE>equals</CODE> method in the <CODE>Object</CODE> class with an 
+implementation in the <CODE>Book</CODE> class. The <CODE>equals</CODE> method 
+has to make sure whether the object is the same as the one received as 
+parameter. First, we define a method according to which all the objects are the 
+same.</P>
+<PRE class="sh_java">    public boolean equals(Object object) {
+        return true;
+    }
+            </PRE>
+<P>Our method is a little too optimistic, so let us change its functionality 
+slightly. Let us define that the objects are not the same if the parameter 
+object is <EM>null</EM> or if the the two object types are different. We can 
+find out the type of an object with the method <CODE>getClass()</CODE> (which is 
+denifed in the <CODE>oject</CODE> class). Otherwise, we expect that the objects 
+are the same.</P>
+<PRE class="sh_java">    public boolean equals(Object object) {
+        if (object == null) {
+            return false;
+        }
+
+        if (this.getClass() != object.getClass()) {
+            return false;
+        }
+
+        return true;
+    }
+            </PRE>
+<P>The <CODE>equals</CODE>method finds out the class difference of two objects, 
+but it is not able to distinguish two similar objects from each other. In order 
+to compare our object with the object we received as parameter, and whose 
+reference is <CODE>Object</CODE> type, we have to change the type of the Object 
+reference. The reference type can be changed if and only if the object type is 
+really such as we are converting it into. Type casting happens by specifying the 
+desired class within brackets on the right side of the assignment sentence:</P>
+<PRE class="sh_java">    WantedType variable = (WantedType) oldVariable;
+            </PRE>
+<P>Type casting is possible because we know two objects are the same type. If 
+they are different type, the above <CODE>getClass</CODE> method returns false. 
+Let us change the <CODE>Object</CODE> parameter received with the 
+<CODE>equals</CODE> method into <CODE>Book</CODE> type, and let us identify two 
+different books against their publishing year. The books are otherwise the 
+same.</P>
+<PRE class="sh_java">    public boolean equals(Object object) {
+        if (object == null) {
+            return false;
+        }
+
+        if (getClass() != object.getClass()) {
+            return false;
+        }
+
+        Book compared = (Book) object;
+
+        if(this.publishingYear != compared.getPublishingYear()) {
+            return false;
+        }
+
+        return true;
+    }
+            </PRE>
+<P>Now, our comparison method is able to distinguish books against their 
+publishing year. Wa want to check still that our book names are the same, and 
+our own book name is not <EM>null</EM>.</P>
+<PRE class="sh_java">    public boolean equals(Object object) {
+        if (object == null) {
+            return false;
+        }
+
+        if (getClass() != object.getClass()) {
+            return false;
+        }
+
+        Book compared = (Book) object;
+
+        if (this.publishingYear != compared.getPublishingYear()) {
+            return false;
+        }
+
+        if (this.name == null || !this.name.equals(compared.getName())) {
+            return false;
+        }
+
+        return true;
+    }
+            </PRE>
+<P>Excellent, we have got a method for comparison which works, finally! Below is 
+our <CODE>Book</CODE> class as it looks like at the moment.</P>
+<PRE class="sh_java">public class Book {
+    private String name;
+    private int publishingYear;
+
+    public Book(String name, int publishingYear) {
+        this.name = name;
+        this.publishingYear = publishingYear;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getPublishingYear() {
+        return this.publishingYear;
+    }
+
+    @Override
+    public String toString() {
+        return this.name + " (" + this.publishingYear + ")";
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (object == null) {
+            return false;
+        }
+
+        if (getClass() != object.getClass()) {
+            return false;
+        }
+
+        Book compared = (Book) object;
+
+        if (this.publishingYear != compared.getPublishingYear()) {
+            return false;
+        }
+
+        if (this.name == null || !this.name.equals(compared.getName())) {
+            return false;
+        }
+
+        return true;
+    }
+}
+            </PRE>
+<P>Now, our book comparison returns <CODE>true</CODE>, if the book contents are 
+the same.</P>
+<PRE class="sh_java">Book objectBook = new Book("Objectbook", 2000);
+Book anotherObjectBook = new Book("Objectbook", 2000);
+
+if (objectBook.equals(anotherObjectBook)) {
+    System.out.println("The books are the same");
+} else {
+    System.out.println("The books are not the same");
+}
+            </PRE>
+<PRE>The books are the same
+            </PRE>
+<H4>Equals and ArrayList</H4>
+<P>Various different Java made-up methods make use of the <CODE>equals</CODE> 
+method to implement their search functionality. For instance, the 
+<CODE>contains</CODE> mehod of class <CODE>ArrayList</CODE> compares objects 
+through the <CODE>equals</CODE> method. Let us continue to use the 
+<CODE>Book</CODE> class we defied for our examples. If our objects do not 
+implement the <CODE>equals</CODE> method, we can't use the <CODE>contains</CODE> 
+method, for instance. Try out the code below in two different <CODE>book</CODE> 
+classes. The first class implements the <CODE>equals</CODE> method, the other 
+does not.</P>
+<PRE class="sh_java">ArrayList&lt;Book&gt; books = new ArrayList&lt;Book&gt;();
+Book objectBook = new Book("Objectbook", 2000);
+books.add(objectBook);
+
+if (books.contains(objectBook)) {
+    System.out.println("The object book was found.");
+}
+
+objectBook = new Book("Objectbook", 2000);
+
+if (!books.contains(objectBook)) {
+    System.out.println("The object book was not found.");
+}
+            </PRE>
+<H3>HashCode Method</H3>
+<P>The <CODE>hashCode</CODE> method takes an object and returns a numeric value, 
+i.e. a hash value. We need numeric values for instance when we use and object as 
+HashMap keys. So far, we have been using only String and Integer objects as 
+HashMap keys, and their <CODE>hashCode</CODE> method is implemented by default. 
+Let us make an example where it is not so: let us continue with our book 
+examples and let us start to take note of our books on loan. We want to 
+implement our bookkeeping through Hashmap. The key is the book, and the book's 
+value is a string, which tells the loaner's name:</P>
+<PRE class="sh_java">        HashMap&lt;Book, String&gt; loaners = new HashMap&lt;Book, String&gt;();
+
+        Book objectbook = new Book("Objectbook", 2000);
+        loaners.put( objectbook, "Pekka" );
+        loaners.put( new Book("Test Driven Development",1999), "Arto" );
+
+        System.out.println( loaners.get( objectbook ) );
+        System.out.println( loaners.get( new Book("Objectbook", 2000) );
+        System.out.println( loaners.get( new Book("Test Driven Development", 1999) );
+            </PRE>
+<P>Print output:</P>
+<PRE>Pekka
+null
+null
+            </PRE>
+<P>We can find the loaner by searching against the same object which was given 
+as HashMap key with the <CODE>put</CODE> method. However, if our search item is 
+the same book but a different object, we are not able to find its loaner and we 
+are retured with a <EM>null</EM> reference. This is again due to the default 
+implementation of the <CODE>hashCode</CODE> method of <CODE>Object</CODE> class. 
+The default implementation creates an index based on the reference; this means 
+that different objects with the same content receive different hashCode method 
+outputs, and therefore it is not possible to find the right place of the object 
+in the HashMap.</P>
+<P>To be sure the HashMap worked in the way we want - i.e. it returned the 
+loaner when the key is an object with the right <EM>content</EM> (not 
+necessarily the same object as the original value) - the class which works as 
+key must overwrite both the <CODE>equals</CODE> method and the 
+<CODE>hashCode</CODE> method. The method must be overwritten in such a way, so 
+that it would assign the same numeric value to all objects which have the same 
+content. Some objects with different content may eventually be assigned the same 
+hashCode; however, different content objects should be assigned the same 
+hashCode as rarely as possible, if we want our HashMap to be efficient.</P>
+<P>Previously, we have successfully used <CODE>String</CODE> objects as HashMap 
+keys, and we can therefore say that the <CODE>String</CODE> class has a 
+<CODE>hashCode</CODE> implementation which works as expected. Let us 
+<EM>delegate</EM> the calculation to the <CODE>String</CODE> object.</P>
+<PRE class="sh_java">    public int hashCode() {
+        return this.name.hashCode();
+    }
+            </PRE>
+<P>The solution above is quite good; but if <CODE>name</CODE> is <EM>null</EM>, 
+we are thrown a <CODE>NullPointerException</CODE>. We can fix this by setting 
+the condition: if the value of the <CODE>name</CODE> variable is is 
+<EM>null</EM>, return value 7. Seven is a value chosen casually, thirteen could 
+have done as well.</P>
+<PRE class="sh_java">    public int hashCode() {
+        if (this.name == null) {
+            return 7;
+        }
+
+        return this.name.hashCode();
+    }
+            </PRE>
+<P>We can still improve the <CODE>hashCode</CODE> method by taking into 
+consideration the book publishing year, in our calculations:</P>
+<PRE class="sh_java">    public int hashCode() {
+        if (this.name == null) {
+            return 7;
+        }
+
+        return this.publishingYear + this.name.hashCode();
+    }
+            </PRE>
+<P>An additional remark: the output of the hashCode method of HashMap key 
+objects tells us their value slot in the hash construction, i.e. their index in 
+the HashMap. You may now be wondering: "doesn't this lead to a situation where 
+more than one object ends up with the same index in the HashMap?". The answer is 
+yes and no. Even if the <CODE>hashCode</CODE> method gave the same value to two 
+different objects, HashMaps are built in such way that various different obejcts 
+may have the same index. In order to distinguish objects with the same index, 
+the key objects of the HashMap must have implemented the <CODE>equals</CODE> 
+method. You will find more information about Hashmap implementation in the 
+course <EM>Data Structures and Algorithms</EM>.</P>
+<P>The final <CODE>Book</CODE> class now.</P>
+<PRE class="sh_java">public class Book {
+
+    private String name;
+    private int publishingYear;
+
+    public Book(String name, int publishingYear) {
+        this.name = name;
+        this.publishingYear = publishingYear;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getPublishingYear() {
+        return this.publishingYear;
+    }
+
+    @Override
+    public String toString() {
+        return this.name + " (" + this.publishingYear + ")";
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (object == null) {
+            return false;
+        }
+
+        if (getClass() != object.getClass()) {
+            return false;
+        }
+
+        Book compared = (Book) object;
+
+        if (this.publishingYear != compared.getPublishingYear()) {
+            return false;
+        }
+
+        if (this.name == null || !this.name.equals(compared.getName())) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public int hashCode() {
+        if (this.name == null) {
+            return 7;
+        }
+
+        return this.publishingYear + this.name.hashCode();
+    }
+}
+            </PRE>
+<P><B>Let us sum up everything again:</B> in order to use a class as HashMap 
+key, we have to define</P>
+<UL>
+  <LI>The <CODE>equals</CODE> method in a way that objects with the same content 
+  will return true when compared, whereas different-content objects shall return 
+  false</LI>
+  <LI>The <CODE>hashCode</CODE> method in a way that it assigns the same value 
+  to all the objects whose content is regarded as similar</LI></UL>
+<P>The equals and hashCode methods of our Book class fulfill these two 
+conditions. Now, the problem we faced before is solved, and we can find out the 
+book loaners:</P>
+<PRE class="sh_java">        HashMap&lt;Book, String&gt; loaners = new HashMap&lt;Book, String&gt;();
+
+        Book objectbook = new Book("Objectbook", 2000);
+        loaners.put( objectbook, "Pekka" );
+        loaners.put( new Book("Test Driven Development",1999), "Arto" );
+
+        System.out.println( loaners.get( objectbook ) );
+        System.out.println( loaners.get( new Book("Objectbook", 2000) );
+        System.out.println( loaners.get( new Book("Test Driven Development", 1999) );
+            </PRE>
+<P>Print output:</P>
+<PRE>Pekka
+Pekka
+Arto
+            </PRE>
+<P><EM>NetBeans allows for the automatic creation of the <CODE>equals</CODE> and 
+<CODE>hashCode</CODE> methods. From the menu Source -&gt; Insert Code, you can 
+choose <EM>equals() and hashCode()</EM>. After this, NetBeans asks which object 
+variables the methods shall use.</EM></P><nextweek>
+<DIV class="tehtavat" id="viikko8">
+<DIV class="tehtava">
+<H3>Car Registration Centre</H3>
+<H4>Registration Plate Equals and HashCode</H4>
+<P>European registration plates are composed of two parts: the country ID -- one 
+or two letters long -- and possibly a regitration code specific for the country, 
+which in turn is composed of numbers and letters. Registaration plates are 
+defined using the following class:</P>
+<PRE class="sh_java">public class RegistrationPlate {
+    // ATTENTION: the object variable types are final, meaning that their value cannot be changed!
+    private final String regCode;
+    private final String country;
+
+    public RegistrationPlate(String regCode, String country) {
+       this.regCode = regCode;
+       this.country = country;
+    }
+
+    public String toString(){
+        return country+ " "+regCode;
+    }
+}
+                </PRE>
+<P>We want to store the registration plates into say ArrayLists, using a HashMap 
+as key. As mentioned before, it means we have to implement the methods 
+<CODE>equals</CODE> and <CODE>hashCode</CODE> in their class, otherwise they 
+can't work as we want. </P>
+<P><STRONG>Suggestion:</STRONG> take the equals and hashCode models from the 
+Book example above. The registration plate hashCode can be created say combining 
+the hashCodes of the country ID and of the registration code.</P>
+<P>Example program:</P>
+<PRE class="sh_java">    public static void main(String[] args) {
+        RegistrationPlate reg1 = new RegistrationPlate("FI", "ABC-123");
+        RegistrationPlate reg2 = new RegistrationPlate("FI", "UXE-465");
+        RegistrationPlate reg3 = new RegistrationPlate("D", "B WQ-431");
+
+        ArrayList&lt;RegistrationPlate&gt; finnish = new ArrayList&lt;RegistrationPlate&gt;();
+        finnish.add(reg1);
+        finnish.add(reg2);
+
+        RegistrationPlate new = new RegistrationPlate("FI", "ABC-123");
+        if (!finnish.contains(new)) {
+            finnish.add(new);
+        }
+        System.out.println("Finnish: " + finnish);
+        // if the equals method hasn't been overwritten, the same registration plate is repeated in the list
+
+        HashMap&lt;RegistrationPlate, String&gt; owners = new HashMap&lt;RegistrationPlate, String&gt;();
+        owners.put(reg1, "Arto");
+        owners.put(reg3, "Jürgen");
+
+        System.out.println("owners:");
+        System.out.println(owners.get(new RegistrationPlate("FI", "ABC-123")));
+        System.out.println(owners.get(new RegistrationPlate("D", "B WQ-431")));
+        // if the hashCode hasn't been overwritten, the owners are not found
+    }
+                </PRE>
+<P>If equals hashCode have been implemented well, the output should look like 
+this:</P>
+<PRE>Finnish: [FI ABC-123, FI UXE-465]
+owners:
+Arto
+Jürgen
+
+                </PRE>
+<H4>The Owner, Based of the Registration Plate</H4>
+<P>Implement the class <CODE>VehicleRegister</CODE> which has the following 
+methods:</P>
+<UL>
+  <LI><CODE>public boolean add(RegistrationPlate plate, String owner)</CODE>, 
+  which adds the parameter owner of the car which corresponds to the parameter 
+  registration plate. The method returns true if the car had no owner; if the 
+  car had an owner already, the method returns false and it doesn't do 
+  anything</LI>
+  <LI><CODE>public String get(RegistrationPlate plate)</CODE>, which returns the 
+  car owner which corresponds to the parameter register number. If the car was 
+  not registered, it returns <CODE>null</CODE></LI>
+  <LI><CODE>public boolean delete(RegistrationPlate plate)</CODE>, which delete 
+  the information connected to the parameter registration plate. The method 
+  returns true if the information was deleted, and false if there was no 
+  information connetted to the parameter in the register.</LI></UL>
+<P><STRONG>Attention:</STRONG> the vehicle register has to store the owner 
+information into a <CODE>HashMap&lt;RegistrationPlate, String&gt; owners</CODE> 
+object variable!</P>
+<H4>More for the Vehicle Register</H4>
+<P>Add still the following methods to your VehicleRegister:</P>
+<UL>
+  <LI><CODE>public void printRegistrationPlates()</CODE>, which prints out all 
+  the registration plates stored</LI>
+  <LI><CODE>public void printOwners()</CODE>, which prints all the car owners 
+  stored. Each owner's name has to be printed only once, even though they had 
+  more than one car</LI></UL></DIV></DIV>
+<H2 id="rajapinta">Interface</H2>
+<P><EM>Interface</EM> is an instrument we have to define the functionality our 
+classes should have. Interfaces are defined as normal Java classes, but instead 
+of the definition "<CODE>public class ...</CODE>", we write "<CODE>public 
+interface ...</CODE>". The interfaces influence class behaviour by defining the 
+method names and return values, but they <EM>do not contain method 
+implementation</EM>. The access modifier is not specified, because it is always 
+<CODE>public</CODE>. Let us have a look at the interface <EM>Readable</EM>, 
+which defines whether an object can be read.</P>
+<PRE class="sh_java">public interface Readable {
+    String read();
+}
+            </PRE>
+<P>The interface <CODE>Readable</CODE> defines the method <CODE>read()</CODE>, 
+which returns a string object. The classes which implement an interface decide 
+<EM>in which way</EM> the methods defined in the interface have to be 
+implemented, in the end. A class implements an interface by adding the keyword 
+<EM>implements</EM> between the class and the interface name. Below, we create 
+the class <CODE>SMS</CODE> which implements <CODE>Readable</CODE> interface.</P>
+<PRE class="sh_java">public class SMS implements Readable {
+    private String sender;
+    private String content;
+
+    public SMS(String sender, String content) {
+        this.sender = sender;
+        this.content = content;
+    }
+
+    public String getSender() {
+        return this.sender;
+    }
+
+    public String read() {
+        return this.content;
+    }
+}
+            </PRE>
+<P>Because the class <CODE>SMS</CODE> implements the interface 
+<CODE>Readable</CODE> (<CODE>public class SMS implements Readable</CODE>), the 
+class <CODE>SMS</CODE> <EM>must</EM> implement the method <CODE>public String 
+read()</CODE>. The implementations of methods defined in the interface must 
+always have public access.</P>
+<P><EM>An interface is a behavioural agreement. In order to implement the 
+behaviour, the class must implement the methods defined by the interface. The 
+programmer of a class which implements an interface has to define what the 
+behaviour will be like. Implementing an interface means to agree that the class 
+will offer all the actions defined by the interface, i.e. the behaviour defined 
+by the interface. A class which implements an interface but does not implement 
+some of the interface methods can not exist.</EM></P>
+<P>Let us implement another class which implements the <CODE>Readable</CODE> 
+interface, in addition to our <CODE>SMS</CODE> class. The class 
+<CODE>EBook</CODE> is the electronic implementation of a book, and it contains 
+the book name and page number. The EBook reads one page at time, and the 
+<CODE>public String read()</CODE> method always returns the string of the 
+following page.</P>
+<PRE class="sh_java">public class EBook implements Readable {
+    private String name;
+    private ArrayList&lt;String&gt; pages;
+    private int pageNumber;
+
+    public EBook(String name, ArrayList&lt;String&gt; pages) {
+        this.name = name;
+        this.pages = pages;
+        this.pageNumber = 0;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int howManyPages() {
+        return this.pages.size();
+    }
+
+    public String read() {
+        String page = this.pages.get(this.pageNumber);
+        nextPage();
+        return page;
+    }
+
+    private void nextPage() {
+        this.pageNumber = this.pageNumber + 1;
+        if(this.pageNumber % this.pages.size() == 0) {
+            this.pageNumber = 0;
+        }
+    }
+}
+            </PRE>
+<P>Classes which implement interfaces generate objects as well as normal 
+classes, and they can be used as ArrayList types too.</P>
+<PRE class="sh_java">    SMS message = new SMS("ope", "Awesome stuff!");
+    System.out.println(message.read());
+
+    ArrayList&lt;SMS&gt; messages = new ArrayList&lt;SMS&gt;();
+    messages.add(new SMS("unknown number", "I hid the body.");
+            </PRE>
+<PRE>Awesome stuff!</PRE>
+<PRE class="sh_java">    ArrayList&lt;String&gt; pages = new ArrayList&lt;String&gt;();
+    pages.add("Split your method into short clear chunks.");
+    pages.add("Devide the user interface logic from the application logic.");
+    pages.add("At first, always code only a small program which solves only a part of the problem.");
+    pages.add("Practice makes perfect. Make up your own fun project.");
+
+    EBook book = new EBook("Programming Hints.", pages);
+    for(int page = 0; page &lt; book.howManyPages(); page++) {
+        System.out.println(book.read());
+    }
+            </PRE>
+<PRE>
+Split your method into short clear chunks.
+Divide the user interface logic from the application logic.
+At first, always code only a small program which solves only a part of the problem.
+Practice makes perfect. Make up your own fun project.
+            </PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>NationalService</H3>
+<P>In the exercise layout, you find the premade interface 
+<CODE>NationalService</CODE>, which contains the following operations:</P>
+<UL>
+  <LI> the method <CODE>int getDaysLeft()</CODE> which returns the number of 
+  days left on service</LI>
+  <LI> the method <CODE>void work()</CODE>, which reduces the working days by 
+  one. The working days number can not become negative.</LI></UL>
+<PRE class="sh_java">public interface NationalService {
+    int getDaysLeft();
+    void work();
+}
+                </PRE>
+<H4>CivilService</H4>
+<P>Create the class <CODE>CivilService</CODE> which implements your 
+<CODE>NationalService</CODE> interface. The class constructor is without 
+parameter. The class has the object variable daysLeft which is initialised in 
+the constructor receiving the value 362.</P>
+<H4>MilitaryService</H4>
+<P>Create the class <CODE>MilitaryService</CODE> which implements your 
+<CODE>NationalService</CODE> interface. The class constructor has one parameter, 
+defining the days of service (<CODE>int daysLeft</CODE>).</P></DIV></DIV>
+<H3>An Interface as Variable Type</H3>
+<P>When we create a new variable we always specify its type. There are two types 
+of variable types: primitive-type variables (int, double, ...) and 
+reference-type (all objects). As far as reference-type variables are concerned, 
+their class has also been their type, so far.</P>
+<PRE class="sh_java">    String string = "string-object";
+    SMS message = new SMS("teacher", "Something crazy is going to happen");
+            </PRE>
+<P>The type of an object can be different from its class. For instance, if a 
+class implements the interface <CODE>Readable</CODE>, its type is 
+<CODE>Readable</CODE>, too. For instance, since the class <CODE>SMS</CODE> 
+implements the interface <CODE>Readable</CODE>, it has two types: 
+<CODE>SMS</CODE> and <CODE>Readable</CODE>.</P>
+<PRE class="sh_java">    SMS message = new SMS("teacher", "Awesome stuff!");
+    Readable readable = new SMS("teacher", "The SMS is Readable!");
+            </PRE>
+<PRE class="sh_java">    ArrayList&lt;String&gt; pages = new ArrayList&lt;String&gt;();
+    pages.add("A method can call itself.");
+
+    Readable book = new EBook("Recursion Principles", pages);
+    for(int page = 0; page &lt; ((EBook)book).howManyPages(); page++) {
+        System.out.println(book.read());
+    }
+            </PRE>
+<P>Because an interface can be used as type, it is possible to create a list 
+containing interface-type objects.</P>
+<PRE class="sh_java">    ArrayList&lt;Readable&gt; numberList = new ArrayList&lt;Readable&gt;();
+
+    numberList.add(new SMS("teacher", "never been programming before..."));
+    numberList.add(new SMS("teacher", "gonna love it i think!"));
+    numberList.add(new SMS("teacher", "give me something more challenging! :)"));
+    numberList.add(new SMS("teacher", "you think i can do it?"));
+    numberList.add(new SMS("teacher", "up here we send several messages each day"));
+
+    for (Readable readable: numberList) {
+        System.out.println(readable.read());
+    }
+            </PRE>
+<P>The <CODE>EBook</CODE> class implements the interface <CODE>Readable</CODE>. 
+However, notice that even though the type of the class <CODE>EBook</CODE> is an 
+interface, <CODE>EBook</CODE> is not the type of all the classes which implement 
+the <CODE>Readable</CODE> interface. It is possible to assign an 
+<CODE>EBook</CODE> object to a <CODE>Readable</CODE> variable, but the 
+assignment does not work in the opposite way without a particular type 
+change.</P>
+<PRE class="sh_java">    Readable readable = new SMS("teacher", "The SMS is Readable!"); // works
+    SMS message = readable; // not possible
+
+    SMS transformedMessage = (SMS) readable; // works
+            </PRE>
+<P>Type casting works if and only if the variable's type is really what we try 
+to change it into. Type casting is not usually a best practice; one of the only 
+cases where that is legitimate is in connection with the <CODE>equals</CODE> 
+method.</P>
+<H3>An Interface as Method Parameter</H3>
+<P>The real use of interfaces becomes clear when we use them for the type of a 
+method parameter. Because interfaces can be used as variable type, they can be 
+used in method calls as parameter type. For instance, the below method 
+<CODE>print</CODE> of class <CODE>Printer</CODE> receives a 
+<CODE>Readable</CODE> variable.</P>
+<PRE class="sh_java">public class Printer {
+    public void print(Readable readable) {
+        System.out.println(readable.read());
+    }
+}
+          </PRE>
+<P>The real value of the <CODE>print</CODE> method of class <CODE>Printer</CODE> 
+is that its parameter can be <EM>whatever</EM> class instance which implements 
+our <CODE>Readable</CODE> interface. When we call the method of an object, the 
+method will work regardless of the class of this object, as long as the object 
+implements Readable.</P>
+<PRE class="sh_java">    SMS message = new SMS("teacher", "Wow, this printer is able to print them, actually!");
+    ArrayList&lt;String&gt; pages = new ArrayList&lt;String&gt;();
+    pages.add("{3, 5} are the numbers in common between {1, 3, 5} and {2, 3, 4, 5}.");
+
+    EBook book = new EBook("Introduction to University Mathematics.", pages);
+
+    Printer printer = new Printer();
+    printer.print(message);
+    printer.print(book);
+          </PRE>
+<PRE>Wow, this printer is able to print them, actually!
+{3, 5} are the numbers in common between {1, 3, 5} and {2, 3, 4, 5}.
+          </PRE>
+<P>Let us implement another <CODE>numberList</CODE> class, where we can add 
+interesting readable stuff. The class has an <CODE>ArrayList</CODE> instance as 
+object variable where we save things to read. We add items to our number list 
+through the <CODE>add</CODE> method which receives a <CODE>Readable</CODE> 
+variable as parameter.</P>
+<PRE class="sh_java">public class NumberList {
+    private ArrayList&lt;Readable&gt; readables;
+
+    public NumberList() {
+        this.readables = new ArrayList&lt;Readable&gt;();
+    }
+
+    public void add(Readable readable) {
+        this.readables.add(readable);
+    }
+
+    public int howManyReadables() {
+        return this.readables.size();
+    }
+}
+          </PRE>
+<P>Number lists are usually readable, so we can implement the 
+<CODE>Readable</CODE> interface to the <CODE>NumberList</CODE> class. The number 
+list <CODE>read</CODE> method reads all the objects of the 
+<CODE>readables</CODE> list, and it adds them one by one to a string which is 
+returned by the <CODE>read()</CODE> method.</P>
+<PRE class="sh_java">public class NumberList implements Readable {
+    private ArrayList&lt;Readable&gt; readables;
+
+    public NumberList() {
+        this.readables = new ArrayList&lt;Readable&gt;();
+    }
+
+    public void add(Readable readable) {
+        this.readables.add(readable);
+    }
+
+    public int howManyReadables() {
+        return this.readables.size();
+    }
+
+    public String read() {
+        String read = "";
+        for(Readable readable: this.readables) {
+            read += readable.read() + "\n";
+        }
+
+        this.readables.clear();
+        return read;
+    }
+}
+          </PRE>
+<PRE class="sh_java">    NumberList joelList = new NumberList();
+    joelList.add(new SMS("matti", "have you already written the tests?"));
+    joelList.add(new SMS("matti", "did you have a look at the submissions?"));
+
+    System.out.println("Joel has " + joelList.howManyReadables() + " messages to read");
+          </PRE>
+<PRE>Joel has got 2 messages to read
+          </PRE>
+<P>Because the type of <CODE>NumberList</CODE> is <CODE>Readable</CODE>, we can 
+add <CODE>NumberList</CODE> objects to our number list, too. In the example 
+below, Joel has a lot of messages to read, luckily Mikael deals with it and 
+reads the messages on behalf of Joel.</P>
+<PRE class="sh_java">    NumberList joelList = new NumberList();
+    for (int i = 0; i &lt; 1000; i++) {
+        joelList.add(new SMS("matti", "have you already written the tests?"));
+    }
+
+    System.out.println("Joel has " + joelList.howManyReadables() + " messages to read");
+    System.out.println("Let's delegate some reading to Mikael");
+
+    NumberList mikaelList = new NumberList();
+    mikaelList.add(joelList);
+    mikaelList.read();
+
+    System.out.println();
+    System.out.println("Joel has " + joelList.howManyReadables() + " messages to read");
+          </PRE>
+<PRE>Joel has 1000 messages to read
+Let's delegate some reading to Mikael
+
+Joel has 0 messages to read
+          </PRE>
+<P>The <CODE>read</CODE> method which is called in connection to Mikael's list 
+parses all the <CODE>Readable</CODE> objects contained in the list, and calls 
+their <CODE>read</CODE> method. At the end of each <CODE>read</CODE> method call 
+the list is cleared. In other words, Joel's number list is cleared as soon as 
+Mikael reads it.</P>
+<P><EM>At this point, there are a lot of references; it would be good to draw 
+down the objects and try to grasp how the <CODE>read</CODE> method call 
+connected to <CODE>mikaelList</CODE> works!</EM></P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Boxes and Things</H3>
+<H4 class="req">ToBeStored</H4>
+<P>We need storage boxes when we move to a new apartment. The boxes are used to 
+store different things. All the things which are stored in the boxes have to 
+implement the following interface:</P>
+<PRE class="sh_java">public interface ToBeStored {
+    double weight();
+}
+            </PRE>
+<P>Add the interface to your program. New interfaces are added almost in the 
+same way as classes: you choose <I>new Java interface</I> instead of <I>new Java 
+class</I>.</P>
+<P>Create two classes which implement the interface <CODE>Book</CODE> and 
+<CODE>CD</CODE>. Book receives its writer (String), name (String), and weight 
+(double), all as parameter. CD's parameter contains its artist (String), title 
+(String), and publishing year (int). All CDs weigh 0.1 kg.</P>
+<P>Remember that the classes also have to implement the interface 
+<CODE>ToBeStored</CODE>. The classes have to work in the following way:</P>
+<PRE class="sh_java">    public static void main(String[] args) {
+        Book book1 = new Book("Fedor Dostojevski", "Crime and Punishment", 2);
+        Book book2 = new Book("Robert Martin", "Clean Code", 1);
+        Book book3 = new Book("Kent Beck", "Test Driven Development", 0.5);
+
+        CD cd1 = new CD("Pink Floyd", "Dark Side of the Moon", 1973);
+        CD cd2 = new CD("Wigwam", "Nuclear Nightclub", 1975);
+        CD cd3 = new CD("Rendezvous Park", "Closer to Being Here", 2012);
+
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
+        System.out.println(cd1);
+        System.out.println(cd2);
+        System.out.println(cd3);
+    }
+            </PRE>
+<P>Print output:</P>
+<PRE>Fedor Dostojevski: Crime and Punishment
+Robert Martin: Clean Code
+Kent Beck: Test Driven Development
+Pink Floyd: Dark Side of the Moon (1973)
+Wigwam: Nuclear Nightclub (1975)
+Rendezvous Park: Closer to Being Here (2012)
+            </PRE>
+<P>Attention! The weight is not reported here.</P>
+<H4 class="req">Box</H4>
+<P>Create the class box, which has to store Things that implement the interface 
+<CODE>ToBeStored</CODE>. The box receives as constructor the maximum weight, 
+expressed in kilograms. The box can't be added more things than its maximum 
+capacity allows for. The weight of the things contained in the box can never 
+exceed the box maximum capacity.</P>
+<P>The following example clarifies the box use:</P>
+<PRE class="sh_java">    public static void main(String[] args) {
+        Box box = new Box(10);
+
+        box.add( new Book("Fedor Dostojevski", "Crime and Punishment", 2) ) ;
+        box.add( new Book("Robert Martin", "Clean Code", 1) );
+        box.add( new Book("Kent Beck", "Test Driven Development", 0.7) );
+
+        box.add( new CD("Pink Floyd", "Dark Side of the Moon", 1973) );
+        box.add( new CD("Wigwam", "Nuclear Nightclub", 1975) );
+        box.add( new CD("Rendezvous Park", "Closer to Being Here", 2012) );
+
+        System.out.println( box );
+    }
+            </PRE>
+<P>Printing:</P>
+<PRE>Box: 6 things, total weight 4.0 kg
+            </PRE>
+<P>Note: because the weights are represented as double, the rounding can cause 
+small mistakes. You don't need to care about it when you do the exercise.</P>
+<H4 class="req">Box weight</H4>
+<P>If you created the object variable <CODE>double weght</CODE> in your box 
+which records the weight of your things, replace it now with a method which 
+calculates the weight:</P>
+<PRE class="sh_java">public class Box {
+    //...
+
+    public double weight() {
+        double weight = 0;
+        // it calculates the total weight of the things which had been stored
+        return weight;
+    }
+}
+            </PRE>
+<P>When you need the box weight -- if you have to add a new thing, for instance 
+-- you can simply call the method which calculates it.</P>
+<P>In fact, the method could work well even though it retured the value of an 
+object variable. However, we train a situation where you don't need to maintain 
+the object variable explicitly, but you can calculate it when you need it. With 
+the following exercise, the information stored in a box object variable would 
+not necessarily work properly, however. Why?</P>
+<H4 class="req">Boxes are Stored too!</H4>
+<P>Implementing the interface <CODE>ToBeStored</CODE> requires that the class 
+has the method <CODE>double weight()</CODE>. In fact, we just added this method 
+to Box. Boxes can be stored!</P>
+<P>Boxes are objects where we can store object which implement the interface 
+<CODE>ToBeStored</CODE>. Boxes also implement this interface. This means that 
+<B>you can also put boxes inside your boxes!</B></P>
+<P>Try this out: create a couple of boxes in your program, put things into the 
+boxes and put smaller boxes into the bigger ones. Try also what happens when you 
+put a box into itself. Why does it happen?</P></DIV></DIV>
+<H3>An Interface as Method Return Value</H3>
+<P>As well as any other variable type, an interface can also be used as method 
+return value. Below you find <CODE>Factory</CODE>, which can be used to produce 
+different objects that implement the interface <CODE>Item</CODE>. In the 
+beginning, Factory produces books and disks at random.</P>
+<PRE class="sh_java">   public class Factory {
+      public Factory(){
+          // Attention: it is not necessary to write an empty constructor if there are no other constructors in the class.
+      // In such cases, Java creates a default constructor, i.e a constructor without parameter
+      }
+
+       public Item produceNew(){
+           Random random = new Random();
+           int num = random.nextInt(4);
+           if ( num==0 ) {
+               return new CD("Pink Floyd", "Dark Side of the Moon", 1973);
+           } else if ( num==1 ) {
+               return new CD("Wigwam", "Nuclear Nightclub", 1975);
+           } else if ( num==2 ) {
+               return new Book("Robert Martin", "Clean Code", 1 );
+           } else {
+               return new Book("Kent Beck", "Test Driven Development", 0.7);
+           }
+       }
+   }
+        </PRE>
+<P>It is possible to use our Factory without knowing precisely what kind of 
+classes are present in it, as long as they all implement Item. Below you find 
+the class <CODE>Packer</CODE> which can be used to get a boxful of items. The 
+Packer knows the factory which produces its Items:</P>
+<PRE class="sh_java">   public class Packer {
+       private Factory factory;
+
+       public Packer(){
+            factory = new Factory();
+       }
+
+       public Box giveABoxful() {
+            Box box = new Box(100);
+
+            for ( int i=0; i &lt; 10; i++ ) {
+                Item newItem = factory.produceNew();
+                box.add(newItem);
+            }
+
+            return box;
+       }
+   }
+        </PRE>
+<P>Because the packer doesn't know the classes which implement the Item 
+interface, it is possble to add new classes which implement the interface 
+without having to modify the packer. Below, we create a new class which 
+implements our Item interface - <CODE>ChocolateBar</CODE>. Our Factory was 
+modified to produce chocolate bars in addition to books and CDs. The class 
+<CODE>Packer</CODE> works fine with the extended factory version, without having 
+to change it.</P>
+<PRE class="sh_java">   public class ChocolateBar implements Item {
+      // we don't need a constructor because Java is able to generate a default one!
+
+      public double weight(){
+         return 0.2;
+      }
+   }
+
+   public class Factory {
+      // we don't need a constructor because Java is able to generate a default one!
+
+       public Item produceNew(){
+           Random random = new Random();
+           int num = random.nextInt(5);
+           if ( num==0 ) {
+               return new CD("Pink Floyd", "Dark Side of the Moon", 1973);
+           } else if ( num==1 ) {
+               return new CD("Wigwam", "Nuclear Nightclub", 1975);
+           } else if ( num==2 ) {
+               return new Book("Robert Martin", "Clean Code", 1 );
+           } else if ( num==3 ) {
+               return new Book("Kent Beck", "Test Driven Development", 0.7);
+           } else {
+               return new ChocolateBar();
+           }
+       }
+   }
+        </PRE>
+<P><EM>Using interfaces while programming permits us to reduce the number of 
+dependences among our classes. In our example, Packer is not dependent on the 
+classes which implement Item interface, it is only dependent on the interface 
+itself. This allows us to add classes wihout having to change the class Packer, 
+as long as they implement our interface. We can even add classes that implement 
+the interface to the methods which make use of our packer without compromising 
+the process. In fact, less dependences make it easy to extend a 
+program.</EM></P><!--
+<p>We can imlement now the classes <code>PieceOfNews</code> and <code>NewsService</code>; the first reports a singular piece of news, and the second produces the news to be read. The code which makes use of our news service does not have to know the actual news implementation, and that is not even sensible. The only essential thing is that the program is able to read the news. In fact, the news service can submit its news through the <code>Readable</code> interface.</p>
+
+<pre class="sh_java">
+public class PieceOfNews implements Readable {
+    private String text;
+
+    public PieceOfNews(String text) {
+        this.text = text;
+    }
+
+    public String read() {
+        return this.text;
+    }
+}
+</pre>
+
+<pre class="sh_java">
+public class NewsService {
+
+    public Luettava getLatestNews() {
+        return new PieceOfNews("Latest Hot Topics!");
+    }
+}
+</pre>
+
+        <p>The news service always submits a <code>Readable</code> interface object. At this point, people often wonder a simple question: "<code>Why shouldn't we simply use the class PieceOfNews?</code>". The answer is quite long but hopefully it will clear the idea behind this.</p>
+
+        <p>Let us think about a situation where we have a <code>Publisher</code> which publishes news. The publisher has to read the news from the NewsService regularly, and print out the messages (the Publisher could send the message to different media, but let's stick to a basic example). Let us suppose that NewsService returns PieceOfNews objects.</p>
+
+<pre class="sh_java">
+public class NewsService {
+
+    public Luettava getLatestNews() {
+        return new PieceOfNews("Latest Hot News!");
+    }
+}
+</pre>
+
+        <p>Publisher's essential functionality is a loop, which calls the method <code>getLatestNews</code> with regular intermissions.</p>
+
+<pre class="sh_java">
+public class Publisher {
+    private NewsService newsService;
+
+    public Publisher() {
+        this.newsService = new NewsService();
+    }
+
+    public void start() {
+        while (true) {
+            PieceOfNews news = newsService.getLatestNews();
+            System.out.println(news.read());
+
+            try {
+                Thread.sleep(10000);
+            } catch (Exception e) {
+            }
+        }
+    }
+}
+</pre>
+
+        <p>So far, everything works well. We can now suppose our CEO notices that they need a new format for graphic news. Thus, we create a different class called <code>GraphicPieceOfNews</code>. GraphicPieceOfNews is readable so our NewsService programmer make it implement our Readable interface.</p>
+
+<pre class="sh_java">
+public class GraphicPieceOfNews implements Readable {
+    private String imageAddress;
+    private String text;
+
+    public GraphicPieceOfNews(String text, String imageAddress) {
+        this.text = text;
+        this.imageAddress = imageAddress;
+    }
+
+    public String read() {
+        return this.text + " (image address: " + this.imageAddress + ")";
+    }
+}
+</pre>
+
+        <p>Meanwhile, they also have to modify NewsService class, because it doesn't support the new news format: </p>
+
+<pre class="sh_java">
+public class NewsService {
+
+    public GraphicPieceOfNews getLatestNews() {
+        return new GraphicPieceOfNews("Latest Hot News!", "image address");
+    }
+}
+</pre>
+
+        <p>Now <em>we have to</em> modify our Publisher. In fact, it does not work any more because it returns an instance of the class <code>GraphicPieceOfNews</code>. How many classes we would have to modify if the news service used ten services, and what about one thousand? At this point <em>each</em> implementation which used our news service should change its own functionality.</p>
+
+        <p>And what about if not all the pieces of news contained photos, and sometimes we wanted to return a <code>PieceOfNews</code> class instance? The method above, <code>getLatestNews</code>, may not be enough.</p>
+
+        <p>Let's go back to our news format change, where the return type of the news service method <code>getLatestNews</code> is <code>Readable</code>.</p>
+
+
+<pre class="sh_java">
+public class NewsService {
+
+    public Readable getLatestNews() {
+        return new PieceOfNews("The Latest Hot News!");
+    }
+}
+</pre>
+
+        <p>If the news service CEO wanted to get a new image format, we would not need to modify the <code>getLatestNews</code> method at all.</p>
+
+<pre class="sh_java">
+public class NewsService {
+
+    public Readable getLatestNews() {
+        return new GraphicPieceOfNews("The Latest Hot News!", "Photo's address");
+    }
+}
+</pre>
+
+        <p>Not even the Publisher would need any modification.</p>
+
+<pre class="sh_java">
+public class Publisher {
+    private NewsService newsService;
+
+    public Publisher() {
+        this.newsService = new NewsService();
+    }
+
+    public void start() {
+        while (true) {
+            Readable readable = newsService.GraphicPieceOfNews();
+            System.out.println(readable.read());
+
+            try {
+                Thread.sleep(10000);
+            } catch (Exception e) {
+            }
+        }
+    }
+}
+</pre>
+
+        <p>How many classes should we have modified if our news service offered ten services, and what about one thousand? Zero. And what about if our news service wanted to send sometimes normal news and sometimes graphic news? Easy! We only need to change our news service.</p>
+
+<pre class="sh_java">
+public class NewsService {
+
+    public Readable getLatestNews() {
+        Random random = new Random();
+
+        if(random.nextDouble() > 0.5) {
+            return new PieceOfNews("The Latest Hot News!");
+        }
+
+        return new GraphicPieceOfNews("The Latest Hot News!", "photo's address");
+    }
+}
+</pre>
+
+    <p>Even in this case we don't need to change the implementations which make use of our NewsService.</p>
+
+
+    <p><em>Coding to interface allows for reducing the dependences. If all the services which make use of our news service were coded to the interface Readable, they would not be dependent on any particular class which implements the Readable interface. In the wxamples above, the internal implementation of the news service can be modified so that the modifications would not affect the objects which make use of the news service, in any way.</em></p>
+--> 
+        <!-- TODO: tarkista onko sama kuin "Valmiit rajapinnat"-->         
+<H3>Made-Up Interfaces</H3>
+<P>Java API offers a sensible number of made-up interfaces. Below, we get to 
+know some of Java's most used interfaces: <CODE><A href="http://download.oracle.com/javase/6/docs/api/java/util/List.html" 
+target="_blank">List</A></CODE>, <CODE><A href="http://download.oracle.com/javase/6/docs/api/java/util/Map.html" 
+target="_blank">Map</A></CODE>, <CODE><A href="http://download.oracle.com/javase/6/docs/api/java/util/Set.html" 
+target="_blank">Set</A></CODE> and <CODE><A href="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html" 
+target="_blank">Collection</A></CODE>.</P>
+<H4>List</H4>
+<P>The <A href="http://download.oracle.com/javase/6/docs/api/java/util/List.html">List</A> 
+interface defines lists basic functionality. Because the class ArrayList 
+implements the <CODE>List</CODE> interface, it can also be initialized through 
+the <CODE>List</CODE> interface.</P>
+<PRE class="sh_java">List&lt;String&gt; strings = new ArrayList&lt;String&gt;();
+strings.add("A String object within an ArrayList object!");
+        </PRE>
+<P>As we notice from the <A href="http://download.oracle.com/javase/6/docs/api/java/util/List.html">List 
+interface Java API</A>, there are a lot of classes which implement the interface 
+<CODE>List</CODE>. A list construction which is familiar to hakers like us is 
+the <A href="http://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html" 
+target="_blank">linked list</A>. A linked list can be used through the List 
+interface in the same way as the objects created from ArrayList.</P>
+<PRE class="sh_java">List&lt;String&gt; strings = new LinkedList&lt;String&gt;();
+strings.add("A string object within a LinkedList object!");
+        </PRE>
+<P>Both implementations of the <CODE>List</CODE> interface work in the same way, 
+in the user point of view. In fact, the interface <EM>abstracts</EM> their 
+internal functionality. ArrayList and linkedList internal construction is 
+evidently different, anyway. ArrayList saves the objects into a table, and the 
+search is quick with a specific index. Differently, LinkedList builds up a list 
+where each item has a reference to the following item. When we search for an 
+item in a linked list, we have to go through all the list items till we reach 
+the index.</P>
+<P>When it comes to bigger lists, we can point out more than evident performance 
+differences. LinkedList's strength is that adding new items is always fast. 
+Differently, behind ArrayList there is a table which grows as it fills up. 
+Increasing the size of the table means creating a new one and copying there the 
+information of the old. However, searching against an index is extremely fast 
+with an ArrayList, whereas we have to go thourgh all the list elements one by 
+one before reaching the one we want, with a LinkedList. More information about 
+data structures such as ArrayList and LinkedList internal implementation comes 
+with the course <EM>Data structures and algorithms</EM>.</P>
+<P>In our programming course you will rather want to choose ArrayList, in fact. 
+Programming to interface is worth of it, anyway: implement your program so that 
+you'll use data structures via interfaces.</P>
+<H4>Map</H4>
+<P>The <A 
+href="http://download.oracle.com/javase/6/docs/api/java/util/Map.html">Map</A> 
+Interface defines HashMap basic fuctionality. Because HashMaps implement the 
+<CODE>Map</CODE> interface, it is possible to initialize them trough the 
+<CODE>Map</CODE> interface.</P>
+<PRE class="sh_java">Map&lt;String, String&gt; translations = new HashMap&lt;String, String&gt;();
+translations.put("gambatte", "tsemppiä");
+translations.put("hai", "kyllä");
+        </PRE>
+<P>You get HashMap keys thourgh the method <CODE>keySet</CODE>.</P>
+<PRE class="sh_java">Map&lt;String, String&gt; translations = new HashMap&lt;String, String&gt;();
+translations.put("gambatte", "good luck");
+translations.put("hai", "yes");
+
+for(String key: translations.keySet()) {
+    System.out.println(key + ": " + translations.get(key));
+}
+        </PRE>
+<PRE>gambatte: good luck
+hai: yes
+        </PRE>
+<P>The <CODE>keySet</CODE> method returns a set made of keys which implement 
+<CODE>Set</CODE> interface. The set which implement the <CODE>Set</CODE> 
+interface can be parsed with a for-each loop. HashMap values are retrieved 
+through the <CODE>values</CODE> method, which returns a set of values which 
+implement the <CODE>Collection</CODE> interface. We should now focus on Set and 
+Collection interfaces.</P>
+<H4>Set</H4>
+<P>The <A href="http://download.oracle.com/javase/6/docs/api/java/util/Set.html" 
+target="_blank">Set</A> interface defines the functionality of Java's sets. 
+Java's sets always contain 0 or 1 element of a certain type. Among the others, 
+<CODE><A href="http://docs.oracle.com/javase/6/docs/api/java/util/HashSet.html" 
+target="_blank">HashSet</A></CODE> is one of the classes which implement the Set 
+interface. We can parse a key set through a for-each loop, in the following 
+way</P>
+<PRE class="sh_java">Set&lt;String&gt; set = new HashSet&lt;String&gt;();
+set.add("one");
+set.add("one");
+set.add("two");
+
+for (String key: set) {
+    System.out.println(key);
+}
+        </PRE>
+<PRE>one
+two
+        </PRE>
+<P>Notice that HashSet is not concerned on the order of its keys.</P>
+<H4>Collection</H4>
+<P>The <A href="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html" 
+target="_blank">Collection</A> interface defines the functionality of 
+collections. Among the others, Java's lists and sets are collections -- that is, 
+List and Set interfaces implement the Collection interface. Collection interface 
+provides methods to check object existence (the <CODE>contains</CODE> method) 
+and to check the collection size (<CODE>size</CODE> method). We can parse any 
+class which implements the Collection interface with a <CODE>for-each</CODE> 
+loop. </P>
+<P>We now create a HashMap and parse first its keys, and then its values.</P>
+<PRE class="sh_java">Map&lt;String, String&gt; translations = new HashMap&lt;String, String&gt;();
+translations.put("gambatte", "good luck");
+translations.put("hai", "yes");
+
+Set&lt;String&gt; keys = translations.keySet();
+Collection&lt;String&gt; keySet = keys;
+
+System.out.println("Keys:");
+for(String key: keySet) {
+    System.out.println(key);
+}
+
+System.out.println();
+System.out.println("Values:");
+Collection&lt;String&gt; values = translations.values();
+for(String value: values) {
+    System.out.println(value);
+}
+        </PRE>
+<PRE>Keys:
+gambatte
+hai
+
+Values:
+yes
+good luck
+        </PRE>
+<P>The following example would have produced the same output, too.</P>
+<PRE class="sh_java">Map&lt;String, String&gt; translations = new HashMap&lt;String, String&gt;();
+translations.put("gambatte", "good luck");
+translations.put("hai", "yes");
+
+System.out.println("Keys:");
+for(String key: translations.keySet()) {
+    System.out.println(key);
+}
+
+System.out.println();
+System.out.println("Values:");
+for(String value: translations.values()) {
+    System.out.println(value);
+}
+        </PRE>
+<P>In the following exercise we build an online shop, and we train to use 
+classes through their interfaces.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Online Shop</H3>
+<P>Next, we create some programming components which are useful to manage an 
+online shop.</P>
+<H4>Storehouse</H4>
+<P>Create the class Storehouse with the following methods:</P>
+<UL>
+  <LI><CODE>public void addProduct(String product, int price, int stock)</CODE>, 
+  adding to the storehouse a product whose price and number of stocks are the 
+  parameter values</LI>
+  <LI><CODE>public int price(String product)</CODE> returns the price of the 
+  parameter product; if the product is not available in the storehouse, the 
+  method returns -99</LI></UL>
+<P>Inside the storehouse, the prices (and soon also the stocks) of the products 
+have to be stored into a <CODE>Map&lt;String, Integer&gt;</CODE> variable! The 
+type of the object so created can be <CODE>HashMap</CODE>, but you should use 
+the interface <CODE>Map</CODE> for the variable type (see 40.4.2)</P>
+<P>The next example clarifies storehouse use:</P>
+<PRE class="sh_java">        Storehouse store = new Storehouse();
+        store.addProduct("milk", 3, 10);
+        store.addProduct("coffee", 5, 7);
+
+        System.out.println("prices:");
+        System.out.println("milk:  " + store.price("milk"));
+        System.out.println("coffee:  " + store.price("coffee"));
+        System.out.println("sugar: " + store.price("sugar"));
+            </PRE>
+<P>Prints:</P>
+<PRE>prices:
+milk:  3
+coffee:  5
+sugar: -99
+            </PRE>
+<H4>Product Stock</H4>
+<P>Store product stocks in a similar <CODE>Map&lt;String, Integer&gt;</CODE> 
+variable as the one you used for their prices. Fill the Storehouse with the 
+following methods:</P>
+<UL>
+  <LI><CODE>public int stock(String product)</CODE> returns the stock of the 
+  parameter product.</LI>
+  <LI><CODE>public boolean take(String product)</CODE> decreases the stock of 
+  the parameter product by one, and it returns <EM>true</EM> if the object was 
+  available in the storehouse. If the product was not in the storehouse, the 
+  method returns <EM>false</EM>, the product stock cannot go below zero.</LI></UL>
+<P>An example of how to use the storehouse now:</P>
+<PRE class="sh_java">        Storehouse store = new Storehouse();
+        store.addProduct("coffee", 5, 1);
+
+        System.out.println("stocks:");
+        System.out.println("coffee:  " + store.stock("coffee"));
+        System.out.println("sugar: " + store.stock("sugar"));
+
+        System.out.println("we take a coffee " + store.take("coffee"));
+        System.out.println("we take a coffee " + store.take("coffee"));
+        System.out.println("we take sugar " + store.take("sugar"));
+
+        System.out.println("stocks:");
+        System.out.println("coffee:  " + store.stock("coffee"));
+        System.out.println("sugar: " + store.stock("sugar"));
+            </PRE>
+<P>Prints:</P>
+<PRE>stocks:
+coffee:  1
+sugar: 0
+we take coffee true
+we take coffee false
+we take sugar false
+stocks:
+coffee:  0
+sugar: 0
+            </PRE>
+<H4>Listing the Products</H4>
+<P>Let's add another method to our storehouse:</P>
+<UL>
+  <LI><CODE>public Set&lt;String&gt; products()</CODE> returns a name 
+  <EM>set</EM> of the products contained in the storehouse</LI></UL>
+<P>The method can be implemented easily. Using the Map's method 
+<CODE>keySet</CODE>, you can get the storehouse products by asking for their 
+prices or stocks.</P>
+<P>An example of how to use the storehose now:</P>
+<PRE class="sh_java">        Storehouse store = new Storehouse();
+        store.addProduct("milk", 3, 10);
+        store.addProduct("coffee", 5, 6);
+        store.addProduct("buttermilk", 2, 20);
+        store.addProduct("jogurt", 2, 20);
+
+        System.out.println("products:");
+        for (String product : store.products()) {
+            System.out.println(product);
+        }
+            </PRE>
+<P>Prints:</P>
+<PRE>products:
+buttermilk
+jogurt
+coffee
+milk
+            </PRE>
+<H4>Purchase</H4>
+<P>We add <EM>purchases</EM> to our shopping basket. With purchase we mean a 
+specific number of a specific product. For instance, we can put into our 
+shopping basket either a purchase corresponding to one bread, or a purchase 
+corresponding to 24 coffees.</P>
+<P>Create the class <CODE>Purchase</CODE> with the following functionality:</P>
+<UL>
+  <LI>a constructor <CODE>public Purchase(String product, int amount, int 
+  unitPrice)</CODE>, which creates a purchase corresponding the parameter 
+  product. The product unit amount of purchase is clarified by the parameter 
+  <EM>amount</EM>, and the third parameter is the <EM>unit price</EM></LI>
+  <LI><CODE>public int price()</CODE>, which returns the purchase price. This is 
+  obtained by raising the unit amount by the unit price</LI>
+  <LI><CODE>public void increaseAmount()</CODE> increases by one the purchase 
+  unit amount</LI>
+  <LI><CODE>public String toString()</CODE> returns the purchase in a string 
+  form like the following</LI></UL>
+<P>An example of how to use a purchase</P>
+<PRE class="sh_java">        Purchase purchase = new Purchase("milk", 4, 2);
+        System.out.println( "the total price of a purchase containing four milks is " + purchase.price() );
+        System.out.println( purchase );
+        purchase.increaseAmount();
+        System.out.println( purchase );
+            </PRE>
+<P>Prints:</P>
+<PRE>the total price of a purchase containing four milks is 8
+milk: 4
+milk: 5
+            </PRE>
+<P>Note: <EM>toString</EM> follows the pattern <EM>product: amount</EM>, but the 
+price is not reported!</P>
+<H4>Shopping Basket</H4>
+<P>Finally, we can implement our shopping basket class!</P>
+<P>The shopping basket stores its products as <EM>Purchase objects</EM>. The 
+shopping basket has to have an object variable whose type is either 
+<CODE>Map&lt;String, Purchase&gt;</CODE> or <CODE>List&lt;Purchase&gt;</CODE>. 
+Do not create any other object variable for your shopping basket in addition to 
+the Map or List needed to store purchases.</P>
+<P>Attention: if you store a Purchase object in a Map helping variable, it will 
+be useful to use the Map method values() in this and in the following exercise; 
+with it, it's easy to go through all the stored Purchase objects.</P>
+<P>Let's create a constructor without parameter for our shopping basket, as well 
+as the following methods:</P>
+<UL>
+  <LI><CODE>public void add(String product, int price)</CODE> adds a purchase to 
+  the shopping basket; the purchase is defined by the parameter product, and its 
+  price is the second parameter.</LI>
+  <LI><CODE>public int price()</CODE> returns the shopping basket total 
+  price</LI></UL>
+<P>Example code of using basket</P>
+<PRE class="sh_java">        ShoppingBasket basket = new ShoppingBasket();
+        basket.add("milk", 3);
+        basket.add("buttermilk", 2);
+        basket.add("cheese", 5);
+        System.out.println("basket price: " + basket.price());
+        basket.add("computer", 899);
+        System.out.println("basket price: " + basket.price());
+            </PRE>
+<P>Prints:</P>
+<PRE>basket price: 10
+basket price: 909
+            </PRE>
+<H4>Printing out the Shopping Basket</H4>
+<P>Let's create the method <CODE>public void print()</CODE> for our shopping 
+basket. This prints out the <EM>Purchase</EM> objects which are contained by the 
+basket. The printing order is not important. The output of the shopping basket 
+in the previous example would be:</P>
+<PRE>butter: 1
+cheese: 1
+computer: 1
+milk: 1
+            </PRE>
+<P>Note that the number stands for the unit amount of the products, not for 
+their price!</P>
+<H4>Only One Purchase Object for One Product</H4>
+<P>Let's update our Shopping Basket; if the basket already contains the product 
+which we add, we don't create a new Purchase object, but we update the Purchase 
+object corresponding to the existing product by calling its method 
+<EM>increaseAmount()</EM>.</P>
+<P>Example:</P>
+<PRE class="sh_java">        ShoppingBasket basket = new ShoppingBasket();
+        basket.add("milk", 3);
+        basket.print();
+        System.out.println("basket price: " + basket.price() +"\n");
+
+        basket.add("buttermilk", 2);
+        basket.print();
+        System.out.println("basket price: " + basket.price() +"\n");
+
+        basket.add("milk", 3);
+        basket.print();
+        System.out.println("basket price: " + basket.price() +"\n");
+
+        basket.add("milk", 3);
+        basket.print();
+        System.out.println("basket price: " + basket.price() +"\n");
+            </PRE>
+<P>Prints:</P>
+<PRE>milk: 1
+basket price: 3
+
+buttermilk: 1
+milk: 1
+basket price: 5
+
+buttermilk: 1
+milk: 2
+basket price: 8
+
+buttermilk: 1
+milk: 3
+basket price: 11
+            </PRE>
+<P>This means that first, we add milk and buttermilk, creating new Purchase 
+objects for them. When we add more milk to the basket, we don't create a new 
+purchase object for the milk, but we update the unit amount of the purchase 
+object representing the milk we already have in the basket.</P>
+<H4>Shop</H4>
+<P>Now, all the parts of our online shop are ready. Our online shop has a 
+storage house, which contains all products. We have got a shopping basket to 
+manage all our customers. Whenever a customer chooses a purchase, we add it to 
+the shopping basket if the product is available in our storage house. Meanwhile, 
+the storage stocks are reduced by one.</P>
+<P>Below, you find a ready-made code body for your online shop. Create the class 
+<CODE>Shop</CODE> to your project, and copy the code below into it.</P>
+<PRE class="sh_java">import java.util.Scanner;
+
+public class Shop {
+
+    private Storehouse store;
+    private Scanner reader;
+
+    public Shop(Storehouse store, Scanner reader) {
+        this.store = store;
+        this.reader = reader;
+    }
+
+    // the method to deal with a customer in the shop
+    public void manage(String customer) {
+        ShoppingBasket basket = new ShoppingBasket();
+        System.out.println("Welcome to our shop " + customer);
+        System.out.println("below is our sale offer:");
+
+        for (String product : store.products()) {
+            System.out.println( product );
+        }
+
+        while (true) {
+            System.out.print("what do you want to buy (press enter to pay):");
+            String product = reader.nextLine();
+            if (product.isEmpty()) {
+                break;
+            }
+
+            // here, you write the code to add a product to the shopping basket, if the storehouse is not empty
+            // and decreases the storehouse stocks
+            // do not touch the rest of the code!
+
+        }
+
+        System.out.println("your purchases are:");
+        basket.print();
+        System.out.println("basket price: " + basket.price());
+    }
+}
+            </PRE>
+<P>The following main program fills the shop storehouse and manages the customer 
+Pekka:</P>
+<PRE class="sh_java">    Storehouse store = new Storehouse();
+    store.addProduct("coffee", 5, 10);
+    store.addProduct("milk", 3, 20);
+    store.addProduct("milkbutter", 2, 55);
+    store.addProduct("bread", 7, 8);
+
+    Shop shop = new Shop(store, new Scanner(System.in));
+    shop.manage("Pekka");
+            </PRE>
+<P>The shop is almost ready. There are comments in the method <CODE>public void 
+manage(String customer)</CODE>, showing the part that you should implement. In 
+that point, implement the code to check whether the object the customer wants is 
+available in the storehouse. If so, reduce the storehouse stocks by one unit, 
+and add the product to the shopping basket.</P>
+<P><EM>Now you have done something! verkkokauppa.com!</EM></P></DIV></DIV>
+<H2>Generics</H2>
+<P>We speak about <EM>Generics</EM> in connection to the way classes can 
+conserve objects of genric type. Generics is based on the generic type parameter 
+which is used when we define a class, and which helps us to define the types 
+that have to be chosen when an <EM>object is created</EM>. A class generics can 
+be defined by setting up the number of type parameters we want. This number is 
+written after the class name and between the greater-than and less-than signs. 
+We now implement our own generic class <CODE>Slot</CODE> which be assigned 
+whatever object.</P>
+<PRE class="sh_java">public class Slot&lt;T&gt; {
+    private T key;
+
+    public void setValue(T key) {
+        this.key = key;
+    }
+
+    public T getValue() {
+        return key;
+    }
+}
+        </PRE>
+<P>The definition <CODE>public class Slot&lt;T&gt;</CODE> tells us that we have 
+to give a type parameter to the constructor of the class <CODE>Slot</CODE>. 
+After the constructor call the object variables have to be the same type as what 
+established with the call. We now create a slot which memorizes strings.</P>
+<PRE class="sh_java">    Slot&lt;String&gt; string = new Slot&lt;String&gt;();
+    string.setValue(":)");
+
+    System.out.println(string.getValue());
+        </PRE>
+<PRE>:)
+        </PRE>
+<P>If we change the type parameter we can create different kinds of 
+<CODE>Slot</CODE> ojects, whose purpose is to memorize objects. For instance, we 
+can memorize an integer in the following way:</P>
+<PRE class="sh_java">    Slot&lt;Integer&gt; num = new Slot&lt;Integer&gt;();
+    num.setValue(5);
+
+    System.out.println(slot.getValue());
+        </PRE>
+<PRE>5
+        </PRE>
+<P>An important part of Java data structures are programmed to be generic. For 
+instance, ArrayList receives one parameter, HashMap two.</P>
+<PRE class="sh_java">    List&lt;String&gt; string = new ArrayList&lt;String&gt;();
+    Map&lt;String, String&gt; keyCouples = new HashMap&lt;String, String&gt;();
+        </PRE>
+<P>In the future, when you see the type <CODE>ArrayList&lt;String&gt;</CODE>, 
+for instance, you know that its internal structure makes use of a generic type 
+parameter.</P>
+<H3>The Interface which Makes Use of Generics: Comparable</H3>
+<P>In addition to normal interfaces, Java has interfaces which make use of 
+generics. The internal value types of generic interfaces are defined in the same 
+way as for generic classes. Let us have a look at Java made-up <CODE><A href="http://java.sun.com/javase/6/docs/api/java/lang/Comparable.html">Comparable</A></CODE> 
+interface. The <CODE>Comparable</CODE> interface defines the 
+<CODE>compareTo</CODE> method, which returns the place of <CODE>this</CODE> 
+object, in relation to the parameter object (a negative number, 0, or a positive 
+number). If <CODE>this</CODE> object is placed before the parameter object in 
+the comparison order, the method returns a negative value, whereas it returns a 
+positive value if it is placed after the parameter object. If the objects are 
+placed at the same place in the comparison order, the method returns 0. With 
+comparison order we mean the object order of magnitude defined by the 
+programmer, i.e. the object order, when they are sorted with the sort 
+method.</P>
+<P>One of the advantages of the <CODE>Comparable</CODE> interface is that it 
+allows us to sort a list of Comparable type keys by using the standard library 
+method <CODE>Collections.sort</CODE>, for instance. 
+<CODE>Collections.sort</CODE> uses the <CODE>compareTo</CODE> method of a key 
+list to define in which order these keys should be. We call <EM>Natural 
+Ordering</EM> this ordering technique which makes use of the 
+<CODE>compareTo</CODE> method.         </P>
+<P>We create the class <CODE>ClubMember</CODE>, which depicts the young people 
+and children who belong to the club. The members have to eat in order of height, 
+so the club members will implement the interface <CODE>Comparable</CODE>. The 
+interface <CODE>Comparable</CODE> also takes as type parameter the class which 
+it is compared to. As type parameter, we use the <CODE>ClubMember</CODE> 
+class.</P>
+<PRE class="sh_java">public class ClubMember implements Comparable&lt;ClubMember&gt; {
+    private String name;
+    private int height;
+
+    public ClubMember(String name, int height) {
+        this.name = name;
+        this.height = height;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getHeight() {
+        return this.height;
+    }
+
+    @Override
+    public String toString() {
+        return this.getName() + " (" + this.getHeight() + ")";
+    }
+
+    @Override
+    public int compareTo(ClubMember clubMember) {
+        if(this.height == clubMember.getHeight()) {
+            return 0;
+        } else if (this.height &gt; clubMember.getHeight()) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+}
+        </PRE>
+<P>The interface requires the method <CODE>compareTo</CODE>, which returns an 
+integer that tells us the comparison order. Our <CODE>compareTo()</CODE> method 
+has to return a negative number if <CODE>this</CODE> object is smaller than its 
+parameter object, or zero, if the two members are equally tall. Therefore, we 
+can implement the above <CODE>compareTo</CODE> method, in the following way:</P>
+<PRE class="sh_java">    @Override
+    public int compareTo(ClubMember clubMember) {
+        return this.height - clubMember.getHeight();
+    }
+        </PRE>
+<P>Sorting club members is easy, now.</P>
+<PRE class="sh_java">    List&lt;ClubMember&gt; clubMembers = new ArrayList&lt;ClubMember&gt;();
+    clubMembers.add(new ClubMember("mikael", 182));
+    clubMembers.add(new ClubMember("matti", 187));
+    clubMembers.add(new ClubMember("joel", 184));
+
+    System.out.println(clubMembers);
+    Collections.sort(clubMembers);
+    System.out.println(clubMembers);
+        </PRE>
+<PRE>[mikael (182), matti (187), joel (184)]
+[mikael (182), joel (184), matti (187)]
+        </PRE>
+<P>If we want to sort the members in descending order, we only have to switch 
+the variable order in our <CODE>compareTo</CODE> method.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Rich First, Poor Last</H3>
+<P>You find the pre-made class Person. People have got name and salary 
+information. Make Person implement the <CODE>Comparable</CODE> interface, so 
+that the <CODE>compareTo</CODE> method would sort the people according to their 
+salary -- rich first, poor last.</P></DIV>
+<DIV class="tehtava">
+<H3>Students Sorted by Name</H3>
+<P>You find the pre-made class Student. Students have got a name. Make Student 
+implement the <CODE>COmparable</CODE> interface, so that the 
+<CODE>compareTo</CODE> method would sort the students in alphabetic order.</P>
+<P><B>Tip:</B> student names are Strings, the class String is 
+<CODE>Comparable</CODE> itself. You can use the String's <CODE>compareTo</CODE> 
+method when you implement your Student class. <CODE>String.compareTo</CODE> 
+gives a different value to characters according to their case; because of this, 
+String has also got the method <CODE>compareToIgnoreCase</CODE> which, in fact, 
+ignores the case while comparing. You can use either of them, when you sort your 
+students.</P></DIV>
+<DIV class="tehtava">
+<H3>Sorting Cards</H3>
+<P>Together with the exercise layout, you find a class whose objects represent 
+playing cards. Cards have got a value and a suit. Card values are <EM>2, 3, ..., 
+10, J, Q, K </EM> and <EM>A</EM>, and the suits are <EM>Spades, Hearts, 
+Diamonds</EM> and <EM>Clubs</EM>. Value and suit are however shown as integers 
+in the objects. Cards have also got a toString method, which is used to print 
+the card value and suit in a "friendly way". </P>
+<P>Four constants -- that is <CODE>public static final</CODE> variables -- are 
+defined in the class, so that the user didn't need to handle card's suits as 
+numbers:</P>
+<PRE class="sh_java">public class Card {
+    public static final int SPADES  = 0;
+    public static final int DIAMONDS  = 1;
+    public static final int HEARTS = 2;
+    public static final int CLUBS   = 3;
+
+    // ...
+}
+            </PRE>
+<P>Now, instead of writing the number 1, we can use the constant 
+<CODE>Card.DIAMONDS</CODE> in our program. In the following example, we create 
+three cards and print them:</P>
+<PRE class="sh_java">  Card first = new Card(2, Card.DIAMONDS);
+  Card second = new Card(14, Card.CLUBS);
+  Card third = new Card(12, Card.HEARTS);
+
+  System.out.println(first);
+  System.out.println(second);
+  System.out.println(third);
+            </PRE>
+<P>Prints:</P>
+<PRE>2 of Diamonds
+A of Clubs
+Q of Hearts
+            </PRE>
+<P><B>Note:</B> using constants as shown above is not the best way deal with 
+things. Later on in the course we learn a better way to show suits!</P>
+<H4>Comparable Cards</H4>
+<P>Make your Cards class Comparable. Implement the <CODE>compareTo</CODE> method 
+so that cards would be sorted in ascending order according to their value. If 
+the value of two classes have got the same values, we compare them against their 
+suit in ascending order: <EM>spades first, diamonds second, hearts third, and 
+clubs last</EM>.</P>
+<P>The smallest card would then be the two spades and the greatest would be the 
+clubs ace.</P>
+<H4>Hand</H4>
+<P>Next, let's create the class <CODE>Hand</CODE> which represents the player 
+hand set of cards. Create the following method to the hand:</P>
+<UL>
+  <LI><CODE>public void add(Card card)</CODE> adds a card to the hand</LI>
+  <LI><CODE>public void print()</CODE> prints the cards in the hand following 
+  the below example pattern</LI></UL>
+<PRE class="sh_java">  Hand hand = new Hand();
+
+  hand.add( new Card(2, Card.SPADES) );
+  hand.add( new Card(14, Card.CLUBS) );
+  hand.add( new Card(12, Card.HEARTS) );
+  hand.add( new Card(2, Card.CLUBS) );
+
+  hand.print();
+            </PRE>
+<P>Prints:</P>
+<PRE>2 of Spades
+A of Clubs
+Q of Hearts
+2 of Clubs
+            </PRE>
+<P>Store the hand cards into an ArrayList.</P>
+<H4>Sorting the Hand</H4>
+<P>Create the method <CODE>public void sort()</CODE> for your hand, which sorts 
+the cards in the hand. After being sorted, the cards are printed in order:</P>
+<PRE class="sh_java">  Hand hand = new Hand();
+
+  hand.add( new Card(2, Card.SPADES) );
+  hand.add( new Card(14, Card.CLUBS) );
+  hand.add( new Card(12, Card.HEARTS) );
+  hand.add( new Card(2, Card.CLUBS) );
+
+  hand.sort();
+
+  hand.print();
+            </PRE>
+<P>Prints:</P>
+<PRE>2 of Spades
+2 of Clubs
+Q of Hearts
+A of Clubs
+            </PRE>
+<H4>Comparing Hands</H4>
+<P>In one card game, the most valuable hand, where the sum of the cards value is 
+the biggest. Modify the class <CODE>Hand</CODE> so that it could be compared 
+according to this criterion: make it implement the interface 
+<CODE>Comparable&lt;Hand&gt;</CODE>.</P>
+<P>Below, you find an example of a program where we compare hands:</P>
+<PRE class="sh_java">  Hand hand1 = new Hand();
+
+  hand1.add( new Card(2, Card.SPADES) );
+  hand1.add( new Card(14, Card.CLUBS) );
+  hand1.add( new Card(12, Card.HEARTS) );
+  hand1.add( new Card(2, Card.CLUBS) );
+
+  Hand hand2 = new Hand();
+
+  hand2.add( new Card(11, Card.DIAMONDS) );
+  hand2.add( new Card(11, Card.CLUBS) );
+  hand2.add( new Card(11, Card.HEARTS) );
+
+  int comparison = hand1.compareTo(hand2);
+
+  if ( comparison &lt; 0 ) {
+    System.out.println("the most valuable hand contains the cards");
+    hand2.print();
+  } else if ( comparison &gt; 0 ){
+    System.out.println("the most valuable hand contains the cards");
+    hand1.print();
+  } else {
+    System.out.println("the hands are equally valuable");
+  }
+            </PRE>
+<P>Prints:</P>
+<PRE>the most valuable hand contains the cards
+J of Diamonds
+J of Clubs
+J of Hearts
+            </PRE>
+<H4>Sorting the Cards against Different Criteria</H4>
+<P>What about if we wanted to sort cards in a slightly different way, sometimes; 
+for instance, what about if we wanted to have all same-suit cards in a raw? The 
+class can have only one compareTo method, which means that we have to find out 
+other ways to sort cards against different orders.</P>
+<P>If you want to sort your cards in optional orders, you can make use of 
+different classes which execute the comparison. These classes have to implement 
+the interface <CODE>Comparator&lt;Card&gt;</CODE>. The object which determines 
+the sorting order compares two cards it receives as parameter. There is only one 
+method, a compare(Card card1, Card card2) method which has to return a negative 
+value if card1 is before card2, a positive value if card2 is before card1, and 0 
+otherwise.</P>
+<P>The idea is creating a specific comparison class for each sorting order; for 
+instance, a class which places same suit cards together in a row:</P>
+<PRE class="sh_java">import java.util.Comparator;
+
+public class SortAgainstSuit implements Comparator&lt;Card&gt; {
+    public int compare(Card card1, Card card2) {
+        return card1.getSuit()-card2.getSuit();
+    }
+}
+            </PRE>
+<P>Sorting against suit works in the same way as the card method 
+<CODE>compareTo</CODE> thought for suits, that is <EM>spades first, diamonds 
+second, hearts third, clubs last.</EM></P>
+<P>Sorting is still possible through the Collections' sort method. The method 
+now receives as second parameter an object of the class that determines the 
+sorting order:</P>
+<PRE class="sh_java">  ArrayList&lt;Card&gt; cards = new ArrayList&lt;Card&gt;();
+
+  cards.add( new Card(3, Card.CLUBS) );
+  cards.add( new Card(2, Card.DIAMONDS) );
+  cards.add( new Card(14, Card.CLUBS) );
+  cards.add( new Card(12, Card.HEARTS) );
+  cards.add( new Card(2, Card.CLUBS) );
+
+  SortAgainstSuit suitSorter = new SortAgainstSuit();
+  Collections.sort(cards, suitSorter );
+
+  for (Card c : cards) {
+    System.out.println( c );
+  }
+          </PRE>
+<P>Prints:</P>
+<PRE>2 of Diamonds
+Q of Hearts
+3 of Clubs
+A of Clubs
+2 of Clubs
+          </PRE>
+<P>The sorting object can also be created directly together with the sort 
+call:</P>
+<PRE class="sh_java">  Collections.sort(cards, new SortAgainstSuit() );
+          </PRE>
+<P></P>
+<P>Further information about comparator classes in <A href="http://leepoint.net/notes-java/data/collections/comparators.html">here.</A></P>
+<P>Create now the class <CODE>SortAgainstSuitAndValue</CODE> which implements 
+the Comparator interface and sorts cards as it is done in the example above, 
+plus same suit cards are also sorted according to their value.           </P>
+<H4>Sort Against Suit</H4>
+<P>Add the method <CODE>public void sortAgainstSuit()</CODE> to the class 
+<CODE>Hand</CODE>; when the method is called the hand's cards are sorted 
+according to the comparator <CODE>SortAgainstSuitAndValue</CODE>. After sorting 
+them, the cards are printed in order:</P>
+<PRE class="sh_java">  Hand hand = new Hand();
+
+  hand.add( new Card(12, Card.HEARTS) );
+  hand.add( new Card(4, Card.CLUBS) );
+  hand.add( new Card(2, Card.DIAMONDS) );
+  hand.add( new Card(14, Card.CLUBS) );
+  hand.add( new Card(7, Card.HEARTS) );
+  hand.add( new Card(2, Card.CLUBS) );
+
+  hand.sortAgainstSuit();
+
+  hand.print();
+          </PRE>
+<P>Prints:</P>
+<PRE>2 of Diamonds
+7 of Hearts
+Q of Hearts
+2 of Clubs
+4 of Clubs
+A of Clubs
+          </PRE></DIV></DIV>
+<H2>Collections</H2>
+<P>The class library <CODE><A href="http://java.sun.com/javase/6/docs/api/java/util/Collections.html" 
+target="_blank">Collections</A></CODE> is Java's general-purpose library for 
+collection classes. As we can see, <CODE>Collections</CODE> provides methods to 
+sort objects either through the interface <CODE>Comparable</CODE> or 
+<CODE>Comparator</CODE>. In addition to sorting, we can use this class library 
+to retrieve the minimum and maximum values (through the methods <CODE>min</CODE> 
+and <CODE>max</CODE>, respectively), retrieve a specific value 
+(<CODE>binarySearch</CODE> method), or reverse the list (<CODE>reverse</CODE> 
+method).</P>
+<H3>Search</H3>
+<P>The Collections class library provides a pre-made binary search 
+functionality. The method <CODE>binarySearch()</CODE> returns the index of our 
+searched key, if this is found. If the key is not found, the search algorithm 
+returns a negative value. The method <CODE>binarySearch()</CODE> makes use of 
+the Comparable interface to retieve objects. If the object's 
+<CODE>compareTo()</CODE> method returns the value 0, i.e. if it is the same 
+object, the key is considered found.</P>
+<P>Our ClubMember class compares people's heights in its 
+<CODE>compareTo()</CODE> method, i.e. we look for club members whose height is 
+the same while we parse our list.</P>
+<PRE class="sh_java">    List&lt;ClubMember&gt; clubMembers = new ArrayList&lt;ClubMember&gt;();
+    clubMembers.add(new ClubMember("mikael", 182));
+    clubMembers.add(new ClubMember("matti", 187));
+    clubMembers.add(new ClubMember("joel", 184));
+
+    Collections.sort(clubMembers);
+
+    ClubMember wanted = new ClubMember("Name", 180);
+    int index = Collections.binarySearch(clubMembers, wanted);
+    if (index &gt;= 0) {
+        System.out.println("A person who is 180 centimeters tall was found at index " + index);
+        System.out.println("name: " + clubMembers.get(index).getName());
+    }
+
+    wanted = new ClubMember("Name", 187);
+    index = Collections.binarySearch(clubMembers, wanted);
+    if (index &gt;= 0) {
+        System.out.println("A person who is 187 centimeters tall was found at index " + index);
+        System.out.println("name: " + clubMembers.get(index).getName());
+    }
+      </PRE>
+<P>The print output is the following:</P>
+<PRE>A person who is 187 centimeters tall was found at index 2
+name: matti
+      </PRE>
+<P>Notice that we also called the method <CODE>Collections.sort()</CODE>, in our 
+example. This is because binary search cannot be done if our table or list are 
+not already sorted up.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Ski Jumping</H3>
+<P>Once again, you can train to build the program structure yourself; the 
+appearance of the user interface and its functionality are pre-defined.</P>
+<P><B>Note: you can create only one Scanner object lest the tests fail. Also, no 
+not use static variables: the tests execute your program many different times, 
+and the static variable values left from the previous execution would possibly 
+disturb them!</B></P>
+<P>Ski jumping is a beloved sport for Finns; they attempt to land as far as 
+possible down the hill below, in the most stylish way. In this exercise, you 
+create a simulator for a ski jumping tournament.</P>
+<P>First, the simulator asks the user for the jumper names. If the user inputs 
+an empty string (i.e. presses enter), we move to the jumping phase. In the 
+jumping phase, the jumpers jump one by one in reverse order according to their 
+points. The jumper with the less points always jumps first, then the ones with 
+more points, till the person with the most points.</P>
+<P>The total points of a jumper are calculated by adding up the points from 
+their jumps. Jump points are decided in relation to the jump length (use a 
+random integer between 60-120) and judge decision. Five judges vote for each 
+jump (a vote is a random number between 10-20). The judge decision takes into 
+consideration only three judge votes: the smallest and the greatest votes are 
+not taken into account. For instance, if Mikael jumps 61 meters and the judge 
+votes are 11, 12, 13, 14, and 15, the total points for the jump are 100.</P>
+<P>There are as many rounds as the user wants. When the user wants to quit, we 
+print the tournament results. The tournament results include the jumpers, the 
+jumper total points, and the lengths of the jumps. The final results are sorted 
+against the jumper total points, and the jumper who received the most points is 
+the first.</P>
+<P>Among the other things, you will need the method 
+<CODE>Collections.sort</CODE> and <CODE>Collections.reverse</CODE>. First, you 
+should start to wonder what kind of classes and objects there could be in your 
+program. Also, it would be good to arrive to a situation where your user 
+interface is the only class with printing statements.</P>
+<PRE>Kumpula ski jumping week
+
+Write the names of the participants one at a time; an empty string brings you to the jumping phase.
+  Participant name: <FONT color="red">Mikael</FONT>
+  Participant name: <FONT color="red">Mika</FONT>
+  Participant name:
+
+The tournament begins!
+
+Write "jump" to jump; otherwise you quit: <FONT color="red">jump</FONT>
+
+Round 1
+
+Jumping order:
+  1. Mikael (0 points)
+  2. Mika (0 points)
+
+Results of round 1
+  Mikael
+    length: 95
+    judge votes: [15, 11, 10, 14, 14]
+  Mika
+    length: 112
+    judge votes: [14, 12, 18, 18, 17]
+
+Write "jump" to jump; otherwise you quit: <FONT color="red">jump</FONT>
+
+Round 2
+
+Jumping order:
+  1. Mikael (134 points)
+  2. Mika (161 points)
+
+Results of round 2
+  Mikael
+    length: 96
+    judge votes: [20, 19, 15, 13, 18]
+  Mika
+    length: 61
+    judge votes: [12, 11, 15, 17, 11]
+
+Write "jump" to jump; otherwise you quit: <FONT color="red">jump</FONT>
+
+Round 3
+
+Jumping order:
+  1. Mika (260 points)
+  2. Mikael (282 points)
+
+Results of round 3
+  Mika
+    length: 88
+    judge votes: [11, 19, 13, 10, 15]
+  Mikael
+    length: 63
+    judge votes: [12, 19, 19, 12, 12]
+
+Write "jump" to jump; otherwise you quit: <FONT color="red">quit</FONT>
+
+Thanks!
+
+Tournament results:
+Position    Name
+1           Mikael (388 points)
+            jump lengths: 95 m, 96 m, 63 m
+2           Mika (387 points)
+            jump lengths: 112 m, 61 m, 88 m
+          </PRE>
+<P><STRONG>Note1:</STRONG> it is essential that the <EM>user interface</EM> 
+works exactly as displayed above; for instance, the number of spaces at the 
+beginning of the lines must be right. <STRONG>The space at the beginning of the 
+lines must be made of spaces</STRONG>, the tests do not work if you use 
+tabulatation. Also, it is good that you copy the text which has to be printed by 
+your program and you paste it into your code; you can copy it either from the 
+exercise layout or from the test error messages. <EM>The exercise is worth of 
+four separate exercise points.</EM></P>
+<P><STRONG>The program has to start when we execute the main method in the 
+example layout. Also, remember again that you can create only one Scanner object 
+in your exercise.</STRONG></P></DIV></DIV><!--
+    <p>A screencast where we create a bigger application using what we have learnt in the first two weeks:</p>
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=LFxtwce8chM" height="300" target="_blank"><img src="img/youtube.jpg"/></a>
+
+
+    <p><iframe allowfullscreen="" frameborder="0"  height="450" width="700" src="http://www.youtube.com/embed/LFxtwce8chM"></iframe></p>
+--> 
+  </nextweek></DIV></DIV></DIV><!-- /inner -->   </DIV><!-- /node-312 -->        
+ </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV></DIV></DIV></DIV><!-- /content-content -->             
+                                                  </DIV><!-- /content-inner-inner --> 
+                            </DIV><!-- /content-inner -->                        
+   </DIV><!-- /content-region-inner -->                         </DIV><!-- /content-region --> 
+                        
+<DIV class="content-bottom row nested " id="content-bottom">
+<DIV class="content-bottom-inner inner clearfix" id="content-bottom-inner">
+<DIV class="block block-block odd first last grid16-16" id="block-block-1">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="content clearfix">
+<DIV id="header-top-block">
+<P class="rtecenter">Ohjaus: <A href="http://mooc.fi/content/irc-ohjeet">IRCnet 
+#mooc.fi </A>&nbsp;&nbsp; |  Tiedotus: <A href="http://twitter.com/mooc1"><IMG 
+height="50" style="vertical-align: middle;" src="Interfaces_files/twitter_newbird_blue.png"> 
+Twitter </A><A href="http://www.facebook.com/Moocfi"><IMG height="30" style="padding: 10px; vertical-align: middle;" 
+src="Interfaces_files/f_logo-1.png"> Facebook</A>  |  Virheraportit: <A href="http://sourceforge.net/p/mooc-issues/tickets/"><IMG 
+height="30" style="padding: 10px; vertical-align: middle;" src="Interfaces_files/sf-footer-logo.png"> 
+SourceForge</A></P>
+<P class="rtecenter"><A href="http://www.cs.helsinki.fi/"><IMG width="400" 
+style="vertical-align: middle;" alt="Helsingin yliopiston tietojenkäsittelytieteen laitos" 
+src="Interfaces_files/CS-logo-MOOC.jpg">&nbsp; </A></P></DIV>
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-47575342-3', 'auto');
+  ga('send', 'pageview');
+ 
+</SCRIPT>
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --></DIV><!-- /content-bottom-inner --> 
+</DIV><!-- /content-bottom -->                       </DIV><!-- /content-group-inner --> 
+                    </DIV><!-- /content-group -->                                
+       </DIV><!-- /main-content-inner -->                 </DIV><!-- /main-content --> 
+                              </DIV><!-- /main-group-inner -->             
+</DIV><!-- /main-group -->           </DIV><!-- /main-inner -->         </DIV><!-- /main --> 
+      </DIV><!-- /main-wrapper -->       <!-- postscript-bottom row: width = grid_width --> 
+            <!-- footer row: width = grid_width -->             <!-- footer-message row: width = grid_width --> 
+      
+<DIV class="footer-message-wrapper full-width" id="footer-message-wrapper">
+<DIV class="footer-message row grid16-16" id="footer-message">
+<DIV class="footer-message-inner inner clearfix" id="footer-message-inner">
+<DIV class="footer-message-text block" id="footer-message-text">
+<DIV class="footer-message-text-inner inner clearfix" id="footer-message-text-inner"><BR></DIV><!-- /footer-message-text-inner --> 
+</DIV><!-- /footer-message-text -->                    </DIV><!-- /footer-message-inner --> 
+        </DIV><!-- /footer-message -->       </DIV><!-- /footer-message-wrapper --> 
+    <!-- /page-inner -->   <!-- /page -->   </BODY></HTML>

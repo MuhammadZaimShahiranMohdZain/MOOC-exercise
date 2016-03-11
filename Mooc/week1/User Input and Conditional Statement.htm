@@ -1,0 +1,1708 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0078)http://mooc.cs.helsinki.fi/programming-part1/material-2013/week-1 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<TITLE>MOOC | MOOC - Massiivinen avoin verkkokurssi</TITLE>    <LINK href="/sites/mooc.cs.helsinki.fi/files/acquia_marina_favicon.png" 
+rel="shortcut icon" type="image/x-icon">   <LINK href="User%20input%20and%20conditional%20statement_files/5c1587b6907a85bc361bd4b70014b0e3.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/node.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/defaults.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/system.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/system-menus.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/user.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/content-module.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/ckeditor.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/ctools.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/date.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/panels.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/views.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/aeb58e3ce47f9171327ad9fd87a26c8e.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/flexible.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/typography.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/superfish.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/superfish-navbar.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/superfish-vertical.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/fusion-acquia-marina-style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/custom.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/common.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/exercises.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/menu.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="User%20input%20and%20conditional%20statement_files/sh_style.css" 
+rel="stylesheet" type="text/css" media="all">   <LINK href="User%20input%20and%20conditional%20statement_files/grid16-fluid.css" 
+rel="stylesheet" type="text/css" media="all">   <!--[if IE 8]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie8-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie8-fixes.css?8" />
+  <![endif]--> 
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie7-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie7-fixes.css?8" />
+  <![endif]--> 
+  <!--[if lte IE 6]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie6-fixes.css?8"/>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie6-fixes.css?8"/>
+  <![endif]--> 
+    
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/drupal.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/panels.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/jquery.bgiframe.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/hoverIntent.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/supposition.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/supersubs.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/superfish.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/jquery.corner.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/acquia-marina-script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/util-functions.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/clear-default-text.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/sh_java.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/sh_main.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/sh_ruby.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/sh_scala.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD>
+<BODY class="not-front not-logged-in page-node node-type-weekly-tasks no-sidebars full-node panels layout-main sidebars-both-first font-family-lucida font-size-13 grid-type-fluid grid-width-16 fluid-100" 
+id="pid-programming-part1-material-2013-week-1">   
+<DIV class="page" id="page">
+<DIV class="page-inner" id="page-inner">
+<DIV id="skip"><A href="http://mooc.cs.helsinki.fi/programming-part1/material-2013/week-1?noredirect=1#main-content-area">Skip 
+to Main Content Area</A>       </DIV><!-- header-top row: width = grid_width --> 
+            <!-- header-group row: width = grid_width -->       
+<DIV class="header-group-wrapper full-width" id="header-group-wrapper">
+<DIV class="header-group row grid16-16" id="header-group">
+<DIV class="header-group-inner inner clearfix" id="header-group-inner">
+<DIV class="primary-menu block" id="primary-menu">
+<DIV class="primary-menu-inner inner clearfix" id="primary-menu-inner">
+<UL class="menu sf-menu">
+  <LI class="expanded first"><A title="" 
+  href="http://mooc.cs.helsinki.fi/home">Kurssit ››</A>
+  <UL class="menu">
+    <LI class="leaf first"><A title="" 
+    href="http://mooc.fi/algoritmit">Algoritmien MOOC</A></LI>
+    <LI class="leaf"><A title="" href="http://mooc.cs.helsinki.fi/2014-ohjelmointi">Olio-ohjelmointi 
+    Javalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.aalto.fi/ohjelmointi/">Ohjelmointia Scalalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part1">Object-Oriented Programming with 
+    Java, part I</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part2">Object-Oriented Programming with 
+    Java, part II</A></LI>
+    <LI class="leaf last"><A title="" 
+    href="http://mooc.cs.helsinki.fi/wepa">Web-palvelinohjelmointi</A></LI></UL></LI>
+  <LI class="collapsed"><A title="Mikä on MOOC?" href="http://mooc.cs.helsinki.fi/content/mik%C3%A4-mooc">Mikä 
+  on MOOC? ››</A></LI>
+  <LI class="leaf last"><A title="" href="http://mooc.cs.helsinki.fi/content/j%C3%A4rjest%C3%A4v%C3%A4st%C3%A4-tahosta">Järjestävästä 
+  tahosta ››</A></LI></UL></DIV><!-- /primary-menu-inner --> </DIV><!-- /primary-menu --> 
+          </DIV><!-- /header-group-inner -->         </DIV><!-- /header-group --> 
+      </DIV><!-- /header-group-wrapper -->       <!-- preface-top row: width = grid_width --> 
+        <!--            <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
+        <div id="preface-top" class="preface-top row grid16-16">
+          <div id="preface-top-inner" class="preface-top-inner inner clearfix"> 
+--> 
+          </DIV><!-- /preface-top-inner -->         </DIV><!-- /preface-top -->  
+     <!-- /preface-top-wrapper -->           <!-- main row: width = grid_width --> 
+    
+<DIV class="main-wrapper full-width" id="main-wrapper">
+<DIV class="main row grid16-16" id="main">
+<DIV class="main-inner inner clearfix" id="main-inner"><!-- main group: width = grid_width - sidebar_first_width --> 
+          
+<DIV class="main-group row nested grid16-16" id="main-group">
+<DIV class="main-group-inner inner clearfix" id="main-group-inner">
+<DIV class="main-content row nested" id="main-content">
+<DIV class="main-content-inner inner clearfix" id="main-content-inner"><!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) --> 
+                    
+<DIV class="content-group row nested " id="content-group" style="width: 100%;">
+<DIV class="content-group-inner inner clearfix" id="content-group-inner">
+<DIV class="content-region row nested" id="content-region">
+<DIV class="content-region-inner inner clearfix" id="content-region-inner"><A 
+name="main-content-area" id="main-content-area"></A>                             
+                            
+<DIV class="content-inner block" id="content-inner">
+<DIV class="content-inner-inner inner clearfix" id="content-inner-inner">
+<DIV class="content-content" id="content-content">
+<DIV class="panel-flexible panels-flexible-13 clear-block">
+<DIV class="panel-flexible-inside panels-flexible-13-inside">
+<DIV class="panels-flexible-row panels-flexible-row-13-7 panels-flexible-row-first clear-block ">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-7-inside panels-flexible-row-inside-first clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_ panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-2 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<H1 class="title"><A 
+href="http://mooc.cs.helsinki.fi/programming-part1">Object-Oriented Programming 
+with Java, part I ››</A></H1></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-custom pane-3 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content"><LINK href="User%20input%20and%20conditional%20statement_files/menu(1).css" 
+rel="stylesheet" type="text/css" media="screen"> <LINK href="User%20input%20and%20conditional%20statement_files/common-new.css" 
+rel="stylesheet" type="text/css" media="screen, print"> <LINK href="User%20input%20and%20conditional%20statement_files/sh_style(1).css" 
+rel="stylesheet" type="text/css" media="screen, print">        </DIV></DIV><!-- /inner-inner -->
+	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-4 clear-block js">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-4-inside clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en_ panels-flexible-region-first ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en_-inside panels-flexible-region-inside-first"></DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-js ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js-inside">
+<DIV class="panel-pane pane-node ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node odd full-node node-type-page" id="node-222">
+<DIV class="inner">
+<H2 class="title"><A title="" 
+href="http://mooc.cs.helsinki.fi/content/js-en"></A></H2>
+<DIV class="content clearfix">
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/bootstrap.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/jquery-1.7.1.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/exercises-eng-new.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/common-mooc-eng.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/sh_main.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/sh_java.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="User%20input%20and%20conditional%20statement_files/jquery.easing.js" type="text/javascript"></SCRIPT>
+ 
+<DIV class="menu" id="toc" data-first-exercise-index="1" 
+data-first-chapter-index="1"><SPAN id="materiaali_toc"></SPAN>           <!--div id="tehtavat_toc" ></div--> 
+          <SPAN id="tehtavat_toc2"></SPAN>         </DIV></DIV></DIV><!-- /inner --> 
+  </DIV><!-- /node-222 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-copyright panels-flexible-region-last float-right">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-copyright-inside panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-1 box ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<P><A href="http://creativecommons.org/licenses/by-nc-sa/2.0/" 
+rel="license"><IMG style="border-width: 0px; float: right;" alt="Creative Commons License" 
+src="User%20input%20and%20conditional%20statement_files/88x31.png"></A><SMALL>This 
+material is licensed under the Creative Commons BY-NC-SA license, which means 
+that you can use it and distribute it freely so long as you do not erase the 
+names of the original authors. If you do changes in the material and want to 
+distribute this altered version of the material, you have to license it with a 
+similar free license. The use of the material for commercial use is prohibited 
+without a separate agreement.</SMALL></P></DIV></DIV><!-- /inner-inner -->	   
+</DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-author course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-author">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Authors: Arto Vihavainen, Matti 
+Luukkainen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-translators course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-translators">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Translators to English: Emilia 
+Hjelm, Alex H. Virtanen, Matti Luukkainen, Virpi Sumu, Birunthan Mohanathas      
+  </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-8 panels-flexible-row-last clear-block js en">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-8-inside panels-flexible-row-inside-last clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-node-content box-mooc ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node even full-node node-type-weekly_tasks" id="node-231">
+<DIV class="inner">
+<DIV class="content clearfix">
+<DIV class="viikkoraja-mooc" id="Week 1" data-first-exercise-index="1" 
+data-first-chapter-index="1" kaantaja="Emilia Hjelm, Alex H. Virtanen, Matti Luukkainen, Virpi Sumu, Birunthan Mohanathas" 
+tekija="Arto Vihavainen, Matti Luukkainen" data-first-week-index-mooc="1" 
+data-first-exercise-index-mooc="1" data-first-chapter-index-mooc="1" 
+data-first-week-index="1" deadline=" ">
+<H2>The program and the source code</H2>
+<H3>Source code</H3>
+<P>A computer program is composed of commands written in the <EM>source 
+code</EM>. A computer generally runs <EM>commands</EM> in the source    code 
+from <EM>top to bottom</EM> and <EM>from left to right</EM>. Source code is 
+saved in a textual    format and will be <EM>executed</EM> somehow.</P>
+<H3>Commands</H3>
+<P>Computers execute different <EM>operations</EM>, or actions, based on the 
+commands. For example, when printing the text    "Hello world!" on the screen, 
+it is done by the command <CODE>System.out.println</CODE>.</P>
+<PRE class="sh_java">System.out.println("Hello world!");
+    </PRE>
+<P>The <CODE>System.out.println</CODE> command prints the string given inside 
+the brackets on the    screen. The suffix <CODE>ln</CODE> is short for the word 
+<I>line</I>. Therefore, this command prints out a    line. This means that after 
+the given string has been printed, the command will also print a line    
+break.</P>
+<H3>Compiler and interpreter</H3>
+<P>Computers do not directly understand the programming language we are using. 
+We need a <EM>compiler</EM>    between the source code and the computer. When we 
+are programming using the command line interface, the    command <CODE>javac 
+Hello.java</CODE> will compile the <CODE>Hello.java</CODE> file into 
+<I>bytecode</I>,    which can be executed using the Java interpreter. To run the 
+compiled program, you can use the command     <CODE>java Hello</CODE> where 
+Hello is the name of the original source code file.</P>
+<P>When using a modern development environment (more on this later), it will 
+take care of compiling the    source code. When we choose to run the program, 
+the development environment will compile and execute the    program. All 
+development environments compile source code while it is being written by the 
+programmer,    which means that simple errors will be noticed before executing 
+the program.</P>
+<H3>Components of commands</H3>
+<H4>Semicolon</H4>
+<P>A semicolon <CODE>;</CODE> is used to separate different commands. The 
+compiler and the interpreter both    ignore line breaks in the source code, so 
+we could write the entire program on a single line.</P>
+<P>In the example below we will use the <CODE>System.out.print</CODE> command, 
+which is similar to the     <CODE>System.out.println</CODE> command except that 
+it will not print a line break after printing the    text.</P>
+<P><B>Example of how the semicolons are used</B></P>
+<PRE class="sh_java">System.out.print("Hello "); System.out.print("world");
+System.out.print("!");
+    </PRE>
+<PRE>Hello world!
+    </PRE>
+<P>Even though neither the compiler nor the interpreter need line breaks in the 
+source code, they are very important when considering    human readers of the 
+source code. Line breaks are required to divide source code in a clear manner.   
+ Readability of source code will be emphasized throughout this course.</P>
+<H4>Parameters (information passed to commands)</H4>
+<P>The information processed by a command are the <EM>parameters of a 
+command</EM>. They are passed to the    command by placing them between 
+<CODE>()</CODE> brackets that follow the command name. For example, the     
+<CODE>System.out.print</CODE> command is given the text <EM>hello</EM> as a 
+parameter as follows:     <CODE>System.out.print("hello")</CODE>.</P>
+<H4>Comments</H4>
+<P><EM>Comments</EM> are a useful way to make notes in the source code for 
+yourself and others. Everything    on a line after two forward slashes 
+<CODE>//</CODE> is treated as a comment.</P>
+<H4>Example of using comments</H4>
+<PRE class="sh_java">// We will print the text "Hello world"
+System.out.print("Hello world");
+
+System.out.print(" and all the people of the world."); // We print more text to the same line.
+
+// System.out.print("this line will not be executed, because it is commented out");
+    </PRE>
+<P>The last line of the example introduces a particularly handy use for 
+comments: you can comment out code    instead of completely deleting it if you 
+want to temporarily try out something.</P>
+<H3>More about printing</H3>
+<P>As we can see from the examples above, there are two commands for 
+printing.</P>
+<UL>
+  <LI><CODE>System.out.print</CODE> prints the text without the line break at 
+  the end</LI>
+  <LI><CODE>System.out.println</CODE> prints the text and the line break</LI></UL>
+<P>The printed text can contain both traditional characters and special 
+characters. The most important    special character is <CODE>\n</CODE>, which 
+stands for a line break. There are also other <A title="Escape character - Wikipedia, the free encyclopedia" 
+href="http://en.wikipedia.org/wiki/Escape_character">special characters</A>.</P>
+<PRE class="sh_java">System.out.println("First\nSecond\nThird");
+    </PRE>
+<P>When executed, the example above prints:</P>
+<PRE>First
+Second
+Third
+    </PRE>
+<H2>Main program body</H2>
+<P>The body for a program named "Example" is as follows:</P>
+<PRE class="sh_java">public class Example {
+    public static void main(String[] args) {
+        // program code
+    }
+}
+    </PRE>
+<P>The program is stored in a text file named after the program with the 
+<I>.java</I> extension. For a    program named <I>Example</I>, the file should 
+be named <CODE>Example.java</CODE>.</P>
+<P>The execution of the program begins at the part marked with the <I>// program 
+code</I> comment above.    During our first week of programming, we will limit 
+ourselves to this part. When we are talking about    commands such as printing, 
+we need to write the commands into the program body. For example:     
+<CODE>System.out.print("Text to be printed");</CODE></P>
+<PRE class="sh_java">public class Example {
+    public static void main(String[] args) {
+        System.out.print("Text to be printed");
+    }
+}
+    </PRE>
+<P>From this point on, the main program body will be omitted from the 
+examples.</P>
+<H2>Getting to know your development environment</H2>
+<P>Programming these days takes place in development environments almost without 
+exceptions. The    development environment provides several tools and features 
+to assist the programmer. Although the    development environment does not write 
+the program on behalf of the programmer, it contains several handy    features 
+such as hinting about mistakes in code and assisting the programmer to visualize 
+the structure    of the program.</P>
+<DIV class="help">
+<P>In this course, we will use the <A href="http://netbeans.org/">NetBeans</A> 
+development      environment. A guide for using NetBeans is available <A href="http://mooc.fi/courses/general/programming/how-to-get-started.html#completing-and-submitting-the-programming-assignments">here</A>. 
+      </P></DIV>
+<P>Until you become familiar with NetBeans, follow the guides and steps 
+precisely. Most of the following    exercises show what needs to be printed to 
+the screen for the program to function correctly.</P>
+<P><B>Note:</B> Do not do the exercises by writing code and then clicking the 
+test button. You should also    execute the code manually (green arrow) and 
+observe the result on the screen. This is especially useful if    an exercise 
+fails to pass the tests.</P>
+<DIV class="tehtavat">
+<P>In the following exercises, we will practice the use of NetBeans and printing 
+of text on the screen.</P>
+<P><B>Remember to read the <A href="http://mooc.fi/courses/general/programming/how-to-get-started.html#completing-and-submitting-the-programming-assignments">guide 
+on using NetBeans</A> before you continue!</B></P>
+<P class="help">Please answer to our survey: <A href="http://oo-start.mooc.fi/english_mooc_participants/new">here</A>. 
+It will take less than five minutes.</P>
+<DIV class="tehtava">
+<H3 class="req">Name</H3>
+<P>Create a program that prints your name to the screen.</P>
+<P>The program output should resemble the following:</P>
+<PRE>Jane Doe
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3>Hello world! (And all the people of the world)</H3>
+<P>Create a program that prints out the following:</P>
+<PRE>Hello world!
+(And all the people of the world)
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3 class="req">Spruce</H3>
+<P>Create a program that prints the following:</P>
+<PRE>
+    *
+   ***
+  *****
+ *******
+*********
+    *
+        </PRE></DIV>
+<P><B>Note:</B> You probably wrote <CODE>System.out.println("...")</CODE> quite 
+a few times.      Try typing only <EM>sout</EM> on an empty line in NetBeans and 
+then press the <A href="http://en.wikipedia.org/wiki/Tab_key">tab key</A>. What 
+happened? This tip will save a lot of your      time in the future!</P></DIV>
+<H2 id="muuttuja_ja_sijoitus">Variables and assignment</H2>
+<H3>Variables and data types</H3>
+<P>A <EM>variable</EM> is one of the most important concepts in computer 
+programming. A variable should be    imagined as a box in which you can store 
+information. The information stored in a variable always has a    type. These 
+types include text (<EM>String</EM>), whole numbers (<EM>int</EM>), decimal 
+numbers    (<EM>double</EM>), and truth values (<EM>boolean</EM>). A 
+<EM>value</EM> can be assigned to a variable using    the equals sign 
+(<CODE>=</CODE>).</P>
+<PRE class="sh_java">int months = 12;
+    </PRE>
+<P>In the statement above, we assign the value 12 to the variable named 
+<CODE>months</CODE> whose data type is    integer (<CODE>int</CODE>). The 
+statement is read as "the variable <CODE>months</CODE> is assigned the     
+<EM>value</EM> 12".</P>
+<P>The value of the variable can be appended to a string with the plus 
+<CODE>+</CODE> sign as shown in the    following example.</P><!-- <h4>Esimerkkejä muuttujista ja tietotyypeistä</h4> --> 
+    
+<PRE class="sh_java">String text = "includes text";
+int wholeNumber = 123;
+double decimalNumber = 3.141592653;
+boolean isTrue = true;
+
+System.out.println("The variable's type is text. Its value is " + text);
+System.out.println("The variable's type is integer. Its value is  " + wholeNumber);
+System.out.println("The variable's type is decimal number. Its value is " + decimalNumber);
+System.out.println("The variable's type is truth value. Its value is " + isTrue);
+    </PRE>
+<P>Printing:</P>
+<PRE>The variable's type is text. Its value is includes text
+The variable's type is integer. Its value is 123
+The variable's type is decimal number. Its value is 3.141592653
+The variable's type is truth value. Its value is true
+    </PRE>
+<P>A variable holds its value until it is assigned a new one. Note that the 
+variable type is written only    when the variable is first declared in the 
+program. After that we can use the variable by its name.</P>
+<PRE class="sh_java">int wholeNumber = 123;
+System.out.println("The variable's type is integer. Its value is  " + wholeNumber);
+
+wholeNumber = 42;
+System.out.println("The variable's type is integer. Its value is  " + wholeNumber);
+    </PRE>
+<P>The output is:</P>
+<PRE>The variable's type is integer. Its value is 123
+The variable's type is integer. Its value is 42
+    </PRE>
+<H3>Variable data types are immutable</H3>
+<P>When a variable is declared with a data type, it cannot be changed later. For 
+example, a text variable    cannot be changed into an integer variable and it 
+cannot be assigned integer values.</P>
+<PRE class="sh_java">String text = "yabbadabbadoo!";
+text = 42; // Does not work! :(
+    </PRE>
+<P>Integer values can be assigned to decimal number variables, because whole 
+numbers are also    decimal numbers.</P>
+<PRE class="sh_java">double decimalNumber = 0.42;
+decimalNumber = 1; // Works! :)
+    </PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Varying variables</H3>
+<P>The exercise file initially contains a program which prints:</P>
+<PRE>Chickens:
+3
+Bacon (kg):
+5.5
+A tractor:
+There is none!
+
+In a nutshell:
+3
+5.5
+There is none!
+        </PRE>
+<P>Change the program in the specified places so that it will print:</P>
+<PRE>Chickens:
+9000
+Bacon (kg):
+0.1
+A tractor:
+Zetor
+
+In a nutshell:
+9000
+0.1
+Zetor
+        </PRE></DIV></DIV>
+<H3>Allowed and descriptive variable names</H3>
+<P>There are certain limitations on the naming of our variables. Even though 
+umlauts, for example, can     be used, it is better to avoid them, because 
+problems might arise with <A title="Character encoding - Wikipedia, the free encyclopedia" 
+href="http://en.wikipedia.org/wiki/Character_encoding">character encoding</A>. 
+For example, it is    recommended to use A instead of Ä.</P>
+<P>Variable names must not contain certain special characters like exclamation 
+marks (!). Space characters    cannot be used, either, as it is used to separate 
+commands into multiple parts. It is a good idea to    replace the space 
+character using a <EM><A title="CamelCase – Wikipedia" href="http://fi.wikipedia.org/wiki/CamelCase">camelCase</A></EM> 
+notation. <B>Note:</B> The first character is always written    in lower case 
+when using the camel case notation.</P>
+<PRE class="sh_java">int camelCaseVariable = 7;
+    </PRE>
+<P>Variable names can contain numbers as long it does not start with one. 
+Variable names cannot be composed    solely of numbers, either.</P>
+<PRE class="sh_java">int 7variable = 4; // Not allowed!
+int variable7 = 4; // A valid, but not descriptive variable name
+    </PRE>
+<P>Variable names that have been defined before cannot be used. Command names 
+such as     <CODE>System.out.print</CODE> cannot be used, either.</P>
+<PRE class="sh_java">int camelCase = 2;
+int camelCase = 5; // Not allowed, the variable camelCase is already defined!
+    </PRE>
+<P>It is strongly recommended to name variables so that their purpose can be 
+understood without comments    and without thinking. Variable names used in this 
+course <STRONG>must</STRONG> be descriptive.</P>
+<H4>Valid variable names</H4>
+<UL>
+  <LI>lastDay = 20</LI>
+  <LI>firstYear = 1952</LI>
+  <LI>name = "Matti"</LI></UL>
+<H4>Invalid variable names</H4>
+<UL>
+  <LI>last day of the month = 20</LI>
+  <LI>1day = 1952</LI>
+  <LI>watchout! = 1910</LI>
+  <LI>1920 = 1</LI></UL>
+<H2 id="laskentaa">Calculation</H2>
+<P>The calculation operations are pretty straightforward: <CODE>+</CODE>, 
+<CODE>-</CODE>, <CODE>*</CODE>    and <CODE>/</CODE>. A more peculiar operation 
+is the modulo operation <CODE>%</CODE>, which calculates the    remainder of a 
+division. The order of operations is also pretty straightforward: the operations 
+are    calculated from left to right taking the parentheses into account.</P>
+<PRE class="sh_java">int first = 2;   // variable of whole number type is assigned the value 2
+int second = 4;  // variable of whole number type is assigned the value 4
+int sum = first + second;  // variable of whole number type is assigned the value of first + second
+                           //     (which means 2 + 4)
+
+System.out.println(sum); // the value of the sum of variables is printed
+    </PRE>
+<PRE class="sh_java">int calcWithParens = (1 + 1) + 3 * (2 + 5);  // 23
+int calcWithoutParens = 1 + 1 + 3 * 2 + 5;   // 13
+    </PRE>
+<P>The parentheses example above can also be done step by step.</P>
+<PRE class="sh_java">int calcWithParens = (1 + 1);
+calcWithParens = calcWithParens + 3 * (2 + 5);  // 23
+
+int calcWithoutParens = 1 + 1;
+calcWithoutParens = calcWithoutParens + 3 * 2;
+calcWithoutParens = calcWithoutParens + 5;      // 13
+    </PRE>
+<P>Calculation operations can be used almost anywhere in the program code.</P>
+<PRE class="sh_java">int first = 2;
+int second = 4;
+
+System.out.println(first + second);
+System.out.println(2 + second - first - second);
+    </PRE>
+<H3>Floating point numbers (decimal numbers)</H3>
+<P>Calculating the division and remainder of whole numbers is a little trickier. 
+A floating point number    (decimal number) and integer (whole number) often get 
+mixed up. If all the variables in a    calculation operation are integers, the 
+end result will also be an integer.</P>
+<PRE class="sh_java">int result = 3 / 2;  // result is 1 (integer) because 3 and 2 are integers as well
+    </PRE>
+<PRE class="sh_java">int first = 3:
+int second = 2;
+double result = first / second;  // the result is again 1 because first and second are integers
+    </PRE>
+<P>The remainder can be calculated using the remainder operation 
+(<CODE>%</CODE>). For example, the    calculation <CODE>7 % 2</CODE> yields 
+1.</P>
+<PRE class="sh_java">int remainder = 7 % 2;  // remainder is 1 (integer)
+    </PRE>
+<P>If either the dividend or the divisor (or both!) is a floating point number 
+(decimal number) the end    result will also be a floating point number.</P>
+<PRE class="sh_java">double whenDividendIsFloat = 3.0 / 2;  // result is: 1.5
+double whenDivisorIsFloat = 3 / 2.0;   // result is: 1.5
+    </PRE>
+<P>If needed, integers can be converted to floating point using the type cast 
+operation     <CODE>(double)</CODE> as follows:</P>
+<PRE class="sh_java">int first = 3;
+int second = 2;
+double result1 = (double)first / second;  // result is: 1.5
+
+double result2 = first / (double)second;  // result is: 1.5
+
+double result3 = (double)(first / second);  // result is: 1
+    </PRE>
+<P>In the last example calculation, the result is rounded incorrectly because 
+the calculation between the    integers is done before the type cast to a 
+floating point number.</P>
+<P>If the quotient is assigned to a variable of integer type, the result will be 
+an integer as well.</P>
+<PRE class="sh_java">int integerResultBecauseTypeIsInteger = 3.0 / 2;  // quotient is automatically integer: 1
+    </PRE>
+<P>The next example will print "1.5" because the dividend is transformed into a 
+floating point number by    multiplying it with a floating point number (1.0 * 3 
+= 3.0) before the division.</P>
+<PRE class="sh_java">int dividend = 3;
+int divisor = 2;
+
+double quotient = 1.0 * dividend / divisor;
+System.out.println(quotient);
+    </PRE>
+<P>What does the following code print?</P>
+<PRE class="sh_java">int dividend = 3;
+int divisor = 2;
+
+double quotient = dividend / divisor * 1.0;
+System.out.println(quotient);
+    </PRE>
+<P><BIG>From now on, make sure that you name your variables that follow good 
+conventions like the variables      in the examples above.</BIG></P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Seconds in a year</H3>
+<P>Create a program that counts how many seconds there are in a year. You can 
+assume that a year        consists of 365 days (therefore the year is not a leap 
+year).</P>
+<P>The program should print the following:</P>
+<PRE>There are X seconds in a year.
+        </PRE>
+<P>X should be replaced with the calculation of your program.</P></DIV></DIV>
+<H2 id="katenointi">Concatenation or combining strings</H2>
+<P>Let us take a closer look on combining strings with the <CODE>+</CODE> 
+operator.</P>
+<P>If the <CODE>+</CODE> operator is used between two strings, a new string is 
+created with the two strings    combined. Note the clever use of space 
+characters in the values of the variables below!</P>
+<PRE class="sh_java">String greeting = "Hi ";
+String name = "John";
+String goodbye = ", and goodbye!";
+
+String sentence = greeting + name + goodbye;
+
+System.out.println(sentence);
+    </PRE>
+<PRE>Hi John, and goodbye!
+    </PRE>
+<P>If a string is on either side of the <CODE>+</CODE> operator, the other side 
+is converted to a string    and a new string is created. For example, the 
+integer <CODE>2</CODE> will be converted into the string    "2" and then 
+combined with the other string.</P>
+<PRE class="sh_java">System.out.println("there is an integer --&gt; " + 2);
+System.out.println(2 + " &lt;-- there is an integer");
+    </PRE>
+<P>What we learned earlier about the order of operations is still valid:</P>
+<PRE class="sh_java">System.out.println("Four: " + (2 + 2));
+System.out.println("But! Twenty-two: " + 2 + 2);
+    </PRE>
+<PRE>Four: 4
+But! Twenty-two: 22
+    </PRE>
+<P>Using this information, we can print a mix of strings and values of 
+variables:</P>
+<PRE class="sh_java">int x = 10;
+
+System.out.println("variable x has the following value: " + x);
+
+int y = 5;
+int z = 6;
+
+System.out.println("y has the value  " + y + " and z has the value " + z);
+    </PRE>
+<P>This program obviously prints:</P>
+<PRE>variable x has the following value: 10
+y has the value 5 and z has the value 6
+    </PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Addition</H3>
+<P>Create a program to calculate the sum of two numbers. At the beginning of the 
+program two        variables are introduced and those variables hold the numbers 
+to be summed. Feel free to use other        variables if you need to.</P>
+<P>For example, if the variables hold numbers 5 and 4, the program should 
+output:</P>
+<PRE>5 + 4 = 9
+        </PRE>
+<P>If the variables hold numbers 73457 and 12888, the program output should 
+be:</P>
+<PRE>73457 + 12888 = 86345
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3>Multiplication</H3>
+<P>Create a program similar to the previous one except that it multiplies the 
+two numbers        instead of adding them.</P>
+<P>For example, if the variables hold numbers 2 and 8, the program output should 
+be:</P>
+<PRE>2 * 8 = 16
+        </PRE>
+<P>If the variables hold numbers 277 and 111, the program output should be:</P>
+<PRE>277 * 111 = 30747
+        </PRE>
+<P>What is the biggest multiplication that your program is able to 
+calculate?</P></DIV></DIV>
+<H2 id="syötteen_lukeminen">Reading user input</H2>
+<P>So far our programs have been rather one-sided. Next we will learn how to 
+read <EM>input</EM> from the    user. We will use a special <EM>Scanner</EM> 
+tool to read the user input.</P>
+<P>Let us add the <EM>Scanner</EM> to our existing main program body. Do not 
+worry if the main program body    seems obscure as we will continue to write our 
+code in the part marked <EM>// program code</EM>.</P>
+<PRE class="sh_java">import java.util.Scanner;
+
+public class ProgramBody {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
+        // program code
+    }
+}
+    </PRE>
+<H3 id="syote_simppeli">Reading a string</H3>
+<P>The following code reads the user's name and prints a greeting:</P>
+<PRE class="sh_java">System.out.print("What is your name? ");
+String name = reader.nextLine(); // Reads a line of input from the user and assigns it
+                                 //     to the variable called name
+
+System.out.println("Hi, " + name);
+    </PRE>
+<PRE>What is your name? <SPAN class="red">John</SPAN>
+Hi, John
+    </PRE>
+<P>The program above combined along with the main program body is shown below. 
+The name of the program is     <EM>Greeting</EM>, which means that it must be 
+located in a file named <CODE>Greeting.java</CODE>.</P>
+<PRE class="sh_java">import java.util.Scanner;
+
+public class Greeting {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Who is greeted: ");
+        String name = reader.nextLine(); // Reads a line of input from the user and assigns it
+                                         //     to the variable called name
+
+        System.out.print("Hi " + name);
+    }
+}
+    </PRE>
+<P>When the program above is executed, you can type the input. The output tab in 
+NetBeans (at the bottom)    looks as follows when the program has finished (the 
+user inputs the name "John").</P>
+<PRE>run:
+Who is greeted: John
+Hi John
+BUILD SUCCESSFUL (total time: 6 seconds)
+    </PRE>
+<H3 id="syote_kokonaisluku">Reading integers</H3>
+<P>Our Scanner tool is not good for reading integers, so we will use another 
+special tool to read an integer. The command <CODE>Integer.parseInt</CODE> 
+converts the string given to it into an    integer. The command's parameter is 
+given between brackets and it returns an integer that can be    assigned to an 
+integer variable.</P>
+<P>Basically, we are joining two commands together. First we read the input as a 
+string from the user and    immediately give it to the command 
+<CODE>Integer.parseInt</CODE>.</P><!--
+<pre class="sh_java">
+String threeString = "3";
+int three = Integer.parseInt(threeString);
+</pre>
+
+        <p>Here is the same example, except that now we read the input from the user as a string using Scanner.</p>
+
+
+<pre class="sh_java">
+System.out.print("Type an integer: ");
+String numberString = reader.nextLine();
+int number = Integer.parseInt(numberString);
+
+System.out.println("You typed " + number);
+</pre>
+        <p>Usually commands can also be chained. Let us use the string we get from readers <code>nextLine</code> command directly in another command <code>Integer.parseInt</code>. Now first the reader takes the users input as a string, then the command <code>Integer.parseInt</code> transforms the string to an integer. From now on we will use the following way to read integers from the user.</p>
+//--> 
+    
+<PRE class="sh_java">System.out.print("Type an integer: ");
+int number = Integer.parseInt(reader.nextLine());
+
+System.out.println("You typed " + number);
+    </PRE>
+<P>Next we will ask the user to give us his name and age. The program body is 
+included this time.</P>
+<PRE class="sh_java">import java.util.Scanner;
+
+public class NameAndAgeGreeting {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Your name: ");
+        String name = reader.nextLine();   // Reads a line from the users keyboard
+
+        System.out.print("How old are you: ");
+        int age = Integer.parseInt(reader.nextLine()); // Reads a string variable from the keyboard and transfers it to an integer
+
+        System.out.println("Your name is: " + name + ", and you are " + age + " years old, nice to meet you!");
+    }
+}
+    </PRE>
+<H3 id="yhteenveto">Summary</H3>
+<P>The program body for interaction with the user is as follows:</P>
+<PRE class="sh_java">import java.util.Scanner;
+public class ProgramName {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
+        // code here
+    }
+}
+    </PRE>
+<P>Reading a string:</P>
+<PRE class="sh_java">String text = reader.nextLine();
+    </PRE>
+<P>Reading an integer:</P>
+<PRE class="sh_java">int number = Integer.parseInt(reader.nextLine());
+    </PRE>
+<DIV class="tehtavat" id="viikko1">
+<DIV class="tehtava">
+<H3 class="req">Adder</H3>
+<P>Create a program that asks the user for two integers and then prints their 
+sum.</P>
+<PRE>Type a number: <FONT color="red">6</FONT>
+Type another number: <FONT color="red">2</FONT>
+
+Sum of the numbers: 8
+        </PRE>
+<P>In this example the user input is marked in red color. From now on the red 
+color will indicate        user input in examples.</P></DIV>
+<DIV class="tehtava">
+<H3>Divider</H3>
+<P>Create a program that asks the user for two integers and prints their 
+quotient. Make sure that         <CODE>3 / 2 = 1.5</CODE>. If the decimal part 
+is missing, take another look at <A href="http://mooc.cs.helsinki.fi/programming-part1/material-2013/%E2%80%9D%E2%80%9D">6.1 
+Floating point numbers (decimal numbers)</A> to find the solution.</P>
+<PRE>Type a number: <FONT color="red">3</FONT>
+Type another number: <FONT color="red">2</FONT>
+
+Division: 3 / 2 = 1.5
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3 class="req">Calculating the circumference</H3>
+<P>The circumference of a circle is calculated using the formula <CODE>2 * pi * 
+radius</CODE>.        Create a program that asks the user for the radius and 
+then calculates the circumference using the        given radius. Java already 
+contains the value of pi in the <CODE>Math.PI</CODE> variable, which you        
+can use in your calculation.</P>
+<PRE>Type the radius: <FONT color="red">20</FONT>
+
+Circumference of the circle: 125.66370614359172
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3>Bigger number</H3>
+<P>Create a program that asks the user for two integers and then prints the 
+larger of the two.</P>
+<P><B>Tip:</B> When you write <CODE>Math.</CODE> (that is, Math followed by a 
+dot) in NetBeans, it        shows you a bunch of available mathematical 
+calculations. For example, <CODE>Math.cos(10)</CODE>        calculates the 
+cosine of the number 10. Try to find a suitable tool in <CODE>Math</CODE> to     
+   complete this exercise! If you cannot find anything suitable or do not know 
+how to complete the        exercise, skip the exercise for now. We will return 
+to the matter later on.</P>
+<PRE>Type a number: <FONT color="red">20</FONT>
+Type another number: <FONT color="red">14</FONT>
+
+The bigger number of the two numbers given was: 20
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3 class="req">Sum of the ages</H3>
+<P>Create a program that asks for the names and ages of two users. After that 
+the program prints        the sum of their ages.</P>
+<PRE>Type your name: <FONT color="red">Matti</FONT>
+Type your age: <FONT color="red">14</FONT>
+
+Type your name: <FONT color="red">Arto</FONT>
+Type your age: <FONT color="red">12</FONT>
+
+Matti and Arto are 26 years old in total.
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3 class="req">NHL statistics, part 1</H3>
+<P>A ready-made component <CODE>NHLStatistics</CODE> is included along with the 
+exercise files for        this excercise. It can be used to fetch and see NHL 
+players' score data, including their number of        played games, goals, 
+assists, points, and penalty amount.</P>
+<P>The main program imports (i.e. enables the use of) the component by adding 
+the following line to        the beginning of the file: <CODE>import 
+nhlstats.NHLStatistics;</CODE>. The next example prints the        top 10 
+players based on points:</P>
+<PRE class="sh_java">import java.util.Scanner;
+import nhlstats.NHLStatistics;
+
+public class Mainprogram {
+    public static void main(String[] args) throws Exception {
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Top ten by points");
+        NHLStatistics.sortByPoints();
+        NHLStatistics.top(10);
+    }
+}
+        </PRE>
+<P>It will print (this was the situation on the 9th of January 2012):</P>
+<PRE>Top ten by points
+Henrik Sedin           VAN        43 11 + 38= 49  36
+Phil Kessel            TOR        41 24 + 24= 48  10
+Claude Giroux          PHI        36 18 + 30= 48  16
+Joffrey Lupul          TOR        41 19 + 28= 47  36
+Daniel Sedin           VAN        42 18 + 29= 47  32
+Steven Stamkos         TBL        40 28 + 17= 45  34
+Marian Hossa           CHI        41 17 + 27= 44  14
+Evgeni Malkin          PIT        33 16 + 28= 44  30
+Jordan Eberle          EDM        41 17 + 26= 43   6
+Jason Pominville       BUF        41 14 + 29= 43   8
+        </PRE>
+<P>The name, abbreviation of the club, matches played, assists, points and 
+penalties of players        are printed.</P>
+<P>The first command <CODE>NHLStatistics.sortByPoints()</CODE> sorts the list of 
+NHL players by the        points they have gathered. The second command 
+<CODE>NHLStatistics.top(10);</CODE> prints the ten        first players from the 
+list. Any integer can be given as a parameter.</P>
+<P>Similarly the players can be printed ordered by the goals or assists they 
+have made, or by        penalty minutes they have been given. First, we call the 
+command to sort the players:</P>
+<PRE class="sh_java">NHLStatistics.sortByPoints();     // orders the players by points
+NHLStatistics.sortByGoals();      // orders the players by goals
+NHLStatistics.sortByAssists();    // orders the players by assists
+NHLStatistics.sortByPenalties();  // orders the players by penalty minutes
+        </PRE>
+<P>After that the players are printed with the command <CODE>top</CODE> using 
+the number of players        to be printed as its parameter.<BR></P>
+<P>It is also possible to use the component to request the statistics of a 
+certain player:</P>
+<PRE class="sh_java">NHLStatistics.searchByPlayer("Jaromir Jagr");  // prints stats of Jaromir Jagr
+NHLStatistics.searchByPlayer("Koivu");         // prints stats of Mikko Koivu and Saku Koivu
+NHLStatistics.searchByPlayer("Teemu");         // prints stats of all players named Teemu
+        </PRE>
+<P>The component can also print the statistics of all players in a club:</P>
+<PRE class="sh_java">NHLStatistics.teamStatistics("NYR");  // Statistics of New York Rangers
+        </PRE>
+<P>The order of the printed club statistics can be changed using a 
+<CODE>sortBy...()</CODE>        first.</P>
+<P>The name of the club must be given using the official three letter 
+abbreviation. You can check        the abbreviations <A href="http://everything2.com/title/Ice+hockey+acronyms+and+abbreviations">here 
+        </A>. The statistics component prints a list of the available 
+abbreviations if you        request the statistics of an invalid 
+club.</P><STRONG>Create a program that does the following tasks into the main 
+program body. The tasks          must be done in exactly the same order as 
+listed below. Do the tasks in the program body one after          another 
+without deleting tasks you have already done.</STRONG>         
+<P><B>Note:</B> When you first run the program, the execution might take a while 
+because the        information is downloaded from the web. Execution should be 
+quick after the first run.</P>
+<P>The program must do the following:</P>
+<UL>
+  <LI>Print the top ten players based on goals</LI>
+  <LI>Print the top 25 players based on penalty amounts</LI>
+  <LI>Print the statistics for Sidney Crosby</LI>
+  <LI>Print the statistics for Philadelphia Flyers (abbreviation: PHI). Note in 
+  which order the          players are printed in and why that might be!</LI>
+  <LI>Print the players in Anaheim Ducks (abbreviation: ANA) ordered by 
+  points</LI></UL>
+<P>After you have successfully submitted the exercise, you can        play with 
+the code as you wish!</P></DIV></DIV>
+<H2 id="valinta_ja_totuusarvot">Conditional statements and truth values</H2>
+<P>So far, our programs have progressed from one command to another in a 
+straightforward manner. In order    for the program to <EM>branch</EM> to 
+different execution paths based on e.g. user input, we need    conditional 
+statements.</P>
+<PRE class="sh_java">int number = 11;
+
+if (number &gt; 10) {
+    System.out.println("The number was greater than 10");
+}
+    </PRE>
+<P>The condition <CODE>(number &gt; 10)</CODE> evaluates into a truth value; 
+either <CODE>true</CODE> or     <CODE>false</CODE>. The <CODE>if</CODE> command 
+only handles truth values. The conditional    statement above is read as "if the 
+number is greater than 10".</P>
+<P>Note that the <CODE>if</CODE> statement is not followed by semicolon as the 
+condition path continues    after the statement.</P>
+<P>After the condition, the opening curly brace <CODE>{</CODE> starts a new 
+<EM>block</EM>, which is executed    if the condition is true. The 
+<EM>block</EM> ends with a closing curly brace <CODE>}</CODE>. Blocks can be as  
+  long as desired.</P>
+<P>The comparison operators are:</P>
+<UL>
+  <LI><CODE>&gt;</CODE> Greater than</LI>
+  <LI><CODE>&gt;=</CODE> Greater than or equal to</LI>
+  <LI><CODE>&lt;</CODE> Less than</LI>
+  <LI><CODE>&lt;=</CODE> Less than or equal to</LI>
+  <LI><CODE>==</CODE> Equals</LI>
+  <LI><CODE>!=</CODE> Not equal</LI></UL>
+<PRE class="sh_java">int number = 55;
+
+if (number != 0) {
+    System.out.println("The number was not equal to 0");
+}
+
+if (number &gt;= 1000) {
+    System.out.println("The number was greater than or equal to 1000");
+}
+
+    </PRE>
+<P>A block can contain any code including other <CODE>if</CODE> statements.</P>
+<PRE class="sh_java">int x = 45;
+int number = 55;
+
+if (number &gt; 0) {
+    System.out.println("The number is positive!");
+    if (number &gt; x) {
+        System.out.println(" and greater than the value of variable x");
+        System.out.println("after all, the value of variable x is " + x);
+    }
+}
+    </PRE>
+<P>The comparison operators can also be used outside the <CODE>if</CODE> 
+statements. In such case the truth    value will be stored in a truth value 
+variable.</P>
+<PRE class="sh_java">int first = 1;
+int second = 3;
+
+boolean isGreater = first &gt; second;
+    </PRE>
+<P>In the example above the boolean (i.e. a truth value) variable 
+<CODE>isGreater</CODE> now includes the    truth value <EM>false</EM>.</P>
+<P>A boolean variable can be used as a condition in a conditional sentence.</P>
+<PRE class="sh_java">int first = 1;
+int second = 3;
+
+boolean isLesser = first &lt; second;
+
+if (isLesser) {
+    System.out.println(first + " is less than " + second + "!");
+}
+    </PRE>
+<PRE>1 is less than 3!
+    </PRE>
+<H3 id="indentation">Code indentation</H3>
+<P>Note that the commands in the block following the <CODE>if</CODE> statement 
+(i.e. the lines after the    curly brace, <CODE>{</CODE> ) are not written at 
+the same level as the <CODE>if</CODE> statement itself.    They should be 
+<B>indented</B> slightly to the right. Indentation happens when you press the 
+tab key,    which is located to the left of q key. When the block ends with the 
+closing curly brace, indentation    ends as well. The closing curly brace 
+<CODE>}</CODE> should be on the same level as the original     <CODE>if</CODE> 
+statement.</P>
+<P>The use of indentation is crucial for the readability of program code. During 
+this course and generally    everywhere, you are expected to indent the code 
+properly. NetBeans helps with the correct indentation.    You can easily indent 
+your program by pressing shift, alt, and f simultaneously.</P>
+<H3>else</H3>
+<P>If the truth value of the comparison is false, another optional block can be 
+executed using the     <CODE>else</CODE> command.</P>
+<PRE class="sh_java">int number = 4;
+
+if (number &gt; 5) {
+    System.out.println("Your number is greater than five!");
+} else {
+    System.out.println("Your number is equal to or less than five!");
+}
+    </PRE>
+<PRE>Your number is equal to or less than five!
+    </PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">A positive number</H3>
+<P>Create a program that asks the user for a number and tells if the number is 
+positive (i.e.        greater than zero).</P>
+<PRE>Type a number: <FONT color="red">5</FONT>
+
+The number is positive.
+        </PRE>
+<PRE>Type a number: <FONT color="red">-2</FONT>
+
+The number is not positive.
+        </PRE>
+<P><BIG><B>Are you certain that your code is indented correctly?</B></BIG></P>
+<P>Reread the section on <A href="http://mooc.cs.helsinki.fi/programming-part1/material-2013/week-1?noredirect=1#indentation">code 
+indentation</A>. Observe what        happens when you press shift, alt and f 
+simultaneously! The same automatic indentation        functionality can also be 
+used using the menu bar by selecting Source and then Format.</P></DIV>
+<DIV class="tehtava">
+<H3 class="req">Age of majority</H3>
+<P>Create a program that asks for the user's age and tells whether the user has 
+reached the age of majority (i.e. 18 years old or older).</P>
+<PRE>How old are you? <FONT color="red">12</FONT>
+
+You have not reached the age of majority yet!
+        </PRE>
+<PRE>How old are you? <FONT color="red">32</FONT>
+
+You have reached the age of majority!
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3 class="req">Even or odd?</H3>
+<P>Create a program that asks the user for a number and tells whether the number 
+is even or        odd.</P>
+<PRE>Type a number: <FONT color="red">2</FONT>
+Number 2 is even.
+        </PRE>
+<PRE>Type a number: <FONT color="red">7</FONT>
+Number 7 is odd.
+        </PRE>
+<P><B>Hint:</B> The number's remainder when dividing by 2 tells whether the 
+number is even or odd.        The remainder can be obtained with the 
+<CODE>%</CODE> operator.</P></DIV></DIV>
+<H3>else if</H3>
+<P>If there are more than two conditions for the program to check, it is 
+recommended to use the <CODE>else      if</CODE> command. It works like the 
+<CODE>else</CODE> command, but with an additional condition.     <CODE>else 
+if</CODE> comes after the <CODE>if</CODE> command. There can be multiple 
+<CODE>else if</CODE>    commands.</P>
+<PRE class="sh_java">int number = 3;
+
+if (number == 1) {
+    System.out.println("The number is one.");
+} else if (number == 2) {
+    System.out.println("The number is two.");
+} else if (number == 3) {
+    System.out.println("The number is three!");
+} else {
+    System.out.println("Quite a lot!");
+}
+    </PRE>
+<PRE>The number is three!
+    </PRE>
+<P>Let us read out loud the example above: If number is one, print out "The 
+number is one.".    Otherwise if the number is two, print out "The number is 
+two.". Otherwise if the number is three,    print out "The number is three!". 
+Otherwise print out "Quite a lot!".</P>
+<H3>Comparing strings</H3>
+<P>Strings cannot be compared using the equality operator (<EM>==</EM>). For 
+string comparison, we use the     <CODE>equals</CODE>. command, which is always 
+associated with the string to compare.</P>
+<PRE class="sh_java">String text = "course";
+
+if (text.equals("marzipan")) {
+    System.out.println("The variable text contains the text marzipan");
+} else {
+    System.out.println("The variable text does not contain the text marzipan");
+}
+    </PRE>
+<P>The <CODE>equals</CODE> command is always attached to the string variable 
+with a dot in    between. A string variable can also be compared to another 
+string variable.</P>
+<PRE class="sh_java">String text = "course";
+String anotherText = "horse";
+
+if (text.equals(anotherText)) {
+    System.out.println("The texts are the same!");
+} else {
+    System.out.println("The texts are not the same!");
+}
+    </PRE>
+<P>When comparing strings, it is crucial to make sure that both string variables 
+have been assigned some    value. If a value has not been assigned, the program 
+execution terminates with a     <I>NullPointerException</I> error, which means 
+that variable has no value assigned to it (<I>null</I>).</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Greater number</H3>
+<P>Create a program that asks the user for two numbers and prints the greater of 
+those two. The        program should also handle the case in which the two 
+numbers are equal.</P>
+<P>Example outputs:</P>
+<PRE>Type the first number: <FONT color="red">5</FONT>
+Type the second number: <FONT color="red">3</FONT>
+
+Greater number: 5
+        </PRE>
+<PRE>Type the first number: <FONT color="red">5</FONT>
+Type the second number: <FONT color="red">8</FONT>
+
+Greater number: 8
+        </PRE>
+<PRE>Type the first number: <FONT color="red">5</FONT>
+Type the second number: <FONT color="red">5</FONT>
+
+The numbers are equal!
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3 class="req">Grades and points</H3>
+<P>Create a program that gives the course grade based on the following 
+table.</P>
+<TABLE style="margin-left: 50px;" border="1">
+  <TBODY>
+  <TR>
+    <TH>Points</TH>
+    <TH>Grade</TH></TR>
+  <TR>
+    <TD>0–29</TD>
+    <TD>failed</TD></TR>
+  <TR>
+    <TD>30–34</TD>
+    <TD>1</TD></TR>
+  <TR>
+    <TD>35–39</TD>
+    <TD>2</TD></TR>
+  <TR>
+    <TD>40–44</TD>
+    <TD>3</TD></TR>
+  <TR>
+    <TD>45–49</TD>
+    <TD>4</TD></TR>
+  <TR>
+    <TD>50–60</TD>
+    <TD>5</TD></TR></TBODY></TABLE>
+<P>Example outputs:</P>
+<PRE>Type the points [0-60]: <FONT color="red">37</FONT>
+
+Grade: 2
+        </PRE>
+<PRE>Type the points [0-60]: <FONT color="red">51</FONT>
+
+Grade: 5
+        </PRE></DIV></DIV>
+<H3>Logical operations</H3>
+<P>The condition statements can be made more complicated using logical 
+operations. The logical operations    are:</P>
+<UL>
+  <LI><CODE>condition1 &amp;&amp; condition2</CODE> is true if both conditions 
+  are true.</LI>
+  <LI><CODE>condition1 || condition2</CODE> is true if either of the conditions 
+  are true.</LI>
+  <LI><CODE>!condition</CODE> is true if the condition is false.</LI></UL>
+<P>Below we will use the AND operation <CODE>&amp;&amp;</CODE> to combine two 
+individual conditions in    order to check if the value of the variable is 
+greater than 4 <STRONG>and</STRONG> less than 11 (i.e. in    the range 5 - 
+10).</P>
+<PRE class="sh_java">System.out.println("Is the number between 5-10?");
+int number = 7;
+
+if (number &gt; 4 &amp;&amp; number &lt; 11) {
+    System.out.println("Yes! :)");
+} else {
+    System.out.println("Nope :(")
+}
+    </PRE>
+<PRE>Is the number between 5-10?
+Yes! :)
+    </PRE>
+<P>Next up is the OR operation <CODE>||</CODE>, which will be used to check if 
+the value is less than 0     <STRONG>or</STRONG> greater than 100. The condition 
+evaluates to true if the value fulfills either    condition.</P>
+<PRE class="sh_java">System.out.println("Is the number less than 0 or greater than 100?");
+int number = 145;
+
+if (number &lt; 0 || number &gt; 100) {
+    System.out.println("Yes! :)");
+} else {
+    System.out.println("Nope :(")
+}
+    </PRE>
+<PRE>Is the number less than 0 or greater than 100?
+Yes! :)
+    </PRE>
+<P>Now we will use the negation operation <CODE>!</CODE> to negate the 
+condition:</P>
+<PRE class="sh_java">System.out.println("Is the string equal to 'milk'?");
+String text = "water";
+
+if (!(text.equals("milk"))) {  // true if the condition text.equals("milk") is false
+    System.out.println("No!");
+} else {
+    System.out.println("Yes")
+}
+    </PRE>
+<PRE>Is the text equal to 'milk'?
+No!
+    </PRE>
+<P>For complicated conditions, we often need parentheses:</P>
+<PRE class="sh_java">int number = 99;
+
+if ((number &gt; 0 &amp;&amp; number &lt; 10) || number &gt; 100 ) {
+    System.out.println("The number was in the range 1-9 or it was over 100");
+} else {
+    System.out.println("The number was equal to or less than 0 or it was in the range 10-99");
+}
+    </PRE>
+<PRE>The number was equal to or less than 0 or it was in the range 10-99
+    </PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Age check</H3>
+<P>Create a program that asks for the user's age and checks that it is 
+reasonable (at least 0        and at most 120).</P>
+<PRE>How old are you? <FONT color="red">10</FONT>
+OK
+        </PRE>
+<PRE>How old are you? <FONT color="red">55</FONT>
+OK
+        </PRE>
+<PRE>How old are you? <FONT color="red">-3</FONT>
+Impossible!
+        </PRE>
+<PRE>How old are you? <FONT color="red">150</FONT>
+Impossible!
+        </PRE></DIV>
+<DIV class="tehtava">
+<H3 class="req">Usernames</H3>
+<P>Create a program that recognizes the following users:</P>
+<TABLE style="margin-left: 50px;" border="1">
+  <TBODY>
+  <TR>
+    <TD>Username</TD>
+    <TD>Password</TD></TR>
+  <TR>
+    <TD>alex</TD>
+    <TD>mightyducks</TD></TR>
+  <TR>
+    <TD>emily</TD>
+    <TD>cat</TD></TR></TBODY></TABLE>
+<P>The program should check for the username and password as follows:</P>
+<PRE>Type your username: <FONT color="red">alex</FONT>
+Type your password: <FONT color="red">mightyducks</FONT>
+You are now logged into the system!
+        </PRE>
+<PRE>Type your username: <FONT color="red">emily</FONT>
+Type your password: <FONT color="red">cat</FONT>
+You are now logged into the system!
+        </PRE>
+<PRE>Type your username: <FONT color="red">emily</FONT>
+Type your password: <FONT color="red">dog</FONT>
+Your username or password was invalid!
+        </PRE>
+<P><B>Note:</B> Remember that you cannot compare strings with the 
+<CODE>==</CODE> operation!</P></DIV>
+<DIV class="tehtava">
+<H3>Leap year</H3>
+<P>A year is a leap year if it is divisible by 4. But if the year is divisible 
+by 100, it is a        leap year only when it is also divisible by 400.</P>
+<P>Create a program that checks whether the given year is a leap year.</P>
+<PRE>Type a year: <FONT color="red">2011</FONT>
+The year is not a leap year.
+        </PRE>
+<PRE>Type a year: <FONT color="red">2012</FONT>
+The year is a leap year.
+        </PRE>
+<PRE>Type a year: <FONT color="red">1800</FONT>
+The year is not a leap year.
+        </PRE>
+<PRE>Type a year: <FONT color="red">2000</FONT>
+The year is a leap year.
+        </PRE></DIV></DIV>
+<H2 id="toiston_alkeet">Introduction to loops</H2>
+<P>Conditional statements allow us to execute different commands based on the 
+conditions. For example, we    can let the user login only if the username and 
+password are correct.</P>
+<P>In addition to conditions we also need repetitions. We may, for example, need 
+to keep asking the user    to input a username and password until a valid pair 
+is entered.</P>
+<P>The most simple repetition is an infinite loop. The following code will print 
+out the string <EM>I      can program!</EM> forever or "an infinite number of 
+times":</P>
+<PRE class="sh_java">while (true) {
+    System.out.println("I can program!");
+}
+    </PRE>
+<P>In the example above, the <CODE>while (true)</CODE> command causes the 
+associated block (i.e. the code    between the curly braces <CODE>{}</CODE>) to 
+be <EM>looped</EM> (or repeated) infinitely.</P>
+<P>We generally do not want an infinite loop. The loop can be interrupted using 
+e.g. the <CODE>break</CODE>    command.</P>
+<PRE class="sh_java">while (true) {
+    System.out.println("I can program!");
+
+    System.out.print("Continue? ('no' to quit)? ");
+    String command = reader.nextLine();
+    if (command.equals("no")) {
+        break;
+    }
+}
+
+System.out.println("Thank you and see you later!");
+    </PRE>
+<P>Now the loop progresses like this: First, the program prints <EM>I can 
+program!</EM>. Then, the program will ask the user if it should continue. If the 
+user types <EM>no</EM>, the <CODE>break</CODE>    command is executed and the 
+loop is interrupted and <EM>Thank you and see you again!</EM> is printed.</P>
+<PRE>I can program!
+Continue? ('no' to quit)?<FONT color="red">yeah</FONT>
+I can program!
+Continue? ('no' to quit)? <FONT color="red">jawohl</FONT>
+I can program!
+Continue? ('no' to quit)? <FONT color="red">no</FONT>
+Thank you and see you again!
+    </PRE>
+<P>Many different things can be done inside a loop. Next we create a simple 
+calculator, which performs    calculations based on commands that the user 
+enters. If the command is <EM>quit</EM>, the     <CODE>break</CODE> command will 
+be executed to end the loop. Otherwise two numbers are asked. Then, if the    
+initial command was <EM>sum</EM>, the program calculates and prints the sum of 
+the two numbers. If the    command was <EM>difference</EM>, the program 
+calculates and prints the difference of the two numbers. If    the command was 
+something else, the program reports that the command was unknown.</P>
+<PRE class="sh_java">System.out.println("welcome to the calculator");
+
+while (true) {
+    System.out.print("Enter a command (sum, difference, quit): ");
+    String command = reader.nextLine();
+    if (command.equals("quit")) {
+        break;
+    }
+
+    System.out.print("enter the numbers");
+    int first = Integer.parseInt(reader.nextLine());
+    int second = Integer.parseInt(reader.nextLine());
+
+    if (command.equals("sum") ) {
+        int sum = first + second;
+        System.out.println( "The sum of the numbers is " + sum );
+    } else if (command.equals("difference")) {
+        int difference = first - second;
+        System.out.println("The difference of the numbers is " + difference);
+    } else {
+        System.out.println("Unknown command");
+    }
+
+}
+
+System.out.println("Thanks, bye!");
+    </PRE><!-- screencast --> 
+    
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Password</H3>
+<P>In this exercise we create a program that asks the user for a password. If 
+the password is        right, a secret message is shown to the user.</P>
+<PRE>Type the password: <FONT color="red">turnip</FONT>
+Wrong!
+Type the password: <FONT color="red">beetroot</FONT>
+Wrong!
+Type the password: <FONT color="red">carrot</FONT>
+Right!
+
+The secret is: jryy qbar!
+        </PRE>
+<P>The program will be done in three steps.</P>
+<H4>Asking for the password</H4>
+<P>The initial exercise template defines the variable <CODE>String 
+password</CODE> with a value of         <CODE>carrot</CODE>. Do not change this 
+password! You should make the program ask the user to enter        a password 
+and then compare it with the value in the variable <CODE>password</CODE>. 
+Remember what        that there is a special way to compare strings!</P>
+<PRE>Type the password: <FONT color="red">turnip</FONT>
+Wrong!
+        </PRE>
+<PRE>Type the password: <FONT color="red">carrot</FONT>
+Right!
+        </PRE>
+<PRE>Type the password: <FONT color="red">potato</FONT>
+Wrong!
+        </PRE>
+<H4>Asking for the password until the user gives the correct one</H4>
+<P>Modify the program so that it asks the user to type a password until it gets 
+the correct one.        Implement this using a <CODE>while-true</CODE> loop 
+statement. The loop statement can be        interrupted if and only if the 
+entered password matches the value of the         <CODE>password</CODE> 
+variable.</P>
+<PRE>Type the password: <FONT color="red">turnip</FONT>
+Wrong!
+Type the password: <FONT color="red">beetroot</FONT>
+Wrong!
+Type the password: <FONT color="red">carrot</FONT>
+Right!
+        </PRE>
+<H4>Secret message</H4>
+<P>Add your own secret message to the program and show it to the user when the 
+password is correct.        Your message can be whatever you want!</P>
+<PRE>Type the password: <FONT color="red">turnip</FONT>
+Wrong!
+Type the password: <FONT color="red">rutabaga</FONT>
+Wrong!
+Type the password: <FONT color="red">carrot</FONT>
+Right!
+
+The secret is: jryy qbar!
+        </PRE>
+<P>The secret above has been encrypted using the <A href="http://en.wikipedia.org/wiki/Rot13" 
+target="_blank">Rot13</A> algorithm. During this course we will implement our 
+own encryption        program.</P></DIV>
+<DIV class="tehtava">
+<H3 class="req">Temperatures</H3>
+<P>You will get the <CODE>Graph</CODE> component along with the exercise 
+template.         <CODE>Graph</CODE> draws graphs based on numbers that are 
+given to it. You can give it numbers        as follows:</P>
+<PRE class="sh_java">Graph.addNumber(13.0);
+        </PRE>
+<P>We will create a program that draws a graph based on daily temperatures given 
+to it.</P>
+<H4>Asking for numbers</H4>
+<P>Create a program that asks the user to input floating point numbers 
+(<CODE>double</CODE>) and        then adds the numbers to the graph. Use the 
+<CODE>while-true</CODE> structure again.</P>
+<P><B>Note:</B> To read a <CODE>double</CODE>, use: <CODE>double number =        
+  Double.parseDouble(reader.nextLine());</CODE></P>
+<H4>Checking</H4>
+<P>Improve your program so that temperatures below -30 degrees or over +40 
+degrees are ignored and        not added to the graph.</P></DIV>
+<DIV class="tehtava">
+<H3 class="req">NHL statistics, part 2</H3>
+<P>We will continue using the NHL component introduced earlier and create a 
+program that the user        can use to query for statistics.</P>
+<P>The program is structured similarly to the Calculator example program above. 
+The program body        is as follows:</P>
+<PRE class="sh_java">public static void main(String[] args) throws Exception {
+    Scanner reader = new Scanner(System.in);
+
+    System.out.println("NHL statistics service");
+    while (true) {
+        System.out.println("");
+        System.out.print("command (points, goals, assists, penalties, player, club, quit): ");
+        String command = reader.nextLine();
+
+        if (command.equals("quit")) {
+            break;
+        }
+
+        if (command.equals("points")) {
+            // print the top ten playes sorted by points
+        } else if (command.equals("goals")) {
+            // print the top ten players sorted by goals
+        } else if (command.equals("assists")) {
+            // print the top ten players sorted by assists
+        } else if (command.equals("penalties")) {
+            // print the top ten players sorted by penalties
+        } else if (command.equals("player")) {
+            // ask the user for the player name and print the statistics for that player
+        } else if (command.equals("club")) {
+            // ask the user for the club abbreviation and print the statistics for the club
+            // note: the statistics should be sorted by points
+            //     (players with the most points are first)
+        }
+    }
+}
+        </PRE>
+<P>The program asks the user to give commands and then executes the operation 
+that is associated        with the given command. The commands are: <EM>points, 
+goals, assists, penalties, player, club,          quit</EM>.</P>
+<P>You should write code in the parts marked with comments.</P>
+<P>Here is an example demonstrating the program in action:</P>
+<PRE>NHL statistics service
+
+command (points, goals, assists, penalties, player, club): <FONT color="red">assists</FONT>
+Henrik Sedin           VAN        43 11 + 38= 49  36
+Erik Karlsson          OTT        43  6 + 35= 41  24
+Claude Giroux          PHI        36 18 + 30= 48  16
+Pavel Datsyuk          DET        41 13 + 30= 43  10
+Brian Campbell         FLA        42  3 + 30= 33   4
+Daniel Sedin           VAN        42 18 + 29= 47  32
+Jason Pominville       BUF        41 14 + 29= 43   8
+Nicklas Backstrom      WSH        38 13 + 29= 42  22
+Joffrey Lupul          TOR        41 19 + 28= 47  36
+Evgeni Malkin          PIT        33 16 + 28= 44  30
+
+command (points, goals, assists, penalties, player, club): <FONT color="red">player</FONT>
+which player: Jokinen
+Olli Jokinen           CGY        43 12 + 21= 33  32
+Jussi Jokinen          CAR        40  4 + 19= 23  30
+
+command (points, goals, assists, penalties, player, club): <FONT color="red">club</FONT>
+which club: DET
+Pavel Datsyuk          DET        41 13 + 30= 43  10
+Johan Franzen          DET        41 16 + 20= 36  34
+Valtteri Filppula      DET        40 14 + 21= 35  10
+Henrik Zetterberg      DET        41  8 + 24= 32  14
+// and more players
+
+command (points, goals, assists, penalties, player, club): <FONT color="red">quit</FONT>
+        </PRE>
+<P><B>Note:</B> When you first run the program, the execution might take a while 
+because the        information is downloaded from the internet. Execution should 
+be quick after the first run.</P></DIV></DIV></DIV></DIV></DIV><!-- /inner -->   
+</DIV><!-- /node-231 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV></DIV></DIV></DIV><!-- /content-content -->             
+                                                  </DIV><!-- /content-inner-inner --> 
+                            </DIV><!-- /content-inner -->                        
+   </DIV><!-- /content-region-inner -->                         </DIV><!-- /content-region --> 
+                        
+<DIV class="content-bottom row nested " id="content-bottom">
+<DIV class="content-bottom-inner inner clearfix" id="content-bottom-inner">
+<DIV class="block block-block odd first last grid16-16" id="block-block-1">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="content clearfix">
+<DIV id="header-top-block">
+<P class="rtecenter">Ohjaus: <A href="http://mooc.fi/content/irc-ohjeet">IRCnet 
+#mooc.fi </A>&nbsp;&nbsp; |  Tiedotus: <A href="http://twitter.com/mooc1"><IMG 
+height="50" style="vertical-align: middle;" src="User%20input%20and%20conditional%20statement_files/twitter_newbird_blue.png"> 
+Twitter </A><A href="http://www.facebook.com/Moocfi"><IMG height="30" style="padding: 10px; vertical-align: middle;" 
+src="User%20input%20and%20conditional%20statement_files/f_logo-1.png"> 
+Facebook</A>  |  Virheraportit: <A href="http://sourceforge.net/p/mooc-issues/tickets/"><IMG 
+height="30" style="padding: 10px; vertical-align: middle;" src="User%20input%20and%20conditional%20statement_files/sf-footer-logo.png"> 
+SourceForge</A></P>
+<P class="rtecenter"><A href="http://www.cs.helsinki.fi/"><IMG width="400" 
+style="vertical-align: middle;" alt="Helsingin yliopiston tietojenkäsittelytieteen laitos" 
+src="User%20input%20and%20conditional%20statement_files/CS-logo-MOOC.jpg">&nbsp; 
+</A></P></DIV>
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-47575342-3', 'auto');
+  ga('send', 'pageview');
+ 
+</SCRIPT>
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --></DIV><!-- /content-bottom-inner --> 
+</DIV><!-- /content-bottom -->                       </DIV><!-- /content-group-inner --> 
+                    </DIV><!-- /content-group -->                                
+       </DIV><!-- /main-content-inner -->                 </DIV><!-- /main-content --> 
+                              </DIV><!-- /main-group-inner -->             
+</DIV><!-- /main-group -->           </DIV><!-- /main-inner -->         </DIV><!-- /main --> 
+      </DIV><!-- /main-wrapper -->       <!-- postscript-bottom row: width = grid_width --> 
+            <!-- footer row: width = grid_width -->             <!-- footer-message row: width = grid_width --> 
+      
+<DIV class="footer-message-wrapper full-width" id="footer-message-wrapper">
+<DIV class="footer-message row grid16-16" id="footer-message">
+<DIV class="footer-message-inner inner clearfix" id="footer-message-inner">
+<DIV class="footer-message-text block" id="footer-message-text">
+<DIV class="footer-message-text-inner inner clearfix" id="footer-message-text-inner"><BR></DIV><!-- /footer-message-text-inner --> 
+</DIV><!-- /footer-message-text -->                    </DIV><!-- /footer-message-inner --> 
+        </DIV><!-- /footer-message -->       </DIV><!-- /footer-message-wrapper --> 
+    <!-- /page-inner -->   <!-- /page -->   </BODY></HTML>

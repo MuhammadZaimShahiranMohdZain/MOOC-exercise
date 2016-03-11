@@ -1,0 +1,9 @@
+.req {
+	background: rgb(221, 221, 221); padding: 0.3em;
+}
+.show {
+	background: rgb(255, 0, 0); padding: 0.3em;
+}
+.bonus {
+	background: rgb(0, 0, 0); padding: 0.3em; color: rgb(255, 255, 255);
+}

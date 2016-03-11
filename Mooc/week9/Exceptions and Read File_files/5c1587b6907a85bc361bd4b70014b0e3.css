@@ -1,0 +1,63 @@
+.panels-flexible-region {
+	padding: 0px;
+}
+.panels-flexible-region-inside {
+	padding-right: 0.5em; padding-left: 0.5em;
+}
+.panels-flexible-region-inside-first {
+	padding-left: 0px;
+}
+.panels-flexible-region-inside-last {
+	padding-right: 0px;
+}
+.panels-flexible-column {
+	padding: 0px;
+}
+.panels-flexible-column-inside {
+	padding-right: 0.5em; padding-left: 0.5em;
+}
+.panels-flexible-column-inside-first {
+	padding-left: 0px;
+}
+.panels-flexible-column-inside-last {
+	padding-right: 0px;
+}
+.panels-flexible-row {
+	margin: 0px; padding: 0px 0px 0.5em;
+}
+.panels-flexible-row-last {
+	padding-bottom: 0px;
+}
+.panels-flexible-column-13-main {
+	width: 99%; float: left;
+}
+.panels-flexible-13-inside {
+	padding-right: 0px;
+}
+.panels-flexible-13 {
+	width: auto;
+}
+.panels-flexible-region-13-js_ {
+	width: 99%; float: left;
+}
+.panels-flexible-row-13-7-inside {
+	padding-right: 0px;
+}
+.panels-flexible-region-13-js_en_ {
+	width: 24.75%; float: left;
+}
+.panels-flexible-region-13-js {
+	width: 24.75%; float: left;
+}
+.panels-flexible-region-13-copyright {
+	width: 49.5%; float: left;
+}
+.panels-flexible-row-13-4-inside {
+	padding-right: 0px;
+}
+.panels-flexible-region-13-js_en {
+	width: 99%; float: left;
+}
+.panels-flexible-row-13-8-inside {
+	padding-right: 0px;
+}

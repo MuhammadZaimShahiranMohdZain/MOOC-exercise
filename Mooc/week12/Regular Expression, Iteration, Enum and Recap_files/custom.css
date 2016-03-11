@@ -1,0 +1,384 @@
+#main {
+	
+}
+#slogan {
+	color: rgb(136, 136, 136);
+}
+#block-block-2 {
+	width: auto; float: right;
+}
+.block#primary-menu {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1); border-width: 10px 11px 0px 10px; border-style: solid; border-color: white; width: 940px;
+}
+#primary-menu ul.menu li a:hover {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1);
+}
+#primary-menu ul.menu li:hover a:link {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1);
+}
+#primary-menu ul.menu li:hover a:visited {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1);
+}
+#primary-menu ul.menu li.hover a:link {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1);
+}
+#primary-menu ul.menu li.hover a:visited {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1);
+}
+#primary-menu ul.menu li.active-trail a:link {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1);
+}
+#primary-menu ul.menu li.active-trail a:visited {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1);
+}
+#primary-menu #primary-menu-inner ul.menu li.first {
+	background: url("../images/sf-tab-bg.jpg") repeat-x center;
+}
+#primary-menu #primary-menu-inner ul.menu li.first a {
+	background: url("../images/sf-home-icon.png") no-repeat center; font-size: 0px;
+}
+#primary-menu #primary-menu-inner li.expanded ul {
+	width: auto; padding-top: 20px;
+}
+#primary-menu #primary-menu-inner ul.menu li.expanded li.first a {
+	background: rgb(170, 170, 238); width: auto; font-size: 1.2em; text-decoration: none;
+}
+#primary-menu #primary-menu-inner ul.menu li.expanded li a {
+	background: rgb(170, 170, 238); width: auto; font-size: 1.2em; text-decoration: none;
+}
+#primary-menu ul.menu li:hover {
+	background-position: -190px 0px; background-image: url("../images/sf-tab-right.jpg");
+}
+#primary-menu ul.menu li.hover {
+	background-position: -190px 0px; background-image: url("../images/sf-tab-right.jpg");
+}
+#primary-menu ul.menu li.active-trail {
+	background-position: -190px 0px; background-image: url("../images/sf-tab-right.jpg");
+}
+#primary-menu ul.menu li {
+	background: url("../images/sf-tab-right.jpg") no-repeat -190px 0px rgb(1, 1, 1); margin: 0px; font-weight: normal; max-width: 200px;
+}
+#primary-menu ul.menu li {
+	padding: 0px 0px 0px 10px; letter-spacing: 1px; font-family: Arial, Helvetica, sans-serif;
+}
+#primary-menu ul.menu li a:link {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1); padding: 12px 23px; text-align: center; color: rgb(255, 180, 0);
+}
+#primary-menu ul.menu li a {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1); padding: 12px 23px; text-align: center; color: rgb(255, 180, 0);
+}
+#primary-menu ul.menu li a:visited {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1); padding: 12px 23px; text-align: center; color: rgb(255, 180, 0);
+}
+.page-inner {
+	background: url("../images/sf-background.jpg") repeat-x 0px 0px rgb(1, 1, 1);
+}
+#header-top-wrapper {
+	background: none; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+#header-group-wrapper {
+	background: none; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+div.clearfix #header-site-info {
+	width: auto;
+}
+#primary-menu ul.menu li a {
+	
+}
+.block#primary-menu .inner {
+	float: left;
+}
+#primary-menu ul.menu li.last a {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1); color: rgb(255, 180, 0);
+}
+#primary-menu ul.menu li.last a:link {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1); color: rgb(255, 180, 0);
+}
+#primary-menu ul.menu li.last a:visited {
+	background: url("../images/sf-tab-bg.jpg") repeat-x 0px 0px rgb(1, 1, 1); color: rgb(255, 180, 0);
+}
+#main-wrapper {
+	background: none; padding-top: 0px;
+}
+#main-inner {
+	padding-top: 20px; background-color: white;
+}
+html.js {
+	background: no-repeat 0px 0px rgb(0, 0, 0);
+}
+div.box {
+	padding: 10px; border: 1px solid rgb(221, 221, 221); border-image: none; margin-bottom: 10px;
+}
+div.box h2.pane-title {
+	margin: 0px; padding: 4px; color: white; text-transform: uppercase; line-height: 20px; letter-spacing: 1px; font-size: 1em; font-weight: normal; background-color: rgb(164, 153, 9);
+}
+div.blue h2.pane-title {
+	background-color: rgb(175, 198, 254);
+}
+div.green h2.pane-title {
+	background-color: rgb(76, 184, 99);
+}
+div.red h2.pane-title {
+	background-color: rgb(221, 137, 112);
+}
+div.full-node .inner .content {
+	border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none;
+}
+h1.title {
+	border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none;
+}
+.footer-message {
+	border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none;
+}
+#footer-message {
+	background: url("../images/sf-bottom.png") no-repeat 0px 0px; min-height: 58px;
+}
+#search-block-form {
+	padding-top: 20px;
+}
+#search-block-form label {
+	display: none;
+}
+#site-name a {
+	color: rgb(255, 180, 0); font-size: 0.9em; font-weight: bold;
+}
+#search-box {
+	width: 250px;
+}
+#search-box #search-box-inner {
+	background: 0px 0px; border-width: 0px; border-style: none none solid solid; padding: 0px; width: auto; float: none;
+}
+.search-box-inner input.search-submit {
+	background: url("../images/sf-search-button.png") no-repeat 0px 0px; outline: 0px; border-radius: 0px; border: 0px currentColor; border-image: none; width: 30px; height: 30px; -moz-outline-radius: 0 0 0 0;
+}
+#search-box #edit-search-theme-form-header {
+	height: 24px;
+}
+#footer-message #search-box {
+	margin-right: auto; margin-left: auto; float: none; display: block;
+}
+#header-top-block a {
+	color: rgb(136, 136, 136); text-decoration: none;
+}
+#header-top-block a:link {
+	color: rgb(136, 136, 136); text-decoration: none;
+}
+#header-top-block a:visited {
+	color: rgb(136, 136, 136); text-decoration: none;
+}
+#header-top-block a:hover {
+	color: rgb(136, 136, 136); text-decoration: none;
+}
+#header-top-block a:active {
+	color: rgb(136, 136, 136); text-decoration: none;
+}
+#project-content a {
+	color: rgb(115, 169, 238); text-decoration: none;
+}
+#project-content a:link {
+	color: rgb(115, 169, 238); text-decoration: none;
+}
+#project-content a:visited {
+	color: rgb(115, 169, 238); text-decoration: none;
+}
+#transparency {
+	left: 0px; width: 500px; height: 120px; bottom: 0px; position: absolute; opacity: 0.8; background-color: black;
+}
+#project-content {
+	left: 10px; bottom: 10px; color: white; position: absolute;
+}
+div.item-list ul {
+	padding-top: 5px;
+}
+div.views-slideshow-controls-top {
+	float: right;
+}
+.views_slideshow_singleframe_pager div {
+	display: block;
+}
+.views_slideshow_singleframe_pager div a img {
+	width: auto;
+}
+div.thumbnails img {
+	margin: 5px; padding: 3px; border-radius: 2px; border: 1px solid rgb(221, 221, 221); border-image: none; float: left; background-color: white;
+}
+div.thumbnails div.views-field-view-node {
+	color: rgb(102, 102, 102); font-size: 0.9em;
+}
+div.thumbnails h3 {
+	padding-top: 11px;
+}
+div.thumbnails div.views-row {
+	padding-top: 3px;
+}
+#front-page-links {
+	margin: 0px; text-align: center; color: white; text-transform: uppercase; position: relative;
+}
+#front-page-links a {
+	color: white; text-decoration: none;
+}
+tr.odd {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(250, 250, 250);
+}
+tr.odd td {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(250, 250, 250);
+}
+tr.even {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(244, 244, 244);
+}
+tr.even td {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(244, 244, 244);
+}
+div.node h2.title {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+#block-block-2 {
+	width: auto; float: right;
+}
+#block-block-5 {
+	width: auto; float: right;
+}
+#admin-menu li.admin-menu-shortcuts {
+	float: left;
+}
+body.font-size-13 #main-wrapper {
+	background: url("../images/content-gradient.png") repeat-x 0px 1px rgb(245, 247, 231);
+}
+body.font-size-13 #footer-message-wrapper {
+	background: rgb(245, 247, 231); min-height: 150px;
+}
+body.font-size-13 #footer-message {
+	background: rgb(245, 247, 231); min-height: 150px;
+}
+body.font-size-13 #page-inner {
+	background: url("/sites/linkki.cs.helsinki.fi/files/blue-back.jpg") repeat-x 0px 1px rgb(239, 242, 244);
+}
+body.font-size-13 #primary-menu {
+	width: auto; float: left;
+}
+body.font-size-13 div.course-menu {
+	background: white; border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(221, 221, 221) rgb(221, 221, 221); padding-top: 10px; padding-bottom: 10px; padding-left: 27px; font-size: 0.8em; margin-top: -30px; margin-bottom: 10px;
+}
+body.font-size-13 div.box div.pane-content {
+	padding-top: 10px;
+}
+body.font-family-lucida #site-name-wrapper {
+	float: none;
+}
+body.font-family-lucida #primary-menu ul.menu li {
+	max-width: none;
+}
+body.font-family-lucida #primary-menu #primary-menu-inner ul.menu li.first a {
+	font-size: 1em; background-image: none;
+}
+pre {
+	padding: 10px; border: 1px solid rgb(85, 85, 85); border-image: none; font-family: "Courier New", Courier, monospace; background-color: white;
+}
+div.margin-top {
+	margin-top: 10px;
+}
+div.box h2.block-title a {
+	color: white; text-decoration: none;
+}
+div.viikkoraja-mooc h2:first-child {
+	margin-top: 1em;
+}
+div.main-wrapper div.sets div.item-list ul li.views-row {
+	background: 0px 0px; padding: 0px 10px; text-align: center; margin-left: -5px; border-bottom-color: grey; border-bottom-width: 1px; border-bottom-style: solid; display: inline-block; -ms-zoom: 1; min-width: 150px;
+}
+div.main-wrapper div.sets div.item-list ul li.active.views-row {
+	
+}
+div.main-wrapper div.sets div.item-list div.field-title {
+	font-size: 1.2em;
+}
+div.main-wrapper div.sets div.item-list div.field-deadline {
+	color: grey; min-height: 1px;
+}
+div.main-wrapper div.sets div.item-list a:hover {
+	margin-bottom: 0px; border-bottom-color: grey; border-bottom-width: 3px; border-bottom-style: solid; display: block;
+}
+div.main-wrapper div.sets div.item-list a.active {
+	margin-bottom: 0px; border-bottom-color: grey; border-bottom-width: 3px; border-bottom-style: solid; display: block;
+}
+div.main-wrapper div.sets div.item-list a {
+	text-decoration: none; margin-bottom: 3px; display: block;
+}
+div.sets h2 {
+	padding-top: 10px; font-size: 1.3em; font-weight: lighter; margin-right: 30px; float: left;
+}
+#main-wrapper div.course-pages ul.menu li {
+	padding: 10px; color: grey; font-size: 1.3em; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted; background-image: none; background-color: white;
+}
+#main-wrapper div.course-pages ul.menu li li {
+	border: 0px currentColor; border-image: none; font-size: 0.9em;
+}
+#main-wrapper div.course-pages ul.menu li a:hover {
+	text-decoration: none;
+}
+div.box-mooc {
+	background: white; padding: 20px; border: 1px solid rgb(221, 221, 221); border-image: none; line-height: 150%; font-size: 1.1em; margin-bottom: 10px;
+}
+div.box-mooc h2 {
+	text-transform: uppercase; padding-top: 20px; padding-bottom: 8px; font-weight: normal;
+}
+div.box-mooc h3 {
+	text-transform: uppercase; padding-top: 20px; padding-bottom: 8px; font-weight: normal;
+}
+div.box-mooc h4 {
+	text-transform: uppercase; padding-top: 20px; padding-bottom: 8px; font-weight: normal;
+}
+div.box-mooc h5 {
+	text-transform: uppercase; padding-top: 20px; padding-bottom: 8px; font-weight: normal;
+}
+div.box-mooc h2.pane-title {
+	text-transform: none; line-height: 1em; font-size: 2em; border-bottom-color: grey; border-bottom-width: 1px; border-bottom-style: dotted;
+}
+div.float-right {
+	float: right;
+}
+html.js body.sidebars-both-first #page div.page-inner {
+	background: url("../images/sf-tab-bg.jpg") 0px 0px;
+}
+body.sidebars-both-first #page #page-inner .block#primary-menu {
+	border-width: 0px; border-style: solid;
+}
+body.sidebars-both-first #primary-menu ul.menu li a:link {
+	padding: 8px 23px; color: rgb(238, 238, 238);
+}
+body.sidebars-both-first #primary-menu ul.menu li a {
+	padding: 8px 23px; color: rgb(238, 238, 238);
+}
+body.sidebars-both-first #primary-menu ul.menu li a:visited {
+	padding: 8px 23px; color: rgb(238, 238, 238);
+}
+body.sidebars-both-first #main-wrapper {
+	background: repeat-x 0px 1px rgb(250, 250, 250);
+}
+body.sidebars-both-first #footer-message-wrapper {
+	background: 0px 0px rgb(248, 248, 248);
+}
+body.font-size-13 #footer-message {
+	background: 0px 0px rgb(248, 248, 248);
+}
+body.sidebars-both-first #page #primary-menu ul.menu li:hover ul.menu li a {
+	background: url("../images/sf-tab-bg.jpg") bottom; padding: 10px; width: 200px; text-align: left; color: rgb(238, 238, 238);
+}
+body.sidebars-both-first #page #primary-menu ul.menu li.hover ul.menu li a {
+	background: url("../images/sf-tab-bg.jpg") bottom; padding: 10px; width: 200px; text-align: left; color: rgb(238, 238, 238);
+}
+body.sidebars-both-first #page #primary-menu ul.menu li ul.menu li a {
+	background: url("../images/sf-tab-bg.jpg") bottom; padding: 10px; width: 200px; text-align: left; color: rgb(238, 238, 238);
+}
+body.sidebars-both-first #page #primary-menu ul.menu li:hover ul.menu {
+	margin-top: -15px;
+}
+body.sidebars-both-first #page #primary-menu ul.menu li:hover ul.menu {
+	margin-top: -15px;
+}
+body.sidebars-both-first #page #primary-menu ul.menu li ul.menu {
+	margin-top: -15px;
+}
+div.pane-content h1.title {
+	padding-top: 15px;
+}

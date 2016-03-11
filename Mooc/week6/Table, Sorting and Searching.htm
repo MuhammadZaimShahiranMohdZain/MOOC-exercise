@@ -1,0 +1,2256 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0078)http://mooc.cs.helsinki.fi/programming-part1/material-2013/week-6 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<TITLE>MOOC | MOOC - Massiivinen avoin verkkokurssi</TITLE>    <LINK href="/sites/mooc.cs.helsinki.fi/files/acquia_marina_favicon.png" 
+rel="shortcut icon" type="image/x-icon">   <LINK href="Table,%20Sorting%20and%20Searching_files/5c1587b6907a85bc361bd4b70014b0e3.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/node.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/defaults.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/system.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/system-menus.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/user.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/content-module.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/ckeditor.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/ctools.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/date.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/panels.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/views.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/aeb58e3ce47f9171327ad9fd87a26c8e.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/flexible.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/typography.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/superfish.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/superfish-navbar.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/superfish-vertical.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/fusion-acquia-marina-style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/custom.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/common.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/exercises.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/menu.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Table,%20Sorting%20and%20Searching_files/sh_style.css" 
+rel="stylesheet" type="text/css" media="all">   <LINK href="Table,%20Sorting%20and%20Searching_files/grid16-fluid.css" 
+rel="stylesheet" type="text/css" media="all">   <!--[if IE 8]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie8-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie8-fixes.css?8" />
+  <![endif]--> 
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie7-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie7-fixes.css?8" />
+  <![endif]--> 
+  <!--[if lte IE 6]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie6-fixes.css?8"/>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie6-fixes.css?8"/>
+  <![endif]--> 
+    
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/drupal.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/panels.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/jquery.bgiframe.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/hoverIntent.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/supposition.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/supersubs.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/superfish.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/jquery.corner.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/acquia-marina-script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/util-functions.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/clear-default-text.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/sh_java.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/sh_main.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/sh_ruby.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/sh_scala.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD>
+<BODY class="not-front not-logged-in page-node node-type-weekly-tasks no-sidebars full-node panels layout-main sidebars-both-first font-family-lucida font-size-13 grid-type-fluid grid-width-16 fluid-100" 
+id="pid-programming-part1-material-2013-week-6">   
+<DIV class="page" id="page">
+<DIV class="page-inner" id="page-inner">
+<DIV id="skip"><A href="http://mooc.cs.helsinki.fi/programming-part1/material-2013/week-6?noredirect=1#main-content-area">Skip 
+to Main Content Area</A>       </DIV><!-- header-top row: width = grid_width --> 
+            <!-- header-group row: width = grid_width -->       
+<DIV class="header-group-wrapper full-width" id="header-group-wrapper">
+<DIV class="header-group row grid16-16" id="header-group">
+<DIV class="header-group-inner inner clearfix" id="header-group-inner">
+<DIV class="primary-menu block" id="primary-menu">
+<DIV class="primary-menu-inner inner clearfix" id="primary-menu-inner">
+<UL class="menu sf-menu">
+  <LI class="expanded first"><A title="" 
+  href="http://mooc.cs.helsinki.fi/home">Kurssit ››</A>
+  <UL class="menu">
+    <LI class="leaf first"><A title="" 
+    href="http://mooc.fi/algoritmit">Algoritmien MOOC</A></LI>
+    <LI class="leaf"><A title="" href="http://mooc.cs.helsinki.fi/2014-ohjelmointi">Olio-ohjelmointi 
+    Javalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.aalto.fi/ohjelmointi/">Ohjelmointia Scalalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part1">Object-Oriented Programming with 
+    Java, part I</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part2">Object-Oriented Programming with 
+    Java, part II</A></LI>
+    <LI class="leaf last"><A title="" 
+    href="http://mooc.cs.helsinki.fi/wepa">Web-palvelinohjelmointi</A></LI></UL></LI>
+  <LI class="collapsed"><A title="Mikä on MOOC?" href="http://mooc.cs.helsinki.fi/content/mik%C3%A4-mooc">Mikä 
+  on MOOC? ››</A></LI>
+  <LI class="leaf last"><A title="" href="http://mooc.cs.helsinki.fi/content/j%C3%A4rjest%C3%A4v%C3%A4st%C3%A4-tahosta">Järjestävästä 
+  tahosta ››</A></LI></UL></DIV><!-- /primary-menu-inner --> </DIV><!-- /primary-menu --> 
+          </DIV><!-- /header-group-inner -->         </DIV><!-- /header-group --> 
+      </DIV><!-- /header-group-wrapper -->       <!-- preface-top row: width = grid_width --> 
+        <!--            <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
+        <div id="preface-top" class="preface-top row grid16-16">
+          <div id="preface-top-inner" class="preface-top-inner inner clearfix"> 
+--> 
+          </DIV><!-- /preface-top-inner -->         </DIV><!-- /preface-top -->  
+     <!-- /preface-top-wrapper -->           <!-- main row: width = grid_width --> 
+    
+<DIV class="main-wrapper full-width" id="main-wrapper">
+<DIV class="main row grid16-16" id="main">
+<DIV class="main-inner inner clearfix" id="main-inner"><!-- main group: width = grid_width - sidebar_first_width --> 
+          
+<DIV class="main-group row nested grid16-16" id="main-group">
+<DIV class="main-group-inner inner clearfix" id="main-group-inner">
+<DIV class="main-content row nested" id="main-content">
+<DIV class="main-content-inner inner clearfix" id="main-content-inner"><!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) --> 
+                    
+<DIV class="content-group row nested " id="content-group" style="width: 100%;">
+<DIV class="content-group-inner inner clearfix" id="content-group-inner">
+<DIV class="content-region row nested" id="content-region">
+<DIV class="content-region-inner inner clearfix" id="content-region-inner"><A 
+name="main-content-area" id="main-content-area"></A>                             
+                            
+<DIV class="content-inner block" id="content-inner">
+<DIV class="content-inner-inner inner clearfix" id="content-inner-inner">
+<DIV class="content-content" id="content-content">
+<DIV class="panel-flexible panels-flexible-13 clear-block">
+<DIV class="panel-flexible-inside panels-flexible-13-inside">
+<DIV class="panels-flexible-row panels-flexible-row-13-7 panels-flexible-row-first clear-block ">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-7-inside panels-flexible-row-inside-first clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_ panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-2 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<H1 class="title"><A 
+href="http://mooc.cs.helsinki.fi/programming-part1">Object-Oriented Programming 
+with Java, part I ››</A></H1></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-custom pane-3 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content"><LINK href="Table,%20Sorting%20and%20Searching_files/menu(1).css" 
+rel="stylesheet" type="text/css" media="screen"> <LINK href="Table,%20Sorting%20and%20Searching_files/common-new.css" 
+rel="stylesheet" type="text/css" media="screen, print"> <LINK href="Table,%20Sorting%20and%20Searching_files/sh_style(1).css" 
+rel="stylesheet" type="text/css" media="screen, print">        </DIV></DIV><!-- /inner-inner -->
+	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-4 clear-block js">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-4-inside clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en_ panels-flexible-region-first ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en_-inside panels-flexible-region-inside-first"></DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-js ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js-inside">
+<DIV class="panel-pane pane-node ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node odd full-node node-type-page" id="node-222">
+<DIV class="inner">
+<H2 class="title"><A title="" 
+href="http://mooc.cs.helsinki.fi/content/js-en"></A></H2>
+<DIV class="content clearfix">
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/bootstrap.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/jquery-1.7.1.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/exercises-eng-new.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/common-mooc-eng.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/sh_main.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/sh_java.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Table,%20Sorting%20and%20Searching_files/jquery.easing.js" type="text/javascript"></SCRIPT>
+ 
+<DIV class="menu" id="toc" data-first-exercise-index="1" 
+data-first-chapter-index="1"><SPAN id="materiaali_toc"></SPAN>           <!--div id="tehtavat_toc" ></div--> 
+          <SPAN id="tehtavat_toc2"></SPAN>         </DIV></DIV></DIV><!-- /inner --> 
+  </DIV><!-- /node-222 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-copyright panels-flexible-region-last float-right">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-copyright-inside panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-1 box ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<P><A href="http://creativecommons.org/licenses/by-nc-sa/2.0/" 
+rel="license"><IMG style="border-width: 0px; float: right;" alt="Creative Commons License" 
+src="Table,%20Sorting%20and%20Searching_files/88x31.png"></A><SMALL>This 
+material is licensed under the Creative Commons BY-NC-SA license, which means 
+that you can use it and distribute it freely so long as you do not erase the 
+names of the original authors. If you do changes in the material and want to 
+distribute this altered version of the material, you have to license it with a 
+similar free license. The use of the material for commercial use is prohibited 
+without a separate agreement.</SMALL></P></DIV></DIV><!-- /inner-inner -->	   
+</DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-author course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-author">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Authors: Arto Vihavainen, Matti 
+Luukkainen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-translators course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-translators">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Translators to English: Emilia 
+Hjelm, Alex H. Virtanen, Matti Luukkainen, Virpi Sumu, Birunthan Mohanathas      
+  </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-8 panels-flexible-row-last clear-block js en">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-8-inside panels-flexible-row-inside-last clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-node-content box-mooc ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node even full-node node-type-weekly_tasks" id="node-241">
+<DIV class="inner">
+<DIV class="content clearfix">
+<DIV class="viikkoraja-mooc" id="Week 6" data-first-exercise-index="94" 
+data-first-chapter-index="25" kaantaja="Emilia Hjelm, Alex H. Virtanen, Matti Luukkainen, Virpi Sumu, Birunthan Mohanathas" 
+tekija="Arto Vihavainen, Matti Luukkainen" data-first-week-index-mooc="6" 
+data-first-exercise-index-mooc="94" data-first-chapter-index-mooc="24" 
+data-first-week-index="6" unlock="unlocks when 80% of week 5 done" deadline="unlocks when 80% of week 5 done">
+<H2>A quick recap</H2>
+<P>Let us start week 6 with two assignments that use the most important topics 
+of week 5. You might want to            read chapter 23.10 before assignment 94 
+and chapters 23.6 and 23.12 before assignment 95.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>PhoneBook</H3>
+<P>In this assignment we are implementing a simple phone book.</P>
+<H4>Person</H4>
+<P>Start by programing the class <CODE>Person</CODE> which works as follows:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka Mikkola", "040-123123");
+
+    System.out.println(pekka.getName());
+    System.out.println(pekka.getNumber());
+
+    System.out.println(pekka);
+    pekka.changeNumber("050-333444");
+    System.out.println(pekka);
+}
+  </PRE>
+<P>The output is:</P>
+<PRE>Pekka Mikkola
+040-123123
+Pekka Mikkola  number: 040-123123
+Pekka Mikkola  number: 050-333444
+  </PRE>
+<P>So you have to implement the following class:</P>
+<UL>
+  <LI>the method <CODE>public String toString()</CODE>, which returns the string 
+  representation    formulated as the above example shows</LI>
+  <LI>constructor that sets the person name and phone number</LI>
+  <LI><CODE>public String getName()</CODE>, that returns the name</LI>
+  <LI><CODE>public String getNumber()</CODE>, that returns the phone number</LI>
+  <LI>the method <CODE>public void changeNumber(String newNumber)</CODE>, that 
+  can be used to    change the phone number of the person</LI></UL>
+<H4>Adding persons to Phonebook</H4>
+<P>Program the class <CODE>Phonebook</CODE> that stores 
+<CODE>Person</CODE>-objects using an  ArrayList. At this stage you'll need the 
+following methods:</P>
+<UL>
+  <LI><CODE>public void add(String name, String number)</CODE> creates a     
+  <CODE>Person</CODE>-object and adds it to the ArrayList inside the 
+  Phonebook</LI>
+  <LI><CODE>public void printAll()</CODE>, prints all the persons inside the 
+  Phonebook</LI></UL>
+<P>With the code:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Phonebook phonebook = new Phonebook();
+
+    phonebook.add("Pekka Mikkola", "040-123123");
+    phonebook.add("Edsger Dijkstra", "045-456123");
+    phonebook.add("Donald Knuth", "050-222333");
+
+    phonebook.printAll();
+}
+  </PRE>
+<P>the output should be:</P>
+<PRE>Pekka Mikkola  number: 040-123123
+Edsger Dijkstra  number: 045-456123
+Donald Knuth  number: 050-222333
+  </PRE>
+<H4>Searching for numbers from the phonebooks</H4>
+<P>Extend the class Phonebook with the method <CODE>public String 
+searchNumber(String name)</CODE>,  that returns the phone number corresponding 
+to the given name. If the sought person is not known  the string "number not 
+known" is returned.</P>
+<P>Example code:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Phonebook phonebook = new Phonebook();
+    phonebook.add("Pekka Mikkola", "040-123123");
+    phonebook.add("Edsger Dijkstra", "045-456123");
+    phonebook.add("Donald Knuth", "050-222333");
+
+    String number = phonebook.searchNumber("Pekka Mikkola");
+    System.out.println( number );
+
+    number = phonebook.searchNumber("Martti Tienari");
+    System.out.println( number );
+}
+  </PRE>
+<P>output:</P>
+<PRE>040-123123
+number not known
+  </PRE></DIV>
+<DIV class="tehtava">
+<H3>Money</H3>
+<P>In a previous assignment we stored the balance of a LyyraCard using a double 
+variable. In reality  money should not be represented as a double since the 
+double arithmetics is not accurate. A better  idea would be to implement a class 
+that represents money. We'll start with the following  class skeleton:</P>
+<PRE class="sh_java">public class Money {
+
+    private final int euros;
+    private final int cents;
+
+    public Money(int euros, int cents) {
+
+        if (cents &gt; 99) {
+            euros += cents / 100;
+            cents %= 100;
+        }
+
+        this.euros = euros;
+        this.cents = cents;
+    }
+
+    public int euros(){
+        return euros;
+    }
+
+    public int cents(){
+        return cents;
+    }
+
+    public String toString() {
+        String zero = "";
+        if (cents &lt;= 10) {
+            zero = "0";
+        }
+
+        return euros + "." + zero + cents + "e";
+    }
+}
+  </PRE>
+<P>Notice that the instance variables <CODE>euros</CODE> and <CODE>cents</CODE> 
+have been defined  as <CODE>final</CODE> meaning that once the variables have 
+been set, the value of those can not be  changed. An object value of which can 
+not be changed is said to be <EM>immutable</EM>. If we need to  e.g. calculate 
+the sum of two money objects, we need to create a new money object that 
+represents  the sum of the originals.</P>
+<P>In the following we'll create three methods that are needed in operating with 
+money.</P>
+<H4>Plus</H4>
+<P>Let us start by implementing the method <CODE>public Money plus(Money 
+added)</CODE>, that  returns a <EM>new Money object</EM> that has a value equal 
+to the sum of the object for which the  method was called and the object given 
+as parameter.</P>
+<P>Examples of the method usage:</P>
+<PRE class="sh_java">Money a = new Money(10,0);
+Money b = new Money(5,0);
+
+Money c = a.plus(b);
+
+System.out.println(a);  // 10.00e
+System.out.println(b);  // 5.00e
+System.out.println(c);  // 15.00e
+
+a = a.plus(c);          // NOTE: new Money-object is created and reference to that
+                        //           is assigned to variable a.
+                        //       The Money object 10.00e that variable a used to hold
+                        //           is not referenced anymore
+
+System.out.println(a);  // 25.00e
+System.out.println(b);  // 5.00e
+System.out.println(c);  // 15.00e
+  </PRE>
+<H4>less</H4>
+<P>Create the method <CODE>public boolean less(Money compared)</CODE>, that 
+returns true if the  object for which the method was called is less valuable 
+than the object given as parameter.</P>
+<PRE class="sh_java">Money a = new Money(10,0);
+Money b = new Money(3,0);
+Money c = new Money(5,0);
+
+System.out.println(a.less(b));  // false
+System.out.println(b.less(c));  // true
+
+  </PRE>
+<H4>Minus</H4>
+<P>And finally create the method <CODE>public Money minus(Money 
+decremented)</CODE>, that returns a   <EM>new Money object</EM> that has a value 
+equal to the object for which the method was called  minus the object given as 
+parameter. If the value would be negative, the resulting Money object  should 
+have the value 0.</P>
+<P>Examples of the method usage:</P>
+<PRE class="sh_java">Money a = new Money(10,0);
+Money b = new Money(3,50);
+
+Money c = a.minus(b);
+
+System.out.println(a);  // 10.00e
+System.out.println(b);  // 3.50e
+System.out.println(c);  // 6.50e
+
+c = c.minus(a);         // NOTE: new Money-object is created and reference to that is assigned to variable c
+                        //       the Money object 6.50e that variable c used to hold, is not referenced anymore
+
+System.out.println(a);  // 10.00e
+System.out.println(b);  // 3.50e
+System.out.println(c);  // 0.00e
+  </PRE></DIV></DIV>
+<H3>Character strings are immutable</H3>
+<P>The String objects of Java, as with the Money class objects, are 
+unchangeable, <EM>immutable</EM>.            If for example a new object is 
+concatenated to the end of a character string with the + operator, the           
+ original character string doesn't become longer, but a new character string 
+object is born:</P>
+<PRE class="sh_java">String characterString = "test";
+characterString + "tail";
+
+System.out.println( characterString );  // test
+</PRE>
+<P>We see that the character string cannot be changed, but we can add the value 
+of the new character string            - that was born from concatenation - to 
+the old variable:</P>
+<PRE class="sh_java">String characterString = "test";
+characterString = characterString + "tail";   // or characterString += "tail";
+
+System.out.println( characterString );  // testtail
+</PRE><!--
+Despite the ease of use of ArrayList the programs you write sometimes have a need for a <em>List</em>, the ancestor of ArrayList.
+--> 
+            
+<P>Now the variable <CODE>characterString</CODE> refers to a <EM>new</EM> 
+character string object, which            was created by combining the previous 
+character string value the variable referred to ("test")            with the 
+"tail" character string. Nothing refers to the "test" character string object    
+        anymore.</P>
+<H2 id="taulukko">Array</H2>
+<P>During the course, we've used ArrayLists numerous times to store different 
+kinds of objects.            ArrayList is easy to use because it offers a lot of 
+ready-made tools that make the programmer's life a            little easier: 
+automatic growing of a list, thanks to the list which doesn't run out of space 
+(unless            of course the list grows so large that it makes the program 
+take up all the memory that is reserved for            it), for example.</P>
+<P><EM>Array</EM> is an object that can be understood as a series of 
+<EM>pigeonholes</EM> for values. The             <EM>length</EM> or 
+<EM>size</EM> of an array is the number of spots in that array - the number of 
+items you            can put in the array. The values of an array are called 
+<EM>cells</EM> of the array. Unlike with            ArrayLists, the size of the 
+array (the amount of cells in an array) cannot be changed, growing an array      
+      always requires creating a new array and copying the cells of the old 
+array to the new one.</P>
+<P>An array can be created in two ways. Let's take a look at the way in which we 
+give content to the array            at creation. An array of the integer type 
+that consists of 3 cells is defined as follows:</P>
+<PRE class="sh_java">int[] numbers = {100, 1, 42};
+</PRE>
+<P>The type of the Array object is denoted as<CODE>int[]</CODE>, which stands 
+for an array, the cells of which             are of the type <CODE>int</CODE>. 
+In the example the name of the array-object is <CODE>numbers</CODE>            
+and it holds 3 number values <CODE>{100, 1, 42}</CODE>. The array is formatted 
+with a block, in which the            values to be inserted into the array are 
+separated by commas.</P>
+<P>The values of the array can be of any variable type that we've seen earlier. 
+Below we've first            introduced an array containing character strings 
+and then an array containing floating numbers.</P>
+<PRE class="sh_java">String[] characterStringArray = {"Matti P.", "Matti V."};
+double[] floatingNumberArray = {1.20, 3.14, 100.0, 0.6666666667};
+</PRE>
+<P>The cells of the array are referred to with <EM>indexes</EM> that are 
+integers. The index tells the            position of the cell in the array. The 
+first item in an array is in position 0, the next one in position 1, and         
+   so forth. When inspecting a certain value of an array, the index is given 
+after the name of the array            object in brackets.</P>
+<PRE class="sh_java">// index           0   1    2    3   4   5     6     7
+int[] numbers = {100,  1,  42,  23,  1,  1, 3200, 3201};
+
+System.out.println(numbers[0]);    // prints the number in the array's index 0: the number 100
+System.out.println(numbers[2]);    // prints the number in the array's index 2, the number 42
+</PRE>
+<P>The size (length) of the array above is 8.</P>
+<P><EM>You'll probably notice that the <CODE>get</CODE>-method of ArrayList 
+works pretty much the same as getting from a certain index of an array. Only the 
+notation - the syntax - is different when dealing with arrays.</EM></P>
+<P>Setting an individual value to a certain position in an array happens the 
+same way as with regular            variables, only with arrays the index also 
+has to be mentioned. The index is mentioned inside brackets.</P>
+<PRE class="sh_java">int[] numbers = {100,1,42};
+
+numbers[0] = 1;    // setting value 1 to index 0
+numbers[1] = 101;  // setting value 101 to index 1
+
+// the numbers array now looks like {1,101,42}
+</PRE>
+<P>If an index points <EM>past an array</EM>, that is, to a cell that doesn't 
+exist, we will get an            error: <EM>ArrayIndexOutOfBoundsException</EM>, 
+which means that the index that we pointed at doesn't            exist. So we 
+cannot refer to a cell that is past the array - to an index that is smaller than 
+0, or larger            or equals the size of the array.</P>
+<P>We'll notice that the array clearly is related to ArrayList. Arrays, as with 
+lists, have their cells in a certain order!</P>
+<H3>Iteration of an array</H3>
+<P>The size of an array object can be found out by typing 
+<CODE>array.length</CODE> into the code, notice            that you don't use 
+parentheses with this one. <CODE>array.length()</CODE> does not work!</P>
+<P>Iterating through the cells of an array is easy to implement with the help of 
+the             <CODE>while</CODE>-command:</P>
+<PRE class="sh_java">int[] numbers = {1, 8, 10, 3, 5};
+
+int i = 0;
+while (i &lt; numbers.length ) {
+    System.out.println(numbers[i]);
+    i++;
+}
+</PRE>
+<P>With the help of variable <CODE>i</CODE> we go through the indexes 0, 1, 2, 
+3, and 4, and print the            value of the variable in each cell. First 
+<CODE>numbers[0]</CODE> gets printed, then             <CODE>numbers[1]</CODE> 
+and so forth. The variable <CODE>i</CODE> stops getting increased when the array 
+has            been iterated through, that is when <CODE>i</CODE>'s value is 
+equal to the length of the array.</P>
+<P>When iterating through an array it isn't always necessary to list the indexes 
+of it, the only            interesting thing is the values of the array. In this 
+case we can use the for-each-structure - that we            became familiar with 
+earlier - to go through the values. Now only the name of a variable is given in 
+the            frame of the loop, to which each of the values of the array are 
+set one after the other. The name of the            array is separated with a 
+colon.</P>
+<PRE class="sh_java">int[] numbers = {1,8,10,3,5};
+
+for (int number : numbers) {
+    System.out.println(number);
+}
+</PRE>
+<PRE class="sh_java">String[] names = {"Juhana L.", "Matti P.", "Matti L.", "Pekka M."};
+
+for (String name : names) {
+    System.out.println(name);
+}
+</PRE>
+<P><STRONG>Notice:</STRONG> when using a for-each-type of loop you cannot set 
+values to the cells of the            array! With the format of the for-sentence 
+we inspect next that can be done too.</P>
+<H3>Another form of the for command</H3>
+<P>So far when doing loops, we've used while and the for-each form of the for 
+sentence. Another form of            the for-loop exists, which is handy 
+especially when handling arrays. In the following we print the numbers           
+ 0, 1 and 2 with a for loop:</P>
+<PRE class="sh_java">for (int i = 0; i &lt; 3; i++ ) {
+    System.out.println(i);
+}
+</PRE>
+<P>The for in the example works <EM>exactly</EM> as the while below:</P>
+<PRE class="sh_java">int i = 0;  // formatting the variable that will be used in the loop
+while ( i &lt; 3 ) {  // condition
+    System.out.println(i);
+    i++;   // updating the variable that is used in the loop
+}
+</PRE>
+<P>a for command, as shown in <CODE>for (int i = 0; i &lt; 3; i++ )</CODE> 
+above, has three parts to it:             <EM>formatting the loop variables; 
+condition; updating the loop variables</EM>:</P>
+<UL>
+  <LI>In the first part, the variables that are used in the loop are formatted. 
+  In the example above we formatted the variable <CODE>i</CODE> with <CODE>int 
+  i=0</CODE>. The first part is run only once, at the beginning of a for 
+  run.</LI>
+  <LI>In the second part the condition is defined, which defines how long the 
+  code is run in the code block that is related to the for loop. In our example 
+  the condition was <CODE>i &lt; 3</CODE>. The validity of the condition is 
+  checked <EM>before each round of the loop</EM>. The condition works exactly 
+  the same as the a condition of a while loop works.</LI>
+  <LI>The third part, which in our example is <CODE>i++</CODE> , is always run 
+  once at the end of each round of the loop.</LI></UL>
+<P>Compared to <EM>while</EM>, <EM>for</EM> is a slightly clearer way of 
+implementing loops of whose            amount of runs is based on, for example, 
+growing a counter. When going through an array the case is usually            
+exactly this. In the following we print the contents of the <CODE>numbers</CODE> 
+array with for:</P>
+<PRE class="sh_java">int[] numbers = {1, 3, 5, 9, 17, 31, 57, 105};
+
+for(int i = 3; i &lt; 7; i++) {
+    System.out.println(numbers[i]);
+}
+</PRE>
+<P>Naturally with for you don't have to start from 0 and the iteration can be 
+done 'from top            down'. For example, the cells in indexes 6, 5, 4, and 
+3 can be printed like this:</P>
+<PRE class="sh_java">int[] numbers = {1, 3, 5, 9, 17, 31, 57, 105};
+
+for(int i = 6; i&gt;2 ; i--) {
+    System.out.println(numbers[i]);
+}
+</PRE>
+<H3>For and array length</H3>
+<P>Going through all cells of an array with for happens like this:</P>
+<PRE class="sh_java">int[] numbers = {1, 8, 10, 3, 5};
+
+for (int i = 0; i &lt; numbers.length; i++ ) {
+    System.out.println(numbers[i]);
+}
+</PRE>
+<P>Notice, that in the condition <CODE>i &lt; numbers.length</CODE> we compare 
+the value of the            loop variable to the length we get from the array. 
+The condition should not in any case be            "hardcoded" as, for example, 
+<CODE>i &lt; 5</CODE> because often the length of the array            can't be 
+known for sure beforehand.</P>
+<H3>Array as a parameter</H3>
+<P>Arrays can be used - just as any other objects - as a parameters to a method. 
+Notice that, as with all            objects, the method gets a reference to an 
+array, so all changes done to the content of the array in the            method 
+also show up in the main program.</P>
+<PRE class="sh_java">public static void listCells(int[] integerArray) {
+
+    System.out.println("the cells of the array are: ");
+    for( int number : integerArray) {
+        System.out.print(number + " ");
+    }
+
+    System.out.println("");
+}
+
+public static void  main(String[] args) {
+    int[] numbers = { 1, 2, 3, 4, 5 };
+    listCells(numbers);
+}
+</PRE>
+<P>As we already know, the name of the parameter within a method can be freely 
+chosen. The name does not            need to be the same as in the one used in 
+calling it. Above, the array is called <CODE>integerArray</CODE>            
+within the method and the caller of the method knows the array as 
+<CODE>numbers</CODE>. <!-- CAST61--> </P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Sum of the array</H3>
+<P>Implement the method <CODE>public static sum(int[] array)</CODE>, which 
+returns the sum of the  numbers in the array given as parameter.</P>
+<P>Program skeleton:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        int[] array = {5, 1, 3, 4, 2};
+        System.out.println(sum(array));
+    }
+
+    public static int sum(int[] array) {
+        // write code here
+        return 0;
+    }
+}
+  </PRE>
+<P>The output should be:</P>
+<PRE>15
+  </PRE>
+<P><B>NOTE:</B> in this and some of the following assignments methods are 
+<CODE>static</CODE> as the  they used to be in the assignments for weeks 2 and 
+3. The reason for this is that the methods  are not instance methods, i.e. not 
+operating with instance variables of objects, instead they are  working at 
+"class level" and operating just with the values and objects given as  
+parameter. In chapter 31 we'll elaborate more on the question whether a method 
+should be static  or not.</P></DIV>
+<DIV class="tehtava">
+<H3 class="req">Elegant printing of an array</H3>
+<P>Implement the method <CODE>public static int printElegantly(int[] 
+array)</CODE>, which prints the  numbers in the array on the same row. In the 
+printout all the numbers should be separated with  comma and whitespace and 
+there should not be a comma trailing the last number.</P>
+<P>Program skeleton:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        int[] array = {5, 1, 3, 4, 2};
+        printElegantly(array);
+    }
+
+    public static void printElegantly(int[] array) {
+        // write code here
+    }
+}
+  </PRE>
+<P>The output should be:</P>
+<PRE>5, 1, 3, 4, 2
+  </PRE></DIV></DIV>
+<H3>Creating a new array</H3>
+<P>If the size of the array isn't always the same, that is, if its size depends 
+on            user input for example, the previously introduced way of creating 
+arrays will not do. It is also possible to create a            table so that its 
+size is defined with the help of a variable:</P>
+<PRE class="sh_java">int cells = 99;
+int[] array = new int[cells];
+</PRE>
+<P>Above we create an array of the type int, that has 99 cells. With this 
+alternative way creation of an            array happens just like with any other 
+object; with the command <CODE>new</CODE>. Following the             
+<CODE>new</CODE> is the type of the array and in the brackets is the size of the 
+array.</P>
+<PRE class="sh_java">int cells = 99;
+int[] array = new int[cells]; //creating an array of the size of the value in the 'cells' variable
+
+if(array.length == cells) {
+    System.out.println("The length of the array is " + cells);
+} else {
+    System.out.println("Something unreal happened. The length of the array is something else than " + cells);
+}
+</PRE>
+<P>In the following example there is a program that prompts for the user the 
+amount of values and subsequently            the values. After this the program 
+prints the values in the same order again. The values given by the user          
+  are stored in the array.</P>
+<PRE class="sh_java">System.out.print("How many values? ");
+int amountOfValues = Integer.parseInt(reader.nextLine());
+
+int[] values = new int[amountOfValues];
+
+System.out.println("Enter values:");
+for(int i = 0; i &lt; amountOfValues; i++) {
+    values[i] = Integer.parseInt(reader.nextLine());
+}
+
+System.out.println("Values again:");
+for(int i = 0; i &lt; amountOfValues; i++) {
+    System.out.println(values[i]);
+}
+</PRE>
+<P>A run of the program could look something like this:</P>
+<PRE>How many values? <SPAN class="red">4</SPAN>
+Enter values:
+<SPAN class="red">4</SPAN>
+<SPAN class="red">8</SPAN>
+<SPAN class="red">2</SPAN>
+<SPAN class="red">1</SPAN>
+Values again:
+4
+2
+8
+1
+</PRE>
+<H3 id="muita_palautustyyppeja">An array as the return value</H3>
+<P>Since methods can return objects, they can also return arrays. This 
+particular method that returns an            array looks like this -- notice 
+that arrays might as well contain objects.</P>
+<PRE class="sh_java">public static String[] giveStringTable() {
+    String[] tchrs = new String[3];
+
+    tchrs[0] = "Bonus";
+    tchrs[1] = "Ihq";
+    tchrs[2] = "Lennon";
+
+    return tchrs;
+}
+
+public static void main(String[] args){
+    String[] teachers = giveStringTable();
+
+    for ( String teacher : teachers)
+        System.out.println( teacher );
+}
+</PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Reversing and copying of an array</H3>
+<H4 class="req">Copy</H4>
+<P>Implement the method <CODE>public static int[] copy(int[] array)</CODE> that 
+creates a copy of  the parameter. <STRONG>Tip:</STRONG> since you are supposed 
+to create a copy of the parameter, the  method should create a new array where 
+the contents of the parameter is copied.</P>
+<P>In the following an example of the usage (note how code uses a handy helper 
+method to print  arrays):</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    int[] original = {1, 2, 3, 4};
+    int[] copied = copy(original);
+
+    // change the copied
+    copied[0] = 99;
+
+    // print both
+    System.out.println( "original: " + Arrays.toString(original));
+    System.out.println( "copied: " + Arrays.toString(copied));
+}
+  </PRE>
+<P>As seen in the output, the change made to the copy does not affect the 
+original:</P>
+<PRE>original: [1, 2, 3, 4]
+copied: [99, 2, 3, 4]
+  </PRE>
+<H4 class="req">Reverse copy</H4>
+<P>Implement the method <CODE>public static int[] reverseCopy(int[] 
+array)</CODE> that creates an  array which contains the elements of the 
+parameter but in reversed order. The parameter array must  remain the same.</P>
+<P>E.g. if the parameter contains values <EM>5, 6, 7</EM> the method returns 
+<EM>a new array</EM>  that contains the values <EM>7, 6, 5</EM>.</P>
+<P>In the following an example of the usage:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    int[] original = {1, 2, 3, 4};
+    int[] reverse = reverseCopy(original);
+
+    // print both
+    System.out.println( "original: " +Arrays.toString(original));
+    System.out.println( "reversed: " +Arrays.toString(reverse));
+}
+  </PRE>
+<P>The output should reveal that the parameter remains intact:</P>
+<PRE>original: [1, 2, 3, 4]
+reversed: [4, 3, 2, 1]
+  </PRE></DIV></DIV>
+<H2 id="lohkoista">About blocks and nested loops</H2>
+<P>A piece of code that begins with a curly bracket <CODE>{</CODE> and ends with 
+a curly bracket             <CODE>}</CODE> is called a <EM>block</EM>. As we've 
+already seen, blocks are used - among other things            - to denote the 
+code of conditional and loop sentences. <EM>An important feature of a block is 
+that variables defined within it only exist within it.</EM>.</P>
+<P>In the following example we define the string variable 
+<CODE>stringDefinedWithinBlock</CODE> within the            block of a 
+conditional sentence, which therefor will only exist within the block. The 
+variable introduced            within the block cannot be printed outside of 
+it!</P>
+<PRE class="sh_java">int number = 5;
+
+if( number == 5 ){
+    String stringDefinedWithinBlock = "Yeah!";
+}
+
+System.out.println(stringDefinedWithinBlock); // does not work!
+</PRE>
+<P>However, you can use and manipulate variables defined outside of the block in 
+the block.</P>
+<PRE class="sh_java">int number = 5;
+
+if( number == 5 ) {
+    number = 6;
+}
+
+System.out.println(number); // prints 6
+</PRE>
+<P>You can have any kind of code within a block. For example, a for loop can 
+have another for loop within it            or say, a while loop. Let's inspect 
+the following program:</P>
+<PRE class="sh_java">for(int i = 0; i &lt; 3; i++) {
+   System.out.print(i + ": ");
+
+   for(int j = 0; j &lt; 3; j++) {
+      System.out.print(j + " ");
+   }
+
+   System.out.println();
+}
+</PRE>
+<P>The program prints the following:</P>
+<PRE>0: 0 1 2
+1: 0 1 2
+2: 0 1 2
+</PRE>
+<P>So what happens in the program? If we only think about the outer for loop, 
+its functionality is            easy to understand:</P>
+<PRE class="sh_java">for(int i = 0; i &lt; 3; i++) {
+   System.out.print(i + ": ");
+
+   // the inner for-loop
+
+   System.out.println();
+}
+</PRE>
+<P>So first <CODE>i=0</CODE> prints <CODE>0:</CODE> and a carriage return. After 
+this i grows and 1 is            printed and so forth, so the outer for makes 
+this happen:</P>
+<PRE>0:
+1:
+2:
+</PRE>
+<P>The inner for loop is also easy to understand separately. It prints out 
+<CODE>0 1 2</CODE>. When we            combine these two, we'll notice that the 
+inner for loop carries out its print just before the            outer for loop's 
+carriage return.</P>
+<H3>variables defined outside of a for loop as its condition</H3>
+<P>Let's inspect the following alteration to the previous example:</P>
+<PRE class="sh_java">for(int i = 0; i &lt; 3; i++) {
+    System.out.print(i + ": ");
+
+    for(int j = 0; j &lt;= i; j++) {
+        System.out.print(j + " ");
+    }
+
+    System.out.println();
+}
+</PRE>
+<P>The amount of runs the inner for loop does now depends on the value of the 
+variable <CODE>i</CODE> of            the outer loop. So when <CODE>i=0</CODE> 
+the inner loop prints 0, when <CODE>i=1</CODE> the inner loop            prints 
+0 1. The entire output of the program is as follows:</P>
+<PRE>0: 0
+1: 0 1
+2: 0 1 2
+</PRE>
+<P>The following program prints out the multiplication tables of the numbers 1 
+.. 10.</P>
+<PRE class="sh_java">for(int i = 1; i &lt;= 10; i++) {
+
+    for(int j = 1; j &lt;= 10; j++) {
+        System.out.print(i * j + " ");
+    }
+
+    System.out.println();
+}
+</PRE>
+<P>The output looks like this:</P>
+<PRE>1 2 3 4 5 6 7 8 9 10
+2 4 6 8 10 12 14 16 18 20
+3 6 9 12 15 18 21 24 27 30
+4 8 12 16 20 24 28 32 36 40
+5 10 15 20 25 30 35 40 45 50
+6 12 18 24 30 36 42 48 54 60
+7 14 21 28 35 42 49 56 63 70
+8 16 24 32 40 48 56 64 72 80
+9 18 27 36 45 54 63 72 81 90
+10 20 30 40 50 60 70 80 90 100
+</PRE>
+<P>The topmost row has the multiplication table of 1. At the beginning 
+<CODE>i=1</CODE> and the inner            loop's variable <CODE>j</CODE> gets 
+the values 1...10. For each <CODE>i, j</CODE> value pair their            
+product is printed. So at the beginning <CODE>i=1, j=1</CODE>, then <CODE>i=1, 
+j=2</CODE>, ..., <CODE>i=1, j=10</CODE> next <CODE>i=2, j=1</CODE>, and so 
+forth.</P>
+<P>Of course the multiplication table program can be cut in to smaller pieces, 
+too. We can define the            methods <CODE>public void 
+printMultiplicationTableRow(int multiplier, int howManyTimes)</CODE> and         
+    <CODE>public void printMultiplicationTable(int upTo)</CODE>, in this case 
+the structure of our program            could be as follows:</P>
+<PRE class="sh_java">public class MultiplicationTable {
+
+    public void print(int upTo) {
+        for(int i = 1; i &lt;= upTo; i++) {
+            printMultiplicationTableRow(i, upTo);
+
+            System.out.println();
+        }
+    }
+
+    public void printMultiplicationTableRow(int multiplier, int howManyTimes) {
+        for(int i = 1; j &lt;= howManyTimes; i++) {
+            System.out.print(i * multiplier + " ");
+        }
+    }
+}
+</PRE>
+<P>Now calling <CODE>new MultiplicationTable().print(5);</CODE> prints the 
+tables below.</P>
+<PRE>1 2 3 4 5
+2 4 6 8 10
+3 6 9 12 15
+4 8 12 16 20
+5 10 15 20 25
+</PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Array to stars</H3>
+<P>Implement the method <CODE>public static printArrayAsStars(int[] 
+array)</CODE>, which prints a  line with stars for each number in the array. The 
+line length is determined by the number.</P>
+<P>The program skeleton:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        int[] array = {5, 1, 3, 4, 2};
+        printArrayAsStars(array);
+    }
+
+    public static void printArrayAsStars(int[] array) {
+        // code here
+    }
+}
+  </PRE>
+<P>The above example should cause the following output:</P>
+<PRE>*****
+*
+***
+****
+**
+  </PRE>
+<P>As seen the first line has 5 stars and the reason for that is that is that 
+the first element of  the array is 5. The next line has one star since the 
+second element of the array is 1, etc.</P></DIV>
+<DIV class="tehtava">
+<H3>Night sky</H3>
+<P>Let us implement a program that prints the Night sky. The sky has a star 
+density. If the density  is e.g. <CODE>0.1</CODE>, roughly 10% of the sky is 
+covered with stars.</P>
+<P>Stars print out as <CODE>*</CODE>-characters. Below an example that 
+demonstrates how the   <CODE>NightSky</CODE> could be used when all the steps of 
+the assignment are done.</P>
+<PRE class="sh_java">NightSky NightSky = new NightSky(0.1, 40, 10);
+NightSky.print();
+System.out.println("Number of stars: " + NightSky.starsInLastPrint());
+System.out.println("");
+
+NightSky = new NightSky(0.2, 15, 6);
+NightSky.print();
+System.out.println("Number of stars: " + NightSky.starsInLastPrint());
+  </PRE>
+<PRE>        *     *                  *
+    *             * *         *      **
+                                     *
+        *       *      *         *  *
+ *     *                     *
+*            * *                   *
+*  * *           *          * *  **
+                            *  *
+          *               *
+     *                             *
+Number of stars: 36
+
+ * * *     *
+     * *   *
+*     *
+   *  *       *
+*       *   * *
+* ** **     *
+Number of stars: 22
+
+  </PRE>
+<P><STRONG>Note!</STRONG> in the assignment use the <CODE>for</CODE>-clause. 
+Despite that the  previous chapter described nested loops, in this assignment we 
+"hide" the nested loop  within a method.</P>
+<H4>Class NightSky and a star line</H4>
+<P>Create the class <CODE>NightSky</CODE>, that has three object variables: 
+density  (<CODE>double</CODE>), width (<CODE>int</CODE>), and height 
+(<CODE>int</CODE>). The class should  have 3 constructors:</P>
+<UL>
+  <LI><CODE>public NightSky(double density)</CODE> creates a NightSky object 
+  with the given star    density. Width gets the value <CODE>20</CODE> and 
+  height the value <CODE>10</CODE>.</LI>
+  <LI><CODE>public NightSky(int width, int height)</CODE> creates a NightSky 
+  object with the    given width and height. Density gets the value 
+  <CODE>0.1</CODE>.</LI>
+  <LI><CODE>public NightSky(double density, int width, int height)</CODE> 
+  creates a    NightSky-object with the given density, width and height</LI></UL>
+<P>Add to the class <CODE>NightSky</CODE> the method <CODE>printLine</CODE>, 
+that prints one line of  starts. The line length is determined by the value of 
+the instance variable <CODE>width</CODE> and  the instance variable 
+<CODE>density</CODE> determines the star probability. For each printed  
+character you should use a <CODE>Random</CODE> object to decide if it prints out 
+as a white space  or a star. The method <CODE>nextDouble</CODE> will probably be 
+of use now.</P>
+<P>In the following example:</P>
+<PRE class="sh_java">NightSky NightSky = new NightSky(0.1, 40, 10);
+NightSky.printLine();
+  </PRE>
+<PRE>            *  *                  *
+  </PRE>
+<H4>Printing the night sky</H4>
+<P>Add the class <CODE>NightSky</CODE> the method <CODE>print</CODE>, that 
+prints the night sky of  the given size. Use the method <CODE>printLine</CODE> 
+to print each separate line of the night sky.  An example in the following:</P>
+<PRE class="sh_java">NightSky NightSky = new NightSky(8, 4);
+NightSky.print();
+  </PRE>
+<PRE>    *
+
+  *
+    *
+  </PRE>
+<H4>Counting the number of stars</H4>
+<P>Add the class <CODE>NightSky</CODE> an instance variable starsInLastPrint 
+(<CODE>int</CODE>) and  the method <CODE>starsInLastPrint()</CODE>, that returns 
+the number of stars printed in the  previous night sky. Example in the 
+below:</P>
+<PRE class="sh_java">NightSky NightSky = new NightSky(8, 4);
+NightSky.print();
+System.out.println("Number of stars: " + NightSky.starsInLastPrint());
+System.out.println("");
+
+NightSky.print();
+System.out.println("Number of stars: " + NightSky.starsInLastPrint());
+  </PRE>
+<PRE>
+ *
+
+Number of stars: 1
+
+ *
+      *
+*
+
+Number of stars: 3
+  </PRE></DIV></DIV>
+<H2>To static or not to static?</H2>
+<P>When we started using objects, the material advised to leave out the keyword 
+'static' when            defining their methods. However, up until week 3 all of 
+the methods included that keyword. So what is it            all about?</P>
+<P>The following example has a method <CODE>resetArray</CODE>, that works as its 
+name implies; it sets            all of the cells of an array that it receives 
+as a parameter to 0.</P>
+<PRE class="sh_java">public class Program {
+
+    public static void resetArray(int[] table) {
+        for ( int i=0; i &lt; table.length; i++ )
+            table[i] = 0;
+    }
+
+    public static void main(String[] args) {
+        int[] values = { 1, 2, 3, 4, 5 };
+
+        for ( int number : values ) {
+            System.out.print( number + " " );  // prints 1, 2, 3, 4, 5
+        }
+
+        System.out.println();
+
+        resetArray(values);
+
+        for ( int number : values ) {
+            System.out.print( number + " " );  // prints 0, 0, 0, 0, 0
+        }
+    }
+}
+</PRE>
+<P>We notice that the method definition now has the keyword <CODE>static</CODE>. 
+The reason for that is            that the method does not operate on any 
+object, instead it is a <EM>class method</EM> or in other words             
+<EM>static methods</EM>. In contrast to instance methods, static methods are not 
+connected to any            particular object and thus the reference 
+<CODE>this</CODE> is not valid within static methods. A static            method 
+can operate only with data that is given it as parameter. The parameter of a 
+static method can            naturally be an object.</P>
+<P>Since static methods are not connected to any object, those can not be called 
+through the object name:             <CODE>objectName.methodName()</CODE> but 
+should be called as in the above example by using only the method            
+name.</P>
+<P>If the static method is called from a different class, the call is of the 
+form             <CODE>ClassName.staticMethodName()</CODE>. The below example 
+demonstrates that:</P>
+<PRE class="sh_java">public class Program {
+    public static void main(String[] args) {
+        int[] values = { 1, 2, 3, 4, 5 };
+
+        for ( int value : values ) {
+            System.out.print( value + " " );  // prints: 1, 2, 3, 4, 5
+        }
+
+        System.out.println();
+
+        ArrayHandling.resetArray(values);
+
+        for ( int value : values ) {
+            System.out.print( value + " " );  // prints: 0, 0, 0, 0, 0
+        }
+    }
+}
+</PRE>
+<PRE class="sh_java">public class ArrayHandling {
+    public static void resetArray(int[] array) {
+        for ( int i=0; i &lt; array.length; i++ ) {
+            array[i] = 0;
+        }
+    }
+}
+</PRE>
+<P>The static method that has been defined within another class will now be 
+called with             
+<CODE>ArrayHandling.resetArray(<EM>parameter</EM>);</CODE>.</P>
+<H3>When static methods should be used</H3>
+<P>All object state-handling methods should be defined as normal object methods. 
+For example, all of the            methods of the <CODE>Person, MyDate, Clock, 
+Team, ...</CODE> classes we defined during the previous weeks            should 
+be defined as normal object methods, not as statics.</P>
+<P>Lets get back to the <CODE>Person</CODE> class yet again. In the following is 
+a part of the class            definition. All of the object variables are 
+referred to with the <CODE>this</CODE> keyword because we            emphasize 
+that we are handling the object variables 'within' the said object..</P>
+<PRE class="sh_java">public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name) {
+        this.age = 0;
+        this.name = name;
+    }
+
+    public boolean isAdult(){
+        if ( this.age &lt; 18 ) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public void becomeOlder() {
+        this.age++;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+}
+</PRE>
+<P>Because the methods manipulate the object, they do not need to be defined as 
+static, or in other words            "not belonging to the object". If we try to 
+do this, the program won't work:</P>
+<PRE class="sh_java">public class Person {
+    //...
+
+    public static void becomeOlder() {
+        this.age++;
+    }
+}
+</PRE>
+<P>As a result we'll get an error <I>non-static variable age can not be 
+referenced from static context</I>, which means that a static method cannot 
+handle an object method.</P>
+<P>So when should a static method be used then? Let us inspect the Person object 
+handling an example familiar            from chapter 23:</P>
+<PRE class="sh_java">public class Program {
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka");
+        Person antti = new Person("Antti");
+        Person juhana = new Person("Juhana");
+
+        for ( int i=0; i &lt; 30; i++ ) {
+            pekka.becomeOlder();
+            juhana.becomeOlder();
+        }
+
+        antti.becomeOlder();
+
+        if ( antti.isAdult() ) {
+            System.out.println( antti.getName() + " is an adult" );
+        } else {
+            System.out.println( antti.getName() + " is a minor" );
+        }
+
+        if ( pekka.isAdult() ) {
+            System.out.println( pekka.getName() + " is an adult" );
+        } else {
+            System.out.println( pekka.getName() + " is a minor" );
+        }
+
+        if ( juhana.isAdult() ) {
+            System.out.println( juhana.getName() + " is an adult" );
+        } else {
+            System.out.println( juhana.getName() + " is a minor" );
+        }
+    }
+}
+</PRE>
+<P>We'll notice that the piece of code that reports the matureness of persons is 
+copy-pasted twice in            the program. It looks really bad!</P>
+<P>Reporting the maturity of a person is an excellent candidate for a static 
+method. Let's rewrite the            Program using that method:</P>
+<PRE class="sh_java">public class Main {
+
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka");
+        Person antti = new Person("Antti");
+        Person juhana = new Person("Juhana");
+
+        for ( int i=0; i &lt; 30; i++ ) {
+            pekka.becomeOlder();
+            juhana.becomeOlder();
+        }
+
+        antti.becomeOlder();
+
+        reportMaturity(antti);
+
+        reportMaturity(pekka);
+
+        reportMaturity(juhana);
+    }
+
+    private static void reportMaturity(Person person) {
+        if ( person.isAdult() ) {
+            System.out.println(person.getName() + " is an adult");
+        } else {
+            System.out.println(person.getName() + " is a minor");
+        }
+    }
+}
+</PRE>
+<P>The method <CODE>reportMaturity</CODE> is defined as static so it doesn't 
+belong to any object,             <STRONG>but</STRONG> the method receives a 
+Person object as a parameter. The method is not defined within            the 
+Person-class since even though it handles a Person object that it receives as a 
+parameter, it is an            assistance method of the main program we just 
+wrote. With the method we've made main more readable.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>The library information system</H3>
+<P>In this assignment we are implementing a simple information system prototype 
+for a library. The  prototype will have functionality for searching books by the 
+title, publisher or publishing  year.</P>
+<P>The main building blocks of the system are the classes <CODE>Book</CODE> and  
+ <CODE>Library</CODE>. Objects of the class <CODE>Book</CODE> represent the 
+information of a single  book. Object of the class <CODE>Library</CODE> holds a 
+set of books and provides various ways to  search for the books within the 
+library.</P>
+<H4>Book</H4>
+<P>Let us start with the class Book. The class has instance variables 
+<CODE>title</CODE> for the  book title, <CODE>publisher</CODE> for the name of 
+the publisher, and <CODE>year</CODE>  for the publishing year. The title and the 
+publisher are of the type String and the publishing year  is represented as an 
+integer.</P>
+<P>Now implement the class <CODE>Book</CODE>. The class should have the 
+constructor <CODE>public    Book(String title, String publisher, int 
+year)</CODE> and methods <CODE>public String    title()</CODE>, <CODE>public 
+String publisher()</CODE>, <CODE>public int year()</CODE> and   <CODE>public 
+String toString()</CODE>.</P>
+<P>Example usage:</P>
+<PRE class="sh_java">Book cheese = new Book("Cheese Problems Solved", "Woodhead Publishing", 2007);
+System.out.println(cheese.title());
+System.out.println(cheese.publisher());
+System.out.println(cheese.year());
+
+System.out.println(cheese);
+  </PRE>
+<P>The output should be:</P>
+<PRE>Cheese Problems Solved
+Woodhead Publishing
+2007
+Cheese Problems Solved, Woodhead Publishing, 2007
+  </PRE>
+<H4>Library</H4>
+<P>Implement the class <CODE>Library</CODE>, with constructor <CODE>public 
+Library()</CODE> and  methods <CODE>public void addBook(Book newBook)</CODE> and 
+<CODE>public void    printBooks()</CODE></P>
+<P>Example usage below.</P>
+<PRE class="sh_java">Library Library = new Library();
+
+Book cheese = new Book("Cheese Problems Solved", "Woodhead Publishing", 2007);
+Library.addBook(cheese);
+
+Book nhl = new Book("NHL Hockey", "Stanley Kupp", 1952);
+Library.addBook(nhl);
+
+Library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
+
+Library.printBooks();
+  </PRE>
+<P>The output should be:</P>
+<PRE>Cheese Problems Solved, Woodhead Publishing, 2007
+NHL Hockey, Stanley Kupp, 1952
+Battle Axes, Tom A. Hawk, 1851
+  </PRE>
+<H4>Search functionality</H4>
+<P>Add to the class <CODE>Library</CODE> the methods <CODE>public 
+ArrayList&lt;Book&gt;    searchByTitle(String title)</CODE>, <CODE>public 
+ArrayList&lt;Book&gt; searchByPublisher(String    publisher)</CODE> and 
+<CODE>public ArrayList&lt;Book&gt; searchByYear(int year)</CODE>. The methods  
+return the list of books that match the given title, publisher or year.</P>
+<P><B>Note:</B> you are supposed to do a method that returns an ArrayList. Use 
+the following  skeleton as starting point:</P>
+<PRE class="sh_java">public class Library {
+   // ...
+
+   public ArrayList&lt;Book&gt; searchByTitle(String title) {
+     ArrayList&lt;Book&gt; found = new ArrayList&lt;Book&gt;();
+
+     // iterate the list of books and add all the matching books to the list found
+
+     return found;
+   }
+  </PRE>
+<P>Note: when you do the search by a string (title or publisher), do not look 
+for exact matches  (with the method <CODE>equals</CODE>) instead use the method 
+<CODE>contains</CODE> of the class   <CODE>String</CODE>.</P>
+<P>Example usage:</P>
+<PRE class="sh_java">Library Library = new Library();
+
+Library.addBook(new Book("Cheese Problems Solved", "Woodhead Publishing", 2007));
+Library.addBook(new Book("The Stinky Cheese Man and Other Fairly Stupid Tales", "Penguin Group", 1992));
+Library.addBook(new Book("NHL Hockey", "Stanley Kupp", 1952));
+Library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
+
+ArrayList&lt;Book&gt; result = Library.searchByTitle("Cheese");
+for (Book book: result) {
+    System.out.println(book);
+}
+
+System.out.println("---");
+for (Book book: Library.searchByPublisher("Penguin Group  ")) {
+    System.out.println(book);
+}
+
+System.out.println("---");
+for (Book book: Library.searchByYear(1851)) {
+    System.out.println(book);
+}
+  </PRE>
+<P>The output should be:</P>
+<PRE>Cheese Problems Solved, Woodhead Publishing, 2007
+The Stinky Cheese Man and Other Fairly Stupid Tales, Penguin Group, 1992
+---
+---
+Battle Axes, Tom A. Hawk, 1851
+  </PRE>
+<H4>Improved search</H4>
+<P>There are some minor problems with the implemented search functionality. One 
+particular problem  is that the search differentiates upper and lower case 
+letters. In the above example the search by  title with the search term 
+<CODE>"cheese"</CODE> produced an empty list as answer.  The example where the 
+search term contained extra white spaces did not give the expected answer, 
+either.  We'd like the search functionality to be case insensitive and not 
+disturbed by the extra white  spaces at the start or at the end of the search 
+terms. We will implement a small helper library   <CODE>StringUtils</CODE> that 
+will then be used in the Library for the more flexible search  
+functionality.</P>
+<P>Implement the class <CODE>StringUtils</CODE> with a <STRONG>static</STRONG> 
+method <CODE>public    static boolean included(String word, String 
+searched)</CODE>, which checks if the string   <CODE>searched</CODE> is 
+contained within the string <CODE>word</CODE>. As described in the  previous 
+paragraph, the method should be case insensitive and should not care about 
+trailing and  ending white spaces in the string <CODE>searched</CODE>. If either 
+of the strings is <EM>null</EM>,  the method should return 
+<CODE>false</CODE>.</P>
+<P><EM>Tip:</EM> The methods <CODE>trim</CODE> and <CODE>toUpperCase()</CODE> of 
+the class   <CODE>String</CODE> might be helpful.</P>
+<P>When you have completed the method, use it in the search functionality of the 
+class   <CODE>Library</CODE>.</P>
+<P>Use the method as follows:</P>
+<PRE class="sh_java">if(StringUtils.included(book.title(), searchedTitle)) {
+    // Book found!
+}
+  </PRE>
+<P>The improved library with the example:</P>
+<PRE class="sh_java">Library Library = new Library();
+
+Library.addBook(new Book("Cheese Problems Solved", "Woodhead Publishing", 2007));
+Library.addBook(new Book("The Stinky Cheese Man and Other Fairly Stupid Tales", "Penguin Group", 1992));
+Library.addBook(new Book("NHL Hockey", "Stanley Kupp", 1952));
+Library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
+
+for (Book book: Library.searchByTitle("CHEESE")) {
+    System.out.println(book);
+}
+
+System.out.println("---");
+for (Book book: Library.searchByPublisher("PENGUIN  ")) {
+    System.out.println(book);
+}
+  </PRE>
+<P>should output the following:</P>
+<PRE>Cheese Problems Solved, Woodhead Publishing, 2007
+The Stinky Cheese Man and Other Fairly Stupid Tales, Penguin Group, 1992
+---
+The Stinky Cheese Man and Other Fairly Stupid Tales, Penguin Group, 1992
+  </PRE></DIV></DIV>
+<H2>Assignments where you are free to decide how to structure the program.</H2>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Grade distribution</H3>
+<P><B>This assignment corresponds to three assignment points.</B></P>
+<P><B>Note1:</B> Your program should use only one Scanner object, i.e., it is 
+allowed to call   <CODE>new Scanner</CODE> only once. If you need scanner in 
+multiple places, you can pass it as  parameter:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    // ...
+
+    doSomething(scanner);
+}
+
+public static void doSomething(Scanner scanner) {
+    String riw = scanner.nextLine();
+    // ...
+}
+  </PRE>
+<P>If another object needs a scanner, you can pass it as constructor parameter 
+and save in  instance variable.</P>
+<P><B>Note2:</B> Do not save anything in static variables. The main method is 
+executed by the tests  multiple times so the use of static variables might cause 
+problems.</P>
+<P>The input of the program is a set of exam scores of a course. Each score is 
+an integer. When -1  is entered, the program stops asking for further input.</P>
+<P>Inputting the exam scores should work as follows:</P>
+<PRE>Type exam scores, -1 completes:
+<FONT color="red">34</FONT>
+<FONT color="red">41</FONT>
+<FONT color="red">53</FONT>
+<FONT color="red">36</FONT>
+<FONT color="red">55</FONT>
+<FONT color="red">27</FONT>
+<FONT color="red">43</FONT>
+<FONT color="red">40</FONT>
+<FONT color="red">-1</FONT>
+  </PRE>
+<P>After the scores have been read, the program prints the grade distribution 
+and acceptance  percentage of the course in the following form:</P>
+<PRE>Grade distribution:
+5: **
+4:
+3: ***
+2: *
+1: *
+0: *
+Acceptance percentage: 87.5
+  </PRE>
+<P>Grade distribution is formed as follows:</P>
+<UL>
+  <LI>Each exam score is mapped to a grade using the same formula as in exercise 
+  18. If the    score is not within the range 0-60 it is not taken into 
+  account.</LI>
+  <LI>The number of grades are printed as stars, e.g. if there are 2 scores that 
+  correspond to grade    5, the line <EM>5: **</EM> is printed. If there are no 
+  scores that correspond to a particular    grade, as is the case with grade 4 
+  in the above example, the printed line is <EM>4:</EM></LI></UL>
+<P>All the grades besides zeros are accepted, so in the above 7 out of 8 
+participants were  accepted. Acceptance percentage is calculated with the 
+formula <EM>100*accepted/allScores</EM>.</P></DIV>
+<DIV class="tehtava">
+<H3>Birdwatchers database</H3>
+<P><B>Note1:</B> Your program should use only one Scanner object, i.e., it is 
+allowed to call   <CODE>new Scanner</CODE> only once.</P>
+<P><B>Note2:</B> Do not save anything in static variables. The main method is 
+executed by the tests  multiple times so the use of static variables might cause 
+problems.</P>
+<P><B>This assignment corresponds to three assignment points.</B></P>
+<P>In this assignment you are supposed to design and implement an observation 
+database for a bird  watcher. The database contains birds, each of which have a 
+name and a Latin name, both Strings.  Database also tracks how many times each 
+bird has been observed.</P>
+<P>The program should implement the following commands:</P>
+<UL>
+  <LI><CODE>Add</CODE> - adds a bird</LI>
+  <LI><CODE>Observation</CODE> - adds an observation</LI>
+  <LI><CODE>Statistics</CODE> - prints all the birds</LI>
+  <LI><CODE>Show</CODE> - prints one bird</LI>
+  <LI><CODE>Quit</CODE> - terminates the program</LI></UL>
+<P>The program should also handle the invalid inputs (see <CODE>Turing</CODE> 
+below).</P>
+<P>The following is an example how the program is supposed to work:</P>
+<PRE>? <FONT color="red">Add</FONT>
+Name: <FONT color="red">Raven</FONT>
+Latin Name: <FONT color="red">Corvus Corvus</FONT>
+? <FONT color="red">Add</FONT>
+Name: <FONT color="red">Seagull</FONT>
+Latin Name: <FONT color="red">Dorkus Dorkus</FONT>
+? <FONT color="red">Observation</FONT>
+What was observed:? <FONT color="red">Seagull</FONT>
+? <FONT color="red">Observation</FONT>
+What was observed:? <FONT color="red">Turing</FONT>
+Is not a bird!
+? <FONT color="red">Observation</FONT>
+What was observed:? <FONT color="red">Seagull</FONT>
+? <FONT color="red">Statistics</FONT>
+Seagull (Dorkus Dorkus): 2 observations
+Raven (Corvus Corvus): 0 observations
+? <FONT color="red">Show</FONT>
+What? <FONT color="red">Seagull</FONT>
+Seagull (Dorkus Dorkus): 2 observations
+? <FONT color="red">Quit</FONT>
+  </PRE>
+<P><STRONG>Note</STRONG> you may structure your program freely, it is only 
+required that the output  of the program is as in the above 
+example.</P></DIV></DIV>
+<H2>Sorting an array</H2>
+<P>We'll get back to arrays again.</P>
+<H3>Sorting an array with the ready-made tools of Java.</H3>
+<P>As we've seen, there's all kinds of useful things already in Java. For 
+example for handling            ArrayLists you can find many useful help methods 
+in the class Collections. For arrays you can find helpful            methods in 
+the class <CODE>Arrays</CODE>. Sorting a table can be done with             
+<CODE>Arrays.sort(array)</CODE>.</P>
+<P>Note: To be able to use the command you must have the following definition at 
+the top of the program            file:</P>
+<PRE>import java.util.Arrays;
+</PRE>
+<P><EM>If you forget to write the <CODE>import</CODE> line, NetBeans will offer 
+help with writing it. Try clicking the picture of the "bulp" that appears to the 
+left from the line of code that is underlined with red.</EM></P>
+<P>The following program creates arrays and sorts the values in the array with 
+the Arrays.sort            -command.</P>
+<PRE class="sh_java">int[] values = {-3, -111, 7, 42};
+Arrays.sort(values);
+for(int value: values) {
+    System.out.println(value);
+}
+</PRE>
+<PRE>-111
+-3
+7
+42
+</PRE>
+<H3>Implementation of a sorting algorithm</H3>
+<P>It's easy to sort an array with the ready-made tools of Java. The general 
+knowledge of a program            requires knowing at least one sorting 
+algorithm (or in other words, a way to sort an array). Let's get            
+familiar with the "classic" sorting algorithm, choice sorting. Let's do this 
+with a few            excercise.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Sorting</H3>
+<P><B>Note:</B> in this assignment you're supposed to sort the array yourself. 
+You can't  use the help of the Arrays.sort()-method or ArrayLists!</P>
+<H4 class="req">Smallest</H4>
+<P>Implement a method <CODE>smallest</CODE>, which returns the smallest value in 
+the array.</P>
+<P>The frame of the method is as follows:</P>
+<PRE class="sh_java">public static int smallest(int[] array) {
+    // write the code here
+}
+  </PRE>
+<P><B>NOTE:</B> You can't change the array that gets passed into the method!</P>
+<P>The following code demonstrates the functionality of the method:</P>
+<PRE class="sh_java">int[] values = {6, 5, 8, 7, 11};
+System.out.println("smallest: " + smallest(values));
+  </PRE>
+<PRE>smallest: 5
+  </PRE>
+<H4 class="req">The index of the smallest</H4>
+<P>Implement a method <CODE>indexOfTheSmallest</CODE>, which returns the index 
+of the smallest value  in the array (the position of the value in the array, 
+that is).</P>
+<P>The frame of the method looks like this:</P>
+<PRE class="sh_java">public static int indexOfTheSmallest(int[] array) {
+    // code goes here
+}
+  </PRE>
+<P><B>NOTE:</B> You can't change the array that gets passed into the method as a 
+ parameter!</P>
+<P>The following code demonstrates the functionality of the method:</P>
+<PRE class="sh_java">// indexes:   0  1  2  3  4
+int[] values = {6, 5, 8, 7, 11};
+System.out.println("Index of the smallest: " + indexOfTheSmallest(values));
+  </PRE>
+<PRE>Index of the smallest: 1
+  </PRE>
+<P>The smallest value of the table is 2 and its index (its location) in the 
+array is 1.  Remember that the numbering of an array begins from 0.</P>
+<H4 class="req">Index of the smallest at the end of an array</H4>
+<P>Implement a method <CODE>indexOfTheSmallestStartingFrom</CODE>, which works 
+just like the method of  the previous assignment, but only takes into 
+consideration the end of an array starting from a  certain index. In addition to 
+the array the method gets as parameter an index, from which the search for the  
+smallest will be started.</P>
+<P>The frame of the method is as follows:</P>
+<PRE class="sh_java">public static int indexOfTheSmallestStartingFrom(int[] array, int index) {
+    // write the code here
+}
+  </PRE>
+<P><B>NOTE:</B> You can't change the array that gets passed into the method as a 
+ parameter!</P>
+<P>The following code demonstrates the functionality of the method:</P>
+<PRE class="sh_java">// indexes:    0  1  2  3   4
+int[] values = {-1, 6, 9, 8, 12};
+System.out.println(indexOfTheSmallestStartingFrom(values, 1));
+System.out.println(indexOfTheSmallestStartingFrom(values, 2));
+System.out.println(indexOfTheSmallestStartingFrom(values, 4));
+  </PRE>
+<PRE>1
+3
+4
+  </PRE>
+<P>In the example, the first method call finds the index of the smallest value 
+starting from index  1. Starting from index 1 the smallest value is 6, and its 
+index is 1. Respectively the second  method call looks for the index of the 
+smallest value starting from index 2. In this case the  smallest value is 8 and 
+its index is 3. The last call starts from the last cell of the  array, in this 
+case there is no other cells so the smallets value is in index 4.</P>
+<H4 class="req">Swapping values</H4>
+<P>Create a method <CODE>swap</CODE>, to which will be passed an array and two 
+of its indexes.  The method swaps the values in the indexes around.</P>
+<P>The frame of the method looks like this:</P>
+<PRE class="sh_java">public static void swap(int[] array, int index1, int index2) {
+    // code goes here
+}
+  </PRE>
+<P>The following showcases the functionality of the method. In printing the 
+array we'll use the  Arrays.toString-method which formats the array into a 
+string:</P>
+<PRE class="sh_java">int[] values = {3, 2, 5, 4, 8};
+
+System.out.println( Arrays.toString(values) );
+
+swap(values, 1, 0);
+System.out.println( Arrays.toString(values) );
+
+swap(values, 0, 3);
+System.out.println( Arrays.toString(values) );
+  </PRE>
+<PRE>[3, 2, 5, 4, 8]
+[2, 3, 5, 4, 8]
+[4, 3, 5, 2, 8]
+  </PRE>
+<H4 class="req">Sorting</H4>
+<P>Now we've got a set of useful methods, with which we can implement a sorting 
+algorithm known  as selection sorting.</P>
+<P>The idea of selection sorting is this:</P>
+<UL>
+  <LI>Move the smallest number of the array to index 0.</LI>
+  <LI>Move the second smallest number to the index 1.</LI>
+  <LI>Move the third smallest number to the index 2.</LI>
+  <LI>and so forth</LI></UL>
+<P>In other words:</P>
+<UL>
+  <LI>Inspect the array starting from index 0. Swap the value in index 0 and the 
+  smallest value    in the array starting from index 0.</LI>
+  <LI>Inspect the array starting from index 1. Swap the value in index 1 and the 
+  smallest value    in the array starting from index 1.</LI>
+  <LI>Inspect the array starting from index 2. Swap the value in index 2 and the 
+  smallest value    in the array starting from index 2.</LI>
+  <LI>and so forth</LI></UL>
+<P>Implement the method <CODE>sort</CODE>, which is based on the idea above. The 
+method ought to  have a loop that goes through the indexes of the array. The 
+methods   <CODE>smallestIndexStartingFrom</CODE> and <CODE>swap</CODE> are 
+surely useful. Also print the  contents of the array before sorting and after 
+each round to be able to make sure that the  algorithm works correctly.</P>
+<P>Body of the method:</P>
+<PRE class="sh_java">public static void sort(int[] array) {
+}
+  </PRE>
+<P>Test the functionality of the method at least with this example:</P>
+<PRE class="sh_java">int[] values = {8, 3, 7, 9, 1, 2, 4};
+sort(values);
+  </PRE>
+<P>The program should print the following. Notice that you're to print the 
+content of the array  after each swap!</P>
+<PRE>[8, 3, 7, 9, 1, 2, 4]
+[1, 3, 7, 9, 8, 2, 4]
+[1, 2, 7, 9, 8, 3, 4]
+[1, 2, 3, 9, 8, 7, 4]
+[1, 2, 3, 4, 8, 7, 9]
+[1, 2, 3, 4, 7, 8, 9]
+[1, 2, 3, 4, 7, 8, 9]
+  </PRE>
+<P>You'll notice how the array little by little gets sorted out starting from 
+the beginning and  advances towards the end.</P></DIV></DIV>
+<H2>Searching</H2>
+<P>In addition to sorting, another very typical problem that a programmer runs 
+into is finding a certain            value in an array. Earlier, we've 
+implemented methods that search for values in lists and arrays. In            
+the case of arrays, values and strings can be searched for in the following 
+way:</P>
+<PRE class="sh_java">public static boolean isInArray(int[] array, int searchingFor) {
+    for ( int value : array ) {
+       if ( value == searchingFor )  {
+           return true;
+       }
+    }
+
+    return false;
+}
+
+public static boolean isWordInArray(String[] array, String searchingFor) {
+    for ( String word: array ) {
+        if ( word.equals(searchingFor) )  {
+            return true;
+        }
+    }
+
+    return false;
+}
+</PRE>
+<P>An implementation like this is the best we've been able to do so far. The 
+downside of the method is            that, if the array has a very large amount 
+of values in it, the search will take a lot of time. In the worst            
+case scenario the method goes through every single cell in the array. This means 
+that going through an            array that has 16777216 cells does 16777216 
+cell inspections.</P>
+<P>On the other hand, if the values in an array are <I>ordered by size</I>, the 
+search can be done in a            notably faster way by applying a technique 
+called <I>binary search</I>. Let's investigate the idea of binary            
+search with this array:</P>
+<PRE>// indexes   0   1   2   3    4   5    6   7   8   9  10
+// values     -7  -3   3   7   11  15   17  21  24  28  30
+</PRE>
+<P>Let's assume that we want to find the value 17. Let's utilize the information 
+that the values of the array            are in order instead of going through 
+the array from the beginning. Let's inspect the middle cell of the            
+array. The middle cell is 5 (the largest index 10 divided by two). The middle 
+cell is marked with the            asterisk:</P>
+<PRE>                                   *
+// indexes   0   1   2   3    4   5    6   7   8   9  10
+// values     -7  -3   3   7   11  15   17  21  24  28  30
+</PRE>
+<P>At the middle is the value 15, which was not the value we were looking for. 
+We're looking for the            value 17, so since the cells of the array are 
+ordered by size, the value cannot be on the left side of the            15. So 
+we can determine that all indexes that are smaller or equal to 5 do not have the 
+value we are            looking for.</P>
+<P>The area where we are searching for the value we want to find can now be 
+limited to values that are on            the right side of the index 5, or in 
+other words, in the indexes [6, 10] (6, 7, 8, 9, 10). In the following,          
+  the searched value cannot be in the part of the array which is grey:</P>
+<PRE>// indexes   <FONT color="lightgrey"> 0   1   2   3   4    5</FONT>    6     7   8   9  10
+// values      <FONT color="lightgrey">-7  -3   3   7  11   15</FONT>   17   21  24  28  30
+</PRE>
+<P>Next, let's inspect the middle index of the area that we have left; the 
+middle index of indexes 6-10. The            middle index can be found by 
+getting the sum of the smallest and largest index and dividing it by two:        
+    (6+10)/2 = 16/2 = 8. The index 8 is marked with the asterisk below.</P>
+<PRE>                                                 *
+// indexes   <FONT color="lightgrey"> 0   1   2   3   4    5</FONT>    6   7   8   9  10
+// values      <FONT color="lightgrey">-7  -3   3   7  11   15</FONT>   17   21  24  28  30
+</PRE>
+<P>In index 8, we have the value 24, which was not the value we were looking 
+for. Because the values in the            array are ordered by size, the value 
+we are searching for can not, in any case, be on the right side of the           
+ value 24. We can deduce that all indexes that are larger or equal to 8 can not 
+contain the value we are            looking for. The search area gets narrowed 
+down again, the grey areas have been dealt with:</P>
+<PRE>// indexes   <FONT color="lightgrey"> 0   1   2   3   4    5</FONT>    6   7  <FONT color="lightgrey"> 8   9  10</FONT>
+// values      <FONT color="lightgrey">-7  -3   3   7  11   15</FONT>   17   21  <FONT color="lightgrey">24  28  30</FONT>
+</PRE>
+<P>The search continues. Let's inspect the middle index of the area that we have 
+left to search, that is, the            middle index of indexes 6-7. The middle 
+index can again be found out by getting the sum of the smallest and            
+largest index of the search area and then dividing it by two: (6+7)/2 = 6.5, 
+which is rounded down to 6.            The spot has been marked with the 
+asterisk.</P>
+<PRE>                                         *
+// indexes   <FONT color="lightgrey"> 0   1   2   3   4    5</FONT>    6    7  <FONT color="lightgrey"> 8   9  10</FONT>
+// values      <FONT color="lightgrey">-7  -3   3   7  11   15</FONT>   17   21  <FONT color="lightgrey">24  28  30</FONT>
+</PRE>
+<P>In the index 6 we have the value 17, which is the same as the value we've 
+been looking for. We can            stop the search and report that the value we 
+searched for is in the array. If the value wouldn't have            been in the 
+array - for example if the searched-for value would've been 16 - the search area 
+would have            eventually been reduced to nothing.</P>
+<PRE>                                         *
+// indexes   <FONT color="lightgrey"> 0   1   2   3   4    5</FONT><FONT color="red">6</FONT>   7  <FONT color="lightgrey"> 8   9  10</FONT>
+// values      <FONT color="lightgrey">-7  -3   3   7  11   15</FONT><FONT color="red">17</FONT>  21  <FONT color="lightgrey">24  28  30</FONT>
+</PRE>
+<P>So for the idea of binary search to become clear to you, simulate with pen 
+and paper how the binary            search works when the array is the one below 
+and first you're searching for value 33 and then value            1.</P>
+<PRE>// indexes   0   1   2   3   4   5   6   7   8   9  10  11  12  13
+// values     -5  -2   3   5   8  11  14  20  22  26  29  33  38  41
+</PRE>
+<P>With the help of binary search we look for cells by always halving the 
+inspected area. This enables us            to search in a very efficient way. 
+For example, an array of size 16 can be divided in half up to 4            
+times, so 16 -&gt; 8 -&gt; 4 -&gt; 2 -&gt; 1. On the other hand, an array that 
+has 16777216 cells can be            halved up to 24 times. This means that with 
+binary search we only need to inspect up to 24 cells in an            array that 
+has 16777216 cells in order to find our desired cell.</P>
+<P><EM>The efficiency of binary search can be inspected with logarithms. A base 
+two logarithm (<CODE>log<SUB>2</SUB></CODE>) of the number 16777216 is 24 -- 
+with the base two logarithm we can calculate how many times a number can be 
+halved. Respectively the base two logarithm of the number 4294967296
+ (<CODE>log<SUB>2</SUB> 4294967296</CODE>) is 32. This means that searching from 
+a sorted array of 4294967296 different values would only take up to 32 cell 
+inspections. Efficiency is an essential part of computer science.</EM></P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3 class="req">Guessing game</H3>
+<P>In this assignment we'll make an AI, which guesses the number the player is 
+thinking about.  The AI assumes that the number is between 
+<EM>lowerLimit</EM>...<EM>upperLimit</EM>. The start of  the game provides these 
+limits to the method as parameters that makes the game happen. The AI asks  the 
+player questions in the format "Is your number greater than X?" and deduce the  
+correct answer from the answers the player gives.</P>
+<P>The AI keeps track of the search area with the help of the variables 
+lowerLimit and upperLimit.  The AI always asks if the player's number is greater 
+than the average of these two numbers, and  based on the answers the search area 
+gets halved each time. In the end the lowerLimit and  upperLimit are the same 
+and the number the user is thinking of has been revealed.</P>
+<P>In the following example the user chooses the number 44:</P>
+<PRE>Think of a number between 1...100.
+I promise you that I can guess the number you are thinking of with 7 questions.
+
+Next I'll present you a series of questions. Answer them honestly.
+
+Is your number greater than 50? (y/n)
+<FONT color="red">n</FONT>
+Is your number greater than 25? (y/n)
+<FONT color="red">y</FONT>
+Is your number greater than 38? (y/n)
+<FONT color="red">y</FONT>
+Is your number greater than 44? (y/n)
+<FONT color="red">n</FONT>
+Is your number greater than 41? (y/n)
+<FONT color="red">y</FONT>
+Is your number greater than 43? (y/n)
+<FONT color="red">y</FONT>
+The number you're thinking of is 44.
+  </PRE>
+<P>In the above example the possible value range is first 1...100. When the user 
+tells the program  that the number is not greater than 50 the possible range is 
+1...50. When the user says that the  number is greater than 25, the range is 
+26...50. The deduction proceeds in the same fashion until  the number 44 is 
+reached.</P>
+<P>In accordance to the principles of halving, or binary search, the possible 
+search area is halved  after each question in which case the number of required 
+questions is small. Even between the  numbers 1...100000 it shouldn't take more 
+than 20 questions.</P>
+<P>The program skeleton of the class <CODE>GuessingGame</CODE> that implements 
+this is the  following:</P>
+<PRE class="sh_java">public class GuessingGame {
+
+    private Scanner reader;
+
+    public GuessingGame() {
+        this.reader = new Scanner(System.in);
+    }
+
+    public void play(int lowerLimit, int upperLimit) {
+        instructions(upperLimit, lowerlimit);
+
+        // write the game logic here
+    }
+
+    // implement here the methods isGreaterThan and average
+
+    public void instructions(int lowerLimit, int upperLimit) {
+        int maxQuestions = howManyTimesHalvable(upperLimit - lowerLimit);
+
+        System.out.println("Think of a number between " + lowerLimit + "..." + upperLimit + ".");
+
+        System.out.println("I promise you that I can guess the number you are thinking of with " + maxQuestions + " questions.");
+        System.out.println("");
+        System.out.println("Next I'll present you with a series of questions. Answer them honestly.");
+        System.out.println("");
+    }
+
+    // a helper method:
+    public static int howManyTimesHalvable(int number) {
+        // we create a base two logarithm  of the given value
+        // Below we swap the base number to base two logarithms!
+        return (int) (Math.log(number) / Math.log(2)) + 1;
+    }
+}
+  </PRE>
+<P>The game is started the in following manner:</P>
+<PRE class="sh_java">GuessingGame game = new GuessingGame();
+
+// we play two rounds
+game.play(1,10);  // value to be guessed now within range 1-10
+game.play(10,99);  // value to be guessed now within range 10-99
+  </PRE>
+<P>We'll implement this assignment in steps.</P>
+<H4>Is greater than</H4>
+<P>Implement the method <CODE>public boolean isGreaterThan(int value)</CODE>, 
+which  presents the user with a question:</P>
+<PRE>"Is your number greater than <EM>given value</EM>? (y/n)"
+  </PRE>
+<P>The method returns the value <CODE>true</CODE> if the user replies "y", 
+otherwise   <CODE>false</CODE>.</P>
+<P>Test your method</P>
+<PRE class="sh_java">GuessingGame game = new GuessingGame();
+
+System.out.println(game.isGreaterThan(32));
+  </PRE>
+<PRE>Is your number greater than 32? (y/n)
+<FONT color="red">y</FONT>
+true
+  </PRE>
+<H4>Average</H4>
+<P>Implement the method <CODE>public int average(int firstNumber, int 
+secondNumber)</CODE>, which  calculates the average of the given values. Notice 
+that Java rounds floating numbers down automatically,  in our case this is 
+perfectly fine.</P>
+<PRE class="sh_java">GuessingGame game = new GuessingGame();
+System.out.println(game.average(3, 4));
+  </PRE>
+<PRE>3
+  </PRE>
+<PRE class="sh_java">GuessingGame game = new GuessingGame();
+System.out.println(game.average(6, 12));
+  </PRE>
+<PRE>9
+  </PRE>
+<H4>Guessing logic</H4>
+<P>Write the actual guessing logic in the method <CODE>play</CODE> of the class  
+ <CODE>GuessingGame</CODE>. You'll need at least one loop and a query in which 
+you ask the user  if their number is greater than the average of the lowerLimit 
+and upperLimit. Change the upperLimit  or lowerLimit depending on the user's 
+reply.</P>
+<P>Keep doing the loop until lowerLimit and upperLimit are the same! You can 
+also test the game  with smaller lower- and upperLimit values:</P>
+<PRE>Think of a number between 1...4.
+I promise you that I can guess the number you are thinking of with 2 questions.
+
+Next I'll present you with a series of questions. Answer them honestly.
+
+Is your number greater than 2? (y/n)
+<FONT color="red">k</FONT>
+Is your number greater than 3? (y/n)
+<FONT color="red">k</FONT>
+The number you're thinking of is 4.
+  </PRE></DIV>
+<DIV class="tehtava">
+<H3>Implementation of binary search</H3>
+<P>The template you get from the test automaton has a start for an 
+implementation of binary search.  The class <CODE>BinarySearch</CODE> holds a 
+method <CODE>public static boolean search(int[] array,    int 
+searchedValue)</CODE>, the job of which is to figure out, by using binary 
+search, if the  value given as a parameter is in the sorted array that is also 
+given as parameter.</P>
+<P>The method <CODE>search</CODE> does not work yet, however. Finish the 
+method's  implementation into a real binary search.</P>
+<P>For testing, a separate main program can be found in the class 
+<CODE>Main</CODE>, which has a  frame like this:</P>
+<PRE class="sh_java">import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Here you can test binary search
+        int[] array = { -3, 2, 3, 4, 7, 8, 12 };
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Values of the array: " + Arrays.toString(array));
+        System.out.println();
+
+        System.out.print("Enter searched number: ");
+        String searchedValue = reader.nextLine();
+        System.out.println();
+
+        boolean result = BinarySearch.search(array, Integer.parseInt(searchedValue));
+
+        // Print the binary search result here
+    }
+}
+  </PRE>
+<P>The execution of the program looks like this:</P>
+<PRE>Values of the array: [-3, 2, 3, 4, 7, 8, 12]
+
+Enter searcher number: <FONT color="red">8</FONT>
+
+Value 8 is in the array
+  </PRE>
+<PRE>Values of the array: [-3, 2, 3, 4, 7, 8, 12]
+
+Enter searcher number: <FONT color="red">99</FONT>
+
+Value 99 is not in the array
+  </PRE></DIV></DIV>
+<H2>About arrays and objects</H2>
+<P>If need be, any type of object can be put into an array. In the following, an 
+example of an array into            which will be put <EM>Person</EM> 
+objects:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person[] persons = new Person[3];
+
+    persons[0] = new Person("Pekka");
+    persons[1] = new Person("Antti");
+    persons[2] = new Person("Juhana");
+
+    for ( int i=0; i &lt; 30; i++ ) {
+        persons[0].becomeOlder();
+        persons[1].becomeOlder();
+        persons[2].becomeOlder();
+    }
+
+    for ( Person person : persons ) {
+        reportMaturity(person);
+    }
+}
+</PRE>
+<P>First we create an array that can hold 3 Person objects. We put Pekka in slot 
+0, Antti in 1 and Juhana            in 2. We age all by 30 years and check all 
+of their matureness with the help of the method from the            previous 
+chapter.</P>
+<P>The same example with ArrayLists:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    ArrayList&lt;Person&gt; persons = new ArrayList&lt;Person&gt;();
+
+    persons.add( new Person("Pekka") );
+    persons.add( new Person("Antti") );
+    persons.add( new Person("Juhana") );
+
+    for ( int i=0; i &lt; 30; i++ ) {
+        for ( Person person : persons ) {
+            person.becomeOlder();
+        }
+
+        //  or persons.get(0).becomeOlder();
+        //     persons.get(1).becomeOlder();
+        //     ...
+    }
+
+    for ( Person person : persons ) {
+        reportMaturity(person);
+    }
+}
+</PRE>
+<P>In most situations it's better to use ArrayList instead of an array. However 
+there can be cases where            an array is adequate and is simpler to 
+use.</P>
+<P>A week always consists of seven days. It would be meaningful to form it out 
+of exactly 7 Day objects. Since            there's always 7 Day objects, an 
+array will suit the situation very well:</P>
+<PRE class="sh_java">public class Day {
+    private String name;
+    // ...
+}
+
+public class Week {
+    private Day[] days;
+
+    public Week(){
+        days = new Day[7];
+        days[0] = new Day("Monday");
+        days[1] = new Day("Tuesday");
+        // ...
+    }
+}
+</PRE>
+<H2>Final Words</H2>
+<P>Object-Oriented Programming with Java, Part I ends here. Congratulations for  
+              making it this far! If you want to continue learning and 
+programming, start our                second part of the course here: <A href="http://mooc.fi/courses/2013/programming-part-2/">Object-Oriented 
+Programming with Java, Part II</A></P>
+<P>Assuming you have NetBeans and TMC already installed in your computer, in 
+NetBeans just change the current                course from TMC -&gt; Settings 
+to <B>2013-OOProgrammingWithJava-PART2</B> and you should be good to 
+go!</P></DIV></DIV></DIV><!-- /inner -->   </DIV><!-- /node-241 -->         
+</DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV></DIV></DIV></DIV><!-- /content-content -->             
+                                                  </DIV><!-- /content-inner-inner --> 
+                            </DIV><!-- /content-inner -->                        
+   </DIV><!-- /content-region-inner -->                         </DIV><!-- /content-region --> 
+                        
+<DIV class="content-bottom row nested " id="content-bottom">
+<DIV class="content-bottom-inner inner clearfix" id="content-bottom-inner">
+<DIV class="block block-block odd first last grid16-16" id="block-block-1">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="content clearfix">
+<DIV id="header-top-block">
+<P class="rtecenter">Ohjaus: <A href="http://mooc.fi/content/irc-ohjeet">IRCnet 
+#mooc.fi </A>&nbsp;&nbsp; |  Tiedotus: <A href="http://twitter.com/mooc1"><IMG 
+height="50" style="vertical-align: middle;" src="Table,%20Sorting%20and%20Searching_files/twitter_newbird_blue.png"> 
+Twitter </A><A href="http://www.facebook.com/Moocfi"><IMG height="30" style="padding: 10px; vertical-align: middle;" 
+src="Table,%20Sorting%20and%20Searching_files/f_logo-1.png"> Facebook</A>  |  
+Virheraportit: <A href="http://sourceforge.net/p/mooc-issues/tickets/"><IMG 
+height="30" style="padding: 10px; vertical-align: middle;" src="Table,%20Sorting%20and%20Searching_files/sf-footer-logo.png"> 
+SourceForge</A></P>
+<P class="rtecenter"><A href="http://www.cs.helsinki.fi/"><IMG width="400" 
+style="vertical-align: middle;" alt="Helsingin yliopiston tietojenkäsittelytieteen laitos" 
+src="Table,%20Sorting%20and%20Searching_files/CS-logo-MOOC.jpg">&nbsp; 
+</A></P></DIV>
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-47575342-3', 'auto');
+  ga('send', 'pageview');
+ 
+</SCRIPT>
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --></DIV><!-- /content-bottom-inner --> 
+</DIV><!-- /content-bottom -->                       </DIV><!-- /content-group-inner --> 
+                    </DIV><!-- /content-group -->                                
+       </DIV><!-- /main-content-inner -->                 </DIV><!-- /main-content --> 
+                              </DIV><!-- /main-group-inner -->             
+</DIV><!-- /main-group -->           </DIV><!-- /main-inner -->         </DIV><!-- /main --> 
+      </DIV><!-- /main-wrapper -->       <!-- postscript-bottom row: width = grid_width --> 
+            <!-- footer row: width = grid_width -->             <!-- footer-message row: width = grid_width --> 
+      
+<DIV class="footer-message-wrapper full-width" id="footer-message-wrapper">
+<DIV class="footer-message row grid16-16" id="footer-message">
+<DIV class="footer-message-inner inner clearfix" id="footer-message-inner">
+<DIV class="footer-message-text block" id="footer-message-text">
+<DIV class="footer-message-text-inner inner clearfix" id="footer-message-text-inner"><BR></DIV><!-- /footer-message-text-inner --> 
+</DIV><!-- /footer-message-text -->                    </DIV><!-- /footer-message-inner --> 
+        </DIV><!-- /footer-message -->       </DIV><!-- /footer-message-wrapper --> 
+    <!-- /page-inner -->   <!-- /page -->   </BODY></HTML>

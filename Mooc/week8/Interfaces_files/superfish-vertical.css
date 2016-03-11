@@ -1,0 +1,78 @@
+.sf-vertical {
+	width: 10em;
+}
+.sf-vertical li {
+	width: 10em;
+}
+.sf-vertical li:hover ul {
+	left: 10em; top: 0px; right: 0px;
+}
+.sf-vertical li.sfHover ul {
+	left: 10em; top: 0px; right: 0px;
+}
+.sf-vertical .sf-sub-indicator {
+	background-position: -10px 0px;
+}
+.sf-vertical a > .sf-sub-indicator {
+	background-position: 0px 0px;
+}
+.sf-vertical a:focus > .sf-sub-indicator {
+	background-position: -10px 0px;
+}
+.sf-vertical a:hover > .sf-sub-indicator {
+	background-position: -10px 0px;
+}
+.sf-vertical a:active > .sf-sub-indicator {
+	background-position: -10px 0px;
+}
+.sf-vertical li:hover > a > .sf-sub-indicator {
+	background-position: -10px 0px;
+}
+.sf-vertical li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0px;
+}
+.sidebars-split .sidebar-last .sf-vertical ul {
+	width: 10em;
+}
+.sidebars-both-last .sidebar-last .sf-vertical ul {
+	width: 10em;
+}
+.sidebars-both-last .sidebar-first .sf-vertical ul {
+	width: 10em;
+}
+.sidebars-split .sidebar-last .sf-vertical li {
+	text-align: right;
+}
+.sidebars-split .sidebar-last .sf-vertical li li {
+	text-align: right;
+}
+.sidebars-both-last .sidebar-last .sf-vertical li {
+	text-align: right;
+}
+.sidebars-both-last .sidebar-last .sf-vertical li li {
+	text-align: right;
+}
+.sidebars-both-last .sidebar-first .sf-vertical li {
+	text-align: right;
+}
+.sidebars-both-last .sidebar-first .sf-vertical li li {
+	text-align: right;
+}
+.sidebars-split .sidebar-last .sf-vertical li:hover ul {
+	left: auto; top: 0px; right: 10em;
+}
+.sidebars-split .sidebar-last .sf-vertical li.sfHover ul {
+	left: auto; top: 0px; right: 10em;
+}
+.sidebar-last.sidebars-both-last .sf-vertical li:hover ul {
+	left: auto; top: 0px; right: 10em;
+}
+.sidebars-both-last .sidebar-last .sf-vertical li.sfHover ul {
+	left: auto; top: 0px; right: 10em;
+}
+.sidebars-both-last .sidebar-first .sf-vertical li:hover ul {
+	left: auto; top: 0px; right: 10em;
+}
+.sidebars-both-last .sidebar-first .sf-vertical li.sfHover ul {
+	left: auto; top: 0px; right: 10em;
+}

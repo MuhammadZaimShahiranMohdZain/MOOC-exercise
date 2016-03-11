@@ -1,0 +1,1200 @@
+html {
+	margin: 0px; padding: 0px;
+}
+body {
+	margin: 0px; padding: 0px;
+}
+div {
+	margin: 0px; padding: 0px;
+}
+span {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+dl {
+	margin: 0px; padding: 0px;
+}
+dt {
+	margin: 0px; padding: 0px;
+}
+dd {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+ol {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px;
+}
+h2 {
+	margin: 0px; padding: 0px;
+}
+h3 {
+	margin: 0px; padding: 0px;
+}
+h4 {
+	margin: 0px; padding: 0px;
+}
+h5 {
+	margin: 0px; padding: 0px;
+}
+h6 {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+fieldset {
+	margin: 0px; padding: 0px;
+}
+input {
+	margin: 0px; padding: 0px;
+}
+textarea {
+	margin: 0px; padding: 0px;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+abbr {
+	border: 0px currentColor; border-image: none;
+}
+acronym {
+	border: 0px currentColor; border-image: none;
+}
+p {
+	margin: 1em 0px;
+}
+h1 {
+	margin: 0px 0px 0.5em;
+}
+h2 {
+	margin: 0px 0px 0.5em;
+}
+h3 {
+	margin: 0px 0px 0.5em;
+}
+h4 {
+	margin: 0px 0px 0.5em;
+}
+h5 {
+	margin: 0px 0px 0.5em;
+}
+h6 {
+	margin: 0px 0px 0.5em;
+}
+ul {
+	margin-bottom: 1.5em; margin-left: 2em;
+}
+ol {
+	margin-bottom: 1.5em; margin-left: 2em;
+}
+dd {
+	margin-bottom: 1.5em; margin-left: 2em;
+}
+li ul {
+	margin-bottom: 0px;
+}
+li ol {
+	margin-bottom: 0px;
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+a {
+	margin: 0px; padding: 0px; text-decoration: none;
+}
+a:link {
+	
+}
+a:visited {
+	
+}
+a:hover {
+	text-decoration: underline;
+}
+a:focus {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: underline;
+}
+blockquote {
+	
+}
+hr {
+	border: 1px solid gray; border-image: none; height: 1px;
+}
+table {
+	width: 100%; border-spacing: 0;
+}
+caption {
+	text-align: left;
+}
+th {
+	margin: 0px; padding: 0px 10px 0px 0px;
+}
+th.active img {
+	display: inline;
+}
+thead th {
+	padding-right: 10px;
+}
+td {
+	margin: 0px; padding: 3px;
+}
+td.block {
+	margin: 0px; border: currentColor; border-image: none; float: none;
+}
+tr.drag td {
+	background: rgb(255, 255, 221); color: rgb(0, 0, 0);
+}
+tr.drag-previous td {
+	background: rgb(255, 255, 221); color: rgb(0, 0, 0);
+}
+#skip a {
+	left: 0px; top: -500px; width: 1px; height: 1px; overflow: hidden; position: absolute;
+}
+#skip a:hover {
+	left: 0px; top: -500px; width: 1px; height: 1px; overflow: hidden; position: absolute;
+}
+#skip a:visited {
+	left: 0px; top: -500px; width: 1px; height: 1px; overflow: hidden; position: absolute;
+}
+#skip a:active {
+	padding: 5px 10px; top: 0px; width: auto; height: auto; color: rgb(0, 0, 0); position: absolute; z-index: 99; background-color: rgb(255, 255, 255);
+}
+#skip a:focus {
+	padding: 5px 10px; top: 0px; width: auto; height: auto; color: rgb(0, 0, 0); position: absolute; z-index: 99; background-color: rgb(255, 255, 255);
+}
+#skip a:hover {
+	text-decoration: none;
+}
+.hide {
+	display: none; visibility: hidden;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.clearfix::after {
+	height: 0px; line-height: 0; overflow: auto; clear: both; font-size: 0px; display: block; visibility: hidden; content: ".";
+}
+.clearfix .inner::after {
+	height: 0px; line-height: 0; overflow: auto; clear: both; font-size: 0px; display: block; visibility: hidden; content: ".";
+}
+.page {
+	margin: 0px auto;
+}
+.row {
+	margin: 0px auto;
+}
+.row {
+	overflow: hidden;
+}
+.nested {
+	overflow: hidden;
+}
+.block {
+	overflow: hidden;
+}
+div.full-width {
+	width: 100%;
+}
+.nested {
+	margin: 0px; width: 100%; float: left;
+}
+.nested#sidebar-first {
+	overflow: visible;
+}
+.nested#sidebar-last {
+	overflow: visible;
+}
+div.superfish {
+	overflow: visible;
+}
+.sidebars-both-first .content-group {
+	float: right;
+}
+.sidebars-both-last .sidebar-first {
+	float: right;
+}
+#grid-mask-overlay {
+	left: 0px; top: 0px; width: 100%; display: none; position: absolute; z-index: 997; opacity: 0.75;
+}
+#grid-mask-overlay .row {
+	margin: 0px auto;
+}
+#grid-mask-overlay .block .inner {
+	background-color: rgb(227, 255, 252);
+}
+.grid-mask #grid-mask-overlay {
+	display: block;
+}
+.grid-mask .block {
+	overflow: visible;
+}
+.grid-mask .block .inner {
+	outline: rgb(255, 0, 0) dashed 1px;
+}
+#grid-mask-toggle {
+	padding: 0px 5px 2px; border: 2px outset rgb(255, 255, 255); border-image: none; left: 0px; top: 22px; text-align: center; color: rgb(255, 255, 255); font-variant: small-caps; font-weight: normal; position: absolute; z-index: 998; cursor: pointer; background-color: rgb(119, 119, 119); -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+.grid-on#grid-mask-toggle {
+	border-style: inset; font-weight: bold;
+}
+#header-site-info {
+	width: auto;
+}
+#site-name-wrapper {
+	float: left;
+}
+#site-name {
+	display: block;
+}
+#slogan {
+	display: block;
+}
+#site-name a:link {
+	text-decoration: none;
+}
+#site-name a:visited {
+	text-decoration: none;
+}
+#site-name a:hover {
+	text-decoration: none;
+}
+#site-name a:active {
+	text-decoration: none;
+}
+#site-name a {
+	outline: 0px;
+}
+#header-group {
+	overflow: visible;
+}
+.node-bottom {
+	margin: 1.5em 0px 0px;
+}
+#header-top-wrapper {
+	clear: both;
+}
+#header-group-wrapper {
+	clear: both;
+}
+#preface-top-wrapper {
+	clear: both;
+}
+#main-wrapper {
+	clear: both;
+}
+#preface-bottom {
+	clear: both;
+}
+#content-top {
+	clear: both;
+}
+#content-region {
+	clear: both;
+}
+#content-bottom {
+	clear: both;
+}
+#postscript-top {
+	clear: both;
+}
+#postscript-bottom-wrapper {
+	clear: both;
+}
+#footer-wrapper {
+	clear: both;
+}
+#footer-message-wrapper {
+	clear: both;
+}
+.item-list ul li {
+	margin: 0px;
+}
+.block ul {
+	padding: 0px; margin-left: 2em;
+}
+.block ol {
+	padding: 0px; margin-left: 2em;
+}
+.content-inner ul {
+	margin-bottom: 1.5em;
+}
+.content-inner ol {
+	margin-bottom: 1.5em;
+}
+.content-inner li ul {
+	margin-bottom: 0px;
+}
+.content-inner li ol {
+	margin-bottom: 0px;
+}
+.block ul.links {
+	margin-left: 0px;
+}
+ul.menu li {
+	margin: 0px; padding: 0px;
+}
+ul.links li {
+	margin: 0px; padding: 0px;
+}
+#primary-menu {
+	overflow: visible;
+}
+.block#primary-menu ul {
+	margin-left: 0px;
+}
+.primary-menu ul li {
+	list-style: none; float: left; position: relative;
+}
+.primary-menu ul li a {
+	padding: 0.75em 1em; text-decoration: none; display: block;
+}
+.primary-menu ul li .nolink {
+	padding: 0.75em 1em; text-decoration: none; display: block;
+}
+.primary-menu ul li .nolink {
+	cursor: default;
+}
+.primary-menu ul li:hover {
+	outline: 0px;
+}
+.primary-menu ul li.sfHover {
+	outline: 0px;
+}
+.primary-menu ul a:focus {
+	outline: 0px;
+}
+.primary-menu ul a:hover {
+	outline: 0px;
+}
+.primary-menu ul a:active {
+	outline: 0px;
+}
+.secondary-menu-inner ul.links {
+	margin-left: 0px;
+}
+.fusion-clear {
+	clear: both;
+}
+div.fusion-right {
+	float: right;
+}
+div.fusion-center {
+	margin-right: auto; margin-left: auto; float: none;
+}
+.fusion-center-content .inner {
+	text-align: center;
+}
+.fusion-center-content .inner ul.menu {
+	text-align: center; display: inline-block;
+}
+.fusion-center-content #user-login-form {
+	text-align: center;
+}
+.fusion-right-content .inner {
+	text-align: right;
+}
+.fusion-right-content #user-login-form {
+	text-align: right;
+}
+.fusion-callout .inner {
+	font-weight: bold;
+}
+.fusion-padding .inner {
+	padding: 30px;
+}
+.fusion-border .inner {
+	border-width: 1px; border-style: solid; padding: 10px;
+}
+.fusion-inline-menu .inner ul.menu {
+	margin-left: 0px;
+}
+.fusion-inline-menu .inner ul.menu li {
+	margin: 0px; padding: 0px; border-right-width: 1px; border-right-style: solid; display: inline; white-space: nowrap;
+}
+.fusion-inline-menu .inner ul.menu li a {
+	padding: 0px 8px 0px 5px;
+}
+.fusion-inline-menu .inner ul li.last {
+	border: currentColor; border-image: none;
+}
+.fusion-inline-menu .inner ul li.expanded ul {
+	display: none;
+}
+.fusion-multicol-menu .inner ul {
+	text-align: left; margin-left: 0px;
+}
+.fusion-multicol-menu .inner ul li {
+	font-weight: bold; border-right-color: currentColor; border-right-width: medium; border-right-style: none; display: block;
+}
+.fusion-multicol-menu .inner ul li.last {
+	border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.fusion-multicol-menu .inner ul li.last a {
+	padding-right: 0px;
+}
+.fusion-multicol-menu .inner ul li.expanded {
+	margin-left: 50px; float: left; list-style-image: none;
+}
+.fusion-multicol-menu .inner ul li.leaf {
+	margin-left: 50px; float: left; list-style-image: none;
+}
+.fusion-multicol-menu .inner ul.menu li.first {
+	margin-left: 0px;
+}
+.fusion-multicol-menu .inner ul li.expanded li.leaf {
+	margin-left: 0px; float: none;
+}
+.fusion-multicol-menu .inner ul li.expanded ul {
+	margin-left: 0px; display: block;
+}
+.fusion-multicol-menu .inner ul li.expanded ul li {
+	border: currentColor; border-image: none; text-align: left; margin-left: 0px;
+}
+.fusion-multicol-menu .inner ul.menu li ul.menu li {
+	font-weight: normal;
+}
+.fusion-2-col-list .inner .item-list ul li {
+	width: 50%; float: left;
+}
+.fusion-2-col-list .inner ul.menu li {
+	width: 50%; float: left;
+}
+.fusion-3-col-list .inner .item-list ul li {
+	width: 33%; float: left;
+}
+.fusion-3-col-list .inner ul.menu li {
+	width: 33%; float: left;
+}
+.fusion-2-col-list .inner .item-list ul.pager li {
+	width: auto; float: none;
+}
+.fusion-3-col-list .inner .item-list ul.pager li {
+	width: auto; float: none;
+}
+.fusion-list-bottom-border .inner ul li {
+	list-style: none;
+}
+.fusion-list-bottom-border .inner ul li {
+	padding: 0px 0px 0px 10px; line-height: 216.7%; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.fusion-list-bottom-border .view-content div.views-row {
+	padding: 0px 0px 0px 10px; line-height: 216.7%; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.fusion-list-bottom-border .inner ul {
+	margin: 0px;
+}
+.fusion-list-bottom-border .inner ul li ul {
+	border-bottom-width: 1px; border-bottom-style: solid;
+}
+.fusion-list-bottom-border .inner ul li ul li.last {
+	margin-top: -1px; margin-bottom: -1px; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.fusion-list-vertical-spacing .inner ul {
+	margin-top: 10px; margin-left: 0px;
+}
+.fusion-list-vertical-spacing div.views-row-first {
+	margin-top: 10px; margin-left: 0px;
+}
+.fusion-list-vertical-spacing .inner ul li {
+	padding: 0px; line-height: 133.3%; margin-bottom: 10px;
+}
+.fusion-list-vertical-spacing div.views-row {
+	padding: 0px; line-height: 133.3%; margin-bottom: 10px;
+}
+.fusion-list-vertical-spacing .inner ul li {
+	list-style: none;
+}
+.fusion-list-vertical-spacing .inner ul li ul {
+	margin-left: 10px;
+}
+.fusion-bold-links .inner a {
+	font-weight: bold;
+}
+.fusion-float-imagefield-left .field-type-filefield {
+	margin: 0px 15px 15px 0px; float: left;
+}
+.fusion-float-imagefield-left .image-insert {
+	margin: 0px 15px 15px 0px; float: left;
+}
+.fusion-float-imagefield-left .imagecache {
+	margin: 0px 15px 15px 0px; float: left;
+}
+.fusion-float-imagefield-left .views-row {
+	clear: left;
+}
+.fusion-float-imagefield-right .field-type-filefield {
+	margin: 0px 0px 15px 15px; float: right;
+}
+.fusion-float-imagefield-right .image-insert {
+	margin: 0px 0px 15px 15px; float: right;
+}
+.fusion-float-imagefield-right .imagecache {
+	margin: 0px 0px 15px 15px; float: right;
+}
+.fusion-float-imagefield-right .views-row {
+	clear: right;
+}
+.sf-menu li {
+	list-style: none;
+}
+.superfish-vertical {
+	position: relative; z-index: 9;
+}
+ul.sf-vertical {
+	background: rgb(250, 250, 250); margin: 0px; width: 100%;
+}
+ul.sf-vertical li {
+	padding: 0px; width: 100%; line-height: 200%; font-weight: bold; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+ul.sf-vertical li a:link {
+	padding: 2px; margin-left: 10px;
+}
+ul.sf-vertical li a:visited {
+	padding: 2px; margin-left: 10px;
+}
+ul.sf-vertical li .nolink {
+	padding: 2px; margin-left: 10px;
+}
+ul.sf-vertical li a:hover {
+	text-decoration: underline;
+}
+ul.sf-vertical li a.active {
+	text-decoration: underline;
+}
+ul.sf-vertical li ul {
+	background: rgb(250, 250, 250); width: 150px; margin-left: 0px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid;
+}
+ul.sf-vertical li ul li.last {
+	margin-top: -1px; margin-bottom: -1px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid;
+}
+ul.sf-vertical li ul {
+	padding: 4px 0px; border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+ul.sf-vertical li ul li {
+	line-height: 150%; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+ul.sf-vertical li ul li.last {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+ul.sf-vertical li ul li ul {
+	margin-top: -4px;
+}
+ul.pager {
+	margin: 20px 0px;
+}
+ul.pager li {
+	margin: 0px; white-space: nowrap;
+}
+ul.pager a {
+	border-width: 1px; border-style: solid; padding: 3px 6px 2px; text-decoration: none;
+}
+ul.pager li.pager-current {
+	border-width: 1px; border-style: solid; padding: 3px 6px 2px; text-decoration: none;
+}
+ul.pager a:link {
+	color: inherit;
+}
+ul.pager a:visited {
+	color: inherit;
+}
+ul.pager a:hover {
+	border-width: 1px; border-style: solid;
+}
+ul.pager a:active {
+	border-width: 1px; border-style: solid;
+}
+ul.pager a:focus {
+	border-width: 1px; border-style: solid;
+}
+ul.pager span.pager-ellipsis {
+	padding: 0px 4px;
+}
+.item-list .pager li {
+	padding: 0px;
+}
+.form-text {
+	padding: 2px;
+}
+form input.form-submit {
+	margin: 2px; padding: 3px 5px; font-weight: bold; cursor: pointer;
+}
+form input.form-submit:hover {
+	cursor: pointer;
+}
+fieldset {
+	margin: 15px 0px; padding: 10px;
+}
+html.js fieldset.collapsed {
+	margin-bottom: 15px;
+}
+textarea {
+	max-width: 95%;
+}
+.form-item input {
+	max-width: 95%;
+}
+.form-item select {
+	max-width: 95%;
+}
+#content-region input.form-text {
+	max-width: 95%;
+}
+html.js textarea {
+	max-width: 100%;
+}
+fieldset.collapsible .resizable-textarea textarea {
+	max-width: 101.5%;
+}
+fieldset.collapsible .resizable-textarea .grippie {
+	width: 101%;
+}
+.page-admin #main-content-inner .nested {
+	overflow: visible; margin-bottom: 1.5em;
+}
+.page-admin #content-group {
+	overflow: visible; margin-bottom: 1.5em;
+}
+.page-admin #content-region {
+	overflow: visible; margin-bottom: 1.5em;
+}
+.page-admin #content-inner {
+	overflow: visible; margin-bottom: 1.5em;
+}
+.page-admin .content-inner-inner {
+	z-index: 10;
+}
+form#system-theme-settings select {
+	max-width: 95%;
+}
+form#system-theme-settings input.form-text {
+	max-width: 95%;
+}
+#system-themes-form {
+	position: relative; z-index: 1;
+}
+.form-item select#edit-theme {
+	max-width: none;
+}
+div.admin .left {
+	margin-right: 1%; margin-left: 1%;
+}
+div.admin .right {
+	margin-right: 1%; margin-left: 1%;
+}
+.block-region {
+	margin: 1px; padding: 3px; border: 3px dashed rgb(204, 204, 204); border-image: none; text-align: center; color: rgb(85, 85, 85); text-transform: uppercase; font-weight: bold; text-shadow: 1px 1px #fdfdfd; background-color: rgb(243, 243, 243); -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+#user-login-form {
+	text-align: left;
+}
+#user-login-form .item-list {
+	margin-top: 1em;
+}
+#user-login-form .item-list ul {
+	margin-left: 0px;
+}
+#user-login-form div.item-list ul li {
+	margin: 0px; list-style-type: none;
+}
+#user-login-form li.openid-link a {
+	background-position: 0px 0px; padding: 0px 0px 0px 20px;
+}
+#user-login li.openid-link a {
+	background-position: 0px 0px; padding: 0px 0px 0px 20px;
+}
+.fusion-horiz-login#block-user-0 {
+	margin: 20px 0px 10px; float: right; position: relative;
+}
+html.js .fusion-horiz-login#block-user-0 {
+	margin-top: 10px;
+}
+.fusion-horiz-login#block-user-0 h2.title {
+	display: none;
+}
+.fusion-horiz-login#block-user-0 #user-login-form div.form-item {
+	margin: 0px 10px 0px 0px; text-align: left; float: left;
+}
+.fusion-horiz-login#block-user-0 #user-login-form input.form-submit {
+	margin: 0px 10px 0px 0px; text-align: left; float: left;
+}
+.fusion-horiz-login#block-user-0 .item-list {
+	margin: 0px 10px 0px 0px; text-align: left; float: left;
+}
+.fusion-horiz-login#block-user-0 #user-login-form input.form-submit {
+	padding: 2px 15px; text-align: center;
+}
+.fusion-horiz-login#block-user-0 #user-login-form div.form-item {
+	width: 115px;
+}
+.fusion-horiz-login#block-user-0 #user-login-form label {
+	margin: -20px 0px 0px 2px;
+}
+html.js .fusion-horiz-login#block-user-0 #user-login-form label {
+	margin: 0px 0px 0px 7px; top: 2px; font-weight: normal; display: block; position: absolute;
+}
+.fusion-horiz-login#block-user-0 #user-login-form input.form-text {
+	border-width: 1px; padding: 1px; width: 125px;
+}
+.fusion-horiz-login#block-user-0 .item-list {
+	margin-top: -1px;
+}
+.fusion-horiz-login#block-user-0 .item-list ul {
+	margin: 0px; padding: 0px;
+}
+.fusion-horiz-login#block-user-0 .item-list li {
+	list-style: none; margin: 0px;
+}
+.fusion-horiz-login#block-user-0 .item-list li a {
+	text-decoration: none;
+}
+.fusion-horiz-login#block-user-0 .item-list li a:hover {
+	text-decoration: underline;
+}
+.fusion-horiz-login#block-user-0 .item-list li a:focus {
+	text-decoration: underline;
+}
+.fusion-horiz-login#block-user-0 #user-login-form li.openid-link {
+	background: none; padding: 6px 0px 0px;
+}
+.fusion-horiz-login#block-user-0 #user-login-form li.user-link {
+	background: none; padding: 6px 0px 0px;
+}
+.fusion-horiz-login#block-user-0 #user-login-form div#edit-openid-identifier-wrapper {
+	margin: 0px 10px 0px 0px; width: 145px;
+}
+.fusion-horiz-login#block-user-0 #user-login-form input.form-text#edit-openid-identifier {
+	width: 135px;
+}
+html.js .fusion-horiz-login#block-user-0 #user-login-form div#edit-openid-identifier-wrapper label {
+	padding-left: 18px;
+}
+.fusion-horiz-login#block-user-0 #edit-openid-identifier-wrapper .description {
+	text-align: right; padding-right: 5px;
+}
+.block {
+	width: 100%; margin-bottom: 1.5em; float: left;
+}
+#content-content .inner {
+	margin-right: 0px; margin-left: 0px;
+}
+.block .inner {
+	position: relative;
+}
+.block .fusion-edit {
+	padding: 0px; top: 0px; text-align: left; right: 0px; display: none; position: absolute; z-index: 10;
+}
+.block:hover > .inner > .fusion-edit {
+	display: block;
+}
+.block .fusion-edit a {
+	padding: 2px 2px 2px 6px; outline: 0px; border: 1px solid rgb(51, 51, 51); border-image: none; width: 16px; text-indent: -9999px; float: left; display: block; background-color: rgb(255, 255, 255);
+}
+.block .fusion-edit a:hover {
+	text-decoration: none; background-color: rgb(238, 238, 238);
+}
+.block .fusion-block-config {
+	background: url("../images/emblem-system.png") no-repeat center;
+}
+.block .fusion-block-edit {
+	background: url("../images/emblem-system.png") no-repeat center;
+}
+.block .fusion-edit-menu {
+	background: url("../images/text-x-generic-menu.png") no-repeat center;
+}
+div.node {
+	margin-bottom: 1.5em;
+}
+a.feed-icon img {
+	margin: 0px 5px; border: 0px currentColor; border-image: none;
+}
+ul.links img {
+	margin: 0px 5px; border: 0px currentColor; border-image: none;
+}
+th img {
+	margin: 0px 5px; border: 0px currentColor; border-image: none;
+}
+#content-content .node ul.links li.comment_forbidden a {
+	padding-right: 0px;
+}
+div.comment {
+	margin: 15px 0px; padding: 10px;
+}
+div.comment h3.title {
+	margin: 0px 0px 5px; font-weight: bold;
+}
+div.comment div.links a {
+	text-align: right;
+}
+div.comment ul.links a {
+	text-align: right;
+}
+.comment-folded {
+	margin: 1em 0px 1em 1em;
+}
+.comment-folded .subject {
+	text-transform: uppercase; padding-right: 5px; font-weight: bold;
+}
+.comment-folded .subject a {
+	text-transform: none; font-style: normal; font-weight: normal;
+}
+.signature {
+	margin: 10px 0px; padding: 0px; border-top-width: 1px; border-top-style: solid;
+}
+.profile {
+	margin: 12px 0px; clear: none;
+}
+.profile h2.title {
+	margin-top: 15px; border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.profile dt {
+	padding: 0px 5px; width: 185px; text-align: left; margin-right: 5px; margin-bottom: -10px; float: left;
+}
+#forum .description {
+	margin: 5px;
+}
+#forum td.created {
+	white-space: nowrap;
+}
+#forum td.posts {
+	white-space: nowrap;
+}
+#forum td.topics {
+	white-space: nowrap;
+}
+#forum td.last-reply {
+	white-space: nowrap;
+}
+#forum td.replies {
+	white-space: nowrap;
+}
+#forum td.pager {
+	white-space: nowrap;
+}
+#forum td.posts {
+	text-align: center;
+}
+#forum td.topics {
+	text-align: center;
+}
+#forum td.replies {
+	text-align: center;
+}
+#forum td.pager {
+	text-align: center;
+}
+.forum-topic-navigation {
+	padding: 5px; text-align: center; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.forum-topic-navigation .topic-previous {
+	width: 46%; text-align: right; float: left;
+}
+.forum-topic-navigation .topic-next {
+	width: 46%; text-align: left; float: right;
+}
+.book-navigation .menu {
+	padding: 10px 0px 0px 30px; border-top-width: 1px; border-top-style: solid;
+}
+.book-navigation .page-links {
+	padding: 5px; text-align: center; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+div.content-messages div.messages {
+	border-width: 6px; border-style: solid; padding: 14px; overflow: hidden; font-weight: bold; margin-bottom: 1.5em;
+}
+div.content-help div.help {
+	border-width: 6px; border-style: solid; padding: 14px; overflow: hidden; font-weight: bold; margin-bottom: 1.5em;
+}
+div.content-messages-inner div.status {
+	border-color: rgb(141, 196, 120); color: rgb(62, 100, 47); background-color: rgb(234, 248, 228);
+}
+div.content-messages-inner div.warning {
+	background: rgb(255, 255, 221); border-color: rgb(238, 211, 0); color: rgb(116, 85, 0);
+}
+div.content-messages-inner div.error {
+	border-color: rgb(204, 0, 0); color: rgb(178, 0, 0); background-color: rgb(255, 242, 242);
+}
+.help {
+	border-color: rgb(87, 113, 138); color: rgb(41, 41, 41); background-color: rgb(228, 238, 248);
+}
+div.content-help-inner div.help {
+	border-color: rgb(87, 113, 138); color: rgb(41, 41, 41); background-color: rgb(228, 238, 248);
+}
+div.messages ul {
+	list-style-position: inside;
+}
+div.content-help .help ul {
+	list-style-position: inside;
+}
+div.messages a:link {
+	color: rgb(51, 51, 51); text-decoration: underline;
+}
+div.messages a:visited {
+	color: rgb(51, 51, 51); text-decoration: underline;
+}
+.help a:link {
+	color: rgb(51, 51, 51); text-decoration: underline;
+}
+.help a:visited {
+	color: rgb(51, 51, 51); text-decoration: underline;
+}
+.help .more-help-link a:link {
+	color: rgb(51, 51, 51); text-decoration: underline;
+}
+.help .more-help-link a:visited {
+	color: rgb(51, 51, 51); text-decoration: underline;
+}
+div.messages a:hover {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+div.messages a:active {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+.help a:hover {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+.help a:active {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+.help .more-help-link a:hover {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+.help .more-help-link a:active {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+div.messages em {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+#content-region ul.tips li {
+	background: none; list-style: inside;
+}
+#first-time p {
+	clear: both;
+}
+.in-maintenance .page #logo {
+	float: none;
+}
+.in-maintenance .page .header-site-info {
+	margin-top: 10px; margin-bottom: 10px;
+}
+.db-offline .page .header-group-inner {
+	padding-right: 10px; padding-left: 10px;
+}
+.db-offline .page .main-inner {
+	padding-right: 10px; padding-left: 10px;
+}
+.block-poll .poll div.title {
+	font-weight: bold; margin-bottom: 10px;
+}
+.view {
+	margin: 0px;
+}
+.views-edit-view input {
+	max-width: 95%;
+}
+.views-edit-view textarea {
+	max-width: 95%;
+}
+.block-wrapper .block-views .views-row-last .node {
+	margin-bottom: 0px;
+}
+div.view div.views-admin-links {
+	width: auto;
+}
+div.view div.views-admin-links li {
+	background: none;
+}
+div.view div.views-admin-links ul.links {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-weight: bold; text-decoration: none; display: inline; background-image: none;
+}
+div.view div.views-admin-links ul.links li {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-weight: bold; text-decoration: none; display: inline; background-image: none;
+}
+div.view div.views-admin-links ul.links li a:link {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-weight: bold; text-decoration: none; display: inline; background-image: none;
+}
+div.view div.views-admin-links ul.links li a:visited {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-weight: bold; text-decoration: none; display: inline; background-image: none;
+}
+div.view div.views-admin-links ul.links li a:hover {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-weight: bold; text-decoration: none; display: inline; background-image: none;
+}
+div.view div.views-admin-links ul.links li a:focus {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-weight: bold; text-decoration: none; display: inline; background-image: none;
+}
+div.view div.views-admin-links ul.links li {
+	list-style: none;
+}
+div.view div.views-admin-links ul.links li a:link {
+	padding: 3px; color: rgb(0, 0, 0); opacity: 0.75; background-color: rgb(255, 255, 255); -khtml-opacity: 0.75; -moz-opacity: 0.75;
+}
+div.view div.views-admin-links ul.links li a:visited {
+	padding: 3px; color: rgb(0, 0, 0); opacity: 0.75; background-color: rgb(255, 255, 255); -khtml-opacity: 0.75; -moz-opacity: 0.75;
+}
+div.view div.views-admin-links ul.links li a:hover {
+	text-decoration: underline;
+}
+div.view div.views-admin-links ul.links li a:focus {
+	text-decoration: underline;
+}
+#cart-form-products {
+	border: 0px currentColor; border-image: none;
+}
+.cart-review {
+	border: 0px currentColor; border-image: none;
+}
+#cart-form-buttons {
+	border: 0px currentColor; border-image: none;
+}
+#checkout-form-bottom {
+	border: 0px currentColor; border-image: none;
+}
+.review-button-row {
+	border: 0px currentColor; border-image: none;
+}
+.product-image {
+	padding-left: 0px; clear: left; margin-left: 0px; border-left-color: currentColor; border-left-width: 0px; border-left-style: none; float: none;
+}
+.add-to-cart [name=qty].form-text {
+	width: 25px;
+}
+.category-grid-products table {
+	margin: 5px 0px; border: currentColor; border-image: none; clear: both; table-layout: fixed;
+}
+.category-grid-products table tbody {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.category-grid-products td {
+	background: none; padding: 5px; border: currentColor; border-image: none; vertical-align: top;
+}
+.category-grid-products .catalog-grid-image {
+	margin: 0px 0px 0.5em; padding: 0px; width: 100%; text-align: center; display: block;
+}
+.category-grid-products #edit-qty-wrapper {
+	display: block;
+}
+.category-grid-products .form-item label {
+	display: inline;
+}
+.category-grid-products .form-item .form-text {
+	margin: 0px;
+}
+.category-grid-products .catalog-grid-title {
+	width: 100%; display: block;
+}
+.catalog-grid-title a {
+	padding: 10px; display: block;
+}
+.category td {
+	text-align: center;
+}
+.category-grid-products td {
+	text-align: center;
+}
+.cart-block-summary-table tr.cart-block-summary-tr td {
+	text-align: center;
+}
+.uc-price-list_price {
+	text-decoration: line-through;
+}
+.uc-price-list {
+	text-decoration: line-through;
+}
+.vertical-tabs {
+	margin-left: 0px;
+}
+.vertical-tabs-list {
+	border: currentColor; border-image: none; left: -1.5em;
+}
+.vertical-tabs ul li {
+	border-left-color: currentColor; border-left-width: medium; border-left-style: none; list-style-image: none;
+}
+.vertical-tabs ul li.last {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.vertical-tabs-list li a:link {
+	border: currentColor; border-image: none; background-image: none; background-color: transparent;
+}
+.vertical-tabs-list li a:visited {
+	border: currentColor; border-image: none; background-image: none; background-color: transparent;
+}
+.vertical-tabs-list li a:hover {
+	border: currentColor; border-image: none; background-image: none; background-color: transparent;
+}
+.vertical-tabs-list li a:active {
+	border: currentColor; border-image: none; background-image: none; background-color: transparent;
+}
+.quicktabs .block {
+	float: none;
+}
+.block div.view div.views-admin-links {
+	margin-top: 0px;
+}
+html.js span.preview-icon {
+	background: url("../images/skinrpreviews/skinr-image-preview.png") no-repeat right bottom; margin: 0px 0px -6px 3px; width: 20px; height: 20px; display: inline-block; cursor: help;
+}
+span.preview-icon {
+	text-indent: -9000px; display: block;
+}
+#screenshot {
+	background: rgb(51, 51, 51); padding: 5px 5px 0px; height: 190px; color: rgb(51, 51, 51); display: block; position: absolute; z-index: 100; box-shadow: 3px 3px 3px #999; -moz-border-radius: 3px; -webkit-border-radius: 3px; -moz-box-shadow: 3px 3px 3px #999; -webkit-box-shadow: 3px 3px 3px #999;
+}
+#screenshot .screenshot-caption {
+	margin: 0px 0px -3px -5px; padding: 0px 10px; height: 30px; text-align: center; bottom: 0px; color: rgb(255, 255, 255); line-height: 100%; overflow: hidden; font-weight: bold; position: absolute; z-index: 100; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+#screenshot .screenshot-preview {
+	background: rgb(51, 51, 51); margin-bottom: 30px; display: block; position: relative; z-index: 100;
+}
+#screenshot .fusion-general-styles-fusion-callout {
+	background: url("../images/skinrpreviews/fusion-general-styles-fusion-callout.png") no-repeat;
+}
+#screenshot .fusion-general-styles-fusion-padding {
+	background: url("../images/skinrpreviews/fusion-general-styles-fusion-padding.png") no-repeat;
+}
+#screenshot .fusion-general-styles-fusion-border {
+	background: url("../images/skinrpreviews/fusion-general-styles-fusion-border.png") no-repeat;
+}
+#screenshot .fusion-general-styles-bold-links {
+	background: url("../images/skinrpreviews/fusion-general-styles-bold-links.png") no-repeat;
+}
+#screenshot .fusion-general-styles-equal-heights {
+	background: url("../images/skinrpreviews/fusion-general-styles-equal-heights.png") no-repeat;
+}
+#screenshot .list-styles-bottom-border {
+	background: url("../images/skinrpreviews/list-styles-bottom-border.png") no-repeat;
+}
+#screenshot .list-styles-extra-vertical-spacing {
+	background: url("../images/skinrpreviews/list-styles-extra-vertical-spacing.png") no-repeat;
+}
+#screenshot .fusion-menu-fusion-inline-menu {
+	background: url("../images/skinrpreviews/fusion-menu-fusion-inline-menu.png") no-repeat;
+}
+#screenshot .fusion-menu-fusion-multicol-menu {
+	background: url("../images/skinrpreviews/fusion-menu-fusion-multicol-menu.png") no-repeat;
+}
+#screenshot .fusion-superfish-superfish-vertical {
+	background: url("../images/skinrpreviews/fusion-superfish-superfish-vertical.png") no-repeat;
+}
+#screenshot .fusion-login-fusion-horiz-login {
+	background: url("../images/skinrpreviews/fusion-login-fusion-horiz-login.png") no-repeat;
+}

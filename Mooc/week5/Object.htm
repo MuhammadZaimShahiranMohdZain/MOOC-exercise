@@ -1,0 +1,2191 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0078)http://mooc.cs.helsinki.fi/programming-part1/material-2013/week-5 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<TITLE>MOOC | MOOC - Massiivinen avoin verkkokurssi</TITLE>    <LINK href="/sites/mooc.cs.helsinki.fi/files/acquia_marina_favicon.png" 
+rel="shortcut icon" type="image/x-icon">   <LINK href="Object_files/5c1587b6907a85bc361bd4b70014b0e3.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/node.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/defaults.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/system.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/system-menus.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/user.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/content-module.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/ckeditor.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/ctools.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/date.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/panels.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/views.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/aeb58e3ce47f9171327ad9fd87a26c8e.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/flexible.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/typography.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/superfish.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/superfish-navbar.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/superfish-vertical.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/fusion-acquia-marina-style.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/custom.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/common.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/exercises.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/menu.css" 
+rel="stylesheet" type="text/css" media="all"> <LINK href="Object_files/sh_style.css" 
+rel="stylesheet" type="text/css" media="all">   <LINK href="Object_files/grid16-fluid.css" 
+rel="stylesheet" type="text/css" media="all">   <!--[if IE 8]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie8-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie8-fixes.css?8" />
+  <![endif]--> 
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie7-fixes.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie7-fixes.css?8" />
+  <![endif]--> 
+  <!--[if lte IE 6]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie6-fixes.css?8"/>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie6-fixes.css?8"/>
+  <![endif]--> 
+    
+<SCRIPT src="Object_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/drupal.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/panels.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/jquery.bgiframe.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/hoverIntent.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/supposition.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/supersubs.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/superfish.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/jquery.corner.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/acquia-marina-script.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/util-functions.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/clear-default-text.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/sh_java.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/sh_main.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/sh_ruby.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/sh_scala.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD>
+<BODY class="not-front not-logged-in page-node node-type-weekly-tasks no-sidebars full-node panels layout-main sidebars-both-first font-family-lucida font-size-13 grid-type-fluid grid-width-16 fluid-100" 
+id="pid-programming-part1-material-2013-week-5">   
+<DIV class="page" id="page">
+<DIV class="page-inner" id="page-inner">
+<DIV id="skip"><A href="http://mooc.cs.helsinki.fi/programming-part1/material-2013/week-5?noredirect=1#main-content-area">Skip 
+to Main Content Area</A>       </DIV><!-- header-top row: width = grid_width --> 
+            <!-- header-group row: width = grid_width -->       
+<DIV class="header-group-wrapper full-width" id="header-group-wrapper">
+<DIV class="header-group row grid16-16" id="header-group">
+<DIV class="header-group-inner inner clearfix" id="header-group-inner">
+<DIV class="primary-menu block" id="primary-menu">
+<DIV class="primary-menu-inner inner clearfix" id="primary-menu-inner">
+<UL class="menu sf-menu">
+  <LI class="expanded first"><A title="" 
+  href="http://mooc.cs.helsinki.fi/home">Kurssit ››</A>
+  <UL class="menu">
+    <LI class="leaf first"><A title="" 
+    href="http://mooc.fi/algoritmit">Algoritmien MOOC</A></LI>
+    <LI class="leaf"><A title="" href="http://mooc.cs.helsinki.fi/2014-ohjelmointi">Olio-ohjelmointi 
+    Javalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.aalto.fi/ohjelmointi/">Ohjelmointia Scalalla</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part1">Object-Oriented Programming with 
+    Java, part I</A></LI>
+    <LI class="leaf"><A title="" 
+    href="http://mooc.fi/programming-part2">Object-Oriented Programming with 
+    Java, part II</A></LI>
+    <LI class="leaf last"><A title="" 
+    href="http://mooc.cs.helsinki.fi/wepa">Web-palvelinohjelmointi</A></LI></UL></LI>
+  <LI class="collapsed"><A title="Mikä on MOOC?" href="http://mooc.cs.helsinki.fi/content/mik%C3%A4-mooc">Mikä 
+  on MOOC? ››</A></LI>
+  <LI class="leaf last"><A title="" href="http://mooc.cs.helsinki.fi/content/j%C3%A4rjest%C3%A4v%C3%A4st%C3%A4-tahosta">Järjestävästä 
+  tahosta ››</A></LI></UL></DIV><!-- /primary-menu-inner --> </DIV><!-- /primary-menu --> 
+          </DIV><!-- /header-group-inner -->         </DIV><!-- /header-group --> 
+      </DIV><!-- /header-group-wrapper -->       <!-- preface-top row: width = grid_width --> 
+        <!--            <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
+        <div id="preface-top" class="preface-top row grid16-16">
+          <div id="preface-top-inner" class="preface-top-inner inner clearfix"> 
+--> 
+          </DIV><!-- /preface-top-inner -->         </DIV><!-- /preface-top -->  
+     <!-- /preface-top-wrapper -->           <!-- main row: width = grid_width --> 
+    
+<DIV class="main-wrapper full-width" id="main-wrapper">
+<DIV class="main row grid16-16" id="main">
+<DIV class="main-inner inner clearfix" id="main-inner"><!-- main group: width = grid_width - sidebar_first_width --> 
+          
+<DIV class="main-group row nested grid16-16" id="main-group">
+<DIV class="main-group-inner inner clearfix" id="main-group-inner">
+<DIV class="main-content row nested" id="main-content">
+<DIV class="main-content-inner inner clearfix" id="main-content-inner"><!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) --> 
+                    
+<DIV class="content-group row nested " id="content-group" style="width: 100%;">
+<DIV class="content-group-inner inner clearfix" id="content-group-inner">
+<DIV class="content-region row nested" id="content-region">
+<DIV class="content-region-inner inner clearfix" id="content-region-inner"><A 
+name="main-content-area" id="main-content-area"></A>                             
+                            
+<DIV class="content-inner block" id="content-inner">
+<DIV class="content-inner-inner inner clearfix" id="content-inner-inner">
+<DIV class="content-content" id="content-content">
+<DIV class="panel-flexible panels-flexible-13 clear-block">
+<DIV class="panel-flexible-inside panels-flexible-13-inside">
+<DIV class="panels-flexible-row panels-flexible-row-13-7 panels-flexible-row-first clear-block ">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-7-inside panels-flexible-row-inside-first clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_ panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-2 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<H1 class="title"><A 
+href="http://mooc.cs.helsinki.fi/programming-part1">Object-Oriented Programming 
+with Java, part I ››</A></H1></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-custom pane-3 ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content"><LINK href="Object_files/menu(1).css" rel="stylesheet" 
+type="text/css" media="screen"> <LINK href="Object_files/common-new.css" rel="stylesheet" 
+type="text/css" media="screen, print"> <LINK href="Object_files/sh_style(1).css" 
+rel="stylesheet" type="text/css" media="screen, print">        </DIV></DIV><!-- /inner-inner -->
+	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-4 clear-block js">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-4-inside clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en_ panels-flexible-region-first ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en_-inside panels-flexible-region-inside-first"></DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-js ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js-inside">
+<DIV class="panel-pane pane-node ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node odd full-node node-type-page" id="node-222">
+<DIV class="inner">
+<H2 class="title"><A title="" 
+href="http://mooc.cs.helsinki.fi/content/js-en"></A></H2>
+<DIV class="content clearfix">
+<SCRIPT src="Object_files/bootstrap.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/jquery-1.7.1.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/exercises-eng-new.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/common-mooc-eng.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/sh_main.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/sh_java.min(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Object_files/jquery.easing.js" type="text/javascript"></SCRIPT>
+ 
+<DIV class="menu" id="toc" data-first-exercise-index="1" 
+data-first-chapter-index="1"><SPAN id="materiaali_toc"></SPAN>           <!--div id="tehtavat_toc" ></div--> 
+          <SPAN id="tehtavat_toc2"></SPAN>         </DIV></DIV></DIV><!-- /inner --> 
+  </DIV><!-- /node-222 -->         </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV>
+<DIV class="panels-flexible-region panels-flexible-region-13-copyright panels-flexible-region-last float-right">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-copyright-inside panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-custom pane-1 box ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<P><A href="http://creativecommons.org/licenses/by-nc-sa/2.0/" 
+rel="license"><IMG style="border-width: 0px; float: right;" alt="Creative Commons License" 
+src="Object_files/88x31.png"></A><SMALL>This material is licensed under the 
+Creative Commons BY-NC-SA license, which means that you can use it and 
+distribute it freely so long as you do not erase the names of the original 
+authors. If you do changes in the material and want to distribute this altered 
+version of the material, you have to license it with a similar free license. The 
+use of the material for commercial use is prohibited without a separate 
+agreement.</SMALL></P></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-author course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-author">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Authors: Arto Vihavainen, Matti 
+Luukkainen        </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block -->
+<DIV class="panel-region-separator"></DIV>
+<DIV class="panel-pane pane-content-field pane-field-translators course-menu ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="field field-type-text field-field-translators">
+<DIV class="field-items">
+<DIV class="field-item odd">                    Translators to English: Emilia 
+Hjelm, Alex H. Virtanen, Matti Luukkainen, Virpi Sumu, Birunthan Mohanathas      
+  </DIV></DIV></DIV></DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper --> 
+    
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV>
+<DIV class="panels-flexible-row panels-flexible-row-13-8 panels-flexible-row-last clear-block js en">
+<DIV class="inside panels-flexible-row-inside panels-flexible-row-13-8-inside panels-flexible-row-inside-last clear-block">
+<DIV class="panels-flexible-region panels-flexible-region-13-js_en panels-flexible-region-first panels-flexible-region-last ">
+<DIV class="inside panels-flexible-region-inside panels-flexible-region-13-js_en-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<DIV class="panel-pane pane-node-content box-mooc ">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="pane-content content">
+<DIV class="node even full-node node-type-weekly_tasks" id="node-240">
+<DIV class="inner">
+<DIV class="content clearfix">
+<DIV class="viikkoraja-mooc" id="Week 5" data-first-exercise-index="84" 
+data-first-chapter-index="24" kaantaja="Emilia Hjelm, Alex H. Virtanen, Matti Luukkainen, Virpi Sumu, Birunthan Mohanathas" 
+tekija="Arto Vihavainen, Matti Luukkainen" data-first-week-index-mooc="5" 
+data-first-exercise-index-mooc="84" data-first-chapter-index-mooc="23" 
+data-first-week-index="5" unlock="unlocks when 80% of week 4 done" deadline="unlocks when 80% of week 4 done">
+<H2>More about objects and classes</H2>
+<H3>Multiple constructors</H3>
+<P>Let us return to the class that handles Persons again. The class 
+<CODE>Person</CODE> currently looks            like this:</P>
+<PRE class="sh_java">public class Person {
+
+    private String name;
+    private int age;
+    private int height;
+    private int weight;
+
+     public Person(String name) {
+        this.name = name;
+        this.age = 0;
+        this.weight = 0;
+        this.height = 0;
+    }
+
+    public void printPerson() {
+        System.out.println(this.name + " I am " + this.age + " years old");
+    }
+
+    public void becomeOlder() {
+        this.age++;
+    }
+
+    public boolean adult(){
+        if ( this.age &lt; 18 ) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public double weightIndex(){
+        double heightInMeters = this.height/100.0;
+
+        return this.weight / (heightInMeters*heightInMeters);
+    }
+
+    public String toString(){
+        return this.name + " I am " + this.age + " years old, my weight index is " + this.weightindex();
+    }
+
+    public void setHeight(int height){
+        this.height = height;
+    }
+
+    public int getHeight(){
+        return this.height;
+    }
+
+    public int getWeight() {
+        return this.weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+}
+</PRE>
+<P>All person objects are 0 years old at creation, since the constructor sets it 
+to 0:</P>
+<PRE class="sh_java">public Person(String name) {
+    this.name = name;
+    this.age = 0;
+    this.weight = 0;
+    this.height = 0;
+}
+</PRE>
+<P>We also want to create a person so that in addition to name, can be given an 
+age as a parameter. This can            be achieved easily, since multiple 
+constructors can exist. Let us make an alternative constructor. You            
+do not need to remove the old one.</P>
+<PRE class="sh_java">public Person(String name) {
+    this.name = name;
+    this.age = 0;
+    this.weight = 0;
+    this.height = 0;
+}
+
+public Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+    this.weight = 0;
+    this.height = 0;
+}
+</PRE>
+<P>Now, creating objects can be done in two different ways:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka", 24);
+    Person esko = new Person("Esko");
+
+    System.out.println( pekka );
+    System.out.println( esko );
+}
+</PRE>
+<PRE>Pekka, age 24 years
+Esko, age 0 years
+</PRE>
+<P>The technique in which a class has two constructors is called <EM>constructor 
+overloading</EM>. A class            can have multiple constructors, which are 
+different from one another according to parameter quanitities and/or            
+types. However, it is not possible to create two different constructors that 
+have exactly the same type of            parameters. We cannot add a constructor 
+<CODE>public Person(String name, int weight)</CODE> on top of            the old 
+ones, since it is impossible for Java to tell the difference between this one 
+and the one in which            the integer stands for the age.</P>
+<H3>Calling your own constructor</H3>
+<P>But wait, in chapter 21 we noted that "copy-paste" code is not too great of 
+an idea! When            we inspect the overloaded constructors above, we notice 
+that they have the same code repeated in them.            We are not ok with 
+this.</P>
+<P>The old constructor actually is a special case of the new constructor. What 
+if the old            constructor could 'call' the new constructor? This can be 
+done, since you can call another            constructor from within a 
+constructor with <CODE>this</CODE>!</P>
+<P>Let us change the old constructor that does nothing, but only calls the new 
+constructor below            it and asks it to set the age to 0:</P>
+<PRE class="sh_java">public Person(String name) {
+    this(name, 0);  // run here the other constructor's code and set the age parameter to 0
+}
+
+public Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+    this.weight = 0;
+    this.height = 0;
+}
+</PRE>
+<P>Calling the own constructor of a class <CODE>this(name, 0);</CODE> might seem 
+a little peculiar. But we            can imagine that during the call it will 
+automatically copy-paste the code from the constructor below and            that 
+0 is entered to the age parameter.</P>
+<H3>Overloading a method</H3>
+<P>Just like constructors, methods can also be overloaded and multiple versions 
+of a method can exist. Again,            the parameter types of different 
+versions have to be different. Let us create another version of the             
+<CODE>becomeOlder</CODE>, which enables aging the person the amount of years 
+that is entered as a            parameter:</P>
+<PRE class="sh_java">public void becomeOlder() {
+    this.age = this.age + 1;
+}
+
+public void becomeOlder(int years) {
+    this.age = this.age + years;
+}
+</PRE>
+<P>In the following, "Pekka" is born as a 24-year old, ages one year, and then 
+10:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka", 24);
+
+    System.out.println(pekka);
+    pekka.becomeOlder();
+    System.out.println(pekka);
+    pekka.becomeOlder(10);
+    System.out.println(pekka);
+}
+</PRE>
+<P>Prints:</P>
+<PRE>Pekka, age 24 years
+Pekka, age 25 years
+Pekka, age 35 years
+</PRE>
+<P>Now, a person has two <CODE>becomeOlder</CODE> methods. The method that is 
+chosen to be run depends on            the amount of parameters entered in to 
+the method call. The method <CODE>becomeOlder</CODE> can also be run            
+through the method <CODE>becomeOlder(int years)</CODE>:</P>
+<PRE class="sh_java">public void becomeOlder() {
+    this.becomeOlder(1);
+}
+
+public void becomeOlder(int years) {
+    this.age = this.age + years;
+}
+</PRE><!-- CAST1--> 
+            <!-- screencast -->             
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Overloaded counter</H3>
+<H4>Multiple constructors</H4>
+<P>Make a class <CODE>Counter</CODE> that holds a number that can be decreased 
+and increased. The  counter also has an optional <EM>check</EM> that prevents 
+the counter from going below 0. The class  has to have the following 
+constructors:</P>
+<UL>
+  <LI><CODE>public Counter(int startingValue, boolean check)</CODE> creates a 
+  new counter with    the given value. The check is on if the parameter given to 
+  <CODE>check</CODE> was     <CODE>true</CODE>.</LI>
+  <LI><CODE>public Counter(int startingValue)</CODE> creates a new counter with 
+  the given value.    The check on the new counter should be off.</LI>
+  <LI><CODE>public Counter(boolean check)</CODE> creates a new counter with the 
+  starting value    0. The check is on if the parameter given to 
+  <CODE>check</CODE> was <CODE>true</CODE>.</LI>
+  <LI><CODE>public Counter()</CODE> creates a new counter with the starting 
+  value of 0 and with    checking off.</LI></UL>
+<P>and the following methods:</P>
+<UL>
+  <LI><CODE>public int value()</CODE> returns the current value of the 
+  counter</LI>
+  <LI><CODE>public void increase()</CODE> increases the value of the counter by 
+  one</LI>
+  <LI><CODE>public void decrease()</CODE> decreases the value of the counter by 
+  one, but not    below 0 if the check is on</LI></UL>
+<H4>Alternative methods</H4>
+<P>Create also a one parametered versions of the methods <CODE>increase</CODE> 
+and   <CODE>decrease</CODE>:</P>
+<UL>
+  <LI><CODE>public void increase(int increaseAmount)</CODE> increases the value 
+  by the amount of    the parameter. If the value of the parameter is negative, 
+  the value will not change.</LI>
+  <LI><CODE>public void decrease(int decreaseAmount)</CODE> decreases the value 
+  of the counter by    the amount given by the parameter, but not below 0 if the 
+  check is on. If the value of the    parameter is negative, the value of the 
+  counter will not change.</LI></UL></DIV></DIV>
+<H3>Object is at the end of a wire</H3>
+<P>In chapter 20, we noted that <CODE>ArrayList</CODE> is at the end of a wire. 
+Also objects are 'at the            end of a wire'. What does this mean? Let us 
+inspect the following example:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka", 24);
+
+    System.out.println( pekka );
+}
+</PRE>
+<P>When we run the sentence <CODE>Person pekka = new Person("Pekka", 24);</CODE> 
+an object is            born. The object can be accessed through the variable 
+<CODE>pekka</CODE>. Technically speaking, the object            is not within 
+the variable <CODE>pekka</CODE> (in the box 'pekka'), but <CODE>pekka</CODE> 
+refers            to the object that was born. In other words, the object is 'at 
+the end of a wire' that is attached            to a variable named 
+<CODE>pekka</CODE>. The concept could be visualized like this:</P>
+<P><IMG src="Object_files/lanka1.png"></P>
+<P>Let us add to the program a variable <CODE>person</CODE> of the type 
+<CODE>Person</CODE> and set its            starting value to <CODE>pekka</CODE>. 
+What happens now?</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka", 24);
+
+    System.out.println( pekka );
+
+    Person person = pekka;
+    person.becomeOlder(25);
+
+    System.out.println( pekka );
+}
+</PRE>
+<P>Prints:</P>
+<PRE>Pekka, age 24 years
+Pekka, age 49 years
+</PRE>
+<P>In the beginning, Pekka was 24 years old. Then a Person object at the end of 
+a wire attached to a             <CODE>Person</CODE> variable is aged by 25 
+years and as a consequence of that Pekka becomes older!            What is going 
+on here?</P>
+<P>The command <CODE>Person person = pekka;</CODE> makes <CODE>person</CODE> 
+refer to            the same object that <CODE>pekka</CODE> refers to. So, a 
+copy of the object is not born, but instead both            of the variables 
+refer to the same object. With the command <CODE>Person person = pekka;</CODE> a 
+<EM>copy of the wire</EM> is born. The same thing as a picture (Note: in the 
+picture p refers to the variable pekka, and h to the            variable person 
+in the main program. The variable names have also been abbreviated in some of 
+the following            pictures.):</P>
+<P><IMG src="Object_files/lanka2.png"></P>
+<P>In the example, "an unknown <CODE>person</CODE> steals Pekka's identity". In 
+the following,            we have expanded the example so that a new object is 
+created and <CODE>pekka</CODE> begins to refer to a            new object:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka", 24);
+
+    System.out.println( pekka );
+
+    Person person = pekka;
+    person.becomeOlder(25);
+
+    System.out.println( pekka );
+
+    pekka = new Person("Pekka Mikkola", 24);
+    System.out.println( pekka );
+}
+</PRE>
+<P>Prints:</P>
+<PRE>Pekka, age 24 years
+Pekka, age 49 years
+Pekka Mikkola, age 24 years
+</PRE>
+<P>The variable <CODE>pekka</CODE> refers to one object, but then begins to 
+refer to another. Here is            the situation after running the previous 
+line of code:</P>
+<P><IMG src="Object_files/lanka3.png"></P>
+<P>Let's develop the example further by making <CODE>person</CODE> to refer to 
+'nothing', to             <CODE>null</CODE>:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka", 24);
+
+    System.out.println( pekka );
+
+    Person person = pekka;
+    person.becomeOlder(25);
+
+    System.out.println( pekka );
+
+    pekka = new Person("Pekka Mikkola", 24);
+    System.out.println( pekka );
+
+    person = null;
+    System.out.println( person );
+}
+</PRE>
+<P>After running that, the situation looks like this:</P>
+<P><IMG src="Object_files/lanka4.png"></P>
+<P>Nothing refers to the second object. The object has become 'garbage'. Java's 
+garbace            collector cleans up the garbage every now and then by itself. 
+If this did not happen, the garbage would            pile up in the computer's 
+memory until the execution of the program is done.</P>
+<P>We notice this on the last line whine we try to print 'nothing' 
+(<CODE>null</CODE>) on the last            line:</P>
+<PRE>Pekka, age 24 years
+Pekka, age 49 years
+Pekka Mikkola, age 24 years
+null
+</PRE>
+<P>What happens if we try to call a "nothing's" method, for example the method   
+          <CODE>weightIndex</CODE>:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka", 24);
+
+    System.out.println( pekka );
+
+    Person person = null;
+    System.out.println( person.weightIndex() );
+}
+</PRE>
+<P>Result:</P>
+<PRE>Pekka, age 24 years
+<FONT color="red">Exception in thread "main" java.lang.NullPointerException
+        at Main.main(Main.java:20)
+Java Result: 1</FONT>
+</PRE>
+<P>Not good. This might be the first time in your life that you see the text 
+<B>NullPointerException</B>.            But we can assure you that it will not 
+be the last. NullPointerException is an exception state, when we            try 
+to call methods of an object with the value <CODE>null</CODE>.</P>
+<H3>An object as a method parameter</H3>
+<P>We have seen that a method can have, for example <CODE>int, double, 
+String</CODE> or ArrayList as its            parameter. ArrayLists and character 
+strings are objects, so as one might guess a method can take any type            
+of object as a parameter. Let us demonstrate this with an example.</P>
+<P>People whose weight index exceeds a certain limit are accepted into the 
+Weight Watchers. The limit is            not the same in all Weight Watchers 
+associations. Let us make a class corresponding to the Weight            
+Watchers association. As the object is being created, the lowest acceptance 
+limit is passed to the            constructor as a parameter.</P>
+<PRE class="sh_java">public class WeightWatchersAssociation {
+    private double lowestWeightIndex;
+
+    public WeightWatchersAssociation(double indexLimit) {
+        this.lowestWeightIndex = indexLimit;
+    }
+
+}
+</PRE>
+<P>Next we will create a method, with which we can check if a person is eligible 
+to the association, in            other words we check if a person's weight 
+index is large enough. The method returns <CODE>true</CODE>            if the 
+person that is passed in as a parameter is eligible and <CODE>false</CODE> if 
+not.</P>
+<PRE class="sh_java">public class WeightWatchersAssociation {
+    // ...
+
+    public boolean isAcceptedAsMember(Person person) {
+        if ( person.weightIndex() &lt; this.lowestWeightIndex ) {
+            return false;
+        }
+
+        return true;
+    }
+}
+</PRE>
+<P>The method <CODE>isAcceptedAsMember</CODE> of the WeightWatchersAssociation 
+object gets a             <CODE>Person</CODE> object as its parameter (or more 
+accurately the wire to the person), and then calls the            method 
+<CODE>weightIndex</CODE> of the person that it received as a parameter.</P>
+<P>In the following, is a test main program in which a person object 
+<CODE>matti</CODE> and a person            object <CODE>juhana</CODE> is passed 
+to the weight watchers association's method:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person matti = new Person("Matti");
+    matti.setWeight(86);
+    matti.setHeight(180);
+
+    Person juhana = new Person("Juhana");
+    juhana.setWeight(64);
+    juhana.setHeight(172);
+
+    WeightWatchersAssociation kumpulasWeight = new WeightWatchersAssociation(25);
+
+    if ( kumpulasWeight.isAcceptedAsMember(matti) ) {
+        System.out.println( matti.getName() + " is accepted as a member");
+    } else {
+        System.out.println( matti.getName() + " is not accepted as a member");
+    }
+
+    if ( kumpulasWeight.isAcceptedAsMember(juhana) ) {
+        System.out.println( juhana.getName() + " is accepted as a memberksi");
+    } else {
+        System.out.println( juhana.getName() + " is not accepted as a member");
+    }
+}
+</PRE>
+<P>The program prints:</P>
+<PRE>Matti is accepted as a member
+Juhana is not accepted as a member
+</PRE>
+<DIV><BIG><BIG><B>A few NetBeans-tips</B></BIG></BIG> 
+<UL>
+  <LI>All NetBeans-tips are found <A href="http://mooc.fi/courses/general/programming/#netbeans-tips">here</A> 
+    </LI>
+  <LI><B>The automatic generating of constructors, getters and setters.</B>   
+  <P>Go inside of the code block of the class, but outside of all methods and 
+  simultaneously  press Ctrl+Space. If your class, for example, has an object 
+  variable <CODE>balance</CODE>,  NetBeans will offer you the opportunity to 
+  generate the getter and setter methods, and a  constructor that sets a 
+  starting value for the object variable.</P></LI></UL></DIV><!-- CAST2 -->        
+     <!-- screencast -->             
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Reformatory</H3>
+<P>In this assignment, we use the already given class <CODE>Person</CODE> and 
+are supposed to build  a new class <CODE>Reformatory</CODE>. Reformatory objects 
+do certain things to persons, e.g.  measure their weight and feed them.</P>
+<P>Note: you should not alter the code in the class Person!</P>
+<H4>Weight of a person</H4>
+<P>The reformatory class already has a method skeleton <CODE>public int 
+weight(Person    person)</CODE>:</P>
+<PRE class="sh_java">public class Reformatory {
+
+    public int weight(Person person) {
+       // returns the weight of the parameter
+       return -1;
+    }
+}
+  </PRE>
+<P>The method gets a person object as a parameter. The method is supposed to 
+return the weight of  the parameter, so the method should call a suitable method 
+of <CODE>person</CODE>, get the return  value and then return it to the 
+caller.</P>
+<P>In the following a reformatory weight's two persons:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Reformatory eastHelsinkiReformatory = new Reformatory();
+
+    Person brian = new Person("Brian", 1, 110, 7);
+    Person pekka = new Person("Pekka", 33, 176, 85);
+
+    System.out.println(brian.getName() + " weight: " + eastHelsinkiReformatory.weight(brian) + " kilos");
+    System.out.println(pekka.getName() + " weight: " + eastHelsinkiReformatory.weight(pekka) + " kilos");
+}
+  </PRE>
+<P>The output should be:</P>
+<PRE>Brian weight: 7 kilos
+Pekka weight: 85 kilos
+  </PRE>
+<H4>Feeding a person</H4>
+<P>In the previous part of the assignment, the method <CODE>weight</CODE> 
+queried some information  from the parameter object by calling its method. It is 
+also possible to change the state of the  parameter. Add to class Reformatory 
+the method <CODE>public void feed(Person person)</CODE> that  increases the 
+weight of its parameter by one.</P>
+<P>Next, an example where first the weight of Pekka and Brian is measured and 
+printed. Then  Reformatory feeds Brian three times and after that the weights 
+are measured and printed again.</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Reformatory eastHelsinkiReformatory = new Reformatory();
+
+    Person brian = new Person("Brian", 1, 110, 7);
+    Person pekka = new Person("Pekka", 33, 176, 85);
+
+    System.out.println(brian.getName() + " weight: " + eastHelsinkiReformatory.weight(brian) + " kilos");
+    System.out.println(pekka.getName() + " weight: " + eastHelsinkiReformatory.weight(pekka) + " kilos");
+
+    eastHelsinkiReformatory.feed(brian);
+    eastHelsinkiReformatory.feed(brian);
+    eastHelsinkiReformatory.feed(brian);
+
+    System.out.println("");
+
+    System.out.println(brian.getName() + " weight: " + eastHelsinkiReformatory.weight(brian) + " kilos");
+    System.out.println(pekka.getName() + " weight: " + eastHelsinkiReformatory.weight(pekka) + " kilos");
+}
+  </PRE>
+<P>The output should reveal that Brian has gained 3 kilos:</P>
+<PRE>Brian weight: 7 kilos
+Pekka weight: 85 kilos
+
+Brian weight: 10 kilos
+Pekka weight: 85 kilos
+  </PRE>
+<H4>Number of times a weight has been measured</H4>
+<P>Add to class Reformatory the method <CODE>public int 
+totalWeightsMeasured()</CODE> that returns  the total number of times a weight 
+has been measured.</P>
+<P>With the following main program:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Reformatory eastHelsinkiReformatory = new Reformatory();
+
+    Person brian = new Person("Brian", 1, 110, 7);
+    Person pekka = new Person("Pekka", 33, 176, 85);
+
+    System.out.println("total weights measured "+eastHelsinkiReformatory.totalWeightsMeasured());
+
+    eastHelsinkiReformatory.weight(brian);
+    eastHelsinkiReformatory.weight(pekka);
+
+    System.out.println("total weights measured "+eastHelsinkiReformatory.totalWeightsMeasured());
+
+    eastHelsinkiReformatory.weight(brian);
+    eastHelsinkiReformatory.weight(brian);
+    eastHelsinkiReformatory.weight(brian);
+    eastHelsinkiReformatory.weight(brian);
+
+    System.out.println("total weights measured "+eastHelsinkiReformatory.totalWeightsMeasured());
+}
+  </PRE>
+<P>the output should be:</P>
+<PRE>total weights measured 0
+total weights measured 2
+total weights measured 6
+  </PRE></DIV>
+<DIV class="tehtava">
+<H3>Lyyra card and Cash Register</H3>
+<H4 class="req">The "stupid" Lyyra card</H4>
+<P>In the last set of exercises, we implemented the class LyyraCard. The card 
+had methods for paying economical  and gourmet lunches and a method for loading 
+money.</P>
+<P>Last week's version of the card is however somehow problematic. The card knew 
+the lunch  prices so that it could take the right price from the balance if a 
+lunch was paid. What if the  lunch prices change? Or what if it is decided that 
+LyyraCards could also be used to purchase  coffee? A change like these would 
+mean that all the existing LyyraCards should be replaced with the  new ones with 
+the right prices and/or new methods. This does not sound good at all!</P>
+<P>A better solution is to store only the balance on the card and have all the 
+inteligence in a   <EM>cash register</EM>.</P>
+<P>We will soon program the cash register but let us start by completing the 
+"stupid"  version of the Lyyra card. The card holds the balance and has only two 
+methods, <CODE>public void    loadMoney(double amount)</CODE> that is already 
+implemented and <CODE>public boolean pay(double    amount)</CODE> that you 
+should complete according to the instructions below:</P>
+<PRE class="sh_java">public class LyyraCard {
+    private double balance;
+
+    public LyyraCard(double balance) {
+        this.balance = balance;
+    }
+
+    public double balance() {
+        return this.balance;
+    }
+
+    public void loadMoney(double amount) {
+        this.balance += amount;
+    }
+
+    public boolean pay(double amount){
+       // the method checks if the balance of the card is at least the amount given as parameter
+       // if not, the method returns false meaning that the card could not be used for the payment
+       // if the balance is enough, the given amount is taken from the balance and true is returned
+    }
+}
+  </PRE>
+<P>With the following main:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        LyyraCard cardOfPekka = new LyyraCard(10);
+
+        System.out.println("money on the card " + cardOfPekka.balance() );
+        boolean succeeded = cardOfPekka.pay(8);
+        System.out.println("money taken: " + succeeded );
+        System.out.println("money on the card " + cardOfPekka.balance() );
+
+        succeeded = cardOfPekka.pay(4);
+        System.out.println("money taken: " + succeeded );
+        System.out.println("money on the card " + cardOfPekka.balance() );
+    }
+}
+  </PRE>
+<P>the output should be</P>
+<PRE>money on the card 10.0
+money taken: true
+money on the card 2.0
+money taken: false
+money on the card 2.0
+  </PRE>
+<H4 class="req">Cash Register and paying with cash</H4>
+<P>In Unicafe, a client pays either with cash or with a Lyyra Card. The 
+personnel uses a cash  register to charge the client. Let us start by 
+implementig the part of CashRegister that takes care  of cash payments.</P>
+<P>Below is the skeleton of CashRegister that also has the information on how 
+the methods  should be implemented:</P>
+<PRE class="sh_java">public class CashRegister {
+    private double cashInRegister;   // the amount of cash in the register
+    private int economicalSold;      // the amount of economical lunches sold
+    private int gourmetSold;         // the amount of gourmet lunches sold
+
+    public CashRegister() {
+        // at start the register has 1000 euros
+    }
+
+    public double payEconomical(double cashGiven) {
+        // the price of the economical lunch is 2.50 euros
+        // if the given cash is at least the price of the lunch:
+        //    the price of lunch is added to register
+        //    the amount of the sold lunches is incremented by one
+        //    the method returns cashGiven - lunch price
+        // if not enough money is given, all is returned and nothing else happens
+    }
+
+    public double payGourmet(double cashGiven) {
+        // the price of the gourmet lunch is 4.00 euros
+        // if the given cash is at least the price of the lunch:
+        //    the price of lunch is added to the register
+        //    the amount of the sold lunches is incremented by one
+        //    the method returns cashGiven - lunch price
+        // if not enough money is given, all is returned and nothing else happens
+    }
+
+    public String toString() {
+        return "money in register "+cashInRegister+" economical lunches sold: "+economicalSold+" gourmet lunches sold: "+gourmetSold;
+    }
+}
+  </PRE>
+<P>When correctly implemented, the following main:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        CashRegister unicafeExactum = new CashRegister();
+
+        double theChange = unicafeExactum.payEconomical(10);
+        System.out.println("the change was " + theChange );
+
+        theChange = unicafeExactum.payEconomical(5);
+        System.out.println("the change was "  + theChange );
+
+        theChange = unicafeExactum.payGourmet(4);
+        System.out.println("the change was "  + theChange );
+
+        System.out.println( unicafeExactum );
+    }
+}
+  </PRE>
+<P>should output:</P>
+<PRE>the change was 7.5
+the change was 2.5
+the change was 0.0
+money in register 1009.0 economical lunches sold: 2 gourmet lunches sold: 1
+  </PRE>
+<H4 class="req">Paying with card</H4>
+<P>Extend the cash register with methods to charge a lunch price from a Lyyra 
+Card. See below how  the methods should appear and behave:</P>
+<PRE class="sh_java">public class CashRegister {
+    // ...
+
+    public boolean payEconomical(LyyraCard card) {
+        // the price of the economical lunch is 2.50 euros
+        // if the balance of the card is at least the price of the lunch:
+        //    the amount of sold lunches is incremented by one
+        //    the method returns true
+        // if not, the method returns false
+    }
+
+    public boolean payGourmet(LyyraCard card) {
+        // the price of the gourmet lunch is 4.00 euros
+        // if the balance of the card is at least the price of the lunch:
+        //    the amount of sold lunches is incremented by one
+        //    the method returns true
+        // if not, the method returns false
+    }
+
+    // ...
+}
+  </PRE>
+<P><B>Note:</B> card payments do not affect the amount of money in the 
+register!</P>
+<P>Example main and output:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        CashRegister unicafeExactum = new CashRegister();
+
+        double theChange = unicafeExactum.payEconomical(10);
+        System.out.println("the change was " + theChange );
+
+        LyyraCard cardOfJim = new LyyraCard(7);
+
+        boolean succeeded = unicafeExactum.payGourmet(cardOfJim);
+        System.out.println("payment success: " + succeeded);
+        succeeded = unicafeExactum.payGourmet(cardOfJim);
+        System.out.println("payment success: " + succeeded);
+        succeeded = unicafeExactum.payEconomical(cardOfJim);
+        System.out.println("payment success: " + succeeded);
+
+        System.out.println( unicafeExactum );
+    }
+}
+  </PRE>
+<PRE>the change was 7.5
+payment success: true
+payment success: false
+payment success: true
+money in register 1002.5 economical lunches sold: 2 gourmet lunches sold: 1
+  </PRE>
+<H4 class="req">Loading money</H4>
+<P>To complete the assignment, extend the cash register with a method that can 
+be used to load cash  to Lyyra Cards. When a certain amount is loaded to the 
+card, the amount stored in the register  increases correspondingly. Remember 
+that the amount to be loaded needs to be positive! The method  skeleton:</P>
+<PRE class="sh_java">public void loadMoneyToCard(LyyraCard card, double sum) {
+   // ...
+}
+  </PRE>
+<P>Example main and its output:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        CashRegister unicafeExactum = new CashRegister();
+        System.out.println( unicafeExactum );
+
+        LyyraCard cardOfJim = new LyyraCard(2);
+
+        System.out.println("the card balance " + cardOfJim.balance() + " euros");
+
+        boolean succeeded = unicafeExactum.payGourmet(cardOfJim);
+        System.out.println("payment success: " + succeeded);
+
+        unicafeExactum.loadMoneyToCard(cardOfJim, 100);
+
+        succeeded = unicafeExactum.payGourmet(cardOfJim);
+        System.out.println("payment success: " + succeeded);
+
+        System.out.println("the card balance " + cardOfJim.balance() + " euros");
+
+        System.out.println( unicafeExactum );
+    }
+}
+  </PRE>
+<PRE>money in register 1000.0 economical lunches sold: 0 gourmet lunches sold: 0
+money on the card 2.0 euros
+payment success: false
+payment success: true
+the card balance 98.0 euros
+money in register 1100.0 economical lunches sold: 0 gourmet lunches sold: 1
+  </PRE></DIV></DIV>
+<H3>Another object of the same type as a parameter to a method</H3>
+<P>We will keep on working with the <CODE>Person</CODE> class. As we recall, 
+persons know their            age:</P>
+<PRE class="sh_java">public class Person {
+
+    private String name;
+    private int age;
+    private int height;
+    private int weight;
+
+    // ...
+}
+</PRE>
+<P>We want to compare ages of two persons. The comparison can be done in a 
+number of ways. We could            define a getter method <CODE>getAge</CODE> 
+for a person. Comparing two persons in that case would be done            like 
+this:</P>
+<PRE class="sh_java">Person pekka = new Person("Pekka");
+Person juhana = new Person("Juhana")
+
+if ( pekka.getAge() &gt; juhana.getAge() ) {
+    System.out.println(pekka.getName() + " is older than " + juhana.getName());
+}
+</PRE>
+<P>We will learn a slightly more object-oriented way to compare the ages of two 
+people.</P>
+<P>We will create a method <CODE>boolean olderThan(Person compared)</CODE> for 
+the Person class, with            which we can compare a certain person with a 
+person that is given as a parameter.</P>
+<P>The method is meant to be used in the following way:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person pekka = new Person("Pekka", 24);
+    Person antti = new Person("Antti", 22);
+
+    if (pekka.olderThan(antti)) {  //  same as pekka.olderThan(antti)==true
+        System.out.println(pekka.getName() + " is older than " + antti.getName());
+    } else {
+        System.out.println(pekka.getName() + " isn't older than " + antti.getName());
+    }
+}
+</PRE>
+<P>Here, we ask Pekka if he is older than Antti, Pekka replies true if he is, 
+and false if he is not. In            practice, we call the method 
+<CODE>olderThan</CODE> of the object that <CODE>pekka</CODE> refers to. For this 
+method,      we give as a parameter the object that <CODE>antti</CODE> refers 
+to.</P>
+<P>The program prints:</P>
+<PRE>Pekka is older than Antti
+</PRE>
+<P>The program gets a person object as its parameter (or more accurately a 
+reference to a person object,            which is at 'the end of a wire') and 
+then compares its own age <CODE>this.age</CODE> to the age of            the 
+compared <CODE>compared.age</CODE>. The implementation looks like this:</P>
+<PRE class="sh_java">public class Person {
+    // ...
+
+    public boolean olderThan(Person compared) {
+        if ( this.age &gt; compared.age ) {
+            return true;
+        }
+
+        return false;
+    }
+}
+</PRE>
+<P>Even though <CODE>age</CODE> is a <CODE>private</CODE> object variable, we 
+can read the value of the            variable by writing 
+<CODE>compared.age</CODE>. This is because <CODE>private</CODE> variables can be 
+read in            all methods that the class in question contains. Note that 
+the syntax resembles the call of a method of            an object. Unlike 
+calling a method, we refer to a field of an object, in which case we do not 
+write            the parentheses.</P>
+<H3>The date as an object</H3>
+<P>Another example of the same theme. Let us create a class, which can represent 
+dates.</P>
+<P>Within an object, the date is represented with three object variables. Let us 
+also make a method,            which can compare whether the date is earlier 
+than a date that is given as a parameter:</P>
+<PRE class="sh_java">public class MyDate {
+    private int day;
+    private int month;
+    private int year;
+
+    public MyDate(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+
+    public String toString() {
+        return this.day + "." + this.month + "." + this.year;
+    }
+
+    public boolean earlier(MyDate compared) {
+        // first we'll compare years
+        if ( this.year &lt; compared.year ) {
+            return true;
+        }
+
+        // if the years are the same, we'll compare the months
+        if ( this.year == compared.year &amp;&amp; this.month &lt; compared.month ) {
+            return true;
+        }
+
+        // years and months the same, we'll compare the days
+        if ( this.year == compared.year &amp;&amp; this.month == compared.month &amp;&amp;
+                this.day &lt; compared.day ) {
+            return true;
+        }
+
+        return false;
+    }
+}
+</PRE>
+<P>Example of usage:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    MyDate p1 = new MyDate(14, 2, 2011);
+    MyDate p2 = new MyDate(21, 2, 2011);
+    MyDate p3 = new MyDate(1, 3, 2011);
+    MyDate p4 = new MyDate(31, 12, 2010);
+
+    System.out.println( p1 + " earlier than " + p2 + ": " + p1.earlier(p2));
+    System.out.println( p2 + " earlier than " + p1 + ": " + p2.earlier(p1));
+
+    System.out.println( p2 + " earlier than " + p3 + ": " + p2.earlier(p3));
+    System.out.println( p3 + " earlier than " + p2 + ": " + p3.earlier(p2));
+
+    System.out.println( p4 + " earlier than " + p1 + ": " + p4.earlier(p1));
+    System.out.println( p1 + " earlier than " + p4 + ": " + p1.earlier(p4));
+}
+</PRE>
+<PRE>14.2.2011 earlier than 21.2.2011: true
+21.2.2011 earlier than 14.2.2011: false
+21.2.2011 earlier than 1.3.2011: true
+1.3.2011 earlier than 21.2.2011: false
+31.12.2010 earlier than 14.2.2011: true
+14.2.2011 earlier than 31.12.2010: false
+</PRE><!-- CAST3 --> 
+            <!-- screencast -->             
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Apartment comparison</H3>
+<P>The information system of a Housing service represents the apartments it has 
+for sale using  objects of the following class:</P>
+<PRE class="sh_java">public class Apartment {
+    private int rooms;
+    private int squareMeters;
+    private int pricePerSquareMeter;
+
+    public Apartment(int rooms, int squareMeters, int pricePerSquareMeter){
+        this.rooms = rooms;
+        this.squareMeters = squareMeters;
+        this.pricePerSquareMeter = pricePerSquareMeter;
+    }
+}
+  </PRE>
+<P>Next you should implement a couple of methods that help in apartment 
+comparisons.</P>
+<H4>Larger</H4>
+<P>Implement the method <CODE>public boolean larger(Apartment 
+otherApartment)</CODE> that returns  true if the Apartment object for which the 
+method is called (<CODE>this</CODE>) is larger than the  apartment object given 
+as parameter (<CODE>otherApartment</CODE>).</P>
+<P>Example of the usage:</P>
+<PRE class="sh_java">Apartment studioManhattan = new Apartment(1, 16, 5500);
+Apartment twoRoomsBrooklyn = new Apartment(2, 38, 4200);
+Apartment fourAndKitchenBronx = new Apartment(3, 78, 2500);
+
+System.out.println( studioManhattan.larger(twoRoomsBrooklyn) );       // false
+System.out.println( fourAndKitchenBronx.larger(twoRoomsBrooklyn) );   // true
+  </PRE>
+<H4>Price difference</H4>
+<P>Implement the method <CODE>public int priceDifference(Apartment 
+otherApartment)</CODE> that  returns the absolute value of the price difference 
+of the Apartment object for which the method is  called (<CODE>this</CODE>) and 
+the apartment object given as parameter  (<CODE>otherApartment</CODE>). The 
+price of an apartment is <CODE>squareMeters *    pricePerSquareMeter.</CODE></P>
+<P>Example of the usage:</P>
+<PRE class="sh_java">Apartment studioManhattan = new Apartment(1, 16, 5500);
+Apartment twoRoomsBrooklyn = new Apartment(2, 38, 4200);
+Apartment fourAndKitchenBronx = new Apartment(3, 78, 2500);
+
+System.out.println( studioManhattan.priceDifference(twoRoomsBrooklyn) );        // 71600
+System.out.println( fourAndKitchenBronx.priceDifference(twoRoomsBrooklyn) );    // 35400
+  </PRE>
+<H4>more expensive than</H4>
+<P>Implement the method <CODE>public boolean moreExpensiveThan(Apartment 
+otherApartment)</CODE>  that returns true if the Apartment-object for which the 
+method is called (<CODE>this</CODE>) has a  higher price than the apartment 
+object given as parameter (<CODE>otherApartment</CODE>).</P>
+<P>Example of the usage:</P>
+<PRE class="sh_java">Apartment studioManhattan = new Apartment(1, 16, 5500);
+Apartment twoRoomsBrooklyn = new Apartment(2, 38, 4200);
+Apartment fourAndKitchenBronx = new Apartment(3, 78, 2500);
+
+System.out.println( studioManhattan.moreExpensiveThan(twoRoomsBrooklyn) );       // false
+System.out.println( fourAndKitchenBronx.moreExpensiveThan(twoRoomsBrooklyn) );   // true
+  </PRE></DIV></DIV>
+<H3>Objects on a list</H3>
+<P>We've used <CODE>ArrayList</CODE>s in a lot of examples and assignments 
+already. You can add            character strings, for example, to an ArrayList 
+object and going through the strings, searching, removing            and sorting 
+them and so forth, are painless actions.</P>
+<P>You can put any type of objects in ArrayLists. Let's create a person list, an 
+            <CODE>ArrayList&lt;Person&gt;</CODE> and put a few person objects in 
+it:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    ArrayList&lt;Person&gt; teachers = new ArrayList&lt;Person&gt;();
+
+    // first we can take a person into a variable
+    Person teacher = new Person("Juhana");
+    // and then add it to the list
+    teachers.add(teacher);
+
+    // or we can create the object as we add it:
+    teachers.add( new Person("Matti") );
+    teachers.add( new Person("Martin") );
+
+    System.out.println("teachers as newborns: ");
+    for ( Person prs : teachers ) {
+        System.out.println( prs );
+    }
+
+    for ( Person prs : teachers ) {
+        prs.becomeOlder( 30 );
+    }
+
+    System.out.println("in 30 years: ");
+    for ( Person prs : teachers ) {
+        System.out.println( prs );
+    }
+}
+</PRE>
+<P>The program prints:</P>
+<PRE>teachers as newborns:
+Juhana, age 0 years
+Matti, age 0 years
+Martin, age 0 years
+in 30 years:
+Juhana, age 30 years
+Matti, age 30 years
+Martin, age 30 years
+</PRE>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Students</H3>
+<H4 class="req">Class Student</H4>
+<P>Implement class <CODE>Student</CODE> that holds the following information 
+about a student:</P>
+<UL>
+  <LI>name (<CODE>String</CODE>)</LI>
+  <LI>studentNumber (<CODE>String</CODE>)</LI></UL>
+<P>The class should have the following methods:</P>
+<UL>
+  <LI>A constructor that initializes the name and the student number with the 
+  given    parameters.</LI>
+  <LI><CODE>getName</CODE>, that returns the student name</LI>
+  <LI><CODE>getStudentNumber</CODE>, that returns the student number</LI>
+  <LI><CODE>toString</CODE>, that returns a String representation of the form: 
+  Pekka Mikkola    (013141590)</LI></UL>
+<P>With the following code:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Student pekka = new Student("Pekka Mikkola", "013141590");
+        System.out.println("name: " + pekka.getName());
+        System.out.println("studentnumber: " + pekka.getStudentNumber());
+        System.out.println(pekka);
+    }
+}
+  </PRE>
+<P>The output should be:</P>
+<PRE>name: Pekka Mikkola
+studentnumber: 013141590
+Pekka Mikkola (013141590)
+  </PRE>
+<H4 class="req">List of students</H4>
+<P>Implement a main program that works as follws:</P>
+<PRE>name: <FONT color="red">Alan Turing</FONT>
+studentnumber: <FONT color="red">017635727</FONT>
+name: <FONT color="red">Linus Torvalds</FONT>
+studentnumber: <FONT color="red">011288989</FONT>
+name: <FONT color="red">Steve Jobs</FONT>
+studentnumber: <FONT color="red">013672548</FONT>
+name:
+
+Alan Turing (017635727)
+Linus Torvalds (011288989)
+Steve Jobs (013672548)
+  </PRE>
+<P>So the program asks for student information from the user until the user 
+gives a student an  empty name. After the student info has been enteres, all the 
+students are printed. From each  inputted name-studentnumber-pair, the program 
+should create a Student object. The program should  store the students in an 
+ArrayList which is defined as follows:</P>
+<PRE class="sh_java">ArrayList&lt;Student&gt; list = new ArrayList&lt;Student&gt;();
+  </PRE>
+<H4 class="req">Search</H4>
+<P>Extend the program of the previous part so that after the student info has 
+been entered and  students printed, the user can search the student list based 
+on a given search term. The extended  program should work in the following 
+manner:</P>
+<PRE>name: <FONT color="red">Carl Gustaf Mannerheim</FONT>
+studentnumber: <FONT color="red">015696234</FONT>
+name: <FONT color="red">Steve Jobs</FONT>
+studentnumber: <FONT color="red">013672548</FONT>
+name: <FONT color="red">Edsger Dijkstra</FONT>
+studentnumber: <FONT color="red">014662803</FONT>
+name:
+
+Carl Gustaf Mannerheim (015696234)
+Steve Jobs (013672548)
+Edsger Dijkstra (014662803)
+
+Give search term: <FONT color="red">st</FONT>
+Result:
+Carl Gustaf Mannerheim (015696234)
+Edsger Dijkstra (014662803)
+  </PRE>
+<P><STRONG>TIP:</STRONG> in the search you should iterate (using for or while) 
+through the student  list and by using the method <CODE>contains</CODE> of 
+String check if a student's name  (obtained with method <CODE>getName</CODE>) 
+matches the search term.</P></DIV></DIV>
+<H3>An object within an object</H3>
+<P>Objects can have objects within them, not only character strings but also 
+self-defined objects.            Let's get back to the <CODE>Person</CODE>-class 
+again and add a birthday for the person. We can use the             
+<CODE>MyDate</CODE>-object we created earlier here:</P>
+<PRE class="sh_java">public class Person {
+    private String name;
+    private int age;
+    private int weight;
+    private int height;
+    private MyDate birthMyDate;
+
+    // ...
+</PRE>
+<P>Let's create a new constructor for persons, which enables setting a 
+birthday:</P>
+<PRE class="sh_java">    public Person(String name, int day, int month, int year) {
+        this.name = name;
+        this.weight = 0;
+        this.height = 0;
+        this.birthMyDate = new MyDate(day, month, year);
+    }
+</PRE>
+<P>So because the parts of the date are given as constructor parameters (day, 
+month, year), the date object            is created out of them and then 
+<I>inserted</I> to the object variable <CODE>birthMyDate</CODE>.</P>
+<P>Let's edit <CODE>toString</CODE> so that instead of age, it displays the 
+birthdate:</P>
+<PRE class="sh_java">public String toString() {
+    return this.name + ", born " + this.birthMyDate;
+}
+</PRE>
+<P>And then let's test how the renewed Person class works:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    Person martin = new Person("Martin", 24, 4, 1983);
+
+    Person juhana = new Person("Juhana", 17, 9, 1985);
+
+    System.out.println( martin );
+    System.out.println( juhana );
+}
+</PRE>
+<P>Prints:</P>
+<PRE>Martin, born 24.4.1983
+Juhana, born 17.9.1985
+</PRE>
+<P>In chapter 24.4, we noted that objects are 'at the end of a wire'. Take a 
+look at that chapter            again for good measure.</P>
+<P>Person objects have the object variables <CODE>name</CODE>, which is a 
+String-object and             <CODE>birthMyDate</CODE>, which is a MyDate 
+object. The variables of person are consequently both objects,            so 
+technically speaking they don't actually exist within a person object, but are 
+'at the end of a            wire'. In other words a person has a reference to 
+the objects stored in its object variables. The            concept as a 
+picture:</P>
+<P><IMG src="Object_files/person.png"></P>
+<P>The main program now has two person programs at the ends of wires. The 
+persons have a name and a            birthdate. Because both are objects, both 
+are at the ends of wires the person holds.</P>
+<P>Birthday seems like a good expansion to the Person class. We notice, however, 
+that the object variable             <CODE>age</CODE> is becoming obsolete and 
+should probably be removed since the age can be determined easily            
+with the help of the current date and birthday. In Java, the current day can be 
+figured out, for example,            like this:</P>
+<PRE class="sh_java">int day = Calendar.getInstance().get(Calendar.DATE);
+int month = Calendar.getInstance().get(Calendar.MONTH) + 1; // January is 0 so we add 1
+int year = Calendar.getInstance().get(Calendar.YEAR);
+System.out.println("Today is " + day + "." + month + "." + year );
+</PRE>
+<P>When age is removed, the <CODE>olderThan</CODE> method has to be changed so 
+that it compares birthdates.            We'll do this as an excersise 
+assignment.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Clock object</H3>
+<P>In assignment 78 we used objects of the class <CODE>BoundedCounter</CODE> to 
+implement a clock  in the main method. In this assignment we will tranform the 
+clock to an object. The skeleton of the  class clock looks like the 
+following:</P>
+<PRE class="sh_java">public class Clock {
+    private BoundedCounter hours;
+    private BoundedCounter minutes;
+    private BoundedCounter seconds;
+
+    public Clock(int hoursAtBeginning, int minutesAtBeginning, int secondsAtBeginning) {
+      // the counters that represent hours, minutes and seconds are created and
+      // set to have the correct initial values
+    }
+
+    public void tick(){
+      // Clock advances by one second
+    }
+
+    public String toString() {
+        // returns the string representation
+    }
+}
+  </PRE>
+<P>Copy the class <CODE>BoundedCounter</CODE> from assignment 78 to the project 
+of this  assignment!</P>
+<P>Implement constructor and method <CODE>tick</CODE> for the class 
+<CODE>Clock</CODE>. Use the  following main to test your clock:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Clock clock = new Clock(23, 59, 50);
+
+        int i = 0;
+        while( i &lt; 20) {
+            System.out.println( clock );
+            clock.tick();
+            i++;
+        }
+    }
+}
+  </PRE>
+<P>The output should be:</P>
+<PRE>23:59:50
+23:59:51
+23:59:52
+23:59:53
+23:59:54
+23:59:55
+23:59:56
+23:59:57
+23:59:58
+23:59:59
+00:00:00
+00:00:01
+...
+  </PRE></DIV></DIV><!-- foobar --> 
+            
+<H3>A list of objects within an object</H3>
+<P>Let's expand the <CODE>WeightWatchersAssociation</CODE> object so that the 
+association records all            its members into an <CODE>ArrayList</CODE> 
+object. So in this case the list will be filled with             
+<CODE>Person</CODE> objects. In the extended version the association is given a 
+name as a constructor            parameter:</P>
+<PRE class="sh_java">public class WeightWatchersAssociation {
+    private double lowestWeightIndex;
+    private String name;
+    private ArrayList&lt;Person&gt; members;
+
+    public WeightWatchersAssociation(String name, double lowestWeightIndex) {
+        this.lowestWeightIndex = lowestWeightIndex;
+        this.name = name;
+        this.members = new ArrayList&lt;Person&gt;();
+    }
+
+    //..
+}
+</PRE>
+<P>Let's create a method with which a person is added to the association. The 
+method won't add            anyone to the association but people with a high 
+enough weight index. Let's also make a toString with            which the 
+members' names are printed:</P>
+<PRE class="sh_java">public class WeightWatchersAssociation {
+    // ...
+
+    public boolean isAccepted(Person person) {
+        if ( person.weightIndex() &lt; this.lowestWeightIndex ) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public void addAsMember(Person person) {
+        if ( !isAccepted(person) ) { // same as isAccepted(person) == false
+            return;
+        }
+
+        this.members.add(person);
+    }
+
+    public String toString() {
+        String membersAsString = "";
+
+        for ( Person member : this.members ) {
+            membersAsString += "  " + member.getName() + "\n";
+        }
+
+        return "Weightwatchers association " + this.name + " members: \n" + membersAsString;
+    }
+}
+</PRE>
+<P>The method <CODE>addAsMember</CODE> uses the method <CODE>isAccepted</CODE> 
+that was creater            earlier.</P>
+<P>Let's try out the expanded weightwatchers association:</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    WeightWatchersAssociation weightWatcher = new WeightWatchersAssociation("Kumpulan paino", 25);
+
+    Person matti = new Person("Matti");
+    matti.setWeight(86);
+    matti.setHeight(180);
+    weightWatcher.addAsMember(matti);
+
+    Person juhana = new Person("Juhana");
+    juhana.setWeight(64);
+    juhana.setHeight(172);
+    weightWatcher.addAsMember(juhana);
+
+    Person harri = new Person("Harri");
+    harri.setWeight(104);
+    harri.setHeight(182);
+    weightWatcher.addAsMember(harri);
+
+    Person petri = new Person("Petri");
+    petri.setWeight(112);
+    petri.setHeight(173);
+    weightWatcher.addAsMember(petri);
+
+    System.out.println( weightWatcher );
+}
+</PRE>
+<P>In the output we can see that Juhana wasn't accepted as a member:</P>
+<PRE>The members of weight watchers association 'kumpulan paino':
+  Matti
+  Harri
+  Petri
+</PRE>
+<DIV class="tehtavat"><!-- CAST4 --> <!-- screencast --> 
+<DIV class="tehtava">
+<H3>Team and Players</H3>
+<H4 class="req">Class Team</H4>
+<P>Implement a class <CODE>Team</CODE>. At this stage team has only a name 
+(<CODE>String</CODE>)  and the following functionality:</P>
+<UL>
+  <LI>a constructor that sets the team name</LI>
+  <LI><CODE>getName</CODE>, that returns the name</LI></UL>
+<P>With the code:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+    Team barcelona = new Team("FC Barcelona");
+    System.out.println("Team: " + barcelona.getName());
+    }
+}
+  </PRE>
+<P>the output should be::</P>
+<PRE>Team: FC Barcelona
+  </PRE>
+<H4 class="req">Player</H4>
+<P>Create a class <CODE>Player</CODE> with the instance variables for the player 
+name and the  amount of goals. A player should have two constructors: one that 
+initializes the name and an  another that initializes the name and the amount of 
+goals. Implement also the following  methods:</P>
+<UL>
+  <LI><CODE>getName</CODE>, returns the player name</LI>
+  <LI><CODE>goals</CODE>, returns the amount of goals</LI>
+  <LI><CODE>toString</CODE>, returns a string representation that is formed as 
+  in the example    below</LI></UL>
+<P>Example usage:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+    Team barcelona = new Team("FC Barcelona");
+    System.out.println("Team: " + barcelona.getName());
+
+        Player brian = new Player("Brian");
+        System.out.println("Player: " + brian);
+
+        Player pekka = new Player("Pekka", 39);
+        System.out.println("Player: " + pekka);
+    }
+}
+  </PRE>
+<P>and the expected output:</P>
+<PRE>Team: FC Barcelona
+Player: Brian, goals 0
+Player: Pekka, goals 39
+  </PRE>
+<H4 class="req">Adding players to a team</H4>
+<P>Add to the class <CODE>Team</CODE> the following methods:</P>
+<UL>
+  <LI><CODE>addPlayer</CODE>, adds a player to the team</LI>
+  <LI><CODE>printPlayers</CODE>, prints the players in the team</LI></UL>
+<P>You should store the players to an instance variable of the type   
+<CODE>ArrayList&lt;Player&gt;</CODE> within the class <CODE>Team</CODE>.</P>
+<P>With the code:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+    Team barcelona = new Team("FC Barcelona");
+
+        Player brian = new Player("Brian");
+        Player pekka = new Player("Pekka", 39);
+
+        barcelona.addPlayer(brian);
+        barcelona.addPlayer(pekka);
+        barcelona.addPlayer(new Player("Mikael", 1)); // works similarly as the above
+
+        barcelona.printPlayers();
+    }
+}
+  </PRE>
+<P>the output should be:</P>
+<PRE>Brian, goals 0
+Pekka, goals 39
+Mikael, goals 1
+  </PRE>
+<H4 class="req">The team maximum size and current size</H4>
+<P>Add to the class <CODE>Team</CODE> the methods</P>
+<UL>
+  <LI><CODE>setMaxSize(int maxSize)</CODE>, sets the maximum number of players 
+  that the team can    have</LI>
+  <LI><CODE>size</CODE>, returns the number of players in the team</LI></UL>
+<P>By default the maximum number of players should be set to 16, and that can be 
+changed with the method   <CODE>setMaxSize</CODE>. Change the method 
+<CODE>addPlayer</CODE> so that it does not add players  to the team if the team 
+already has the maximum number of players.</P>
+<P>With the code:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+    Team barcelona = new Team("FC Barcelona");
+        barcelona.setMaxSize(1);
+
+        Player brian = new Player("Brian");
+        Player pekka = new Player("Pekka", 39);
+        barcelona.addPlayer(brian);
+        barcelona.addPlayer(pekka);
+        barcelona.addPlayer(new Player("Mikael", 1)); // works similarly as the above
+
+        System.out.println("Number of players: " + barcelona.size());
+    }
+}
+  </PRE>
+<P>the output should be</P>
+<PRE>Number of players: 1
+  </PRE>
+<H4 class="req">Goals of a team</H4>
+<P>Add to the class <CODE>Team</CODE> the method</P>
+<UL>
+  <LI><CODE>goals</CODE>, returns the total number of goals for all the players 
+  in the team</LI></UL>
+<P>With the code:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Team barcelona = new Team("FC Barcelona");
+
+        Player brian = new Player("Brian");
+        Player pekka = new Player("Pekka", 39);
+        barcelona.addPlayer(brian);
+        barcelona.addPlayer(pekka);
+        barcelona.addPlayer(new Player("Mikael", 1)); // works similarly as the above
+
+        System.out.println("Total goals: " + barcelona.goals());
+    }
+}
+  </PRE>
+<P>the output should be</P>
+<PRE>Total goals: 40
+  </PRE></DIV></DIV>
+<H3>Method returns an object</H3>
+<P>We've seen methods that return booleans, numbers, lists and strings. It's 
+easy to guess that a            method can return any type of an object. Let's 
+make a method for the weight watchers association that            returns the 
+person with the highest weight index.</P>
+<PRE class="sh_java">public class WeightWatchersAssociation {
+    // ...
+
+    public Person personWithHighestWeightIndex() {
+        // if members list is empty, we'll return null-reference
+        if ( this.members.isEmpty() ) {
+            return null;
+        }
+
+        Person heaviestSoFar = this.members.get(0);
+
+        for ( Person person : this.members) {
+            if ( person.weightIndex() &gt; heaviestSoFar.weightIndex() ) {
+                heaviestSoFar = person;
+            }
+        }
+
+        return heaviestSoFar;
+    }
+}
+</PRE>
+<P>The logic in this method works in the same way as when finding the largest 
+number in a list. We use a            dummy variable <CODE>heaviestSoFar</CODE> 
+which is initially made to refer to the first person on the list.            
+After that the list is read through and we see if there's anyone with a greater 
+weight index in it, if            so, we make <CODE>heaviestSoFar</CODE> refer 
+to that one instead. At the end we return the value of the            dummy 
+variable, or in other words the <I>reference to a person object</I>.</P>
+<P>Let's make an expansion to the previous main program. The main program 
+receives the reference            returned by the method to its variable 
+<CODE>heaviest</CODE>.</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    WeightWatchersAssociation weightWatcher = new WeightWatchersAssociation("Kumpluan paino", 25);
+
+    // ..
+
+    Person heaviest = weightWatcher.personWithHighestWeightIndex();
+    System.out.print("member with the greatest weight index: " + heaviest.getName() );
+    System.out.println(" weight index " + String.format( "%.2f", heaviest.weightIndex() ) );
+}
+</PRE>
+<P>Prints:</P>
+<PRE>member with the greatest weight index: Petri
+weight index 37,42
+</PRE>
+<H3>Method returns an object it creates</H3>
+<P>In the last example a method returned one Person object that the 
+WeightWatcers object had in it.            It's also possible that a method 
+returns an entirely new object. In the following is a simple counter            
+that has a method <CODE>clone</CODE> with which a clone - an entirely new 
+counter object - can be made from            the counter, which at creation has 
+the same value as the counter that is being cloned:</P>
+<PRE class="sh_java">public Counter {
+    private int value;
+
+    public Counter(){
+        this(0);
+    }
+
+    public Counter(int initialValue){
+        this.value = initialValue;
+    }
+
+    public void grow(){
+        this.value++;
+    }
+
+    public String toString(){
+        return "value: "+value;
+    }
+
+    public Counter clone(){
+        // lets create a new counter object, that gets as its initial value
+        // the value of the counter that is being cloned
+        Counter clone = new Counter(this.value);
+
+        // return the clone to the caller
+        return clone;
+    }
+}
+</PRE>
+<P>Here's a usage example:</P>
+<PRE class="sh_java">Counter counter = new Counter();
+counter.grow();
+counter.grow();
+
+System.out.println(counter);         // prints 2
+
+Counter clone = counter.clone();
+
+System.out.println(counter);         // prints 2
+System.out.println(clone);           // prints 2
+
+counter.grow();
+counter.grow();
+counter.grow();
+counter.grow();
+
+System.out.println(counter);         // prints 6
+System.out.println(clone);           // prints 2
+
+clone.grow();
+
+System.out.println(counter);         // prints 6
+System.out.println(clone);           // prints 3
+</PRE>
+<P>The value of the object being cloned and the value of the clone - after the 
+cloning has happened - are            the same. However they are two different 
+objects, so in the future as one of the counters grows the value            of 
+the other isn't affected in any way.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Extending MyDate</H3>
+<P>In this assignment we will extend the class <CODE>MyDate</CODE>, that was 
+developed in chapter  24.7. The code of the class:</P>
+<PRE class="sh_java">public class MyDate {
+    private int day;
+    private int month;
+    private int year;
+
+    public MyDate(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+
+    public String toString() {
+        return this.day + "." + this.month + "." + this.year;
+    }
+
+    public boolean earlier(MyDate compared) {
+        // first we'll compare years
+        if ( this.year &lt; compared.year ) {
+            return true;
+        }
+
+        // if the years are the same, we'll compare the months
+        if ( this.year == compared.year &amp;&amp; this.month &lt; compared.month ) {
+            return true;
+        }
+
+        // years and months the same, we'll compare the days
+        if ( this.year == compared.year &amp;&amp; this.month == compared.month &amp;&amp;
+                this.day &lt; compared.day ) {
+            return true;
+        }
+
+        return false;
+    }
+}
+  </PRE>
+<H4 class="req">Next day</H4>
+<P>Add to the class MyDate the method <CODE>public void advance()</CODE> that 
+advances the date by  one. <STRONG>Note:</STRONG> In this assignment we assume 
+that all the months have 30 days!</P>
+<H4 class="req">Advancing many days</H4>
+<P>Add also overloaded version <CODE>public void advance(int 
+numberOfDays)</CODE>. This method  should advance the day by the number given as 
+parameter. Implement this method so that it calls the  method 
+<CODE>advance()</CODE> that was defined in the previous part of the assignment, 
+e.g. the  call <CODE>advance(5)</CODE> should call <CODE>advance()</CODE> 5 
+times. Again assume that all the  months have 30 days!</P>
+<H4 class="req">Creation of a new date</H4>
+<P>Add to the class <CODE>MyDate</CODE> the method <CODE>MyDate 
+afterNumberOfDays(int days)</CODE>,  that returns a <STRONG>new</STRONG> 
+<CODE>MyDate</CODE>-object that has the date which equals the  date of the 
+object for which the method was called advance by the parameter of the method   
+<CODE>days</CODE>. Again assume that all the months have 30 days!</P>
+<P>Note that the object for which this method is called should not change!</P>
+<P>Since the method creates a <B>new object</B>, the skeleton is of the 
+form:</P>
+<PRE class="sh_java">public MyDate afterNumberOfDays(int days){
+    MyDate newMyDate = new MyDate( ... );
+
+    // some code here
+
+    return newMyDate;
+}
+  </PRE>
+<P>The following code</P>
+<PRE class="sh_java">public static void main(String[] args) {
+    MyDate day = new MyDate(25, 2, 2011);
+    MyDate newDate = day.afterNumberOfDays(7);
+    for (int i = 1; i &lt;= 7; ++i) {
+        System.out.println("Friday after  " + i + " weeks is " + newDate);
+        newDate = newDate.afterNumberOfDays(7);
+    }
+    System.out.println("This week's Friday is " + day);
+    System.out.println("The date 790 days from this week's Friday is  " + day.afterNumberOfDays(790));
+}
+  </PRE>
+<P>should print:</P>
+<PRE>Friday after  1 weeks is 2.3.2011
+Friday after  2 weeks is 9.3.2011
+Friday after  3 weeks is 16.3.2011
+Friday after  4 weeks is 23.3.2011
+Friday after  5 weeks is 30.3.2011
+Friday after  6 weeks is 7.4.2011
+Friday after  7 weeks is 14.4.2011
+This week's Friday is 25.2.2011
+The date 790 days from this week's Friday is  5.5.2013
+  </PRE></DIV></DIV>
+<H3>More assignments</H3>
+<P>All the new theory for this week has already been covered. However, since 
+this week's topics are            quite challenging, we will practise our 
+routine with a couple of more exercises.</P>
+<DIV class="tehtavat">
+<DIV class="tehtava">
+<H3>Difference of two dates</H3>
+<P>In this assignment we'll further extend the class MyDate. This assignment 
+does not depend on  the previous one, so the project contains the MyDate class 
+that does not have the extensions of the  previous assignment.</P>
+<H4 class="req">Difference in years, first version</H4>
+<P>Add to the class MyDate the method <CODE>public int differenceInYears(MyDate  
+  comparedDate)</CODE>, that calculates the difference in years of the object 
+for which the method is  called and the object given as parameters.</P>
+<P><B>Note the following</B></P>
+<UL>
+  <LI>the first vesion of the method is not very precise, it only calculates the 
+  difference of    the years and does not take into account the day and month of 
+  the dates</LI>
+  <LI>The method needs to work only in the case where the date given as 
+  parameter is before the    date for which the method is called</LI></UL>
+<P>With the code</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        MyDate first = new MyDate(24, 12, 2009);
+        MyDate second = new MyDate(1, 1, 2011);
+        MyDate third = new MyDate(25, 12, 2010);
+
+        System.out.println( second + " and " + first + " difference in years: " + second.differenceInYears(first) );
+
+        System.out.println( third + " and " + first + " difference in years: " + third.differenceInYears(first) );
+
+        System.out.println( second + " and " + third + " difference in years: " + second.differenceInYears(third) );
+    }
+}
+  </PRE>
+<P>the output should be:</P>
+<PRE>1.1.2011 and 24.12.2009 difference in years: 2     // since 2011-2009 = 2
+25.12.2010 and 24.12.2009 difference in years: 1   // since 2010-2009 = 1
+1.1.2011 and 25.12.2010 difference in years: 1     // since 2011-2010 = 1
+  </PRE>
+<H4 class="req">More accuracy</H4>
+<P>Calculation of the previous version was not very exact, e.g. the difference 
+of dates 1.1.2011  and 25.12.2010 was claimed to be one year. <B>Modify the 
+method so that it can calculate the    difference properly.</B> Only the full 
+years in difference count. So if the difference of two dates  would be 1 year 
+and 364 days, only the full years are counted and the result is thus one.</P>
+<P>The method still needs to work only in the case where the date given as 
+parameter is before the  date for which the method is called</P>
+<P>The output for the previous example is now:</P>
+<PRE>1.1.2011 and 24.12.2009 difference in years: 1
+25.12.2010 and 24.12.2009 difference in years: 1
+1.1.2011 and 25.12.2010 difference in years: 0
+  </PRE>
+<H4>And the final version</H4>
+<P>Modify the method so that it works no matter which date is later, the one for 
+which the method  is called or the parameter. Example code:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        MyDate first = new MyDate(24, 12, 2009);
+        MyDate second = new MyDate(1, 1, 2011);
+        MyDate third = new MyDate(25, 12, 2010);
+
+        System.out.println( first + " and " + second + " difference in years: " + second.differenceInYears(first) );
+        System.out.println( second + " and " + first + " difference in years: " + first.differenceInYears(second) );
+        System.out.println( first + " and " + third + " difference in years: " + third.differenceInYears(first) );
+        System.out.println( third + " and " + first + " difference in years: " + first.differenceInYears(third) );
+        System.out.println( third + " and " + second + " difference in years: " + second.differenceInYears(third) );
+        System.out.println( second + " and " + third + " difference in years: " + third.differenceInYears(second) );
+    }
+}
+  </PRE>
+<P>and the output</P>
+<PRE>24.12.2009 and 1.1.2011 difference in years: 1
+1.1.2011 and 24.12.2009 difference in years: 1
+24.12.2009 and 25.12.2010 difference in years: 1
+25.12.2010 and 24.12.2009 difference in years: 1
+1.1.2011 and 25.12.2010 difference in years: 0
+25.12.2010 and 1.1.2011 difference in years: 0
+  </PRE></DIV>
+<DIV class="tehtava">
+<H3>Person extended</H3>
+<H4 class="req">Calculating the age based on the birthday</H4>
+<P>In chapter 24.9. Person was extended by adding to it a birthday represented 
+as a MyDate object.  It was noticed that after the addition the instance 
+variable <CODE>age</CODE> has no role since the  age could easily be calculated 
+based on the current date and the birthday.</P>
+<P>Now implement the method <CODE>age</CODE> that calucates and returns the age 
+of the person.</P>
+<P><B>Note:</B> in the previous assignment we added the class 
+<CODE>MyDate</CODE> method   <CODE>public int differenceInYears(MyDate 
+compared)</CODE>. Copy the method here since it eases  this assignment 
+considerably.</P>
+<PRE class="sh_java">import java.util.Calendar;
+
+public class Person {
+    private String name;
+    private MyDate birthday;
+
+    public Person(String name, int pp, int kk, int vv) {
+        this.name = name;
+        this.birthday = new MyDate(pp, kk, vv);
+    }
+
+    public int age() {
+        // calculate the age based on the birthday and the current day
+        // you get the current day as follows:
+        // Calendar.getInstance().get(Calendar.DATE);
+        // Calendar.getInstance().get(Calendar.MONTH) + 1; // January is 0 so we add one
+        // Calendar.getInstance().get(Calendar.YEAR);
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String toString() {
+        return this.name +", born "+ this.birthday;
+    }
+}
+  </PRE>
+<P>You can use the following program to test your method. Add also yourself to 
+the program and  ensure that your age is calculated correctly.</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka", 15, 2, 1993);
+        Person steve = new Person("Thomas", 1, 3, 1955);
+
+        System.out.println( steve.getName() + " age " + steve.age() + " years");
+        System.out.println( pekka.getName() + " age " + pekka.age() + " years");
+    }
+}
+  </PRE>
+<P>Output:</P>
+<PRE>Thomas age 59 years
+Pekka age 21 years
+  </PRE>
+<H4 class="req">Comparing ages based on birthdate</H4>
+<P>Add to the class Person the method <CODE>boolean olderThan(Person 
+compared)</CODE> which  compares the ages of the object for which the method is 
+called and the object given as parameter.  The method returns true if the object 
+itself is older than the parameter.</P>
+<PRE class="sh_java">public class Person {
+    // ...
+
+    public boolean olderThan(Person compared) {
+       // compare the ages based on birthdate
+    }
+}
+  </PRE>
+<P>Test the method with the code:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka", 15, 2, 1983);
+        Person martin = new Person("Martin", 1, 3, 1983);
+
+        System.out.println( martin.getName() + " is older than " +  pekka.getName() + ": "+ martin.olderThan(pekka) );
+        System.out.println( pekka.getName() + " is older than " +  martin.getName() + ": "+ pekka.olderThan(martin) );
+    }
+}
+  </PRE>
+<P>The output should be:</P>
+<PRE>Martin is older than Pekka: false
+Pekka is older than Martin: true
+  </PRE>
+<H4>New constructors</H4>
+<P>Add to the class Person two new constructors:</P>
+<UL>
+  <LI><CODE>public Person(String name, MyDate birthday)</CODE> constructor sets 
+  the given    MyDate-object to be the birthday of the person</LI>
+  <LI><CODE>public Person(String name)</CODE> constructor sets the current date 
+  (i.e., the date    when the program is run) to be the birthday of the 
+  person</LI></UL>
+<P>Example program:</P>
+<PRE class="sh_java">public class Main {
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka", new MyDate(15, 2, 1983));
+        Person steve = new Person("Steve");
+
+        System.out.println( pekka );
+        System.out.println( steve );
+    }
+}
+  </PRE>
+<P>Output:</P>
+<PRE>Pekka, born 15.2.1983
+Steve, born 9.2.2012
+  </PRE>
+<P><B>Note:</B> The last line depends on the day when the code is 
+executed!</P></DIV></DIV><!-- TYPOFIXES UPTO HERE DONE -->         
+</DIV></DIV></DIV><!-- /inner -->   </DIV><!-- /node-240 -->         
+</DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --> 
+ </DIV></DIV></DIV></DIV></DIV></DIV></DIV><!-- /content-content -->             
+                                                  </DIV><!-- /content-inner-inner --> 
+                            </DIV><!-- /content-inner -->                        
+   </DIV><!-- /content-region-inner -->                         </DIV><!-- /content-region --> 
+                        
+<DIV class="content-bottom row nested " id="content-bottom">
+<DIV class="content-bottom-inner inner clearfix" id="content-bottom-inner">
+<DIV class="block block-block odd first last grid16-16" id="block-block-1">
+<DIV class="inner">
+<DIV class="corner-top">
+<DIV class="corner-top-right corner"></DIV>
+<DIV class="corner-top-left corner"></DIV></DIV>
+<DIV class="inner-wrapper">
+<DIV class="inner-inner">
+<DIV class="content clearfix">
+<DIV id="header-top-block">
+<P class="rtecenter">Ohjaus: <A href="http://mooc.fi/content/irc-ohjeet">IRCnet 
+#mooc.fi </A>&nbsp;&nbsp; |  Tiedotus: <A href="http://twitter.com/mooc1"><IMG 
+height="50" style="vertical-align: middle;" src="Object_files/twitter_newbird_blue.png"> 
+Twitter </A><A href="http://www.facebook.com/Moocfi"><IMG height="30" style="padding: 10px; vertical-align: middle;" 
+src="Object_files/f_logo-1.png"> Facebook</A>  |  Virheraportit: <A href="http://sourceforge.net/p/mooc-issues/tickets/"><IMG 
+height="30" style="padding: 10px; vertical-align: middle;" src="Object_files/sf-footer-logo.png"> 
+SourceForge</A></P>
+<P class="rtecenter"><A href="http://www.cs.helsinki.fi/"><IMG width="400" 
+style="vertical-align: middle;" alt="Helsingin yliopiston tietojenkäsittelytieteen laitos" 
+src="Object_files/CS-logo-MOOC.jpg">&nbsp; </A></P></DIV>
+<SCRIPT>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-47575342-3', 'auto');
+  ga('send', 'pageview');
+ 
+</SCRIPT>
+        </DIV></DIV><!-- /inner-inner -->	   </DIV><!-- /inner-wrapper -->     
+<DIV class="corner-bottom">
+<DIV class="corner-bottom-right corner"></DIV>
+<DIV class="corner-bottom-left corner"></DIV></DIV></DIV><!-- /inner --> </DIV><!-- /block --></DIV><!-- /content-bottom-inner --> 
+</DIV><!-- /content-bottom -->                       </DIV><!-- /content-group-inner --> 
+                    </DIV><!-- /content-group -->                                
+       </DIV><!-- /main-content-inner -->                 </DIV><!-- /main-content --> 
+                              </DIV><!-- /main-group-inner -->             
+</DIV><!-- /main-group -->           </DIV><!-- /main-inner -->         </DIV><!-- /main --> 
+      </DIV><!-- /main-wrapper -->       <!-- postscript-bottom row: width = grid_width --> 
+            <!-- footer row: width = grid_width -->             <!-- footer-message row: width = grid_width --> 
+      
+<DIV class="footer-message-wrapper full-width" id="footer-message-wrapper">
+<DIV class="footer-message row grid16-16" id="footer-message">
+<DIV class="footer-message-inner inner clearfix" id="footer-message-inner">
+<DIV class="footer-message-text block" id="footer-message-text">
+<DIV class="footer-message-text-inner inner clearfix" id="footer-message-text-inner"><BR></DIV><!-- /footer-message-text-inner --> 
+</DIV><!-- /footer-message-text -->                    </DIV><!-- /footer-message-inner --> 
+        </DIV><!-- /footer-message -->       </DIV><!-- /footer-message-wrapper --> 
+    <!-- /page-inner -->   <!-- /page -->   </BODY></HTML>

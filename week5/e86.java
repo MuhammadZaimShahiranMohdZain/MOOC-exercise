@@ -1,6 +1,7 @@
 package week5;
 
 public class e86 {
+//	/*86.1*/
 //    public static void main(String[] args) {
 //        LyyraCard cardOfPekka = new LyyraCard(10);
 //
@@ -13,18 +14,61 @@ public class e86 {
 //        System.out.println("money taken: " + succeeded );
 //        System.out.println("money on the card " + cardOfPekka.balance() );
 //    }
-	 public static void main(String[] args) {
-	        CashRegister unicafeExactum = new CashRegister();
+//	
+//	/*86.2*/
+//	 public static void main(String[] args) {
+//	        CashRegister unicafeExactum = new CashRegister();
+//
+//	        double theChange = unicafeExactum.payEconomical(10);
+//	        System.out.println("the change was " + theChange );
+//
+//	        theChange = unicafeExactum.payEconomical(5);
+//	        System.out.println("the change was "  + theChange );
+//
+//	        theChange = unicafeExactum.payGourmet(4);
+//	        System.out.println("the change was "  + theChange );
+//
+//	        System.out.println( unicafeExactum );
+//	    }
+//
+//	/*86.3*/
+//	public static void main(String[] args) {
+//		CashRegister unicafeExactum = new CashRegister();
+//
+//		double theChange = unicafeExactum.payEconomical(10);
+//		System.out.println("the change was " + theChange );
+//
+//		LyyraCard cardOfJim = new LyyraCard(7);
+//
+//		boolean succeeded = unicafeExactum.payGourmet(cardOfJim);
+//		System.out.println("payment success: " + succeeded);
+//		succeeded = unicafeExactum.payGourmet(cardOfJim);
+//		System.out.println("payment success: " + succeeded);
+//		succeeded = unicafeExactum.payEconomical(cardOfJim);
+//		System.out.println("payment success: " + succeeded);
+//
+//		System.out.println( unicafeExactum );
+//	}
+	
+	/*86.4*/
+	public static void main(String[] args) {
+        CashRegister unicafeExactum = new CashRegister();
+        System.out.println( unicafeExactum );
 
-	        double theChange = unicafeExactum.payEconomical(10);
-	        System.out.println("the change was " + theChange );
+        LyyraCard cardOfJim = new LyyraCard(2);
 
-	        theChange = unicafeExactum.payEconomical(5);
-	        System.out.println("the change was "  + theChange );
+        System.out.println("the card balance " + cardOfJim.balance() + " euros");
 
-	        theChange = unicafeExactum.payGourmet(4);
-	        System.out.println("the change was "  + theChange );
+        boolean succeeded = unicafeExactum.payGourmet(cardOfJim);
+        System.out.println("payment success: " + succeeded);
 
-	        System.out.println( unicafeExactum );
-	    }
+        unicafeExactum.loadMoneyToCard(cardOfJim, 100);
+
+        succeeded = unicafeExactum.payGourmet(cardOfJim);
+        System.out.println("payment success: " + succeeded);
+
+        System.out.println("the card balance " + cardOfJim.balance() + " euros");
+
+        System.out.println( unicafeExactum );
+    }
 }
